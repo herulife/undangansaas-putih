@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" role="img" aria-label="Galeri">
+  <defs>
+    <linearGradient id="lipFill" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d9a0a2"/>
+      <stop offset=".45" stop-color="#b96569"/>
+      <stop offset="1" stop-color="#8f4a4f"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0" x2="1">
+      <stop offset="0" stop-color="#486f65"/>
+      <stop offset=".5" stop-color="#d4b06a"/>
+      <stop offset="1" stop-color="#486f65"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#3d5c54" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="560" height="240" fill="none"/>
+  <g fill="none" stroke="url(#goldLine)" stroke-width="5" stroke-linecap="round">
+    <path d="M78 122h74"/>
+    <path d="M408 122h74"/>
+    <path d="M280 58v-28"/>
+    <path d="M280 211v-28"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <path d="M107 122c58-53 104-71 147-51 14 7 22 18 26 20 4-2 12-13 26-20 43-20 89-2 147 51-55 50-109 71-173 71s-118-21-173-71z" fill="url(#lipFill)" stroke="#7f4247" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M107 122c75-7 129-7 173-1 44-6 98-6 173 1" fill="none" stroke="#fff8ec" stroke-width="6" stroke-linecap="round" opacity=".92"/>
+    <path d="M159 122c43 26 78 38 121 38s78-12 121-38" fill="none" stroke="#6e373c" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+    <path d="M184 100c31-12 59-13 84-2" fill="none" stroke="#f5c8c9" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+    <path d="M300 99c26-11 54-10 85 2" fill="none" stroke="#f5c8c9" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+  </g>
+  <text x="280" y="133" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#fff8ec">Galeri</text>
+</svg>

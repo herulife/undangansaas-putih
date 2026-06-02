@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -46,6 +47,10 @@ func normalizeSlug(value string) string {
 		}
 	}
 	return strings.Trim(builder.String(), "-")
+}
+
+func intString(value int) string {
+	return strconv.Itoa(value)
 }
 
 func uploadDir() string {

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as RegisterRouteImport } from './routes/register'
 import { Route as LoginRouteImport } from './routes/login'
+import { Route as HomeLamaRouteImport } from './routes/home-lama'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
@@ -40,6 +41,11 @@ const RegisterRoute = RegisterRouteImport.update({
 const LoginRoute = LoginRouteImport.update({
   id: '/login',
   path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HomeLamaRoute = HomeLamaRouteImport.update({
+  id: '/home-lama',
+  path: '/home-lama',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DashboardRoute = DashboardRouteImport.update({
@@ -147,6 +153,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/admin': typeof AdminRouteWithChildren
   '/dashboard': typeof DashboardRouteWithChildren
+  '/home-lama': typeof HomeLamaRoute
   '/login': typeof LoginRoute
   '/register': typeof RegisterRoute
   '/admin/media': typeof AdminMediaRoute
@@ -169,6 +176,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/home-lama': typeof HomeLamaRoute
   '/login': typeof LoginRoute
   '/register': typeof RegisterRoute
   '/admin/media': typeof AdminMediaRoute
@@ -194,6 +202,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/admin': typeof AdminRouteWithChildren
   '/dashboard': typeof DashboardRouteWithChildren
+  '/home-lama': typeof HomeLamaRoute
   '/login': typeof LoginRoute
   '/register': typeof RegisterRoute
   '/admin/media': typeof AdminMediaRoute
@@ -220,6 +229,7 @@ export interface FileRouteTypes {
     | '/'
     | '/admin'
     | '/dashboard'
+    | '/home-lama'
     | '/login'
     | '/register'
     | '/admin/media'
@@ -242,6 +252,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/home-lama'
     | '/login'
     | '/register'
     | '/admin/media'
@@ -266,6 +277,7 @@ export interface FileRouteTypes {
     | '/'
     | '/admin'
     | '/dashboard'
+    | '/home-lama'
     | '/login'
     | '/register'
     | '/admin/media'
@@ -291,6 +303,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminRoute: typeof AdminRouteWithChildren
   DashboardRoute: typeof DashboardRouteWithChildren
+  HomeLamaRoute: typeof HomeLamaRoute
   LoginRoute: typeof LoginRoute
   RegisterRoute: typeof RegisterRoute
   USlugRoute: typeof USlugRoute
@@ -310,6 +323,13 @@ declare module '@tanstack/react-router' {
       path: '/login'
       fullPath: '/login'
       preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/home-lama': {
+      id: '/home-lama'
+      path: '/home-lama'
+      fullPath: '/home-lama'
+      preLoaderRoute: typeof HomeLamaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/dashboard': {
@@ -509,6 +529,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdminRoute: AdminRouteWithChildren,
   DashboardRoute: DashboardRouteWithChildren,
+  HomeLamaRoute: HomeLamaRoute,
   LoginRoute: LoginRoute,
   RegisterRoute: RegisterRoute,
   USlugRoute: USlugRoute,

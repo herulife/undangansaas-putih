@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html translate="no">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.75,maximum-scale=0.75,user-scalable=no">
+<meta name="color-scheme" content="light only">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="mobile-web-app-capable" content="yes">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href='/icon/linkundangan-fav.ico' rel='shortcut icon'/>
+<link href='https://share.linkundangan.com/invcode/wedding-premium042' rel='canonical'/> 
+    <title>(DEMO TEMPLATE WEDDING-PREMIUM042) Hamzah &amp; Anissa</title>
+        <meta content='noindex, noarchive' name='robots'/>
+        <meta name="description" content="Minggu, 31 Mei 2026">
+    <meta property="og:title" content="(DEMO TEMPLATE WEDDING-PREMIUM042) Hamzah &amp; Anissa" />
+    <meta property="og:description" content="Minggu, 31 Mei 2026">
+    <meta property="og:url" content="https://share.linkundangan.com/invcode/wedding-premium042" />
+    <meta property="og:image" content="https://www.linkundangan.com/files/assets-builder/ornaments/00003.jpg">
+    <meta property="og:type" content="website" />
+        <link rel="manifest" href="/manifest.json?v=7">
+        
+    <meta content='summary' name='twitter:card'/>
+    <meta content='(DEMO TEMPLATE WEDDING-PREMIUM042) Hamzah &amp; Anissa' name='twitter:title'/>
+    <meta content='@linkundangan' name='twitter:site'/>
+    <meta content='Minggu, 31 Mei 2026' name='twitter:description'/>
+    <meta content='https://www.linkundangan.com/files/assets-builder/ornaments/00003.jpg' name='twitter:image'/>
+    <link href='https://www.linkundangan.com/files/assets-builder/ornaments/00003.jpg' rel='apple-touch-icon'/>
+            <meta name="theme-color" content="#eaeaea" />
+        <meta content='#eaeaea' name='msapplication-navbutton-color'/>
+        <meta content='#eaeaea' name='apple-mobile-web-app-status-bar-style'/>
+            <!--
+
+⚠️ 𝗦𝗘𝗖𝗨𝗥𝗜𝗧𝗬     𝗡𝗢𝗧𝗜𝗖𝗘 ⚠️
+====================================================================
+
+Halo Kak Mohon Maaf Sekali, Saat ini kami tidak membuka program Bug Bounty atau menerima laporan kerentanan keamanan :).
+
+Segala bentuk pengujian keamanan tanpa izin resmi merupakan tindakan yang tidak diperkenankan.
+
+Terima kasih atas pengertiannya.
+
+
+===================================================================
+-->
+<link rel="stylesheet" href="/css/coffee.css?v=2320260587"/>
+<link rel="stylesheet" href="/css/img-slider.css?v=8720260587"/>
+<link rel="stylesheet" href="/AdminLTE/plugins/fontawesome-free/css/all.min.css?v=20260587"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/jquery-ui.min.css?v=20260587"/>
+<link rel="stylesheet" href="/css/linkundangan-styling.css?v=1220260587"/>
+<link rel="stylesheet" href="/css/timeline.css?v=3320260587" />
+<style>
+    .countdown{
+        border-top: 5px dashed #988d8d69;
+        width: 273px;
+        margin: auto;
+        max-width: 100%;
+        padding: 9px 3px;
+        background-color: #8080800a;
+    }
+    .countdown .counter {
+        border-radius: 0 17px!important;
+        background-color:#ffffff33;
+    }
+    .countdown .counter:nth-child(3),.countdown .counter:nth-child(4) {
+        border-radius: 17px 0!important;
+    }
+    #button-to-top,#button-mode-read,.backsound,.link-guestbook{
+        box-shadow: 0 4px 8px #00000014,0 -1px 4px #0000000a;
+    }
+    img.gallery{
+        box-shadow: 0 4px 8px #00000014,0 -1px 4px #0000000a;
+    }
+    form button.btn-primary,form button.btn-warning,form button.btn-danger,form button.btn-secondary,form button.btn-info{
+        box-shadow: 1px 1px 3px rgb(0 0 0 / 11%)
+    }
+    a.btn-primary,a.btn-warning,a.btn-danger,a.btn-secondary,a.btn-info,a.link-reservation{
+        box-shadow: 0 4px 8px #00000014,0 -1px 4px #0000000a;
+    }
+    .bg-darkblue-gradient{
+        box-shadow: 0 4px 8px #00000014,0 -1px 4px #0000000a;
+    }
+    #lampiran p{
+        margin:0!important;
+    }
+    #nav-galeri img{
+        transform:none;
+    }
+        </style>
+<script src="/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="/Templates/WEDDING-PREMIUM042/assets/css/bootstrap5.min.css"/>
+<link rel="stylesheet" href="/Templates/WEDDING-PREMIUM042/assets/css/style.css?v=5" />
+<link rel="stylesheet" href="/Templates/WEDDING-PREMIUM042/assets/css/zoomslider.css" />
+<script src="/Templates/WEDDING-PREMIUM042/assets/js/modernizr-2.6.2.min.js"></script>
+
+<style>
+#coverModal .bg-cover{
+    background-image: linear-gradient(1deg, #ffffff, #ffffff57),url('/files/assets-builder/backgrounds/buieru.jpg');
+    background-image: linear-gradient(1deg, #ffffff, #ffffff57),url('https://www.linkundangan.com/files/assets-builder/ornaments/00003.jpg');
+    background-size:cover;
+    background-position:center top;
+    min-height:100%;
+    height: initial;
+    width:100vw;
+    position:absolute;
+    left:0;
+    filter: blur(0px);
+}
+#coverModal .card{
+	background-size:cover;
+	background-position:center;
+	z-index:9;
+    background-color:transparent;  
+    color: #371c07;
+    text-shadow: 3px 3px 7px #ffffff33;
+}
+.modal-content{
+    background-color:transparent;   
+    background-image: linear-gradient( 44deg , #283e3acf, #fde08700);
+}
+#coverModal .card > *{
+    z-index:9;
+}
+#coverModal .modalcontent::before {
+    content: '';
+    position: absolute;
+    width: 55%;
+    max-width: 199px;
+    max-height: 155px;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background-position: top left;
+    background-image: url(https://www.linkundangan.com/files/assets-builder/ornaments/Picture1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation-name: iddle1;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#coverModal .modalcontent::after {
+    content: '';
+    position: absolute;
+    width: 55%;
+    max-width: 199px;
+    max-height: 155px;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    background-position: bottom right;
+    background-image: url(https://www.linkundangan.com/files/assets-builder/ornaments/Picture2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation-name: iddle2;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: 
+</style>
+<style>
+   .pagination{font-size: 8pt;}
+   .card-sticker{
+        cursor:pointer;
+    }
+    .wish .confirm{
+        border-radius:50rem!important;
+        padding:2px 3px;
+        display:inline-block;
+    }
+    .wish .user{
+        font-weight:bold;
+    }
+    .wish .time{
+        display:block;
+    }
+    .invitation-comment-form {
+        background-color: transparent;
+        text-align: left;
+        border: none;
+        box-shadow: 1px 1px 5px inset rgb(0 0 0 / 18%) !important;
+        padding: 15px;
+        border-radius: 9px;
+        text-shadow:1px 1px 1px white;
+        
+    }
+    .container-wishes{
+        max-height:750px;
+        overflow-y:auto;
+    }
+    .link-reservation{
+        position:relative;
+    }
+    @keyframes  blink{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    .blink{
+        animation: blink 1s alternate-reverse infinite;
+    }
+    .link-reservation{
+        position:relative;
+    }
+    .link-reservation .count-rsv{
+        position: absolute;
+        top: -19px;
+        right: 3px;
+        font-family: sans-serif;
+        font-size: 9pt;
+        background-color: #ce1717;
+        padding: 3px 9px;
+        border-radius: 50rem;
+        box-shadow: 3px 3px 9px #111111;
+    }
+    .link-reservation::after{
+        content: '';
+        position: absolute;
+        background-image: url(/svg/cursor.svg?v=3);
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        bottom: -17px;
+        left: 5px;
+        z-index: 9999;
+        border-radius: 3px;
+    }
+</style>
+<link rel="stylesheet" href="/PhotoSwipe/dist/photoswipe.css?v=20260587"> 
+<link rel="stylesheet" href="/PhotoSwipe/dist/default-skin/default-skin.css?v=20260587">
+<style>
+    .pswp__img{
+        top: 50%!important;
+        left: 50%!important;
+        transform: translate(-50%,-50%)!important;
+        height: auto!important;
+    }
+    .pswp__zoom-wrap{
+        transform:none!important;
+    }
+    .gallery{
+        pointer:cursor;
+    }
+</style>
+<style>
+            body{
+            background-image:url('https://www.linkundangan.com/BgroundBsound/bg-canvaspinky.jpg');
+            background-size: contain;
+        }
+        .frame{
+        position:relative;
+    }
+    .border-h-line-dashed{
+        border:1px dashed white;
+        
+    }
+    .scallop-up{
+        position:relative;
+    }
+    body{
+        padding-left:0;
+        padding-right:0;
+        padding-bottom:0;
+        font-family:'dmsans'!important;
+		color: #371c07;
+        text-shadow: 1px 1px 3px #7f795042;
+    }
+    .bg-header {
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;    
+        background-color: #edd5c5;
+        background-size:cover;
+      	background-position:center;
+        filter:blur(0px);
+    }
+    iframe,a,button,input,select,form{
+        position:relative;
+        z-index:999999;
+    }
+    .scallop-up {
+        height: 99px;
+        width: 100%;
+        background: -webkit-gradient(radial,50% 100%,10,50% 100%,40,from(#ffffff00),color-stop(.49,#ffffff00),color-stop(.51,#e9e5df),to(#eae7e1));
+        -webkit-background-size: 69px 100%;
+    }
+    #nav-tamu .card .wishes .wish {
+        background-color: transparent;
+    }
+    .content-invitation{
+        position: relative;
+        z-index: 9;
+        border-radius: 19px;
+    }
+    #nav-cover .counter {
+        background-color: transparent;
+        color: #613c2c;
+        font-size: 12pt;
+        border-radius: 33px;
+    }
+    #nav-cover .counter span {
+        font-size: 9pt;
+    }
+
+    .divider{
+      width:100%;
+      padding:0;
+      margin:0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position:relative;
+      background-color:white;
+    }
+    .sep7 {
+      transform: translateY(-100%) translateY(2px) scale(1,1);
+      transform-origin: top;
+    }
+    #nav-cerita .story.animate {
+        background-color: #4b3c2ed1;
+        color: #fff;
+    }
+    #nav-cerita .icon span {
+        background-color: #5d4b3e;
+    }
+    .bg-secondary {
+        background-color: #3D251B !important;
+    }
+    :root {
+        --primaryColor: #3D251B;
+    }
+    .bg-primary {
+        background-color: #613c2c !important;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #613c2c;
+        border-color: #613c2c;
+    }
+</style>        <style id="custom_css">
+            
+        </style>
+        <style>
+            body{font-family:'dmsans';}.modal.fade{transition:all 1.3s;top:101%;position: fixed!important;opacity:1!important;display: block!important;}.modal.fade.show{top:1px;}.modal-backdrop{transition:all .7s;}
+img{max-width:100%;}
+.rounded{border-radius:17px!important;}
+.navmenu .navigation .humberger-btn {z-index:999999}
+#nav-cerita .icon span {
+    min-height: 55px;
+    height: 100%;
+    width: 3px;
+    border-radius: 9px;
+    margin: 0px 5px;
+    display:block;
+}
+#nav-cerita .frame .content-invitation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#rsv-container * {
+   color:#343434;
+}
+#rsv-container .link-reservation *{
+   color:white;
+}
+#tali-pita{
+    box-shadow: 5px 5px 5px #a3a3a3!important;
+    margin-bottom: 39px!important;
+}
+#tali-pita::before{
+    box-shadow: 5px 5px 5px #a3a3a3;
+}
+#tali-pita::after{
+    box-shadow: 5px 5px 5px #a3a3a3;
+}
+.fit-content{
+    width:fit-content;
+}
+.skew{
+    transform: skew(347deg, 360deg);
+}
+video{
+    max-width:100%;
+}
+#nav-cerita ul li .date {
+    width:unset!important;
+    font-family:'alata'!important;
+    font-weight: 700!important;
+    font-size: 15pt!important;
+}
+#nav-cerita ul li .title div{
+    font-family:'alata'!important;
+    font-weight: normal!important;
+    font-size: 12pt;
+}
+#nav-cerita .story{
+    border-radius:0;
+    margin-bottom:19px;
+    margin-left:19px;
+    margin-right:19px;
+}
+#nav-galeri img,#gallery img{
+    transform:none;
+}
+.navmenu ul {
+    --col-gap: unset;
+    --row-gap: unset;
+    --line-w: unset;
+    display: unset;;
+    grid-template-columns: unset;
+    grid-auto-columns: unset;
+    column-gap: unset;
+    list-style: none;
+    width: unset;
+    margin-inline: unset;
+}
+a{
+   text-decoration: none!important;
+}
+.open-invitation{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#nav-tamu .card #form-comment, #comment #form-comment{
+    height: inherit;
+}
+        </style>
+    </head>
+    <body>
+                        	<div id='loadingpage' style='display:flex;flex-direction: column;justify-content: center;position:fixed;width:100vw;color:#452626;height:107vh;z-index:9999;top:0;left:0;text-align:center;padding:7px;font-family: dmsans;opacity:1;text-shadow:none;'>
+    <div style="background:white;background-position:center;display:flex;flex-direction: column;justify-content: center;align-items: center;height: 100%;">
+        <div class="animate-iddle9" style="display:flex;flex-direction: column;justify-content: center;align-items:center">
+            <div class="coffee"><div></div><div></div><div></div></div><div class="plate"></div>
+            <div style="font-size: 9pt;text-shadow:none;padding: 1px 9px;background-color: #6c3333;color: white;margin-top: 2px;transform: skewX(353deg);padding:1px 33px;text-shadow:none;filter:none;" class="typing-loading loop">LOADING...</div>
+        </div>
+                    <p style="font-family:'ltcomical';color: #6c3333;font-size: 19px;" id="textLoadingWait">Mohon Tunggu...</p>
+            </div>
+    <div style="height: 7vh;position: sticky;z-index: 27;top:0;">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style=" background-color: #ffffff00;margin-top: -1px;width:100%;height:100%">
+            <path style="fill: #ffffffeb;" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path style="fill: #ffffff6e;" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path style="fill: #ffffff;" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+</div>
+<script>
+const invID = "267104"; const invCode = "UDG202308090264"; let isFirstload = true;
+const _0x36e0d2=_0x3fe3;(function(_0x107f54,_0x535aa7){const _0x24457f=_0x3fe3,_0x2a22f9=_0x107f54();while(!![]){try{const _0x109b06=-parseInt(_0x24457f(0xe6))/(-0x1a70*0x1+-0x21ee+-0x57d*-0xb)+-parseInt(_0x24457f(0xd1))/(0x1e41+-0x1f*-0xb+-0x1*0x1f94)+parseInt(_0x24457f(0x123))/(0xd3*0x1b+-0x7*-0x4bd+0xb15*-0x5)*(-parseInt(_0x24457f(0x131))/(-0x11*0x18e+-0x1876+0x32e8))+parseInt(_0x24457f(0xf1))/(-0x18ce+0x1d*-0x11f+0x3956)+parseInt(_0x24457f(0xec))/(-0x128b+-0x4*-0x8fa+-0x1*0x1157)+-parseInt(_0x24457f(0x108))/(-0xf91*-0x1+0x1412+0x35*-0xac)*(parseInt(_0x24457f(0xea))/(-0x2d6*0x6+0x77b+0x991))+parseInt(_0x24457f(0x11c))/(-0x1*0x22d5+-0xec1+0x319f);if(_0x109b06===_0x535aa7)break;else _0x2a22f9['push'](_0x2a22f9['shift']());}catch(_0x529cc7){_0x2a22f9['push'](_0x2a22f9['shift']());}}}(_0x5dab,0x1*0xa8dbb+-0xb7e66*0x1+0x1*0x74150));function _0x3fe3(_0x1311d8,_0x579ed5){const _0x48c4f1=_0x5dab();return _0x3fe3=function(_0x4a0532,_0x4a7b7e){_0x4a0532=_0x4a0532-(-0x11d6*-0x2+-0x1d8b+-0x551);let _0x1b3693=_0x48c4f1[_0x4a0532];return _0x1b3693;},_0x3fe3(_0x1311d8,_0x579ed5);}try{var loadingPageInv=document[_0x36e0d2(0x10f)+_0x36e0d2(0x119)](_0x36e0d2(0xf8)+'ge');if(loadingPageInv!=null){loadingPageInv[_0x36e0d2(0xe7)][_0x36e0d2(0x128)]=_0x36e0d2(0x100),loadingPageInv[_0x36e0d2(0xe7)][_0x36e0d2(0x10c)]=_0x36e0d2(0xe1),loadingPageInv[_0x36e0d2(0xe7)][_0x36e0d2(0x12e)]='1';const textLoadingWait=document[_0x36e0d2(0x10f)+_0x36e0d2(0x119)](_0x36e0d2(0x12a)+_0x36e0d2(0xd0));if(textLoadingWait!=null)document[_0x36e0d2(0x10f)+_0x36e0d2(0x119)](_0x36e0d2(0x12a)+_0x36e0d2(0xd0))[_0x36e0d2(0x11e)]=_0x36e0d2(0xdb)+_0x36e0d2(0xd9);}var loadingHostName=document[_0x36e0d2(0x10f)+_0x36e0d2(0x119)](_0x36e0d2(0xd3));loadingHostName!=null&&(loadingHostName[_0x36e0d2(0xde)]=location[_0x36e0d2(0x130)][_0x36e0d2(0x122)](_0x36e0d2(0x106),'')[_0x36e0d2(0x122)](_0x36e0d2(0xfb),''));}catch(_0x39a272){}$(document)[_0x36e0d2(0x111)](function(){const _0x397e10=_0x36e0d2,_0x3ab07d={'GWDMu':function(_0x43040f,_0x3cfe13){return _0x43040f(_0x3cfe13);},'LauAB':_0x397e10(0xf8)+'ge','WprZq':_0x397e10(0x11b),'etxTm':_0x397e10(0x12a)+_0x397e10(0xd0),'IKqkZ':_0x397e10(0x117)+_0x397e10(0xeb),'AHSaE':function(_0x29afb3,_0x21e27f){return _0x29afb3(_0x21e27f);},'izXIs':function(_0x1e02c8,_0x3aca4d){return _0x1e02c8!=_0x3aca4d;},'QFbic':_0x397e10(0x129)+_0x397e10(0xf3),'sDdTH':function(_0x52492c,_0x403905){return _0x52492c(_0x403905);},'MfaEv':_0x397e10(0x114)+'s','ElJcs':_0x397e10(0xfd),'fVWyv':function(_0x2e3b6a,_0x3a4791){return _0x2e3b6a>_0x3a4791;},'IliyR':function(_0x17d498,_0x443f39){return _0x17d498>_0x443f39;},'JTXFy':_0x397e10(0x12c),'vgCKG':_0x397e10(0x120),'kvJth':function(_0x4cc225,_0x7bcfd0){return _0x4cc225(_0x7bcfd0);},'mpgWK':_0x397e10(0xfd)+'2','KKSRH':_0x397e10(0xe9),'kTMRj':_0x397e10(0x117)+'h','kshWp':function(_0x1fb386,_0x427e47){return _0x1fb386+_0x427e47;},'zsmey':function(_0x2e6534,_0x16f8bb){return _0x2e6534+_0x16f8bb;},'fTpRO':_0x397e10(0xd6)+_0x397e10(0x103),'EDaDv':_0x397e10(0x12b),'cTssY':function(_0x8f475a,_0x1fe80a){return _0x8f475a(_0x1fe80a);},'rnBXY':function(_0x4f2885,_0x404fbf){return _0x4f2885(_0x404fbf);}};try{$[_0x397e10(0x124)]({'cache':![]}),$[_0x397e10(0xfc)]({'url':_0x3ab07d[_0x397e10(0x104)](_0x3ab07d[_0x397e10(0x104)](_0x3ab07d[_0x397e10(0xd5)](_0x3ab07d[_0x397e10(0xf7)],invID),'/'),invCode),'type':_0x3ab07d[_0x397e10(0x121)],'success':function(_0x309cc7){const _0x1c9b88=_0x397e10,_0x5afe61={'MNcXg':_0x3ab07d[_0x1c9b88(0x118)],'kkQYS':_0x3ab07d[_0x1c9b88(0xed)]};try{_0x3ab07d[_0x1c9b88(0x12d)]($,_0x3ab07d[_0x1c9b88(0x113)])[_0x1c9b88(0xd4)](_0x3ab07d[_0x1c9b88(0xf4)]),_0x3ab07d[_0x1c9b88(0x10d)]($,_0x3ab07d[_0x1c9b88(0x118)])[_0x1c9b88(0x11d)]({'height':0x0,'opacity':0x0},0x563*0x3+-0x2296+0x1849,function(_0x592073){const _0x3bb0e6=_0x1c9b88;document[_0x3bb0e6(0x10f)+_0x3bb0e6(0x119)](_0x5afe61[_0x3bb0e6(0xdf)])[_0x3bb0e6(0xe7)][_0x3bb0e6(0x10c)]=_0x5afe61[_0x3bb0e6(0xe0)];});}catch(_0x1fac96){document[_0x1c9b88(0x10f)+_0x1c9b88(0x119)](_0x3ab07d[_0x1c9b88(0x118)])[_0x1c9b88(0xe7)][_0x1c9b88(0x10c)]=_0x3ab07d[_0x1c9b88(0xed)];}try{window[_0x1c9b88(0x109)](0x259e+0xdcc+-0x336a,-0x4*-0x245+-0x1b*0x13a+0x2*0xc05);var _0x5fefb3=_0x309cc7[_0x1c9b88(0xe5)][_0x1c9b88(0xf5)+_0x1c9b88(0x110)][_0x1c9b88(0x105)];if(_0x3ab07d[_0x1c9b88(0xd8)](_0x5fefb3,'')){audio=new Audio(_0x5fefb3),urlAudio=new URL(audio[_0x1c9b88(0x107)]);const _0x2ce424=new URLSearchParams(urlAudio[_0x1c9b88(0xfe)]);if(_0x3ab07d[_0x1c9b88(0xd8)](_0x2ce424[_0x1c9b88(0xe3)]('t'),null))try{audio[_0x1c9b88(0x115)+_0x1c9b88(0xf0)](_0x3ab07d[_0x1c9b88(0xf2)],function(_0x23b8f2){const _0x2607fb=_0x1c9b88;isFirstload&&(audio[_0x2607fb(0x11a)+'e']=_0x3ab07d[_0x2607fb(0x12d)](parseInt,_0x2ce424[_0x2607fb(0xe3)]('t')),isFirstload=![]);},![]);}catch(_0x5b9160){console[_0x1c9b88(0x12f)](_0x5b9160);}audio[_0x1c9b88(0xf9)]=!![];}}catch(_0x16b43f){console[_0x1c9b88(0x12f)](_0x16b43f);}try{countDownDate=new Date(_0x309cc7[_0x1c9b88(0xe5)][_0x1c9b88(0xf5)+_0x1c9b88(0x110)][_0x1c9b88(0x10a)+_0x1c9b88(0x10e)])[_0x1c9b88(0xe8)]();}catch(_0x243c0e){console[_0x1c9b88(0x12f)](_0x243c0e);}try{const _0x3db400=_0x3ab07d[_0x1c9b88(0xe2)]($,_0x3ab07d[_0x1c9b88(0x101)]),_0x40aa5d=_0x3ab07d[_0x1c9b88(0x10d)]($,_0x3ab07d[_0x1c9b88(0xda)]),_0x4fb57e=_0x309cc7[_0x1c9b88(0xe5)][_0x1c9b88(0xf5)];if(_0x3ab07d[_0x1c9b88(0x11f)](_0x3db400[_0x1c9b88(0xef)],0xf*0x171+-0x1*-0xe21+-0x23c0))_0x3db400[_0x1c9b88(0xd4)](_0x4fb57e[_0x1c9b88(0xe4)]);if(_0x3ab07d[_0x1c9b88(0xfa)](_0x40aa5d[_0x1c9b88(0xef)],0x134*0x3+-0x196*-0x12+-0x2028)){const _0x2ccce3=_0x3ab07d[_0x1c9b88(0xdd)][_0x1c9b88(0xd7)]('|');let _0x2a5821=0xbeb+-0x1a20*-0x1+-0x260b;while(!![]){switch(_0x2ccce3[_0x2a5821++]){case'0':_0x57b8f5[_0x1c9b88(0xde)]=_0x4fb57e[_0x1c9b88(0x10b)];continue;case'1':_0x40aa5d[_0x1c9b88(0x112)](_0x57b8f5);continue;case'2':_0x57b8f5['id']=_0x3ab07d[_0x1c9b88(0xee)];continue;case'3':_0x3ab07d[_0x1c9b88(0x127)]($,_0x3ab07d[_0x1c9b88(0x102)])[_0x1c9b88(0x116)]();continue;case'4':var _0x57b8f5=document[_0x1c9b88(0xf6)+_0x1c9b88(0xff)](_0x3ab07d[_0x1c9b88(0x126)]);continue;}break;}}}catch(_0x515a8c){console[_0x1c9b88(0x12f)](_0x515a8c);}},'error':function(_0x17a667){const _0xccdcce=_0x397e10;try{_0x3ab07d[_0xccdcce(0x10d)]($,_0x3ab07d[_0xccdcce(0x118)])[_0xccdcce(0x11d)]({'height':0x0,'opacity':0x0},0x2189*0x1+0x3*0xd+0x89*-0x34,function(_0x3d1189){const _0x3de8f7=_0xccdcce;document[_0x3de8f7(0x10f)+_0x3de8f7(0x119)](_0x3ab07d[_0x3de8f7(0x118)])[_0x3de8f7(0xe7)][_0x3de8f7(0x10c)]=_0x3ab07d[_0x3de8f7(0xed)];}),_0x3ab07d[_0xccdcce(0x127)]($,_0x3ab07d[_0xccdcce(0x113)])[_0xccdcce(0xd4)](_0x3ab07d[_0xccdcce(0xdc)]);}catch(_0x51dd46){document[_0xccdcce(0x10f)+_0xccdcce(0x119)](_0x3ab07d[_0xccdcce(0x118)])[_0xccdcce(0xe7)][_0xccdcce(0x10c)]=_0x3ab07d[_0xccdcce(0xed)];}}});}catch(_0x46af4b){try{_0x3ab07d[_0x397e10(0xd2)]($,_0x3ab07d[_0x397e10(0x118)])[_0x397e10(0x11d)]({'height':0x0,'opacity':0x0},-0x3ea+-0x5*0xf4+0xe8a,function(_0xb8d79){const _0x383e3f=_0x397e10;document[_0x383e3f(0x10f)+_0x383e3f(0x119)](_0x3ab07d[_0x383e3f(0x118)])[_0x383e3f(0xe7)][_0x383e3f(0x10c)]=_0x3ab07d[_0x383e3f(0xed)];}),_0x3ab07d[_0x397e10(0x125)]($,_0x3ab07d[_0x397e10(0x113)])[_0x397e10(0xd4)](_0x3ab07d[_0x397e10(0xdc)]);}catch(_0x12f5d1){document[_0x397e10(0x10f)+_0x397e10(0x119)](_0x3ab07d[_0x397e10(0x118)])[_0x397e10(0xe7)][_0x397e10(0x10c)]=_0x3ab07d[_0x397e10(0xed)];}}});function _0x5dab(){const _0x3ea5c4=['ajaxSetup','rnBXY','KKSRH','kvJth','height','canplaythr','#textLoadi','GET','4|2|0|1|3','GWDMu','opacity','log','host','28mocyRH','ngWait','1585934dbHioQ','cTssY','#host-name','text','zsmey','/inv-json-','split','izXIs','gu...','ElJcs','Mohon\x20Tung','kTMRj','JTXFy','innerHTML','MNcXg','kkQYS','flex','sDdTH','get','custom_css','data','791108UqjZQU','style','getTime','script','6527896vyLYbe','h...','2701152teIRpZ','WprZq','vgCKG','length','stener','1324415lEtBfu','QFbic','ough','IKqkZ','invitation','createElem','fTpRO','#loadingpa','loop','IliyR','www.','ajax','#custom_js','search','ent','107vh','MfaEv','mpgWK','data/','kshWp','sound','share.','src','7mrjpcV','scrollTo','countdownd','custom_js','display','AHSaE','ate','querySelec','_setting','ready','after','etxTm','#custom_cs','addEventLi','remove','Terimakasi','LauAB','tor','currentTim','none','19296360POZvRF','animate','innerText','fVWyv','custom_js2','EDaDv','replace','19368IWrJLz'];_0x5dab=function(){return _0x3ea5c4;};return _0x5dab();}
+</script>    	<div class="modal fade" id="coverModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+    <div class="bg-cover" style="background-color:white;background-image:linear-gradient(1deg, #6b6b6be3, #ffffff00),url('https://www.linkundangan.com/files/assets-builder/ornaments/00003.jpg?v=2026052414');background-size:cover;background-position: center top;"></div>
+    <div id="particles-js" style="position: fixed;z-index: 0;height: 100%;width: 100%;"></div>
+      <div class="modal-body container d-flex flex-column justify-content-center  overflow-visible">
+         <div class='card border-0 shadow-none text-center overflow-auto py-5 overflow-hidden'>
+            <div class="py-5 mt-1 rounded px-3" style="text-shadow: none;color: white;">
+
+                <div class='display-6 ff-abril fw-bold mb-1 mb-4'>The Wedding Of</div>
+                <div class='h2 judul text-center ff-alata my-1'>
+                    <div class="ff-cinzel fs-3">Anissa</div> 
+                    <div class="align-middle ff-vibes fw-bold mb-1 mt-3">&amp;</div>
+                    <div class="ff-cinzel fs-3">Hamzah</div>
+                </div>
+                <div class="to">
+                    <p class="mb-1">Kepada Yth.</p>
+                    <span class="mt-5 mb-5 fw-bold penerima ff-ltcomical"> Penerima Undangan </span>
+                    <div class="my-3 text-center">
+                        <button type="button" class="border border-1 border-3 btn btn-sm ff-ltcomical fw-bold open-invitation text-white" style="background-color: #371c07;border-color: white!important;font-size:14pt">
+                            <i class="align-middle fas me-1 "></i>
+                            Buka Undangan
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="container-fluid class-crush p-0">
+            <div class="navmenu" style="z-index: 99999;max-width:333px;margin: 0% auto;left:0;right:0">
+        	    <div class="navigation open">
+        	        <div class="d-flex justify-content-center align-items-center">
+        	            <ul class="left">
+        	                <li data-targetid="#nav-perihal">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M10.75 5C4.320313 5 0 9.347656 0 15.8125C0 22.984375 5.785156 27.753906 11.375 32.375C14.125 34.648438 16.976563 37.015625 19.1875 39.65625C19.378906 39.882813 19.640625 40 19.9375 40L20.0625 40C20.359375 40 20.621094 39.882813 20.8125 39.65625C21.675781 38.625 22.765625 37.519531 24 36.375C25.398438 38.636719 26.792969 40.972656 27.71875 43.34375C27.824219 43.621094 28.0625 43.8125 28.34375 43.90625L28.4375 43.9375C28.539063 43.972656 28.644531 44 28.75 44C28.929688 44 29.09375 43.941406 29.25 43.84375C31.523438 42.480469 34.195313 41.496094 36.78125 40.53125C42.109375 38.542969 47.609375 36.480469 49.4375 31.125C51.097656 26.261719 48.957031 21.882813 44.09375 20.21875C43.410156 19.984375 42.660156 19.875 41.875 19.875C40.953125 19.875 40.0625 20.039063 39.21875 20.28125C39.75 18.832031 40 17.355469 40 15.8125C40 9.347656 35.679688 5 29.25 5C25.066406 5 21.535156 8.496094 20 10.28125C18.464844 8.496094 14.929688 5 10.75 5 Z M 10.75 7C15.214844 7 19.148438 12.382813 19.1875 12.4375C19.375 12.699219 19.679688 12.875 20 12.875C20.320313 12.875 20.625 12.699219 20.8125 12.4375C20.851563 12.382813 24.78125 7 29.25 7C34.5625 7 38 10.460938 38 15.8125C38 17.742188 37.5 19.566406 36.5 21.375C36.332031 21.460938 36.144531 21.542969 36 21.625C35.242188 19.835938 33.492188 16.597656 30.46875 15.5625C29.40625 15.199219 28.347656 15 27.3125 15C23.71875 15 20.824219 17.21875 19.5625 20.90625C17.914063 25.730469 20.265625 30.234375 22.9375 34.625C21.824219 35.640625 20.839844 36.601563 20 37.53125C17.800781 35.089844 15.195313 32.941406 12.65625 30.84375C7.183594 26.320313 2 22.042969 2 15.8125C2 10.460938 5.433594 7 10.75 7Z" fill="#A15F9F"></path>
+                                </svg>
+                            </li>
+        	                <li data-targetid="#nav-acara">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M6 1L6 3L5 3C3.9 3 3 3.9 3 5L3 19C3 20.1 3.9 21 5 21L19 21C20.1 21 21 20.1 21 19L21 5C21 3.9 20.1 3 19 3L18 3L18 1L16 1L16 3L8 3L8 1L6 1 z M 5 8L19 8L19 19L5 19L5 8 z M 13 13L13 17L17 17L17 13L13 13 z" fill="#A15F9F"></path>
+                                </svg>
+        	                </li>
+        	            </ul>
+        	            <div class="humberger-btn text-center">
+        	                <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                              <path d="M7.9785156 5.9804688 A 2.0002 2.0002 0 0 0 6.5859375 9.4140625L12.171875 15L6.5859375 20.585938 A 2.0002 2.0002 0 1 0 9.4140625 23.414062L15 17.828125L20.585938 23.414062 A 2.0002 2.0002 0 1 0 23.414062 20.585938L17.828125 15L23.414062 9.4140625 A 2.0002 2.0002 0 0 0 21.960938 5.9804688 A 2.0002 2.0002 0 0 0 20.585938 6.5859375L15 12.171875L9.4140625 6.5859375 A 2.0002 2.0002 0 0 0 7.9785156 5.9804688 z" fill="#6BAFC4" />
+                            </svg>
+                            <svg class="expand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                              <path d="M3 9C1.34375 9 0 10.34375 0 12C0 13.65625 1.34375 15 3 15C4.65625 15 6 13.65625 6 12C6 10.34375 4.65625 9 3 9 Z M 12 9C10.34375 9 9 10.34375 9 12C9 13.65625 10.34375 15 12 15C13.65625 15 15 13.65625 15 12C15 10.34375 13.65625 9 12 9 Z M 21 9C19.34375 9 18 10.34375 18 12C18 13.65625 19.34375 15 21 15C22.65625 15 24 13.65625 24 12C24 10.34375 22.65625 9 21 9Z" fill="#6BAFC4" />
+                            </svg>
+        	            </div>
+        	            <ul class="right">
+        	                <li data-targetid="#nav-galeri">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M5 3C3.897 3 3 3.897 3 5L3 9C3 10.103 3.897 11 5 11L9 11C10.103 11 11 10.103 11 9L11 5C11 3.897 10.103 3 9 3L5 3 z M 15 3C13.897 3 13 3.897 13 5L13 9C13 10.103 13.897 11 15 11L19 11C20.103 11 21 10.103 21 9L21 5C21 3.897 20.103 3 19 3L15 3 z M 6 6L8 6L8 8L6 8L6 6 z M 17 6C17.552 6 18 6.448 18 7C18 7.552 17.552 8 17 8C16.448 8 16 7.552 16 7C16 6.448 16.448 6 17 6 z M 5 13C3.897 13 3 13.897 3 15L3 19C3 20.103 3.897 21 5 21L9 21C10.103 21 11 20.103 11 19L11 15C11 13.897 10.103 13 9 13L5 13 z M 15 13C13.897 13 13 13.897 13 15L13 19C13 20.103 13.897 21 15 21L19 21C20.103 21 21 20.103 21 19L21 15C21 13.897 20.103 13 19 13L15 13 z M 7 16C7.552 16 8 16.448 8 17C8 17.552 7.552 18 7 18C6.448 18 6 17.552 6 17C6 16.448 6.448 16 7 16 z M 16 16L18 16L18 18L16 18L16 16 z" fill="#A15F9F"></path>
+                                </svg>
+        	                </li>
+        	                <li data-targetid="#nav-tamu">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M12 3C8.14 3 5 6.141 5 10C5 12.410337 6.2256309 14.541088 8.0859375 15.800781C4.5135649 17.328535 2 20.878337 2 25L4 25C4 20.59 7.59 17 12 17C13.44 17 14.790937 17.380547 15.960938 18.060547C16.370938 17.510547 16.829844 17.000781 17.339844 16.550781C16.886742 16.262444 16.400847 16.021871 15.900391 15.808594C17.767985 14.550033 19 12.415944 19 10C19 6.141 15.86 3 12 3 z M 12 5C14.757 5 17 7.243 17 10C17 12.757 14.757 15 12 15C9.243 15 7 12.757 7 10C7 7.243 9.243 5 12 5 z M 24 16C19.6 16 16 19.6 16 24C16 28.4 19.6 32 24 32C28.4 32 32 28.4 32 24C32 19.6 28.4 16 24 16 z M 24 18C27.3 18 30 20.7 30 24C30 27.3 27.3 30 24 30C20.7 30 18 27.3 18 24C18 20.7 20.7 18 24 18 z M 27 21.300781L23.699219 24.599609L21.400391 22.300781L20 23.699219L23.699219 27.400391L28.400391 22.699219L27 21.300781 z" fill="#A15F9F"></path>
+                                </svg>
+        	                </li>
+        	            </ul>
+        	        </div>
+        	    </div>
+        	</div>
+            <div id="nav-tabContent">
+                <div id="nav-cover" class="position-relative sheet" role="tabpanel" aria-labelledby="nav-cover-tab">
+                    <div class="bg-header position-fixed"></div>
+                    <section class="position-relative overflow-hidden">
+                        <div class="card bg-transparent px-5 py-5 m-0 rounded-1 text-center d-flex flex-column justify-content-center" style="min-height: 95vh;border-bottom: none;">
+                            <div class="pb-5 rounded pt-5 py-3 row position-relative" style="background-image: linear-gradient(0deg, #ffffff12, #ffffff00);margin-bottom: -19px;z-index:11;opacity: .75;background-color: #fffaf17a;">
+                              <div class="col-12">
+                                  <img decoding="async" width="241" height="436" style="width: 152px;height: auto;" src="/Templates/WEDDING-PREMIUM042/assets/images/waynggsf.png" class="attachment-full mb-3 size-full wp-image-564">
+                                  <div class="ff-qafinte fw-bold mb-3">The Wedding Of</div>
+                              </div>
+                              <div class="col-12 position-relative">
+                                <div>
+                                    <h1 class="fs-3 ff-andina fw-bold pe-2" >
+                                        <span class="do-animate animate-start kekanan">Anissa</span> &amp; <span class="do-animate animate-start kekiri">Hamzah</span>
+                                    </h1>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="m-1 do-animate center my-3 animate-start membesar">
+                                    <div class="ff-alata">Save The Date</div>
+                                    <div class="my-3">
+                                        <span class="ff-alata fw-bold">Minggu</span>,
+                                        <strong>31 Mei 2026</strong>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-12 overflow-hidded">
+                                    <div class="d-flex justify-content-center mt-2 countdown" style="text-shadow: none">
+                                        <div class="counter position-relative fw-bold do-animate animate-start kekiri animate-init"><div class='countday'>00</div><span class="d-block fw-normal">Hari</span></div>
+                                        <div class="counter position-relative fw-bold do-animate animate-start kekanan animate-init"><div class='counthour'>00</div><span class="d-block fw-normal">Jam</span></div>
+                                        <div class="counter position-relative fw-bold do-animate animate-start kekiri animate-init"><div class='countminute'>00</div><span class="d-block fw-normal">Menit</span></div>
+                                        <div class="counter position-relative fw-bold do-animate animate-start kekanan animate-init"><div class='countsecond'>00</div><span class="d-block fw-normal">Detik</span></div>
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div style="position: absolute;width: 100%;bottom: 0;">
+                            <img src="/Templates/WEDDING-PREMIUM042/assets/images/wayang.webp" class="w-100" style="opacity: .75;">
+                            <div class="position-absolute" style="background-image:url(/Templates/WEDDING-PREMIUM042/assets/images/bg-ornament.png);height:100%;width:100%;background-position:center;background-size:contain;top: 0;left: 0;z-index: 9;opacity: .75;background-repeat: no-repeat;"></div>
+                        </div>
+                        <div style="position: absolute;width: 100%;bottom: 0;">
+                            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0" style="fill: #B37646;"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="3" style="fill: #8f6849;"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="5" style="fill: #613c2c;"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="7" style="fill: #3D251B;"></use>
+                            </g>
+                            </svg>
+                        </div>
+                    </section>
+                </div>
+                <div id="nav-perihal" class="sheet" role="tabpanel" aria-labelledby="nav-perihal-tab">                        
+                    <section class="position-relative p-0 border-0 p-0 rounded-0 text-center" style="z-index:1;background-image: url(/Templates/WEDDING-PREMIUM042/assets/images/bg.jpg);background-size: cover;background-position: center left;">
+                        <div style="height: 7vh;position: sticky;z-index: 33;top:0;">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style=" background-color: #ffffff00;margin-top: -1px;width:100%;height:100%">
+                                <path style="fill: #fd923d;" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                                <path style="fill: #613c2c;" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                                <path style="fill: #3D251B;" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                            </svg>
+                        </div>
+                        <div class="container overflow-hidden">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="content-text rounded content-invitation">
+                                    <img src="https://www.linkundangan.com/files/assets-builder/ornaments/wayang.png" style="width:199px;opacity: .8;"/>
+                                    <div class='animate do-animate ff-cabolafe fs-1 h2 mb-4 membesar'>Assalamualaykum Wr Wb</div>
+                                    <p class="do-animate muncul">
+                            		                                		        Dengan segala kerendahan hati,<br />
+kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami,
+                            		                                		</p>
+                            		<div class="row justif-content-center my-5">
+                            		    <div class="col-5">
+                            		        <div class="card rounded border-0 position-relative overflow-hidden shadow-lg do-animate kekanan" >
+                            		          <div class="position-absolute border" style="top:0;left:0;filter:blur(1px);height:100%;width:100%;background-image: url(/Templates/WEDDING-PREMIUM041/assets/images/bg-mempelai.jpg);background-size: cover;background-position: center;"></div>
+                            		                                                        <img src="https://www.linkundangan.com/files/assets-builder/ornaments/00003.jpg" class="card-img-top gallery w-100 mb-2 position-relative" alt="..."> 
+                                                                                            <div class="card-body position-relative px-1 py-3" style="background: #ffffffde;">
+                                                <h5 class="card-title ff-abril m-0 fw-bold">Anissa Maryam</h5>
+                                                <div class="card-text" >Keluarga bapak abdul</div>
+                                              </div>
+                                            </div>
+                            		    </div>
+                            		    <div class="align-self-center col-2 my-3">
+                                            <div class="display-1 ff-andina fw-bold">&amp;</div>
+                                        </div>
+                            		    <div class="col-5">
+                            		        <div class="card rounded border-0 position-relative overflow-hidden shadow-lg do-animate kekiri" >
+                            		          <div class="position-absolute border" style="top:0;left:0;filter:blur(1px);height:100%;width:100%;background-image: url(/Templates/WEDDING-PREMIUM041/assets/images/bg-mempelai.jpg);background-size: cover;background-position: center;"></div>
+                            		                                                        <img src="https://www.linkundangan.com/files/assets-builder/ornaments/002321123312.png" class="card-img-top gallery mb-2 w-100 position-relative" alt="..." >
+                                                                                            <div class="card-body position-relative px-1 py-3" style="background: #ffffffde;">
+                                                <h5 class="card-title ff-abril m-0 fw-bold">Hamzah Yusuf</h5>
+                                                <div class="card-text" >Keluarga bapak hasan</div>
+                                              </div>
+                                            </div>
+                            		    </div>
+                            		    
+                            		</div>
+                                    <p class="do-animate muncul">
+                            		                                		        Kami sangat berharap Bapak/Ibu/Saudara/i dapat menghadiri acara tersebut
+                            		                                		</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="nav-acara" class="sheet" role="tabpanel" aria-labelledby="nav-acara-tab" style="margin-top: -3px;">
+                    <section class="position-relative bg-transparent border-0 p-0 text-center" style="z-index:5">
+                        <div class="parent-overlay">
+                            <div class="child-overlay" style="background-image: url(/Templates/WEDDING-PREMIUM042/assets/images/bg.jpg);background-size: cover;background-position: bottom right;"></div>
+                        </div>
+                        <div class="container overflow-hidden">
+                            <div class="frame d-flex flex-column justify-content-center ff-ltcomical">
+                                <div class="text-center">
+                                  <img src="/Templates/WEDDING-PREMIUM042/assets/images/waynggsf.png" class="" style="max-width:77%;opacity: .5;"> 
+                                </div>
+                                <div class="content-invitation">
+                                    <span class='d-block display-1 ff-spiritednote my-1'>Waktu Dan Tempat</span>
+                                    <div class='my-3'>
+                                        <span>Ingatkan saya melalui google calendar</span><br/>
+                                        <a class='btn btn-sm btn-primary text-white do-animate membesar' href='https://calendar.google.com/calendar/u/0/r/eventedit?text=(DEMO TEMPLATE WEDDING-PREMIUM042) Hamzah & Anissa&details=(DEMO TEMPLATE WEDDING-PREMIUM042) Hamzah & Anissa&dates=20260531T000000/20260531T240000'><i class='fa fa-bell'></i> Atur Pengingat</a>
+                                    </div>
+                                                                        <div class="d-flex bg-white shadow mb-3 do-animate kekanan justify-content-start rounded-3 overflow-hidden">
+                                        <div class="bg-secondary d-flex">
+                                            <div class='align-self-center ff-alata fs-4 position-relative fw-bold px-2 py-5 text-uppercase text-white' style="writing-mode: vertical-lr;transform: rotate(180deg);">
+                                                 Akad
+                                            </div>
+                                        </div>
+                                        <div class="align-self-center col text-center my-3 mx-2">
+                                            <div class='fw-bold h5 my-0'>📅 12 Desember 2021 <br/> 🕐 Pukul 08:00 WIB</div>
+                                            <div>-----------------</div>
+                                            <span class='fw-normal'>Masjid agung bogor</span>
+                                        </div>
+                                    </div>
+                                    <br/><br/>
+                                                                                                            <div class="d-flex do-animate kekiri bg-white shadow mb-3 justify-content-start rounded-3 overflow-hidden">
+                                        <div class="align-self-center col text-center my-3 mx-2">
+                                            <div class='fw-bold h5 my-0'>📅 12 Desember 2024 <br/> 🕐 Pukul 10:00 WIB</div>
+                                            <div>-----------------</div>
+                                            <div>
+                                                 <div class='p-2 content-text'>Jl.kusuma bangsa 05 , rawamangun. Kota Depok</div>
+                                            </div>
+                                                                                        <div>
+                                                <iframe loading="lazy"
+                                                  width="100%" 
+                                                  height="250" 
+                                                  frameborder="0" 
+                                                  scrolling="no" 
+                                                  marginheight="0" 
+                                                  marginwidth="0" 
+                                                  src="https://maps.google.com/maps?q=-6.408050637849384,106.81522008972941&hl=id&z=15&amp;output=embed">
+                                                 </iframe>
+                                            </div>
+                                                                                    </div>
+                                        <div class="bg-secondary d-flex">
+                                            <div class='align-self-center ff-alata fs-4 position-relative fw-bold px-2 py-5 text-uppercase text-white' style="writing-mode: vertical-lr;">
+                                                 Resepsi
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/><br/>
+                                                                                                            <div class="d-flex do-animate kekanan bg-white shadow mb-3 justify-content-start rounded-3 overflow-hidden">
+                                        <div class="bg-secondary d-flex">
+                                            <div class='align-self-center ff-alata fs-4 position-relative fw-bold px-2 py-5 text-uppercase text-white' style="writing-mode: vertical-lr;transform: rotate(180deg);">
+                                                 Ngunduh Mantu
+                                            </div>
+                                        </div>
+                                        <div class="align-self-center col text-center my-3 mx-2">
+                                            <div class='fw-bold h5 my-0' >📅15 Desember 2021 <br/> 🕐 Pukul 08:00 WIB</div>
+                                            <div>-----------------</div>
+                                            <div>
+                                                 <div class='p-2 content-text'>Jl.kusuma bangsa 05 , rawamangun. Kota Depok</div>
+                                            </div>
+                                                                                        <div>
+                                                <iframe loading="lazy"
+                                                  width="100%" 
+                                                  height="250" 
+                                                  frameborder="0" 
+                                                  scrolling="no" 
+                                                  marginheight="0" 
+                                                  marginwidth="0" 
+                                                  src="https://maps.google.com/maps?q=-6.599940663716371,106.97100986368864&hl=id&z=11&amp;output=embed">
+                                                 </iframe>
+                                            </div>
+                                                                                    </div>
+                                    </div>
+                                    <br/><br/>
+                                                                                                            <div class="d-flex do-animate kekiri shadow bg-white mb-3 justify-content-start rounded-3 overflow-hidden">
+                                        <div class="align-self-center col text-center my-3 mx-2">
+                                            <div class='px-2 py-5'>DRESSCODE : BATIK<br />
+Selalu jaga protokol kesehatan</div>
+                                        </div>
+                                        <div class="bg-secondary d-flex">
+                                            <div class='align-self-center ff-alata fs-4 position-relative fw-bold px-2 py-5 text-uppercase text-white' style="writing-mode: vertical-lr;">
+                                                 Catatan
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="nav-cerita" class="sheet position-relative pt-2" role="tabpanel" aria-labelledby="nav-cerita-tab" style="margin-top: -11px;">
+                                        <div class="parent-overlay">
+                        <div class="child-overlay" style="margin-top: -2px;background-image: url(/Templates/WEDDING-PREMIUM042/assets/images/wayang.webp);background-position: center bottom;background-size: cover;"></div>
+                    </div>
+                    <section class="position-relative border-0 p-0 p-0 rounded-0 text-center">
+                        <div class="container overflow-hidden">
+                            <div class="frame  d-flex justify-content-center">
+                                <div class="content-text col-md-8 content-invitation">
+                                                                        <h2 class="h1 fs-1 ff-amsterdam">Our Story</h2>
+                                    <p>Perjalanan kisah cinta kami</p>
+                                                                                                                <div class="d-flex flex-nowrap mb-3">
+                                            <time class="date">31 Januari 2021</time>
+                                            <span class="icon">
+                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                                <path d="M25 44.296875L24.363281 43.769531C23.363281 42.941406 22.019531 42.027344 20.46875 40.96875C14.308594 36.765625 5 30.414063 5 20.285156C5 14.0625 10.097656 9 16.363281 9C19.714844 9 22.851563 10.457031 25 12.957031C27.148438 10.457031 30.289063 9 33.636719 9C39.902344 9 45 14.0625 45 20.285156C45 30.414063 35.691406 36.765625 29.53125 40.96875C27.976563 42.027344 26.636719 42.941406 25.636719 43.769531Z" fill="#A15F9F" />
+                                               </svg>
+                                               <span></span>
+                                            </span>
+                                            <div class="story do-animate animate-init animate__flipInY">
+                                                                                                <div class="px-5 py-3">
+										            <img src="https://www.linkundangan.com/files/assets-builder/ornaments/00003.jpg" class="w-100 d-block mb-2" alt="story love"/>
+										        </div>
+										                                                       <div>*Kenalan*<br />
+Dibawah pohon cemara taman cempaka menjadi saksi kami di pertemukan</div>
+                                            </div>
+                                        </div>
+                                                                                                                                                    <div class="d-flex flex-nowrap mb-3">
+                                            <time class="date">31 Maret 2021</time>
+                                            <span class="icon">
+                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                                <path d="M25 44.296875L24.363281 43.769531C23.363281 42.941406 22.019531 42.027344 20.46875 40.96875C14.308594 36.765625 5 30.414063 5 20.285156C5 14.0625 10.097656 9 16.363281 9C19.714844 9 22.851563 10.457031 25 12.957031C27.148438 10.457031 30.289063 9 33.636719 9C39.902344 9 45 14.0625 45 20.285156C45 30.414063 35.691406 36.765625 29.53125 40.96875C27.976563 42.027344 26.636719 42.941406 25.636719 43.769531Z" fill="#A15F9F" />
+                                               </svg>
+                                               <span></span>
+                                            </span>
+                                            <div class="story do-animate animate-init animate__flipInY">
+                                                                                                <div class="px-5 py-3">
+										            <img src="https://www.linkundangan.com/files/assets-builder/ornaments/000111.png" class="w-100 d-block mb-2" alt="story love"/>
+										        </div>
+										                                                       <div>*Tunangan*<br />
+Banyaknya persamaan dan kecocokan memutuskan kamu untuk serius dalam menjalani hubungan</div>
+                                            </div>
+                                        </div>
+                                                                                                                                                    <div class="d-flex flex-nowrap mb-3">
+                                            <time class="date">21 Desembar 2021</time>
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                                 <path d="M25 44.296875L24.363281 43.769531C23.363281 42.941406 22.019531 42.027344 20.46875 40.96875C14.308594 36.765625 5 30.414063 5 20.285156C5 14.0625 10.097656 9 16.363281 9C19.714844 9 22.851563 10.457031 25 12.957031C27.148438 10.457031 30.289063 9 33.636719 9C39.902344 9 45 14.0625 45 20.285156C45 30.414063 35.691406 36.765625 29.53125 40.96875C27.976563 42.027344 26.636719 42.941406 25.636719 43.769531Z" fill="#A15F9F" />
+                                                </svg>
+                                            </span>
+                                            <div class="story do-animate animate-init animate__flipInY">
+                                                                                                <div class="px-5 py-3">
+										            <img src="https://www.linkundangan.com/files/assets-builder/ornaments/002321123312.png" class="w-100 d-block mb-2" alt="story love"/>
+										        </div>
+										                                                       <div>*Menikah*<br />
+Menjadi hari terindah dalam hidup kami, ikatan pernikahan menjadikan kami semakin erat dalam kasih sayang</div>
+                                            </div>
+                                        </div>
+                                                                                                                                                                                    <h3 class="h4 title-ucapan fw-bold">Harapan Pengantin Pria</h3>
+                                    <p>Semoga dia menjadi istri dunia dan akhirat</p>
+                                                                                                            <h3 class="h4 title-ucapan fw-bold">Harapan Pengantin Wanita</h3>
+                                    <p>Semoga dia menjadi imam yang baik</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="divider bg-transparent">
+                          <div>
+                            <svg id="" class="waves" preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 200" style="display: block;display: block;height: auto;width: 100%;max-height:none" data-height="200">
+                            <polygon class="" style="fill: #d3c8c2" points="1611.912,205.954 -14.224,206 -9.912,2.046 1616.224,162.165 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #59abe3;" points="167.262,39.589 107.551,33.709 123.443,15.177 183.154,21.057 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #d2527f;" points="286.684,51.348 226.973,45.468 242.865,26.936 302.577,32.816 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #d2527f;" points="47.839,27.83 -11.872,21.95 4.021,3.418 63.732,9.298 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #59abe3;" points="406.107,63.107 346.395,57.227 362.288,38.695 421.999,44.575 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #d2527f;" points="525.529,74.866 465.818,68.986 481.71,50.454 541.422,56.334 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #59abe3;" points="644.952,86.625 585.24,80.745 601.133,62.213 660.844,68.093 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #d2527f;" points="764.374,98.384 704.663,92.504 720.555,73.973 780.267,79.852 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #59abe3;" points="883.797,110.143 824.085,104.263 839.978,85.732 899.689,91.611 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #d2527f;" points="1003.219,121.902 943.508,116.023 959.4,97.491 1019.111,103.37 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #59abe3;" points="1122.641,133.661 1062.93,127.782 1078.823,109.25 1138.534,115.129 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #d2527f;" points="1242.064,145.42 1182.353,139.541 1198.245,121.009 1257.956,126.888 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #59abe3;" points="1361.486,157.179 1301.775,151.3 1317.668,132.768 1377.379,138.647 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #d2527f;" points="1480.909,168.938 1421.198,163.059 1437.09,144.527 1496.801,150.406 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #59abe3;" points="1600.331,180.697 1540.62,174.818 1556.513,156.286 1616.224,162.165 "></polygon></svg>
+                          </div>
+                        </div>
+                    </section>
+                                    </div>
+                <div id="nav-galeri" class="sheet position-relative" role="tabpanel" aria-labelledby="nav-galeri-tab" style="background-image: linear-gradient(182deg, #d3c8c2, #ffffff);;">
+                                        <section class="position-relative bg-transparent rounded-0 container overflow-hidden border-0 p-0 text-center">
+                        <div class="frame d-flex flex-column justify-content-center">
+                            <div class="content-invitation py-3">
+                                                                <div class="h3 mb-5 fw-bold display-2 ff-aller"><img src="/Templates/WEDDING-PREMIUM042/assets/images/gunung-removebg-preview.png" class="shadow-none" style="width:199px"></div>
+                                <h2 class="display-1 ff-wedding">Galeri</h2>
+                                <p>&nbsp;&nbsp;&nbsp;Album foto</p>
+                                <br/>
+                                								<div class="p-4 my-1">
+								    <div id="generateImageSlider"></div>
+								</div>
+								<div class='row justify-content-center px-3'>
+									<div class='col-6'>
+																					<div class="rounded border-0 do-animate mb-3 membesar shadow overflow-hiddenn" style="border-radius: 17px;">
+												<img class="position-relative gallery" 
+													 style="max-width:100%; height:auto; z-index:5" 
+													 onerror="this.onerror=null;this.src='https://share.linkundangan.com/images/noimage.png';" 
+													 alt='Galeri mempelai' 
+													 loading='lazy' 
+													 src='https://www.linkundangan.com/files/assets-builder/ornaments/00003.jpg' />
+											</div>
+																					<div class="rounded border-0 do-animate mb-3 membesar shadow overflow-hiddenn" style="border-radius: 17px;">
+												<img class="position-relative gallery" 
+													 style="max-width:100%; height:auto; z-index:5" 
+													 onerror="this.onerror=null;this.src='https://share.linkundangan.com/images/noimage.png';" 
+													 alt='Galeri mempelai' 
+													 loading='lazy' 
+													 src='https://www.linkundangan.com/files/assets-builder/ornaments/002321123312.png' />
+											</div>
+																			</div>
+									<div class='col-6'>
+																					<div class="rounded border-0 do-animate mb-3 membesar shadow overflow-hidden" style="border-radius: 17px;">
+												<img class="position-relative gallery" 
+													 style="max-width:100%; height:auto; z-index:5" 
+													 onerror="this.onerror=null;this.src='https://share.linkundangan.com/images/noimage.png';" 
+													 alt='Galeri mempelai' 
+													 loading='lazy' 
+													 src='https://www.linkundangan.com/files/assets-builder/ornaments/000111.png' />
+											</div>
+																					<div class="rounded border-0 do-animate mb-3 membesar shadow overflow-hidden" style="border-radius: 17px;">
+												<img class="position-relative gallery" 
+													 style="max-width:100%; height:auto; z-index:5" 
+													 onerror="this.onerror=null;this.src='https://share.linkundangan.com/images/noimage.png';" 
+													 alt='Galeri mempelai' 
+													 loading='lazy' 
+													 src='https://www.linkundangan.com/files/assets-builder/ornaments/00007.jpg' />
+											</div>
+																			</div>
+								</div>
+                                                                
+                                                                    <div class="my-5 yt-video">
+                                        <h3 class="ff-autumn">Our Video Story</h3>
+                                        <iframe style="max-width:100%;height:510;x" src="https://www.youtube.com/embed/D8aEHMItxqY"></iframe>
+                                    </div>
+                                                            </div>
+                        </div>
+                    </section>
+                                    </div>
+                <div id="nav-tamu" class="sheet bg-white position-relative" role="tabpanel" aria-labelledby="nav-tamu-tab">
+                    <section class="position-relative bg-transparent rounded-0 border-0 rounded-0 p-0 p-0" >
+                        <div class="container overflow-hidden">
+                            <div class="frame card border-0 bg-transparent d-flex flex-column justify-content-center">
+                                <div class="text-center">
+                                  <img src="/Templates/WEDDING-PREMIUM042/assets/images/gunungg-removebg-preview.png" class="do-animate membesar animate animate-iddle5" style="max-width:150px">
+                                </div>
+                                <div class="content-text content-invitation">
+                                    <h2 class="h1 fs-1 mb-5 text-center ff-wedding">Kirim Pesan</h2>
+                                    <div>Berikan ucapan terbaikmu</div>
+                                    <div class="invitation-comment-form">
+    <form id='form-comment' class="ff-poppins position-relative rounded shadow py-2 px-3" method='POST' action='/attendance'>
+        <input type="hidden" name="_token" value="Ko7ZlNTSLLyMFfCKZxgDelhOoB3bFTBQJ3RN3Qkd"> 
+        <input type='hidden' name='input[invitation_id]' value='267104' />
+        <div class='form-group'>
+            <label class="label-name">Nama</label>
+            <input type='hidden' class='verfiedname' value=''>
+            <input type='text'  name='input[name]' required class='form-control input-name' placeholder="Nama" value=''>
+        </div>
+        <div class='form-group'>
+            <label class="label-attendance">Konfirmasi Kehadiran</label>
+            <select id="attendance-option" class='form-control form-select select-attendance' name='input[confirm]'>
+                <option>Saya berencana hadir</option>
+                <option>Saya masih ragu</option>
+                <option>Maaf saya tidak bisa hadir</option>
+            </select>
+        </div>
+        <div class="d-none">
+            <input type='text'  name='input[additional_1]' class='form-control input-additional_1 d-none'/>
+            <input type='text'  name='input[additional_2]' class='form-control input-additional_2 d-none'/>
+            <input type='text'  name='input[additional_3]' class='form-control input-additional_3 d-none'/>
+        </div>
+        <div class='form-group'>
+            <label class="label-message">Pesan</label>
+            <textarea class='form-control textarea-message' placeholder="Pesan" maxlength='2000' rows='4' name='input[contents]'></textarea>
+        </div>
+        <div>
+            <img id="preview-sticker" class="d-none" style="width:99px;height:auto;border-radius:9px" src="/images/gif/sticker001.gif" alt="preview Sticker" />
+        </div>
+        <div class="my-1">
+            <button type="button" style="border-radius:50px" class="btn btn-sm btn-primary px-3" data-bs-toggle="modal" data-bs-target="#stickersModal">
+              <i class="fa">&#xf118;</i> Stiker
+            </button>
+            <a href="#" style="border-radius:50px;text-decoration:none" class="btn btn-sm btn-warning px-3" onclick="event.preventDefault();this.nextElementSibling.value='';document.querySelector('#preview-sticker').className='d-none';">Batal</a>
+            <input type="hidden" id="input-sticker" name="input[sticker]" value=""/>
+        </div>
+        <div class='form-group clearfix'>
+            <button class='btn btn-sm btn-primary float-end btn-sendcomment px-3' style="min-width:99px;border-radius:50px">Kirim 
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <img class="loading-ajax" style='display:none' width="29px" src="https://share.linkundangan.com/images/loading.gif" alt="Loading" loading="lazy">
+            </button>
+        </div>
+    </form>
+    <div id="summary-attendance">
+        <hr/>
+        <h2 class="attendance-summary text-center"><span class="d-inline-block fs-5 px-5 pb-1 rounded text-white" style="background-color: #072d2e;">Kehadiran</h2>
+        <div class="row justify-content-center" id="attendance-summary">
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <div class="ps-2 pt-2 rounded shadow-inset">
+            <div class="container-wishes">
+                <div class='wishes'>
+                </div>
+            </div>
+        </div>
+        <div id='pagination-wished' class="text-center">
+            <div style="height:69px">
+                <div class="loading m-1">
+                    <div class="text-center">--Loading--</div>
+                    <div class="d-flex">
+                        <span class="flex-fill"></span>
+                        <img width="33px" src="https://www.linkundangan.com/images/loading.gif" alt="Loading" loading="lazy"/>
+                        <span class="flex-fill"></span>
+                    </div>
+                </div>
+            </div>
+            <a id="loadmorefeed" href="https://share.linkundangan.com/invcode/wedding-premium042" class="border-3 btn btn-primary d-inline-block px-5 rounded-pill" style="text-shadow: none;"><i class="fas fa-sync-alt"></i>  Tampilkan lainnya</a>
+        </div>
+    </div> 
+        <hr/>
+    <div id="rsv-container" class="bg-white border m-auto p-5 py-5 rounded shadow-inset text-center text-secondary" style="width: fit-content;">
+        <div>
+            <h4>RSVP Form</h4>
+            <div>
+                <a href="https://share.linkundangan.com/reservation/input/267104/UDG202308090264" class="d-inline-block ff-glacial fs-5 link-reservation mb-2 px-5 py-2 shadow text-white" style="text-shadow: none;background-color: #1a6264;outline: 3px solid #1a6264;margin: 3px;outline-offset: 3px;">
+                    <span id="notif-count-rsv" class="count-rsv">0</span>
+                    <span>--Reservasi--</span>
+                </a>
+            </div>
+        </div>
+        <div class="ff-glacial fs-4">Kehadiran</div>
+        <div class="ff-inter_regular">Isi form rsvp jika kamu berencana hadir</div>
+    </div>
+        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div>
+                        <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep1" viewBox="0 0 1600 100" style="width: 100%;height: auto;max-height: none;" data-height="100">
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
+                            C979.5,96,980,56,1040,56z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8
+                            c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M1400,96c19.5,0,32.7-4.3,43.7-10c-35.2-17.3-54.1-45.7-115.5-45.7c-32.3,0-52.8,7.9-70.2,17.8
+                            c6.4-1.3,13.6-2.1,22-2.1C1340.1,56,1340.3,96,1400,96z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M320,56c6.6,0,12.4,0.5,17.7,1.3c-17-9.6-37.3-17-68.5-17c-60.4,0-79.5,27.8-114,45.2
+                            c11.2,6,24.6,10.5,44.8,10.5C260,96,259.9,56,320,56z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M680,96c23.7,0,38.1-6.3,50.5-13.9C699.6,64.8,679,40.3,622.2,40.3c-30,0-49.8,6.8-66.3,15.8
+                            c1.3,0,2.7-0.1,4.1-0.1C619.7,56,620.2,96,680,96z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
+                            z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4
+                            C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M1205.4,85c-0.2,0-0.4,0-0.6,0c-19.5,0-19.5-13-39-13s-19.4,12.9-39,12.9c0,0-5.9,0-12.3,0.1
+                            c11.4,6.3,24.9,11,45.5,11C1180.6,96,1194.1,91.2,1205.4,85z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M1447.4,83.9c-2.4,0.7-5.2,1.1-8.6,1.1c-19.3,0-19.6-13-39-13s-19.6,13-39,13c-3,0-5.5-0.3-7.7-0.8
+                            c11.6,6.6,25.4,11.8,46.9,11.8C1421.8,96,1435.7,90.7,1447.4,83.9z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M985.8,72c-17.6,0.8-18.3,13-37,13c-19.4,0-19.5-13-39-13c-18.2,0-19.6,11.4-35.5,12.8
+                            c11.4,6.3,25,11.2,45.7,11.2C953.7,96,968.5,83.2,985.8,72z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M743.8,73.5c-10.3,3.4-13.6,11.5-29,11.5c-19.4,0-19.5-13-39-13s-19.5,13-39,13c-0.9,0-1.7,0-2.5-0.1
+                            c11.4,6.3,25,11.1,45.7,11.1C712.4,96,727.3,84.2,743.8,73.5z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M265.5,72.3c-1.5-0.2-3.2-0.3-5.1-0.3c-19.4,0-19.6,13-39,13c-19.4,0-19.6-13-39-13
+                            c-15.9,0-18.9,8.7-30.1,11.9C164.1,90.6,178,96,200,96C233.7,96,248.4,83.4,265.5,72.3z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M1692.3,96V85c0,0,0,0-19.5,0s-19.6-13-39-13s-19.6,13-39,13c-0.1,0-0.2,0-0.4,0c11.4,6.2,24.9,11,45.6,11
+                            C1669.9,96,1684.8,96,1692.3,96z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M25.5,72C6,72,6.1,84.9-13.5,84.9L-20,85v8.9C0.7,90.1,12.6,80.6,25.9,72C25.8,72,25.7,72,25.5,72z"></path>
+                            <path class="" style="fill: rgb(253 238 209);" d="M-40,95.6C20.3,95.6,20.1,56,80,56s60,40,120,40s59.9-40,120-40s60.3,40,120,40s60.3-40,120-40
+                            s60.2,40,120,40s60.1-40,120-40s60.5,40,120,40s60-40,120-40s60.4,40,120,40s59.9-40,120-40s60.3,40,120,40s60.2-40,120-40
+                            s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z"></path>
+                            </svg> 
+                      </div>
+                </div>
+                <div id="nav-lainnya" class="sheet position-relative" role="tabpanel" aria-labelledby="nav-lainnya-tab">
+                    <div class="parent-overlay">
+                        <div class="child-overlay" style="margin-top: -2px;background-image: linear-gradient(2deg, #0000002b, #ffffffa6),url(https://www.linkundangan.com/files/assets-builder/ornaments/00003.jpg);background-position: center;background-size: cover;"></div>
+                    </div>
+                    <section class="position-relative bg-transparent rounded-0  container overflow-hidden border-0 p-0 p-0">
+                        <div class="frame d-flex flex-column justify-content-center">
+                            <div class="content-text content-invitation text-white">
+                                <div class='row justify-content-center'>
+                        		    <div class='col-md-5 mb-3 '>
+                        		        <div class='angpao content-text  shadow  box-element kekanan do-animate'>
+                        		            <h6 class='text-center ff-glacial'>
+                        		                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="width: 42px;height: 55px;">
+                                                  <radialGradient id="YAUH~pB5OZ9CKQK6YVoada" cx="-661.601" cy="159.599" r="1" gradientTransform="matrix(27.6945 0 0 -27.6945 18354.676 4453.4)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#e1c98e" />
+                                                    <stop offset="0" stop-color="#e1c98e" />
+                                                    <stop offset=".242" stop-color="#e9d6a9" />
+                                                    <stop offset=".521" stop-color="#f1e2c1" />
+                                                    <stop offset=".781" stop-color="#f5eacf" />
+                                                    <stop offset="1" stop-color="#f7ecd4" />
+                                                  </radialGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoada)" d="M56,6H40.107H19H6.17C4.545,6,3.089,7.217,3.004,8.839C3.001,8.893,3,8.947,3,9 C3,10.656,4.343,12,6,12h0.357c1.308,0,2.499,0.94,2.63,2.242C8.996,14.33,9,14.417,9,14.503C8.999,15.882,7.88,17,6.5,17H3.17 c-1.625,0-3.081,1.217-3.166,2.839C0.001,19.893,0,19.947,0,20C0,21.656,1.343,23,3,23h3.893c0.997,0,1.92,0.681,2.08,1.664 C8.991,24.777,9,24.888,9,24.997C9.002,26.103,8.106,27,7,27H5.107c-0.997,0-1.92,0.681-2.08,1.664C3.009,28.777,3,28.888,3,28.997 C2.998,30.103,3.894,31,5,31h5.375c0.988,0,6.375,6.12,6.376,7.8c0,0.013,0,0.026-0.001,0.039c-0.001,0.01-0.001,0.02-0.001,0.03 C16.748,40.585,24.3,42,26,42l0,0l0,0h-7.5c0.828,0,1.5,0.672,1.5,1.5l0,0l0,0c0,0.828-0.672,1.5-1.5,1.5h-0.04v0.004l0,0 c-1.357,0.022-2.461,1.136-2.46,2.499c0,0.091,0.005,0.183,0.015,0.276C16.157,49.072,17.351,50,18.653,50h25.693 c1.303,0,2.496-0.928,2.638-2.222C46.995,47.685,47,47.593,47,47.503c0.002-1.363-1.103-2.477-2.46-2.499V45H44.5h-2 c-0.827,0-1.498-0.67-1.5-1.497c0-0.102,0.01-0.205,0.03-0.311c0.144-0.721,0.836-1.165,1.57-1.194 C43.935,41.945,45,40.847,45,39.5v-1c-0.194-0.194-0.306-0.306-0.5-0.5H36v-5h9.357c1.224,0,6.087-0.828,6.333-2h3.81 c1.381,0,2.5-1.119,2.5-2.5c0-1.381-1.119-2.5-2.5-2.5h-1c-0.828,0-1.5-0.672-1.5-1.5l0,0l0,0c0-0.828,0.672-1.5,1.5-1.5h5.33 c1.625,0,3.081-1.217,3.166-2.839C62.999,20.107,63,20.053,63,20c-0.001-1.656-1.344-3-3-3h-4.358c-1.308,0-2.499-0.94-2.63-2.242 C53.004,14.67,53,14.583,53,14.497C53.001,13.118,54.12,12,55.5,12h0.33c1.625,0,3.081-1.217,3.166-2.839 C58.999,9.107,59,9.053,59,9C59,7.344,57.657,6,56,6" />
+                                                  <linearGradient id="YAUH~pB5OZ9CKQK6YVoadb" x1="31" x2="31" y1="11" y2="48" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#ecf9fd" />
+                                                    <stop offset=".848" stop-color="#f2fdff" />
+                                                    <stop offset="1" stop-color="#f4feff" />
+                                                  </linearGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadb)" d="M50,48H12V14c0-1.657,1.343-3,3-3h32c1.657,0,3,1.343,3,3V48z" />
+                                                  <defs>
+                                                    <path id="YAUH~pB5OZ9CKQK6YVoadc" d="M50,29h-7.5c-1.381,0-2.5,1.119-2.5,2.5c0,1.381,1.119,2.5,2.5,2.5c1.381,0,2.5,1.119,2.5,2.5 S43.881,39,42.5,39h-4c-1.381,0-2.5,1.119-2.5,2.5c0,1.381,1.119,2.5,2.5,2.5H47c1.657,0,3-1.343,3-3V29" />
+                                                  </defs>
+                                                  <path style="fill:#fff" d="M35.5 22.5L35.5 22.5c0 1.381 1.119 2.5 2.5 2.5h0c1.381 0 2.5-1.119 2.5-2.5v0c0-1.381-1.119-2.5-2.5-2.5h0C36.619 20 35.5 21.119 35.5 22.5zM27.5 25H30c1.381 0 2.5-1.119 2.5-2.5v0c0-1.381-1.119-2.5-2.5-2.5h-9c-1.105 0-2-.895-2-2v0c0-1.105.895-2 2-2h8.5c1.381 0 2.5-1.119 2.5-2.5v0c0-1.381-1.119-2.5-2.5-2.5H15c-1.657 0-3 1.343-3 3v30h9.5c1.381 0 2.5-1.119 2.5-2.5v0c0-1.381-1.119-2.5-2.5-2.5H21c-1.105 0-2-.895-2-2v0c0-1.105.895-2 2-2h9.5c1.381 0 2.5-1.119 2.5-2.5v0c0-1.381-1.119-2.5-2.5-2.5h-3c-1.381 0-2.5-1.119-2.5-2.5v0C25 26.119 26.119 25 27.5 25z" />
+                                                  <linearGradient id="YAUH~pB5OZ9CKQK6YVoadd" x1="31" x2="31" y1="37" y2="20" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#ff634d" />
+                                                    <stop offset=".204" stop-color="#fe6464" />
+                                                    <stop offset=".521" stop-color="#fc6581" />
+                                                    <stop offset=".794" stop-color="#fa6694" />
+                                                    <stop offset=".989" stop-color="#fa669a" />
+                                                    <stop offset="1" stop-color="#fa669a" />
+                                                  </linearGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadd)" d="M40.881,24.125c-0.427-2.046-2.119-3.672-4.176-4.039c-2.112-0.377-4.029,0.508-5.161,2.02 c-0.266,0.355-0.821,0.355-1.087,0c-1.132-1.512-3.049-2.397-5.161-2.02c-2.057,0.367-3.749,1.993-4.176,4.039 c-0.403,1.93,0.25,3.726,1.486,4.921l-0.002,0.001l7.237,7.469c0.638,0.645,1.681,0.645,2.319,0l7.233-7.467l-0.001,0 C40.631,27.853,41.284,26.057,40.881,24.125z" />
+                                                  <linearGradient id="YAUH~pB5OZ9CKQK6YVoade" x1="-652.235" x2="-651.235" y1="211.354" y2="211.354" gradientTransform="matrix(0 -17 -17 0 3631 -11051)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#ff735f" />
+                                                    <stop offset=".151" stop-color="#fe746f" />
+                                                    <stop offset=".488" stop-color="#fc758c" />
+                                                    <stop offset=".779" stop-color="#fb769e" />
+                                                    <stop offset=".989" stop-color="#fb76a4" />
+                                                    <stop offset="1" stop-color="#fb76a4" />
+                                                  </linearGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoade)" d="M37.088,20.17c-0.329,0.13-0.619,0.32-0.858,0.559c-0.45,0.45-0.73,1.08-0.73,1.77 c0,1.38,1.12,2.5,2.5,2.5c0.69,0,1.32-0.28,1.77-0.73c0.35-0.35,0.6-0.82,0.69-1.34c-0.303-0.614-0.725-1.166-1.235-1.619 C38.617,20.776,37.886,20.378,37.088,20.17" />
+                                                  <linearGradient id="YAUH~pB5OZ9CKQK6YVoadf" x1="-652.235" x2="-651.235" y1="212.015" y2="212.015" gradientTransform="matrix(0 -17 -17 0 3631 -11051)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#ff735f" />
+                                                    <stop offset=".151" stop-color="#fe746f" />
+                                                    <stop offset=".488" stop-color="#fc758c" />
+                                                    <stop offset=".779" stop-color="#fb769e" />
+                                                    <stop offset=".989" stop-color="#fb76a4" />
+                                                    <stop offset="1" stop-color="#fb76a4" />
+                                                  </linearGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadf)" d="M26.28,20c-0.32,0-0.65,0.03-0.98,0.09c-2.06,0.36-3.75,1.99-4.18,4.04 c-0.249,1.198-0.092,2.343,0.357,3.325c0.275,0.6,0.66,1.139,1.128,1.592l-0.001,0L28.371,35H28.5c1.38,0,2.5-1.12,2.5-2.5 c0-0.69-0.28-1.32-0.73-1.77C29.82,30.28,29.19,30,28.5,30h-1c-1.38,0-2.5-1.12-2.5-2.5c0-0.69,0.28-1.32,0.73-1.77 C26.18,25.28,26.81,25,27.5,25H30c1.38,0,2.5-1.12,2.5-2.5c0-0.41-0.1-0.79-0.27-1.13c-0.236,0.198-0.454,0.44-0.654,0.694 c-0.011,0.014-0.022,0.029-0.033,0.043c-0.133,0.178-0.338,0.267-0.543,0.267s-0.41-0.089-0.543-0.267 c-0.951-1.269-2.454-2.097-4.161-2.107C26.29,20,26.285,20,26.28,20" />
+                                                  <linearGradient id="YAUH~pB5OZ9CKQK6YVoadg" x1="45" x2="45" y1="29.5" y2="40.506" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#dff9ff" />
+                                                    <stop offset="0" stop-color="#dff9ff" />
+                                                    <stop offset=".173" stop-color="#d8f8ff" />
+                                                    <stop offset=".423" stop-color="#c5f4ff" />
+                                                    <stop offset=".72" stop-color="#a5eeff" />
+                                                    <stop offset="1" stop-color="#81e7ff" />
+                                                  </linearGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadg)" d="M42.5,29c-1.596,0-2.855,1.516-2.409,3.179c0.295,1.1,1.358,1.821,2.497,1.821h0.002 c1.331,0,2.41,1.079,2.41,2.41V42h5v-8v-2v-3H42.5z" />
+                                                  <linearGradient id="YAUH~pB5OZ9CKQK6YVoadh" x1="-664.826" x2="-663.826" y1="229.751" y2="229.751" gradientTransform="matrix(0 -46.834 -46.834 0 10791.16 -31064.947)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#f29265" />
+                                                    <stop offset=".64" stop-color="#fbb687" />
+                                                    <stop offset="1" stop-color="#ffc595" />
+                                                  </linearGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadh)" d="M51.69,31h-0.005c-0.447,0-0.884,0.129-1.259,0.373L33.18,42.583 c-0.663,0.431-1.422,0.646-2.18,0.646s-1.517-0.215-2.18-0.646l-17.246-11.21C11.2,31.129,10.762,31,10.315,31H10.31 C9.034,31,8,32.034,8,33.31v22.993C8,58.897,10.239,61,13,61h36c2.761,0,5-2.103,5-4.697V33.31C54,32.034,52.966,31,51.69,31" />
+                                                  <linearGradient id="YAUH~pB5OZ9CKQK6YVoadi" x1="31.305" x2="31.305" y1="75.667" y2="37" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#ff8b67" />
+                                                    <stop offset=".847" stop-color="#ffa76a" />
+                                                    <stop offset="1" stop-color="#ffad6b" />
+                                                    <stop offset="1" stop-color="#ffad6b" />
+                                                  </linearGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadi)" d="M54,33.31V56.3c0,2.6-2.24,4.7-5,4.7H13c-1.9,0-3.55-0.99-4.39-2.46l41.82-27.17 C50.8,31.13,51.24,31,51.68,31h0.01C52.97,31,54,32.03,54,33.31z" />
+                                                  <linearGradient id="YAUH~pB5OZ9CKQK6YVoadj" x1="-660.308" x2="-659.719" y1="255.4" y2="255.4" gradientTransform="matrix(0 -30 30 0 -7649.009 -19755.025)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#f1bb76" />
+                                                    <stop offset=".234" stop-color="#f7be80" />
+                                                    <stop offset=".672" stop-color="#ffc28f" />
+                                                    <stop offset="1" stop-color="#ffc28f" />
+                                                  </linearGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadj)" d="M16,38l-8,0v11h5.893c0.996,0,1.919-0.681,2.08-1.664C16.176,46.083,15.215,45,14,45h-1.5 c-0.829,0-1.5-0.672-1.5-1.5s0.671-1.5,1.5-1.5l3.393,0c0.996,0,1.919-0.681,2.08-1.664C18.176,39.083,17.215,38,16,38" />
+                                                  <linearGradient id="YAUH~pB5OZ9CKQK6YVoadk" x1="-682.136" x2="-683.136" y1="255.633" y2="255.633" gradientTransform="matrix(0 30 30 0 -7649.009 20530.023)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                    <stop offset="0" stop-color="#f1bb5d" />
+                                                    <stop offset=".426" stop-color="#fbc080" />
+                                                    <stop offset=".672" stop-color="#ffc28f" />
+                                                    <stop offset="1" stop-color="#ffc28f" />
+                                                  </linearGradient>
+                                                  <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadk)" d="M20,49c-1.104,0-2-0.895-2-2c0-1.104,0.896-2,2-2c1.105,0,2,0.896,2,2 C22,48.105,21.104,49,20,49" />
+                                                  <g>
+                                                    <linearGradient id="YAUH~pB5OZ9CKQK6YVoadl" x1="43.5" x2="43.5" y1="56.583" y2="30.576" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                      <stop offset="0" stop-color="#ff8b67" />
+                                                      <stop offset=".847" stop-color="#ffa76a" />
+                                                      <stop offset="1" stop-color="#ffad6b" />
+                                                      <stop offset="1" stop-color="#ffad6b" />
+                                                    </linearGradient>
+                                                    <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadl)" d="M42,47L42,47c0,1.657,1.343,3,3,3h1.5c1.381,0,2.5,1.119,2.5,2.5v0 c0,1.381-1.119,2.5-2.5,2.5H36c-1.657,0-3,1.343-3,3v0c0,1.657,1.343,3,3,3h13c2.761,0,5-2.239,5-5V44h-9 C43.343,44,42,45.343,42,47z" />
+                                                    <linearGradient id="YAUH~pB5OZ9CKQK6YVoadm" x1="37" x2="37" y1="53.379" y2="37.999" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                                      <stop offset="0" stop-color="#ff8b67" />
+                                                      <stop offset=".847" stop-color="#ffa76a" />
+                                                      <stop offset="1" stop-color="#ffad6b" />
+                                                      <stop offset="1" stop-color="#ffad6b" />
+                                                    </linearGradient>
+                                                    <path style="fill:url(#YAUH~pB5OZ9CKQK6YVoadm)" d="M37 44A3 3 0 1 0 37 50A3 3 0 1 0 37 44Z" />
+                                                  </g>
+                                                </svg>
+                        		                <br/><span>Amplop Digital</span>
+                        		            </h6><div>-----------------</div>
+                            		        <div class="content-angpao">
+                            		            Bagi yang ingin mengirim ampao bisa melalui no rekening berikut,<br />
+[05573XXXX] (BNI/BRI/MANDIRI)<br />
+Atas Nama XXXX <br />
+[085XXXXX] (OVO/DANA/GOPAY)<br />
+Atas Nama XXXX
+                            		        </div>
+                        		        </div>
+                        		    </div>
+                        		    <div class='col-md-5 mb-3  '>
+                            		  <div class='kado content-text  shadow  box-element kekiri  do-animate'>
+                            		        <h6  class='text-center ff-glacial'>
+                            		        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" style="width: 55px;height: 55px;">
+                            		            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                                <path style="fill:#78a0cf" d="M13 27A2 2 0 1 0 13 31A2 2 0 1 0 13 27Z"></path>
+                                                <path style="fill:#f1bc19" d="M77 12A1 1 0 1 0 77 14A1 1 0 1 0 77 12Z"></path>
+                                                <path style="fill:#cee1f4" d="M50 13A37 37 0 1 0 50 87A37 37 0 1 0 50 13Z"></path>
+                                                <path style="fill:#f1bc19" d="M83 11A4 4 0 1 0 83 19A4 4 0 1 0 83 11Z"></path>
+                                                <path style="fill:#78a0cf" d="M87 22A2 2 0 1 0 87 26A2 2 0 1 0 87 22Z"></path>
+                                                <path style="fill:#fbcd59" d="M81 74A2 2 0 1 0 81 78 2 2 0 1 0 81 74zM15 59A4 4 0 1 0 15 67 4 4 0 1 0 15 59z"></path>
+                                                <path style="fill:#78a0cf" d="M25 85A2 2 0 1 0 25 89A2 2 0 1 0 25 85Z"></path>
+                                                <path style="fill:#fff" d="M18.5 51A2.5 2.5 0 1 0 18.5 56A2.5 2.5 0 1 0 18.5 51Z"></path>
+                                                <path style="fill:#f1bc19" d="M21 66A1 1 0 1 0 21 68A1 1 0 1 0 21 66Z"></path>
+                                                <path style="fill:#fff" d="M80 33A1 1 0 1 0 80 35A1 1 0 1 0 80 33Z"></path>
+                                                <path style="fill:#fde751" d="M47.5,31.982c-1-5.482-10.677-8.999-12.437-2.875C33.5,37.5,47.5,35.481,47.5,35.481V31.982z"></path>
+                                                <path style="fill:#472b29" d="M44.098,36.397c-2.778,0-6.508-0.432-8.485-2.492c-1.197-1.248-1.613-2.905-1.237-4.927 c0.734-2.568,2.727-3.911,5.459-3.79c3.479,0.173,7.666,2.893,8.354,6.667l0.012,0.126v4.106L47.6,36.174 C47.457,36.195,46,36.397,44.098,36.397z M39.486,26.58c-1.223,0-3.085,0.405-3.75,2.72c-0.278,1.51,0.007,2.72,0.886,3.636 C39,35.413,44.899,35.048,46.8,34.858v-2.812c-0.597-3.045-4.171-5.318-7.035-5.46C39.677,26.582,39.583,26.58,39.486,26.58z"></path>
+                                                <path style="fill:#fde751" d="M52.5,31.982c1-5.482,10.677-8.999,12.437-2.875C66.5,37.5,52.5,35.481,52.5,35.481V31.982z"></path>
+                                                <path style="fill:#472b29" d="M55.902,36.397c-1.902,0-3.359-0.202-3.502-0.224L51.8,36.088l0.012-4.232 c0.688-3.774,4.875-6.494,8.354-6.667c2.739-0.12,4.725,1.222,5.443,3.725c0.392,2.087-0.024,3.744-1.222,4.992 C62.41,35.966,58.681,36.397,55.902,36.397z M53.2,34.857c1.901,0.188,7.804,0.552,10.179-1.923c0.878-0.916,1.163-2.126,0.869-3.7 c-0.702-2.433-2.811-2.706-4.013-2.647c-2.864,0.142-6.438,2.415-7.035,5.46V34.857z"></path>
+                                                <path style="fill:#ea5167" d="M34.798,73.3c-3.914,0-7.098-3.184-7.098-7.098V43.798c0-3.914,3.184-7.098,7.098-7.098h30.404 c3.914,0,7.098,3.184,7.098,7.098v22.404c0,3.914-3.184,7.098-7.098,7.098H34.798z"></path>
+                                                <path style="fill:#472b29" d="M65.203,37.4c3.528,0,6.397,2.87,6.397,6.397v22.405c0,3.528-2.87,6.397-6.397,6.397H34.797 c-3.528,0-6.397-2.87-6.397-6.397V43.797c0-3.528,2.87-6.397,6.397-6.397H65.203 M65.203,36H34.797C30.509,36,27,39.509,27,43.797 v22.405C27,70.491,30.509,74,34.797,74h30.405C69.491,74,73,70.491,73,66.203V43.797C73,39.509,69.491,36,65.203,36L65.203,36z"></path>
+                                                <g>
+                                                  <path style="fill:#fde751" d="M49.567,40.3c-1.581,0-2.867-1.286-2.867-2.867v-2.865c0-1.581,1.286-2.867,2.867-2.867h0.865 c1.581,0,2.867,1.286,2.867,2.867v2.865c0,1.581-1.286,2.867-2.867,2.867H49.567z"></path>
+                                                  <path style="fill:#472b29" d="M50.432,32.4c1.195,0,2.167,0.972,2.167,2.168v2.865c0,1.195-0.972,2.168-2.167,2.168h-0.865 c-1.195,0-2.167-0.972-2.167-2.168v-2.865c0-1.195,0.972-2.168,2.167-2.168H50.432 M50.432,31h-0.865 C47.605,31,46,32.605,46,34.568v2.865C46,39.395,47.605,41,49.568,41h0.865C52.395,41,54,39.395,54,37.432v-2.865 C54,32.605,52.395,31,50.432,31L50.432,31z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#ea5167" d="M27.933,48.3c-0.68,0-1.232-0.553-1.232-1.232v-4.339c0-3.876,3.152-7.028,7.028-7.028h32.543 c3.876,0,7.028,3.152,7.028,7.028v4.339c0,0.68-0.553,1.232-1.232,1.232H27.933z"></path>
+                                                  <path style="fill:#472b29" d="M66.271,36.4c3.49,0,6.329,2.839,6.329,6.329v4.339c0,0.293-0.239,0.532-0.532,0.532H27.932 c-0.293,0-0.532-0.239-0.532-0.532v-4.339c0-3.49,2.839-6.329,6.329-6.329H66.271 M66.271,35H33.729C29.46,35,26,38.46,26,42.729 v4.339C26,48.135,26.865,49,27.932,49h44.136C73.135,49,74,48.135,74,47.068v-4.339C74,38.46,70.54,35,66.271,35L66.271,35z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#fde751" d="M59.569,28.942c0.836-0.194,1.722-0.159,2.598,0.279"></path>
+                                                  <path style="fill:#472b29" d="M62.167,29.471c-0.038,0-0.076-0.009-0.112-0.026c-0.744-0.373-1.563-0.459-2.43-0.26 c-0.139,0.036-0.269-0.053-0.3-0.187c-0.031-0.135,0.053-0.27,0.187-0.3c0.986-0.229,1.916-0.127,2.768,0.299 c0.123,0.062,0.173,0.212,0.111,0.336C62.347,29.42,62.259,29.471,62.167,29.471z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#fde751" d="M55,32.167c0,0,1.159-1.487,2.797-2.475"></path>
+                                                  <path style="fill:#472b29" d="M55,32.417c-0.054,0-0.108-0.018-0.153-0.053c-0.109-0.085-0.129-0.242-0.044-0.351 c0.049-0.063,1.207-1.535,2.865-2.536c0.117-0.07,0.271-0.034,0.343,0.085c0.071,0.118,0.033,0.271-0.085,0.343 c-1.576,0.951-2.718,2.401-2.729,2.415C55.147,32.384,55.074,32.417,55,32.417z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#fde751" d="M37.875,28.875c0,0,4.062-0.938,6.812,3.313"></path>
+                                                  <path style="fill:#472b29" d="M44.688,32.438c-0.082,0-0.162-0.04-0.21-0.114c-2.617-4.044-6.39-3.242-6.547-3.204 c-0.132,0.032-0.268-0.054-0.299-0.188s0.053-0.269,0.187-0.299c0.044-0.009,4.268-0.925,7.079,3.42 c0.075,0.116,0.042,0.271-0.074,0.346C44.781,32.425,44.734,32.438,44.688,32.438z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#472b29" d="M63.622,70H49.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h14.122 C66.036,69,68,67.036,68,64.622V62.5c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v2.122C69,67.588,66.588,70,63.622,70z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#472b29" d="M68.5,58.917c-0.276,0-0.5-0.224-0.5-0.5V51.75c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v6.667 C69,58.693,68.776,58.917,68.5,58.917z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#472b29" d="M43.5,70h-7.122C33.412,70,31,67.588,31,64.622V62.5c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5 v2.122C32,67.036,33.964,69,36.378,69H43.5c0.276,0,0.5,0.224,0.5,0.5S43.776,70,43.5,70z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#472b29" d="M31.5,60c-0.276,0-0.5-0.224-0.5-0.5v-4c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v4 C32,59.776,31.776,60,31.5,60z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#472b29" d="M31.5,53.5c-0.276,0-0.5-0.224-0.5-0.5v-2c0-0.276,0.224-0.5,0.5-0.5S32,50.724,32,51v2 C32,53.276,31.776,53.5,31.5,53.5z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#fde751" d="M45.7 35.7H54.300000000000004V73.30000000000001H45.7z"></path>
+                                                  <path style="fill:#472b29" d="M53.6,36.4v36.2h-7.2V36.4H53.6 M55,35H45v39h10V35L55,35z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#472b29" d="M51.5,43.75c-0.138,0-0.25-0.112-0.25-0.25v-5c0-0.138,0.112-0.25,0.25-0.25s0.25,0.112,0.25,0.25v5 C51.75,43.638,51.638,43.75,51.5,43.75z"></path>
+                                                </g>
+                                                <g>
+                                                  <path style="fill:#472b29" d="M51.5,69.75c-0.138,0-0.25-0.112-0.25-0.25v-23c0-0.138,0.112-0.25,0.25-0.25s0.25,0.112,0.25,0.25 v23C51.75,69.638,51.638,69.75,51.5,69.75z"></path>
+                                                </g>
+                                              </svg>
+                                             </svg>
+                                            <br/><span>Kado</span>
+                                        </h6><div>-----------------</div>
+                        		        <div class="content-gift">
+                        		            Bagi yang ingin mengirim kado bisa mengirimkannya ke alamat berikut,<br />
+[Isi alamatmu]
+                        		        </div>
+                        		      </div>
+                        		    </div>
+                            	</div>
+                                                                <div class='text-center text-white'>
+                                    <p>Atas kehadirannya kami ucapkan,</p>
+                                    <div class="h4 ff-pacifico">Terimakasih</div>
+                                    <div>
+                                        <div>Hormat Kami,</div>
+                                        <div class="ff-breadley d-flex align-items-center justify-content-center text-center">
+                                            <span class="d-block fs-5 ff-marry flex-fill text-end fw-bold do-animate animate-start">Anissa&nbsp;</span>
+                                            <span class="pt-5">&amp; </span>
+                                            <span class="d-block fs-5 ff-marry flex-fill text-start fw-bold do-animate animate-start pt-5 mt-5">&nbsp;Hamzah</span>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <footer class="position-relative" style="z-index:99">
+                        <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep12" viewBox="0 0 1600 200" style="display: block;width: 100%;height: auto;display: block;width: 100%;height: auto;border: 0;margin-bottom: 0px;" data-height="200"><polygon class="" style="fill: rgb(255 255 255);" points="-4,24 800,198 1604,24 1604,204 -4,204 "></polygon> <polygon class="" style="opacity: 1;fill: #d1ae6b;" points="-4,0 800,198 1604,0 1604,11.833 800,198 -4,12 "></polygon> <polygon class="" style="opacity: 1;fill: #d7c49a;" points="-4,12 -4,24 800,198 1604,24 1604,11.833 800,198 "></polygon></svg>
+                        <div class="text-center py-5 bg-white">
+                                                    </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+            	<div class='backsound play'>
+    	    <svg xmlns="http://www.w3.org/2000/svg" class='iconplay' viewBox="0 0 128 128">
+              <path d="M33.900391 24C32.300391 24 31 25.4 31 27L31 58.199219C31 58.999219 30.2 59.4 29.5 59C26.8 57.4 23.499609 56.699609 20.099609 57.099609C13.199609 57.999609 7.7996094 63.600391 7.0996094 70.400391C6.0996094 79.800391 13.799609 87.6 23.099609 87C30.999609 86.4 37 79.499609 37 71.599609L37 30.5C40.5 31.7 43 35.000391 43 38.900391C43 40.100391 43.700391 41.299219 44.900391 41.699219C47.000391 42.599219 49 41 49 39C49 30.7 42.200391 23.9 33.900391 24 z M 108.68359 36.244141C107.85547 36.262891 107.02422 36.35 106.19922 36.5L76.5 42.400391C70.4 43.700391 66 48.999219 66 55.199219L66 88.199219C66 88.999219 65.2 89.4 64.5 89C61.8 87.4 58.499609 86.699609 55.099609 87.099609C48.299609 87.999609 42.799609 93.500391 42.099609 100.40039C41.099609 109.80039 48.799609 117.6 58.099609 117C65.999609 116.4 72 109.59922 72 101.69922L72 69.5L116 60.699219L116 78.199219C116 78.999219 115.2 79.4 114.5 79C111.8 77.4 108.49961 76.699609 105.09961 77.099609C98.299609 77.999609 92.799609 83.500391 92.099609 90.400391C91.099609 99.800391 98.799609 107.6 108.09961 107C115.99961 106.4 122 99.599219 122 91.699219L122 49.199219C122 44.699219 119.70078 40.499609 115.80078 38.099609C113.62578 36.749609 111.16797 36.187891 108.68359 36.244141 z M 109.16797 42.167969C110.71953 42.205469 112.20039 42.750781 113.40039 43.800781C115.00039 45.100781 116 47.099219 116 49.199219L116 54.5L72 63.300781L72 55.199219C72 51.899219 74.399609 49.000781 77.599609 48.300781L107.59961 42.300781C108.12461 42.200781 108.65078 42.155469 109.16797 42.167969 z M 22 63C27 63 31 67 31 72C31 77 27 81 22 81C17 81 13 77 13 72C13 67 17 63 22 63 z M 107 83C112 83 116 87 116 92C116 97 112 101 107 101C102 101 98 97 98 92C98 87 102 83 107 83 z M 57 93C62 93 66 97 66 102C66 107 62 111 57 111C52 111 48 107 48 102C48 97 52 93 57 93 z" fill="#A15F9F" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class='iconpause' viewBox="0 0 24 24">
+              <path d="M11.294922 3.9882812C11.122922 3.9882812 10.947687 4.0533125 10.804688 4.1953125L6 9L4 9C2.895 9 2 9.895 2 11L2 13C2 14.105 2.895 15 4 15L6 15L10.804688 19.804688C10.947688 19.947688 11.122922 20.011719 11.294922 20.011719C11.654922 20.011719 12 19.732547 12 19.310547L12 4.6894531C12 4.2674531 11.654922 3.9882812 11.294922 3.9882812 z M 14.990234 7.9902344 A 1.0001 1.0001 0 0 0 14.292969 9.7070312L16.585938 12L14.292969 14.292969 A 1.0001 1.0001 0 1 0 15.707031 15.707031L18 13.414062L20.292969 15.707031 A 1.0001 1.0001 0 1 0 21.707031 14.292969L19.414062 12L21.707031 9.7070312 A 1.0001 1.0001 0 0 0 20.980469 7.9902344 A 1.0001 1.0001 0 0 0 20.292969 8.2929688L18 10.585938L15.707031 8.2929688 A 1.0001 1.0001 0 0 0 14.990234 7.9902344 z" fill="#A15F9F" />
+            </svg>
+    	</div>
+    	    	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    		        <div>
+            <div class="modal fade" id="stickersModal" tabindex="-1" aria-labelledby="stickersModalLabel" aria-modal="true" role="dialog">
+              <div class="modal-dialog modal-fullscreen rounded">
+                <div class="modal-content rounded bg-white">
+                  <div class="modal-header bg-white">
+                    <h5 class="modal-title" id="exampleModalLabel">😍 Stickers</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-white">
+                    <div class="row">
+                                                                                                                                                                                                <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="envelope-love.webp" src="https://share.linkundangan.com/images/gif/envelope-love.webp" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker001.gif" src="https://share.linkundangan.com/images/gif/sticker001.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker0013.gif" src="https://share.linkundangan.com/images/gif/sticker0013.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker002.gif" src="https://share.linkundangan.com/images/gif/sticker002.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker003.gif" src="https://share.linkundangan.com/images/gif/sticker003.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker004.gif" src="https://share.linkundangan.com/images/gif/sticker004.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker005.png" src="https://share.linkundangan.com/images/gif/sticker005.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker006.png" src="https://share.linkundangan.com/images/gif/sticker006.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker007.gif" src="https://share.linkundangan.com/images/gif/sticker007.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker008.gif" src="https://share.linkundangan.com/images/gif/sticker008.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker009.gif" src="https://share.linkundangan.com/images/gif/sticker009.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker010.png" src="https://share.linkundangan.com/images/gif/sticker010.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker011.jpg" src="https://share.linkundangan.com/images/gif/sticker011.jpg" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker012.gif" src="https://share.linkundangan.com/images/gif/sticker012.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker014.gif" src="https://share.linkundangan.com/images/gif/sticker014.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker015.gif" src="https://share.linkundangan.com/images/gif/sticker015.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker016.gif" src="https://share.linkundangan.com/images/gif/sticker016.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker017.gif" src="https://share.linkundangan.com/images/gif/sticker017.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker018.gif" src="https://share.linkundangan.com/images/gif/sticker018.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker019.gif" src="https://share.linkundangan.com/images/gif/sticker019.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker020.gif" src="https://share.linkundangan.com/images/gif/sticker020.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker021.gif" src="https://share.linkundangan.com/images/gif/sticker021.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker022.png" src="https://share.linkundangan.com/images/gif/sticker022.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker023.gif" src="https://share.linkundangan.com/images/gif/sticker023.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker024.gif" src="https://share.linkundangan.com/images/gif/sticker024.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker025.gif" src="https://share.linkundangan.com/images/gif/sticker025.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker026.gif" src="https://share.linkundangan.com/images/gif/sticker026.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker027.gif" src="https://share.linkundangan.com/images/gif/sticker027.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker028.gif" src="https://share.linkundangan.com/images/gif/sticker028.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker029.gif" src="https://share.linkundangan.com/images/gif/sticker029.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker030.gif" src="https://share.linkundangan.com/images/gif/sticker030.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker031.gif" src="https://share.linkundangan.com/images/gif/sticker031.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker032.gif" src="https://share.linkundangan.com/images/gif/sticker032.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker033.gif" src="https://share.linkundangan.com/images/gif/sticker033.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
+                                    <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
+                                        <div class="card-body text-center">
+                                            <img data-bs-dismiss="modal" onclick="$('#input-sticker').val($(this).data('img'))" data-img="sticker034.gif" src="https://share.linkundangan.com/images/gif/sticker034.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="custom_element">
+    
+</div>
+<script src="/js/linkundangan-script.js?v=20260587"></script>
+<script src="/AdminLTE/plugins/moment/moment.min.js?v=20260587"></script>
+<script>moment.locale('id');</script>
+<script src="/js/google.analytic.js?v=20260587"></script>
+<script src="/js/animation-scroll.js?v=20260587"></script>
+<script src="/libraries/toast/toastr.min.js?v=20260587"></script>
+<script src="/js/clipboard.min.js?v=20260587"></script>
+<script src="https://share.linkundangan.com/libraries/uuid/uuid.js?v=20260587"></script>
+<script src="https://share.linkundangan.com/libraries/ws/reconnecting-websocket.ori.min.js?v=120260587"></script>
+<script src="/js/easing-jquery.js?v=20260587"></script>
+<script src="/js/img-slider.js?v=1120260587"></script>
+<script>
+console.log("===============================================");
+console.log("%c𝗦𝗘𝗖𝗨𝗥𝗜𝗧𝗬 𝗡𝗢𝗧𝗜𝗖𝗘", "color:red;font-size:17px;");
+console.log(`===============================================
+
+Halo Kak Mohon Maaf Sekali, Saat ini kami tidak membuka program Bug Bounty atau menerima laporan kerentanan keamanan :).
+
+Segala bentuk pengujian keamanan tanpa izin resmi merupakan tindakan yang tidak diperkenankan.
+
+Terima kasih atas pengertiannya.
+
+===============================================
+
+`);
+</script>        <script src="/Templates/WEDDING-PREMIUM042/assets/js/bootstrap5.bundle.min.js?v=20260587"></script>
+<script src="/Templates/WEDDING-PREMIUM042/assets/js/particles.min.js?v=20260587"></script>
+<script src="/Templates/WEDDING-PREMIUM042/assets/js/script.js?v=20260587" id='particles-js'></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?v=20260587"></script>
+<script src="/Templates/WEDDING-PREMIUM042/assets/js/jquery.zoomslider.min.js?v=20260587"></script>
+
+<script src="https://share.linkundangan.com/js/bootstrap5.bundle.min.js?v=20260587"></script>
+<script>
+    var coverModal = new bootstrap.Modal(document.getElementById('coverModal'), {
+      keyboard: false
+    });
+    coverModal.show();
+    var btnOpen = document.querySelector('.open-invitation');
+    let settimeOutbtnRead = null;
+    btnOpen.addEventListener('click',function(e){
+        window.scrollTo(0,0);
+        coverModal.hide();
+         
+        try{
+            audio.play();
+        }catch(e){}
+        try{
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                  audio.pause();
+                } else {
+                  if(document.querySelector(".backsound.play")!=null)audio.play();
+                }
+            });
+        }catch(e){}
+                var counterDownAjax = 0;
+        const paramsMethodGet = new URLSearchParams(window.location.search);
+        let toGuest = encodeURIComponent((paramsMethodGet.get("to") || ""));
+        if(toGuest == ""){
+             const arrayUrlPath = window.location.pathname.split("/to/");
+             if(arrayUrlPath.length > 1){
+                toGuest = arrayUrlPath[arrayUrlPath.length-1];
+             }
+        }
+        var urlCounterViewer = '/counterviewer/267104?to='+toGuest;
+        var _0x4b0b=["\x47\x45\x54","\x6F\x70\x65\x6E","\x6F\x6E\x72\x65\x61\x64\x79\x73\x74\x61\x74\x65\x63\x68\x61\x6E\x67\x65","\x72\x65\x61\x64\x79\x53\x74\x61\x74\x65","\x73\x74\x61\x74\x75\x73","\x72\x65\x73\x70\x6F\x6E\x73\x65\x54\x65\x78\x74","\x70\x61\x72\x73\x65","\x73\x65\x6E\x64"];var interValCounter=setInterval(function(){counterDownAjax++;if(counterDownAjax=== 10){var _0xafa5x2= new XMLHttpRequest();_0xafa5x2[_0x4b0b[1]](_0x4b0b[0],urlCounterViewer,true);_0xafa5x2[_0x4b0b[2]]= function(){if(this[_0x4b0b[3]]== 4&& this[_0x4b0b[4]]== 200){var _0xafa5x3=JSON[_0x4b0b[6]](this[_0x4b0b[5]])}};_0xafa5x2[_0x4b0b[7]]();clearInterval(interValCounter)}},1000)
+        try{
+            //document.documentElement.requestFullscreen();
+        }catch(e){}
+        try{
+            swiper.autoplay.stop();
+        }catch(e){}
+        try{
+             
+                clearTimeout(settimeOutbtnRead);
+                settimeOutbtnRead = setTimeout(function(){ $("#button-mode-read").click();}, 750);
+                    }catch(e){console.log(e);}
+    });
+</script><script>
+var formkehadiran = document.getElementById('form-comment');
+var dirSticker = 'https://share.linkundangan.com/images/gif/';
+var requestUrl = location.protocol + '//' + location.host + location.pathname;
+var loadmorefeed = document.querySelector('#loadmorefeed');
+var attendanceSummary = document.querySelector('#attendance-summary');
+function _0x46f4(_0x49944d,_0x175689){var _0x24796b=_0x2479();return _0x46f4=function(_0x46f40b,_0x2198bc){_0x46f40b=_0x46f40b-0x7d;var _0x2de4a6=_0x24796b[_0x46f40b];return _0x2de4a6;},_0x46f4(_0x49944d,_0x175689);}var _0x6571a7=_0x46f4;(function(_0x135aad,_0x4737c1){var _0x25a77a=_0x46f4,_0x7615c=_0x135aad();while(!![]){try{var _0xd0c20e=-parseInt(_0x25a77a(0xd5))/0x1+parseInt(_0x25a77a(0xb0))/0x2+-parseInt(_0x25a77a(0x92))/0x3+parseInt(_0x25a77a(0xc0))/0x4*(parseInt(_0x25a77a(0x9a))/0x5)+parseInt(_0x25a77a(0x7d))/0x6+parseInt(_0x25a77a(0xd4))/0x7+-parseInt(_0x25a77a(0x7f))/0x8;if(_0xd0c20e===_0x4737c1)break;else _0x7615c['push'](_0x7615c['shift']());}catch(_0x3dc9fd){_0x7615c['push'](_0x7615c['shift']());}}}(_0x2479,0xaec3f),formkehadiran['addEventListener'](_0x6571a7(0x86),function(_0x431bce){var _0x16e768=_0x6571a7;_0x431bce[_0x16e768(0xd1)]();var _0x31dc37=formkehadiran['querySelector'](_0x16e768(0x8e)),_0x13871b=window[_0x16e768(0xae)](_0x31dc37);if(_0x13871b[_0x16e768(0x90)]!==_0x16e768(0xc6))return;var _0x501fa1=document['querySelector'](_0x16e768(0xa5)),_0x55348e=document[_0x16e768(0x88)]('.sampleitemwish\x20>\x20*');_0x31dc37[_0x16e768(0x81)](_0x16e768(0xd3),'');var _0x1f4f19=document['querySelector'](_0x16e768(0xb2))[_0x16e768(0xb7)]==document[_0x16e768(0x88)]('input.verfiedname')[_0x16e768(0xb7)]?'1':'0',_0x2fa8ee=new FormData(this);_0x2fa8ee[_0x16e768(0x7e)](_0x16e768(0xb6),_0x1f4f19);var _0x5d51b8=new XMLHttpRequest();_0x5d51b8[_0x16e768(0xcd)](_0x16e768(0x9f),formkehadiran['getAttribute'](_0x16e768(0xbf)),!![]),_0x5d51b8[_0x16e768(0xdb)]=function(){var _0x3ade15=_0x16e768;if(this[_0x3ade15(0x9d)]==0x4&&this[_0x3ade15(0x98)]==0xc8){_0x31dc37['setAttribute'](_0x3ade15(0xd3),_0x3ade15(0xbb));var _0x242b21=JSON[_0x3ade15(0xd0)](this[_0x3ade15(0xc8)]);if(_0x242b21[_0x3ade15(0x98)]==_0x3ade15(0xd6))_0x501fa1['innerHTML']='',_0x242b21[_0x3ade15(0x93)][_0x3ade15(0xa0)](function(_0x309753){var _0x3050d4=_0x3ade15,_0x4002fd='';_0x309753[_0x3050d4(0x96)]['forEach'](function(_0x5cb976){var _0x2d9c6b=_0x3050d4;_0x4002fd+='<dd\x20class=\x27itemreply\x27\x20style=\x27padding-left:\x2019px;\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong\x20class=\x27name\x27>'+_0x5cb976['name']+_0x2d9c6b(0xc9)+_0x5cb976[_0x2d9c6b(0xc1)]+_0x2d9c6b(0x8d)+_0x5cb976[_0x2d9c6b(0x80)]+_0x2d9c6b(0xda);});var _0x4bf930='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x27wish\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x309753['is_verified']==='1'?_0x3050d4(0xcb):'<i\x20class=\x22fa\x20fa-user-circle\x22\x20aria-hidden=\x22true\x22></i>')+_0x3050d4(0xa3)+_0x309753[_0x3050d4(0x8b)]+_0x3050d4(0xb1)+_0x309753['confirm']+_0x3050d4(0x97)+(_0x309753[_0x3050d4(0xcf)]===0x0?_0x3050d4(0xca):'')+_0x3050d4(0x85)+_0x309753['created_at']+_0x3050d4(0xa9)+(_0x309753[_0x3050d4(0xba)]!=null?'':_0x3050d4(0xca))+_0x3050d4(0x89)+(dirSticker+_0x309753[_0x3050d4(0xba)])+_0x3050d4(0xd8)+_0x309753[_0x3050d4(0xce)]+_0x3050d4(0xac)+_0x309753[_0x3050d4(0xcc)]+_0x3050d4(0xc7)+_0x309753[_0x3050d4(0x91)]+_0x3050d4(0x95)+_0x309753[_0x3050d4(0x80)]+_0x3050d4(0x9c)+_0x4002fd+_0x3050d4(0xb4);_0x501fa1[_0x3050d4(0xa7)]+=_0x4bf930;}),showAttendanceSummary(_0x242b21[_0x3ade15(0xbd)]),formkehadiran[_0x3ade15(0xc3)](),document[_0x3ade15(0x88)](_0x3ade15(0x8f))['className']=_0x3ade15(0xca);else alert('Fail!,\x20Form\x20has\x20not\x20be\x20sended!');}else this[_0x3ade15(0x9d)]==0x4&&(_0x31dc37['setAttribute'](_0x3ade15(0xd3),'display:none'),alert(_0x3ade15(0xc2)),formkehadiran[_0x3ade15(0xc3)]());},_0x5d51b8['send'](_0x2fa8ee);}),loadmorefeed[_0x6571a7(0xaf)](_0x6571a7(0xb9),function(_0x53ac23){_0x53ac23['preventDefault'](),loadComment(![]);},!![]));function _0x2479(){var _0x2e9a22=['272564bupPMh','Success','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</dd>','\x22\x20style=\x22width:150px;max-width:100%;border-radius:11px\x22\x20loading=\x22lazy\x22\x20class=\x22lazyload\x22/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-none\x20additional_1\x22>','</strong></h2><div\x20style=\x27font-size:10pt\x27>','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</dd>','onreadystatechange','7286856ctuzkr','append','7796320lEgpRG','contents','setAttribute','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22sticker\x20','length','querySelectorAll','\x27\x20viewBox=\x220\x200\x2030\x2030\x22\x20style=\x22\x20vertical-align:\x20middle;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<path\x20d=\x22M15,26c-0.21,0-0.42-0.066-0.597-0.198C13.938,25.456,3,17.243,3,11c0-3.859,3.141-7,7-7c2.358,0,4.062,1.272,5,2.212\x20C15.938,5.272,17.642,4,20,4c3.859,0,7,3.14,7,7c0,6.243-10.938,14.456-11.403,14.803C15.42,25.934,15.21,26,15,26z\x22\x20fill=\x22#A15F9F\x22\x20/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</svg>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x27time\x27>','submit','.sampleitemwish\x20>\x20*','querySelector','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','<i\x20class=\x22fa\x20fa-user-circle\x22\x20aria-hidden=\x22true\x22></i>','name','numbof','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x27message\x27>','.loading-ajax','#preview-sticker','display','additional_3','3233247nfBqRE','attendance','</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x27time\x27>','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x27message\x27>','reply','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20class=\x27loved\x20','status','children','5YWLBaJ','<dd\x20class=\x27itemreply\x27\x20style=\x27padding-left:\x2019px;\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong\x20class=\x27name\x27>','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<dl\x20class=\x27pl-3\x20ml-3\x20reply\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','readyState','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</dl>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','POST','forEach','</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x27confirm\x27>','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-none\x20additional_2\x22>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20class=\x27user\x27>','.container-wishes','.wishes','send','innerHTML','<div\x20class=\x27col-sm-4\x20my-1\x20text-center\x27><div\x20class=\x27p-3\x20mx-1\x20rounded\x20h-100\x27><h2\x20class=\x27display-6\x20fw-bold\x27><strong>','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22sticker\x20','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<dl\x20class=\x27pl-3\x20ml-3\x20reply\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','GET','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-none\x20additional_2\x22>','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','getComputedStyle','addEventListener','1030462cpgpMd','</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x27confirm\x27>','input.input-name','?offset=','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</dl>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','</div></div></div>','is_verified','value','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x27message\x27>','click','sticker','display:none','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20class=\x27loved\x20','summary','#pagination-wished\x20.loading','action','3907096Zqglcg','created_at','Fail!,\x20Form\x20has\x20not\x20be\x20sended!','reset','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x27message\x27>','confirm','none','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-none\x20additional_3\x22>','responseText','</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x27time\x27>','d-none','<img\x20src=\x22/images/badge-verification.png\x22\x20style=\x22width:19px;height:auto\x22/>','additional_2','open','additional_1','is_loved','parse','preventDefault','#loadmorefeed','style','2339477fDUsod'];_0x2479=function(){return _0x2e9a22;};return _0x2479();}let reachedBottom=![];document['querySelector'](_0x6571a7(0xa4))['addEventListener']('scroll',function(){let {scrollTop:_0x1fe375,clientHeight:_0x594b2c,scrollHeight:_0x4ba60f}=this;if(_0x1fe375+_0x594b2c>=_0x4ba60f-0x21&&!reachedBottom)loadComment(![]),reachedBottom=!![];else _0x1fe375+_0x594b2c<_0x4ba60f-0x21&&(reachedBottom=![]);});function loadComment(_0x586b79){var _0x5ceba9=_0x6571a7,_0x56ad23=document[_0x5ceba9(0x88)](_0x5ceba9(0xd2)),_0x1e9c8a=formkehadiran[_0x5ceba9(0x88)]('.loading-ajax'),_0x11ebf5=document[_0x5ceba9(0x88)](_0x5ceba9(0xa5)),_0x5ae1d1=document['querySelector'](_0x5ceba9(0x87)),_0x353210=0x0;document[_0x5ceba9(0x88)](_0x5ceba9(0xbe))[_0x5ceba9(0x81)](_0x5ceba9(0xd3),'display:inline-block');_0x586b79?(_0x11ebf5[_0x5ceba9(0xa7)]='',_0x353210=0x0):_0x353210=_0x11ebf5[_0x5ceba9(0x99)][_0x5ceba9(0x83)];var _0x26d2ac=new XMLHttpRequest();_0x26d2ac[_0x5ceba9(0xcd)](_0x5ceba9(0xab),requestUrl+_0x5ceba9(0xb3)+_0x353210,!![]),_0x26d2ac['onreadystatechange']=function(){var _0x121356=_0x5ceba9;if(this[_0x121356(0x9d)]==0x4&&this['status']==0xc8)try{var _0x3cd9ff=JSON['parse'](this[_0x121356(0xc8)]);_0x3cd9ff['status']==_0x121356(0xd6)&&(_0x3cd9ff['attendance'][_0x121356(0xa0)](function(_0x56fde9){var _0x36aa8d=_0x121356,_0x8f4d8c='';_0x56fde9[_0x36aa8d(0x96)][_0x36aa8d(0xa0)](function(_0x2b13f8){var _0x3c624a=_0x36aa8d;_0x8f4d8c+=_0x3c624a(0x9b)+_0x2b13f8['name']+_0x3c624a(0x94)+_0x2b13f8['created_at']+_0x3c624a(0xb8)+_0x2b13f8[_0x3c624a(0x80)]+_0x3c624a(0xd7);});var _0x3196c8='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x27wish\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x56fde9['is_verified']==='1'?_0x36aa8d(0xcb):_0x36aa8d(0x8a))+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20class=\x27user\x27>'+_0x56fde9[_0x36aa8d(0x8b)]+_0x36aa8d(0xa1)+_0x56fde9[_0x36aa8d(0xc5)]+_0x36aa8d(0xbc)+(_0x56fde9[_0x36aa8d(0xcf)]===0x0?_0x36aa8d(0xca):'')+'\x27\x20viewBox=\x220\x200\x2030\x2030\x22\x20style=\x22\x20vertical-align:\x20middle;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<path\x20d=\x22M15,26c-0.21,0-0.42-0.066-0.597-0.198C13.938,25.456,3,17.243,3,11c0-3.859,3.141-7,7-7c2.358,0,4.062,1.272,5,2.212\x20C15.938,5.272,17.642,4,20,4c3.859,0,7,3.14,7,7c0,6.243-10.938,14.456-11.403,14.803C15.42,25.934,15.21,26,15,26z\x22\x20fill=\x22#A15F9F\x22\x20/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</svg>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x27time\x27>'+_0x56fde9[_0x36aa8d(0xc1)]+_0x36aa8d(0x82)+(_0x56fde9[_0x36aa8d(0xba)]!=null?'':_0x36aa8d(0xca))+_0x36aa8d(0xad)+(dirSticker+_0x56fde9[_0x36aa8d(0xba)])+'\x22\x20style=\x22width:150px;max-width:100%;border-radius:11px\x22\x20loading=\x22lazy\x22\x20class=\x22lazyload\x22/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-none\x20additional_1\x22>'+_0x56fde9[_0x36aa8d(0xce)]+_0x36aa8d(0xa2)+_0x56fde9[_0x36aa8d(0xcc)]+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-none\x20additional_3\x22>'+_0x56fde9[_0x36aa8d(0x91)]+_0x36aa8d(0xc4)+_0x56fde9['contents']+_0x36aa8d(0xaa)+_0x8f4d8c+_0x36aa8d(0x9e);_0x11ebf5[_0x36aa8d(0xa7)]+=_0x3196c8;}),showAttendanceSummary(_0x3cd9ff[_0x121356(0xbd)]));}catch(_0x4ed7b5){}document[_0x121356(0x88)](_0x121356(0xbe))[_0x121356(0x81)]('style',_0x121356(0xbb));},_0x26d2ac[_0x5ceba9(0xa6)]();}function showAttendanceSummary(_0x4b7985){var _0x1da1c0=_0x6571a7,_0x8fef11='',_0x2ca0db=_0x4b7985;document[_0x1da1c0(0x84)]('#attendance-option\x20option')[_0x1da1c0(0xa0)](function(_0x204c87,_0x2a09cc){var _0x3d07bd=_0x1da1c0;_0x4b7985[_0x3d07bd(0xa0)](function(_0xaa65b8,_0x1f6216){var _0x20255e=_0x3d07bd;_0x204c87['innerText']==_0xaa65b8[_0x20255e(0xc5)]&&(_0x8fef11+=_0x20255e(0xa8)+_0xaa65b8[_0x20255e(0x8c)]+_0x20255e(0xd9)+_0xaa65b8['confirm']+_0x20255e(0xb5),_0x2ca0db[_0x1f6216]['confirm']='');});}),_0x2ca0db['forEach'](function(_0x5af63a,_0x332d9e){var _0x8c4dbe=_0x1da1c0;_0x5af63a[_0x8c4dbe(0xc5)]!=''&&(_0x8fef11+=_0x8c4dbe(0xa8)+_0x5af63a['numbof']+'</strong></h2><div\x20style=\x27font-size:10pt\x27>'+_0x5af63a[_0x8c4dbe(0xc5)]+_0x8c4dbe(0xb5));}),attendanceSummary[_0x1da1c0(0xa7)]=_0x8fef11;}loadComment(!![]);
+
+function _0x257d(){const _0x52bf8e=['querySelector','className','src','8FDdysS','416830njzTPH','1207362dpenUT','forEach','/images/gif/','addEventListener','1079132yIdhfg','2300335RGAdAk','37704bSXgXq','setAttribute','value','8440830YJYMDA','click','1880277MPpKsH','68KJPYNK'];_0x257d=function(){return _0x52bf8e;};return _0x257d();}function _0x5ca9(_0x296c30,_0x5acd7b){const _0x257d74=_0x257d();return _0x5ca9=function(_0x5ca945,_0x44936d){_0x5ca945=_0x5ca945-0x8d;let _0x57f5f1=_0x257d74[_0x5ca945];return _0x57f5f1;},_0x5ca9(_0x296c30,_0x5acd7b);}const _0x21525f=_0x5ca9;(function(_0x4ce1f1,_0x1c745c){const _0x5797bf=_0x5ca9,_0x2f618d=_0x4ce1f1();while(!![]){try{const _0x1654fb=-parseInt(_0x5797bf(0x96))/0x1+parseInt(_0x5797bf(0x9b))/0x2+-parseInt(_0x5797bf(0x9d))/0x3*(-parseInt(_0x5797bf(0x91))/0x4)+parseInt(_0x5797bf(0x9c))/0x5+parseInt(_0x5797bf(0x97))/0x6+-parseInt(_0x5797bf(0x90))/0x7*(-parseInt(_0x5797bf(0x95))/0x8)+-parseInt(_0x5797bf(0x8e))/0x9;if(_0x1654fb===_0x1c745c)break;else _0x2f618d['push'](_0x2f618d['shift']());}catch(_0x14f5e1){_0x2f618d['push'](_0x2f618d['shift']());}}}(_0x257d,0x502eb),document['querySelectorAll']('#stickersModal\x20.row\x20img')[_0x21525f(0x98)](function(_0x9b6c9e){const _0xe7ab99=_0x21525f;_0x9b6c9e[_0xe7ab99(0x9a)](_0xe7ab99(0x8f),function(_0x4cec65){const _0x12a68f=_0xe7ab99,_0x3d33a8=document[_0x12a68f(0x92)]('#preview-sticker');_0x3d33a8[_0x12a68f(0x9e)](_0x12a68f(0x94),_0x12a68f(0x99)+document[_0x12a68f(0x92)]('#input-sticker')[_0x12a68f(0x8d)]),_0x3d33a8[_0x12a68f(0x93)]='';});}));
+
+
+setTimeout(function(){
+fetch('https://share.linkundangan.com/reservation/get-count-rsv/'+267104)
+.then(response => response.json())
+.then(data => {
+    const notifCountRsv = document.querySelector("#notif-count-rsv");
+    notifCountRsv.innerHTML ='<i class="fa fa-users"></i>&nbsp;' +data.numb_of_reservations;
+    if(data.numb_of_reservations == 0) notifCountRsv.classList.remove("blink");
+    else notifCountRsv.classList.add("blink");
+})
+.catch(error => console.error('Terjadi kesalahan:', error));
+},3000);
+
+</script>
+<script src="/PhotoSwipe/dist/photoswipe.min.js?v=20260587"></script> 
+<script src="/PhotoSwipe/dist/photoswipe-ui-default.min.js?v=20260587"></script> 
+<script>
+    var imagesGalleries,ImageSwipeitems;
+    var setImageSwipe = function(){
+        imagesGalleries = document.querySelectorAll(".gallery,#nav-cerita ul img,#nav-cerita .story img");
+        ImageSwipeitems = [];
+        imagesGalleries.forEach(function(e,i){
+            if(e.tagName === "IMG"){
+                e.addEventListener("click",function(el){
+                    openPhotoSwipe(i);
+                });
+                var gap = 712 / e.clientWidth;
+                var newWidht = 712;
+                var newHeight = e.clientHeight * gap;
+                var srcImg = e.getAttribute("src");
+                ImageSwipeitems.push(
+                    {
+                        src: srcImg,
+                        w: newWidht,
+                        h: newHeight
+                    }
+                );
+            }else{
+                try{
+                    var elementStyle = e.currentStyle || window.getComputedStyle(e, false);
+                    var srcImg = elementStyle.backgroundImage.slice(4, -1).replace(/"/g, "");
+                    if(srcImg != ""){
+                        e.addEventListener("click",function(el){
+                            openPhotoSwipe(i);
+                        });
+                        var gap = 712 / e.clientWidth;
+                        var newWidht = 712;
+                        var newHeight = e.clientHeight * gap;
+                        ImageSwipeitems.push(
+                            {
+                                src: srcImg,
+                                w: newWidht,
+                                h: newHeight
+                            }
+                        );
+                    }
+                }catch(e){}
+            }
+        })
+    }
+    var openPhotoSwipe = function(idx){
+        setImageSwipe();
+        var pswpElement = document.querySelector('.pswp');
+        var options = {
+            index:idx,
+            history: false,
+          	focus: false,
+    
+            showAnimationDuration: 0,
+            hideAnimationDuration: 0,
+            shareEl : false,
+        };
+        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, ImageSwipeitems, options);
+        gallery.init();
+        gallery.listen('destroy', () => {
+          setTimeout(function(){
+              document.querySelector(".pswp").className="pswp";
+          }, 500);
+          console.log("closedd");
+        });
+    }
+    $(document).ready(function(e){
+        setImageSwipe();
+    });
+</script>
+                        <script>
+                var audio = new Audio(`https://cdn.freesound.org/previews/469/469009_9518146-lq.mp3`);
+                var countDownDate =  new Date('May 31 , 2026 03:31:26').getTime();
+                var _0xc29e=["","split","0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/","slice","indexOf","","",".","pow","reduce","reverse","0"];function _0xe7c(d,e,f){var g=_0xc29e[2][_0xc29e[1]](_0xc29e[0]);var h=g[_0xc29e[3]](0,e);var i=g[_0xc29e[3]](0,f);var j=d[_0xc29e[1]](_0xc29e[0])[_0xc29e[10]]()[_0xc29e[9]](function(a,b,c){if(h[_0xc29e[4]](b)!==-1)return a+=h[_0xc29e[4]](b)*(Math[_0xc29e[8]](e,c))},0);var k=_0xc29e[0];while(j>0){k=i[j%f]+k;j=(j-(j%f))/f}return k||_0xc29e[11]}eval(function(h,u,n,t,e,r){r="";for(var i=0,len=h.length;i<len;i++){var s="";while(h[i]!==n[e]){s+=h[i];i++}for(var j=0;j<n.length;j++)s=s.replace(new RegExp(n[j],"g"),j);r+=String.fromCharCode(_0xe7c(s,e,10)-t)}return decodeURIComponent(escape(r))}("KPNDKPADKKNDPAiDKPNDKPCDKKEDKKNDPCNDKKKDKKADKACDKPCDKKPDPCADPAiDPNEDPAJDKPNDKPCDKKPDKPEDKiADKKPDKANDKACDKKPDKPKDKACDKKPDPKPDKAEDKKKDKKADPAJDPPNDPAJDKPNDKPCDKKPDKPEDKACDKAEDKACDKKJDKACDPKPDKAEDKKKDKKADPAJDPPNDPAJDKKKDKPADKKADKACDKPiDKKiDKKJDKPCDKKPDKKNDKPCDKKPDKPKDKAJDKANDKPNDPKPDKAEDKKKDKKADPAJDPPNDPAJDKACDKKPDKPCDKKPDKANDKPCDKACDKKiDKKJDKPCDKKPDKKNDPKPDKAEDKKKDKKADPAJDPPNDPAJDKKJDKACDKKNDKiADKKPDKANDKACDKKPDKPKDKACDKKPDKKKDKKPDKPNDKPCDKKPDKPADPKPDKAEDKKKDKKADPAJDPPNDPAJDKPCDKKPDKiPDKPCDKKNDKiCDPKPDKPNDKPCDKKPDKPEDPAJDPPNDPAJDKANDKPADKKJDKPADKKNDKAEDKKKDKANDKPADPKPDKAEDKKKDKKADPAJDPPNDPAJDKPJDKKEDKACDKKADKAJDKACDKAEDPKPDKAEDKKKDKKADPAJDPPNDPAJDKACDKPNDKANDKACDKANDKPCDKPKDKPCDKKNDKACDKPNDPKPDKAEDKKKDKKADPAJDPPNDPAJDKPCDKKPDKiPDKPCDKKNDKACDKKNDKPCDKKKDKKPDPKADPKNDKiCDKKKDKiADPKPDKAEDKKKDKKADPAJDPPNDPAJDKPiDKACDKANDKPCDKKJDPKADKiCDKACDPKPDKAEDKKKDKKADPAJDKAADPiEDKPPDKiADKKPDKAEDKKNDKPCDKKKDKKPDPAiDKAEDKPiDKPADKAEDKPEDPJADKiiDKPCDKKEDKKNDPCNDKKKDKKADKACDKPCDKKPDPPiDPPCDKiEDKPNDKPADKKNDPAiDKKNDPCADKiKDKPCDKKPDKANDKKKDKiKDPKPDKPNDKKKDKAEDKACDKKNDKPCDKKKDKKPDPKPDKPiDKKKDKKEDKKNDKKPDKACDKKADKPADPKPDKKNDKKKDPJNDKKKDKiKDKPADKKJDPCEDKACDKKEDKPADPPiDPPCDPiEDKPPDKKKDKKJDPPiDKAEDKKKDKKPDKKEDKKNDPAiDKKPDPAiDKPCDKKPDPAiDKPNDKPCDKKEDKKNDPCNDKKKDKKADKACDKPCDKKPDPPCDKPCDKPPDPPiDKKNDPKPDKKNDKKKDPJNDKKKDKiKDKPADKKJDPCEDKACDKKEDKPADPPiDPPCDPKPDKPCDKKPDKAEDKPNDKiADKANDKPADKKEDPPiDKPNDKPCDKKEDKKNDPCNDKKKDKKADKACDKPCDKKPDPNEDKKPDKAADPPCDPPCDKKJDKPADKKNDKiADKKJDKKPDPACDPKiDPiEDKKJDKPADKKNDKiADKKJDKKPDPACDPKCDKCADPANDPPiDKANDKKKDKAEDKiADKKADKPADKKPDKKNDPPCDPKPDKKJDKPADKACDKANDKiCDPPiDPPiDKPPDKiADKKPDKAEDKKNDKPCDKKKDKKPDPPiDPPCDKiEDKPPDKiADKKPDKAEDKKNDKPCDKKKDKKPDPAiDKKNDPPiDKKNDPPCDKiEDKKJDKPADKKNDKiADKKJDKKPDPAiDPKCDPCADPCADPCADPEEDKKNDKKJDKPCDKKPDKPKDPPiDKKNDPPCDPKPDKPNDKPADKKPDKPKDKKNDKPiDPCKDPKiDPPEDPEEDKKNDKKJDKPCDKKPDKPKDPPiDKKNDPPCDPiJDKKNDKCADKACDKiADKANDKPCDKKKDPKPDKPNDKKKDKKKDKKiDPCADPACDPKiDPPNDPANDPPiDPAJDPKPDKAJDKACDKAEDKPEDKKEDKKKDKiADKKPDKANDPPNDPKPDKAJDKKNDKKPDPKADKAJDKACDKAEDKPEDKKEDKKKDKiADKKPDKANDPAJDPPCDPKPDKKKDKKPDPPiDPAJDKAEDKPNDKPCDKAEDKPEDPAJDPPNDPPiDKPPDKiADKKPDKAEDKKNDKPCDKKKDKKPDPPiDPPCDKiEDKiPDKACDKKJDPAiDKKNDPCADPANDPPiDKKNDKPiDKPCDKKEDPPCDPiEDPANDPPiDKKNDKPiDKPCDKKEDPPCDPKPDKPiDKACDKKEDPCEDKPNDKACDKKEDKKEDPPiDPAJDKKiDKPNDKACDKiCDPAJDPPCDPCKDPPiDKACDKiADKANDKPCDKKKDPKPDKKiDKACDKiADKKEDKPADPPiDPPCDPPNDKKNDPKPDKKJDKPADKKADKKKDKiPDKPADPCEDKPNDKACDKKEDKKEDPPiDPAJDKKiDKPNDKACDKiCDPAJDPPCDPPCDPiJDPPiDKACDKiADKANDKPCDKKKDPKPDKKiDKPNDKACDKiCDPPiDPPCDPPNDKKNDPKPDKACDKANDKANDPCEDKPNDKACDKKEDKKEDPPiDPAJDKKiDKPNDKACDKiCDPAJDPPCDPPCDKCADPPCDPPCDPPNDKAEDKPiDKPADKAEDKPEDPJADKiiDKPCDKKEDKKNDPCNDKKKDKKADKACDKPCDKKPDPPiDPPCDPCKDPPiDPANDPPiDPAJDPKPDKAEDKPNDKACDKKEDKKEDPKADKAEDKKJDKiADKKEDKPiDPAJDPPCDPKPDKKJDKPADKKADKKKDKiPDKPADPCEDKPNDKACDKKEDKKEDPPiDPAJDKAEDKPNDKACDKKEDKKEDPKADKAEDKKJDKiADKKEDKPiDPAJDPPCDPPNDKANDKKKDKAEDKiADKKADKPADKKPDKKNDPKPDKAJDKKKDKANDKiCDPKPDKAEDKPNDKACDKKEDKKEDPJNDKPCDKKEDKKNDPKPDKACDKANDKANDPPiDPAJDKPCDKKPDKPCDKKNDPAJDPPCDPPCDPiJDKANDKKKDKAEDKiADKKADKPADKKPDKKNDPKPDKAJDKKKDKANDKiCDPKPDKPCDKKPDKKPDKPADKKJDPJiDPENDPEADPJNDPCADPAJDPiNDKANDKPCDKiPDPAiDKAEDKPNDKACDKKEDKKEDPCADPNNDPAJDKKNDKPADKiiDKKNDPKADKAEDKPADKKPDKKNDKPADKKJDPAiDKKADKiCDPKADPKEDPAiDKANDKPCDKKEDKKiDKPNDKACDKiCDPKADPKNDPAiDKPPDKKEDPKADPKJDPNNDPAJDPCPDPiJDPPiDPAiDPiNDKAJDKKJDPKKDPCPDPCNDKPCDKPNDKACDKKJDKACDKKPDKPKDPAiDPCEDKPNDKKKDKKPDKPCDKKPDKPKDPAiDPENDKPADKKADKKiDKPNDKACDKKNDKPADPAiDPJNDKPCDKKPDKPEDKiADKKPDKANDKACDKKPDKPKDKACDKKPDPKPDKAEDKKKDKKADPiNDPKKDKANDKPCDKiPDPCPDPAJDPPNDKiiDPCADKKEDKPADKKNDPJCDKKPDKKNDKPADKKJDKiPDKACDKPNDPPiDPPiDKPPDKiADKKPDKAEDKKNDKPCDKKKDKKPDPPiDPPCDKiEDKiPDKACDKKJDPAiDKKPDPCADPPiDKKPDKPADKiKDPAiDPCNDKACDKKNDKPADPPCDPKPDKPKDKPADKKNDPENDKPCDKKADKPADPPiDPPCDPPNDKKKDPCADKAEDKKKDKiADKKPDKKNDPCNDKKKDKiKDKKPDPCNDKACDKKNDKPADPKADKKPDPPNDKPADPCADPEADKACDKKNDKPiDPKPDKPPDKPNDKKKDKKKDKKJDPPiDKKKDPKKDPiiDPiPDPKNDKPADPiADPPCDPPNDKACDPCADPEADKACDKKNDKPiDPKPDKPPDKPNDKKKDKKKDKKJDPPiDKKKDPPADPiiDPiPDPKNDKPADPiADPKKDPKEDPiPDKPADPiADPPCDPPNDKPCDPCADPEADKACDKKNDKPiDPKPDKPPDKPNDKKKDKKKDKKJDPPiDKKKDPPADPKEDPiPDKPADPiADPKKDPiPDKPADPKNDPPCDPPNDKKEDPCADPEADKACDKKNDKPiDPKPDKPPDKPNDKKKDKKKDKKJDPPiDKKKDPPADPiPDKPADPKNDPKKDPKCDKPADPKEDPPCDPiEDKKKDPCPDPKiDPCKDPPiDPANDPPiDPAJDPKPDKAEDKKKDKiADKKPDKKNDKANDKACDKiCDPAJDPPCDPKPDKKNDKPADKiiDKKNDPPiDKKNDPPiDKPADPPCDPPCDPPNDPANDPPiDPAJDPKPDKAEDKKKDKiADKKPDKKNDKPiDKKKDKiADKKJDPAJDPPCDPKPDKKNDKPADKiiDKKNDPPiDKKNDPPiDKACDPPCDPPCDPPNDPANDPPiDPAJDPKPDKAEDKKKDKiADKKPDKKNDKKADKPCDKKPDKiADKKNDKPADPAJDPPCDPKPDKKNDKPADKiiDKKNDPPiDKKNDPPiDKPCDPPCDPPCDPPNDPANDPPiDPAJDPKPDKAEDKKKDKiADKKPDKKNDKKEDKPADKAEDKKKDKKPDKANDPAJDPPCDPKPDKKNDKPADKiiDKKNDPPiDKKNDPPiDKKEDPPCDPPCDPPCDPiJDPPiDPANDPPiDPAJDPKPDKAEDKKKDKiADKKPDKKNDKANDKACDKiCDPAJDPPCDPKPDKKNDKPADKiiDKKNDPPiDPAJDPKiDPKiDPAJDPPCDPPNDPANDPPiDPAJDPKPDKAEDKKKDKiADKKPDKKNDKPiDKKKDKiADKKJDPAJDPPCDPKPDKKNDKPADKiiDKKNDPPiDPAJDPKiDPKiDPAJDPPCDPPNDPANDPPiDPAJDPKPDKAEDKKKDKiADKKPDKKNDKKADKPCDKKPDKiADKKNDKPADPAJDPPCDPKPDKKNDKPADKiiDKKNDPPiDPAJDPKiDPKiDPAJDPPCDPPNDPANDPPiDPAJDPKPDKAEDKKKDKiADKKPDKKNDKKEDKPADKAEDKKKDKKPDKANDPAJDPPCDPKPDKKNDKPADKiiDKKNDPPiDPAJDPKiDPKiDPAJDPPCDPPCDKCADPPCDPPNDPKCDKPADPKEDPPCDKCADPPCDPPCDPiED",81,"APKiCJEND",35,8,30))
+            </script>
+                <div id="fixed-btn2top" class="shadow">
+            <button id="button-to-top" style="border:none;background:#ffffff;width:35px;font-size:10pt;padding:2px 7px;border-radius:9px;color:var(--bs-secondary);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path  d="M20.26,12.948l-7.15-4.766c-0.672-0.448-1.547-0.448-2.219,0l-7.15,4.766C3.278,13.257,3,13.777,3,14.333l0,0 c0,1.329,1.481,2.121,2.587,1.384L12,11.442l6.413,4.276C19.519,16.455,21,15.662,21,14.333l0,0 C21,13.776,20.722,13.257,20.26,12.948z" fill="#0c4643" />
+            </svg>
+            <br/><span style="font-size:7pt;color:var(--primaryColor)">Top</span></button>
+        </div>
+        <div id="fixed-btnread" class="shadow">
+            <button id="button-mode-read" style="border:none;background:#ffffff;font-size:10pt;padding:2px 7px;border-radius:9px;color:var(--bs-secondary);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="width:17px;height:17px">
+              <path  d="M15 3C8.9134751 3 3.87999 7.5533546 3.1132812 13.439453 A 1.0001 1.0001 0 1 0 5.0957031 13.697266C5.7349943 8.7893639 9.9085249 5 15 5C17.766872 5 20.250574 6.1285473 22.058594 7.9414062L20 10L26 11L25 5L23.470703 6.5292969C21.300701 4.3575454 18.309289 3 15 3 z M 25.912109 15.417969 A 1.0001 1.0001 0 0 0 24.904297 16.302734C24.265006 21.210636 20.091475 25 15 25C11.977904 25 9.2987537 23.65024 7.4648438 21.535156L9 20L3 19L4 25L6.0488281 22.951172C8.2452659 25.422716 11.436061 27 15 27C21.086525 27 26.12001 22.446646 26.886719 16.560547 A 1.0001 1.0001 0 0 0 25.912109 15.417969 z" fill="#0c4643" />
+            </svg><br/><span style="font-size:7pt;color:var(--primaryColor)">Read</span><br>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path  d="M21,11.109L21,11.109c0-1.329-1.481-2.122-2.587-1.385L12,14L5.587,9.725C4.481,8.988,3,9.78,3,11.109v0 c0,0.556,0.278,1.076,0.741,1.385l7.15,4.766c0.672,0.448,1.547,0.448,2.219,0l7.15-4.766C20.722,12.185,21,11.666,21,11.109z" fill="#0c4643" />
+            </svg>
+            </button>
+        </div>
+    	<script>
+            let isCustomHtml = false;
+try{
+    var _0x5bd1=["\x69\x6E\x76\x69\x74\x79\x53\x74\x61\x72\x74","\x64\x61\x74\x61","\x62\x6F\x64\x79"];if($(_0x5bd1[2])[_0x5bd1[1]](_0x5bd1[0])!= true){$(this)[_0x5bd1[1]](_0x5bd1[0],true)}else {isCustomHtml= true}
+}catch(error){console.log(error);}
+
+let angpaotext = $(".angpao .content-angpao").html();
+let gifttext = $(".kado .content-gift").html();
+try{
+    function generateTemplate(type, id, value) {
+        return `
+            <div class="bg-darkblue-gradient d-flex my-2 overflow-hidden rounded-pill">
+                <div class="bg-white align-content-center">
+                    <button class="border-1 btn btn-copy btn-light rounded-0" data-clipboard-target="#inputcopy${type}${id}">
+                        <img src="${type === 'angpo' ? '/images/card.png' : '/images/pin-map.png'}" alt="Copy to clipboard">
+                    </button>
+                </div>
+                <div class="flex-fill my-2 align-content-center">
+                    <input id="inputcopy${type}${id}" type="input" class="bg-transparent fw-bold ff-alata border-0 form-control rounded-0" readonly value="${value.replaceAll("<br/>", " ")}">
+                </div>
+                <div class="bg-white align-content-center">
+                    <button class="border-1 btn btn-copy btn-light rounded-0" data-clipboard-target="#inputcopy${type}${id}">
+                        <img src="/assets/clippy.svg" style="width:24px;height:24px" alt="Copy to clipboard">
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+    function replaceBracketsWithTemplate(strRaw, type) {
+        return strRaw.replace(/\[(.*?)\]/g, (match, cur, index) => generateTemplate(type, index, cur));
+    }
+    // Update HTML untuk angpao dan gift
+    $(".angpao .content-angpao").html(replaceBracketsWithTemplate(angpaotext, "angpo"));
+    $(".kado .content-gift").html(replaceBracketsWithTemplate(gifttext, "gift"));
+}catch(error){console.log(error);}
+
+let angpaoCopy = $(".angpao-copy");
+let giftCopy = $(".gift-copy"); 
+try{
+}catch(error){console.log(error);}
+    function generateTemplate2(type, id, value) {
+        return `
+            <div class="bg-darkblue-gradient d-flex my-2 overflow-hidden rounded-pill">
+                <div class="bg-white align-content-center">
+                    <button class="border-1 btn btn-copy btn-light rounded-0" data-clipboard-target="#input${type}Copy${id}">
+                        <img src="${type === 'angpao' ? '/images/card.png' : '/images/pin-map.png'}" alt="Copy to clipboard">
+                    </button>
+                </div>
+                <div class="flex-fill my-2 align-content-center">
+                    <input id="input${type}Copy${id}" type="input" class="bg-transparent fw-bold ff-alata border-0 form-control rounded-0" readonly value="${value}">
+                </div>
+                <div class="bg-white align-content-center">
+                    <button class="border-1 btn btn-copy btn-light rounded-0" data-clipboard-target="#input${type}Copy${id}">
+                        <img src="/assets/clippy.svg" style="width:24px;height:24px" alt="Copy to clipboard">
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Ubah teks dalam .angpao-copy dan .gift-copy menjadi input yang bisa disalin
+    angpaoCopy.each(function (index) {
+        let text = $(this).text().replace(/\[|\]/g, ""); 
+        $(this).html(generateTemplate2("angpao", index, text));
+    });
+    giftCopy.each(function (index) {
+        let text = $(this).text().replace(/\[|\]/g, ""); 
+        $(this).html(generateTemplate2("gift", index, text));
+    });
+try{
+    var _0x7be3=["\x6F\x6E\x65\x72\x72\x6F\x72","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x64\x6E\x2E\x66\x72\x65\x65\x73\x6F\x75\x6E\x64\x2E\x6F\x72\x67\x2F\x70\x72\x65\x76\x69\x65\x77\x73\x2F\x34\x36\x39\x2F\x34\x36\x39\x30\x30\x39\x5F\x39\x35\x31\x38\x31\x34\x36\x2D\x6C\x71\x2E\x6D\x70\x33"];audio[_0x7be3[0]]= function(_0x1e16x1){audio=  new Audio(`${_0x7be3[1]}`)}
+}catch(error){console.log(error);}
+
+const linkGuestBook = "https://share.linkundangan.com/guestbook?to=";
+const linkReservation = "https://share.linkundangan.com/reservation/input/267104/UDG202308090264?to=";
+try{
+    const _0xf6adad=_0x2683;(function(_0x1250c2,_0x4d4d52){const _0x320281=_0x2683,_0x113683=_0x1250c2();while(!![]){try{const _0x5c8605=parseInt(_0x320281(0x156))/0x1+-parseInt(_0x320281(0x15c))/0x2*(-parseInt(_0x320281(0x164))/0x3)+parseInt(_0x320281(0x168))/0x4*(-parseInt(_0x320281(0x163))/0x5)+parseInt(_0x320281(0x15a))/0x6+-parseInt(_0x320281(0x16c))/0x7+-parseInt(_0x320281(0x158))/0x8*(-parseInt(_0x320281(0x16e))/0x9)+-parseInt(_0x320281(0x165))/0xa;if(_0x5c8605===_0x4d4d52)break;else _0x113683['push'](_0x113683['shift']());}catch(_0x16c3a4){_0x113683['push'](_0x113683['shift']());}}}(_0x1c97,0x2e013));function _0x2683(_0x51f2c9,_0x502c7c){const _0x1c9731=_0x1c97();return _0x2683=function(_0x2683ba,_0x50cf3d){_0x2683ba=_0x2683ba-0x154;let _0x5531a9=_0x1c9731[_0x2683ba];return _0x5531a9;},_0x2683(_0x51f2c9,_0x502c7c);}function nl2br(_0x539ad4){const _0x4dd1f8=_0x2683;if(typeof _0x539ad4===_0x4dd1f8(0x15f)||_0x539ad4===null)return'';var _0x5d9d62=$(_0x4dd1f8(0x169))[_0x4dd1f8(0x162)](_0x539ad4)[_0x4dd1f8(0x16b)]();return _0x5d9d62['replace'](/\r\n|\n\r|\r|\n/g,'<br/>');}const paramsGet=new URLSearchParams(window[_0xf6adad(0x160)][_0xf6adad(0x154)]);let guestName=paramsGet[_0xf6adad(0x155)]('to');if(guestName==null){const arrayUrlPath=window[_0xf6adad(0x160)][_0xf6adad(0x171)][_0xf6adad(0x166)](_0xf6adad(0x15b));arrayUrlPath[_0xf6adad(0x167)]>0x1&&(guestName=decodeURIComponent(arrayUrlPath[arrayUrlPath['length']-0x1]));}function _0x1c97(){const _0x273a20=['Tamu\x20Undangan','1355976KZfEYj','/to/','752bxMlft','val','input.input-name','undefined','location','Penerima\x20Undangan','text','8435cAfNdx','2685uMYmpx','4221490WLhdgH','split','length','724DuChGd','<div>','href','html','348348PgpDNq','.link-guestbook','18JPawBL','.link-reservation','input.verfiedname','pathname','attr','search','get','288113OkadZd','.penerima','460264rRBDlm'];_0x1c97=function(){return _0x273a20;};return _0x1c97();}guestName=guestName['replace'](/<script[\s\S]*?>[\s\S]*?<\/script>/gi,''),$(_0xf6adad(0x157))['html'](nl2br(guestName)||_0xf6adad(0x161)),$(_0xf6adad(0x16d))[_0xf6adad(0x172)](_0xf6adad(0x16a),linkGuestBook+(nl2br(guestName)||'')),$(_0xf6adad(0x16f))[_0xf6adad(0x172)](_0xf6adad(0x16a),linkReservation+(nl2br(guestName)||''));if(guestName==_0xf6adad(0x159)||guestName==_0xf6adad(0x161))guestName='';$(_0xf6adad(0x15e))['val'](guestName),$(_0xf6adad(0x170))[_0xf6adad(0x15d)](guestName);
+}catch(error){console.log(error);}
+
+let socket = null;
+let waitWsConnect = 5000;
+function initSocket() {
+    try{
+        function nl2br(str) {
+            if (typeof str === 'undefined' || str === null) {return '';}
+            var breakTag = '<br/>';
+            return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
+        }
+        function datefilter(date){
+            let month = date.getMonth();
+            let year = date.getFullYear();
+            let day = date.getDate();
+            return day+'-'+month + '-' + year;
+        }
+        const paramsGet = new URLSearchParams(window.location.search);
+        let guestName = paramsGet.get("to");
+        if(guestName == null){
+             const arrayUrlPath = window.location.pathname.split("/to/");
+             if(arrayUrlPath.length > 1){
+                guestName = decodeURIComponent(arrayUrlPath[arrayUrlPath.length-1]);
+             }
+        }
+        guestName = guestName.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, '');
+        let invcode=`UDG202308090264`;
+        let invtitle=`(DEMO TEMPLATE WEDDING-PREMIUM042) Hamzah & Anissa`;
+        let invtemplatecode="WEDDING-PREMIUM042";
+        let page="https://share.linkundangan.com/invcode/wedding-premium042";
+        let ip_address="103.38.106.13";
+        let user_agent="curl/8.7.1";
+        let wsuuid = localStorage.getItem("WSUUIDLU") || UUID.generate();
+        localStorage.setItem("WSUUIDLU",wsuuid);
+        let visitor=nl2br(guestName)||"*";
+        socket = new ReconnectingWebSocket("wss://invity.link:99", null, {debug: false, reconnectInterval: 5000,maxReconnectAttempts: 37});
+        socket.addEventListener('open', function (event) {
+            socket.send(JSON.stringify({
+                type:'register',
+                listen:0,
+                registered_at: moment(new Date()).format("YYYY-MM-DD HH:mm:ss"),
+                data:{
+                    typePage: 'invitation',
+                    invitation : {
+                        invcode:invcode,
+                        invtitle:invtitle,
+                        invtemplatecode:invtemplatecode,
+                        visitor:visitor
+                    },
+                    main:{
+                        userid:'admin',
+                        url:page,
+                        ip_address:ip_address,
+                        uuid:wsuuid,
+                        user_agent:user_agent,
+                    }
+                }
+            }));
+            setInterval(()=>{ if(socket.readyState == WebSocket.OPEN) socket.send('__ping__'); }, 15000);
+        });
+        socket.addEventListener('error', function (error) {
+            console.log(error);
+        });
+        socket.addEventListener('message', function (event) {
+            if(event.data == '__pong__') return;
+            const objectmessage = JSON.parse(event.data);
+            try { this.dispatchEvent(new CustomEvent(objectmessage.type, {detail: objectmessage})); } catch (error) { console.log(error.message) }
+        });
+    }catch(error){console.log(error);}
+};
+initSocket();
+speedAutoScroll=1250;
+rangeAutoScroll=275;
+easingAutoScroll='easeInOutQuad'
+        </script>
+    	<script id="custom_js">
+            
+        </script>
+    </body>
+</html>

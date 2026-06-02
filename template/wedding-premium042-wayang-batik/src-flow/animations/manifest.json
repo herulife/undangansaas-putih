@@ -1,0 +1,11 @@
+{
+  "partials": [
+    "00-scroll-reveal-base.css",
+    "01-attention-seekers.css",
+    "02-back-and-bounce-in-out.css",
+    "03-fade-effects.css",
+    "04-flip-light-rotate-special.css",
+    "05-zoom-effects.css",
+    "06-slide-effects.css"
+  ]
+}

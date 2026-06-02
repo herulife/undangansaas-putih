@@ -1,0 +1,10 @@
+const fs = require('fs');
+const path = require('path');
+const root = path.resolve(__dirname, '../..');
+const flow = __dirname;
+const manifest = require('./manifest.json');
+const css = manifest.partials.map((name) => fs.readFileSync(path.join(flow, 'partials', name), 'utf8')).join('');
+fs.mkdirSync(path.join(root, 'assets/css'), { recursive: true });
+fs.writeFileSync(path.join(root, 'css/animation-scroll.css'), css);
+fs.writeFileSync(path.join(root, 'assets/css/animation-scroll.css'), css);
+console.log('rebuilt animation-scroll.css from', manifest.partials.length, 'partials');

@@ -11,9 +11,10 @@ import (
 )
 
 func (a *app) listInvitations(w http.ResponseWriter, r *http.Request) {
-	userID := ""
-	if user, err := a.authenticateRequest(r); err == nil {
-		userID = user.ID
+	user, ok := currentUserFromContext(r.Context())
+	if !ok {
+		writeError(w, http.StatusUnauthorized, errors.New("authentication required"))
+		return
 	}
 
 	rows, err := a.db.Query(r.Context(), `
@@ -30,10 +31,10 @@ func (a *app) listInvitations(w http.ResponseWriter, r *http.Request) {
 		join templates on templates.id = invitations.template_id
 		left join users on users.id = invitations.user_id
 		left join rsvps on rsvps.invitation_id = invitations.id
-		where ($1 = '' or invitations.user_id = $1::uuid)
+		where ($1 = 'admin' or invitations.user_id = $2::uuid)
 		group by invitations.id, templates.name, templates.slug, users.tier, users.tier_expires_at
 		order by invitations.created_at desc
-	`, userID)
+	`, user.Role, user.ID)
 	if err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return

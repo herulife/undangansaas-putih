@@ -1,0 +1,15 @@
+{
+  "name": "wedding-premium050-pro-match",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node ../../apps/web/node_modules/vite/bin/vite.js build",
+    "audit": "node scripts/audit-build.js",
+    "preview": "node ../../apps/web/node_modules/vite/bin/vite.js --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  }
+}

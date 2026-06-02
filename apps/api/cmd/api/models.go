@@ -206,3 +206,21 @@ type adminUserRequest struct {
 type adminPasswordRequest struct {
 	Password string `json:"password"`
 }
+
+type manualPaymentRequest struct {
+	AmountIDR       int    `json:"amountIdr"`
+	ProviderOrderID string `json:"providerOrderId"`
+	Tier            string `json:"tier"`
+	UserID          string `json:"userId"`
+}
+
+type adminTemplateRequest struct {
+	AssetsURL    string         `json:"assetsUrl"`
+	Category     string         `json:"category"`
+	ConfigSchema map[string]any `json:"configSchema"`
+	IsActive     *bool          `json:"isActive"`
+	Name         string         `json:"name"`
+	PreviewURL   string         `json:"previewUrl"`
+	Slug         string         `json:"slug"`
+	TierAccess   []string       `json:"tierAccess"`
+}

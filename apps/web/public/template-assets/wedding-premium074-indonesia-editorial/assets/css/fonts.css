@@ -1,0 +1,1376 @@
+@font-face {
+  font-family: abril;
+  src: url(../fonts/abril.ttf);
+  font-display: swap;
+}
+.ff-abril {
+  font-family: abril!important;
+}
+@font-face {
+  font-family: aero;
+  src: url(../fonts/aero.ttf);
+  font-display: swap;
+}
+.ff-aero {
+  font-family: aero!important;
+}
+@font-face {
+  font-family: agatha;
+  src: url(../fonts/agatha.ttf);
+  font-display: swap;
+}
+.ff-agatha {
+  font-family: agatha!important;
+}
+@font-face {
+  font-family: aladin;
+  src: url(../fonts/aladin.ttf);
+  font-display: swap;
+}
+.ff-aladin {
+  font-family: aladin!important;
+}
+@font-face {
+  font-family: alata;
+  src: url(../fonts/alata.ttf);
+  font-display: swap;
+}
+.ff-alata {
+  font-family: alata!important;
+}
+@font-face {
+  font-family: alesa;
+  src: url(../fonts/alesa.ttf);
+  font-display: swap;
+}
+.ff-alesa {
+  font-family: alesa!important;
+}
+@font-face {
+  font-family: aller;
+  src: url(../fonts/aller.ttf);
+  font-display: swap;
+}
+.ff-aller {
+  font-family: aller!important;
+}
+@font-face {
+  font-family: amsterdam;
+  src: url(../fonts/amsterdam.ttf);
+  font-display: swap;
+}
+.ff-amsterdam {
+  font-family: amsterdam!important;
+}
+@font-face {
+  font-family: andina;
+  src: url(../fonts/andina.otf);
+  font-display: swap;
+}
+.ff-andina {
+  font-family: andina!important;
+}
+@font-face {
+  font-family: angelique;
+  src: url(../fonts/angelique.otf);
+  font-display: swap;
+}
+.ff-angelique {
+  font-family: angelique!important;
+}
+@font-face {
+  font-family: anydore;
+  src: url(../fonts/anydore.otf);
+  font-display: swap;
+}
+.ff-anydore {
+  font-family: anydore!important;
+}
+@font-face {
+  font-family: ardila;
+  src: url(../fonts/ardila.otf);
+  font-display: swap;
+}
+.ff-ardila {
+  font-family: ardila!important;
+}
+@font-face {
+  font-family: arefruqaa;
+  src: url(../fonts/arefruqaa.ttf);
+  font-display: swap;
+}
+.ff-arefruqaa {
+  font-family: arefruqaa!important;
+}
+@font-face {
+  font-family: autumn;
+  src: url(../fonts/autumn.ttf);
+  font-display: swap;
+}
+.ff-autumn {
+  font-family: autumn!important;
+}
+@font-face {
+  font-family: babynote;
+  src: url(../fonts/babynote.ttf);
+  font-display: swap;
+}
+.ff-babynote {
+  font-family: babynote!important;
+}
+@font-face {
+  font-family: baksosapi;
+  src: url(../fonts/baksosapi.otf);
+  font-display: swap;
+}
+.ff-baksosapi {
+  font-family: baksosapi!important;
+}
+@font-face {
+  font-family: beautifully_delicious;
+  src: url(../fonts/beautifully_delicious.ttf);
+  font-display: swap;
+}
+.ff-beautifully_delicious {
+  font-family: beautifully_delicious!important;
+}
+@font-face {
+  font-family: bestfriendsignature;
+  src: url(../fonts/bestfriendsignature.ttf);
+  font-display: swap;
+}
+.ff-bestfriendsignature {
+  font-family: bestfriendsignature!important;
+}
+@font-face {
+  font-family: bigday;
+  src: url(../fonts/bigday.ttf);
+  font-display: swap;
+}
+.ff-bigday {
+  font-family: bigday!important;
+}
+@font-face {
+  font-family: birthdaynumber;
+  src: url(../fonts/birthdaynumber.ttf);
+  font-display: swap;
+}
+.ff-birthdaynumber {
+  font-family: birthdaynumber!important;
+}
+@font-face {
+  font-family: bismillah;
+  src: url(../fonts/bismillah.ttf);
+  font-display: swap;
+}
+.ff-bismillah {
+  font-family: bismillah!important;
+}
+@font-face {
+  font-family: boldblaster;
+  src: url(../fonts/boldblaster.otf);
+  font-display: swap;
+}
+.ff-boldblaster {
+  font-family: boldblaster!important;
+}
+@font-face {
+  font-family: boogalo;
+  src: url(../fonts/boogalo.ttf);
+  font-display: swap;
+}
+.ff-boogalo {
+  font-family: boogalo!important;
+}
+@font-face {
+  font-family: breadley;
+  src: url(../fonts/breadley.ttf);
+  font-display: swap;
+}
+.ff-breadley {
+  font-family: breadley!important;
+}
+@font-face {
+  font-family: bubblegum;
+  src: url(../fonts/bubblegum.ttf);
+  font-display: swap;
+}
+.ff-bubblegum {
+  font-family: bubblegum!important;
+}
+@font-face {
+  font-family: bunch;
+  src: url(../fonts/bunch.ttf);
+  font-display: swap;
+}
+.ff-bunch {
+  font-family: bunch!important;
+}
+@font-face {
+  font-family: buongiorno_rastellino;
+  src: url(../fonts/buongiorno_rastellino.otf);
+  font-display: swap;
+}
+.ff-buongiorno_rastellino {
+  font-family: buongiorno_rastellino!important;
+}
+@font-face {
+  font-family: buzz;
+  src: url(../fonts/buzz.ttf);
+  font-display: swap;
+}
+.ff-buzz {
+  font-family: buzz!important;
+}
+@font-face {
+  font-family: cabin;
+  src: url(../fonts/cabin.ttf);
+  font-display: swap;
+}
+.ff-cabin {
+  font-family: cabin!important;
+}
+@font-face {
+  font-family: cabolafe;
+  src: url(../fonts/cabolafe.otf);
+  font-display: swap;
+}
+.ff-cabolafe {
+  font-family: cabolafe!important;
+}
+@font-face {
+  font-family: caranda;
+  src: url(../fonts/caranda.ttf);
+  font-display: swap;
+}
+.ff-caranda {
+  font-family: caranda!important;
+}
+@font-face {
+  font-family: casseron;
+  src: url(../fonts/casseron.otf);
+  font-display: swap;
+}
+.ff-casseron {
+  font-family: casseron!important;
+}
+@font-face {
+  font-family: caveat;
+  src: url(../fonts/caveat.ttf);
+  font-display: swap;
+}
+.ff-caveat {
+  font-family: caveat!important;
+}
+@font-face {
+  font-family: charming;
+  src: url(../fonts/charming.otf);
+  font-display: swap;
+}
+.ff-charming {
+  font-family: charming!important;
+}
+@font-face {
+  font-family: cheri;
+  src: url(../fonts/cheri.ttf);
+  font-display: swap;
+}
+.ff-cheri {
+  font-family: cheri!important;
+}
+@font-face {
+  font-family: chocolate;
+  src: url(../fonts/chocolate.ttf);
+  font-display: swap;
+}
+.ff-chocolate {
+  font-family: chocolate!important;
+}
+@font-face {
+  font-family: chunky;
+  src: url(../fonts/chunky.otf);
+  font-display: swap;
+}
+.ff-chunky {
+  font-family: chunky!important;
+}
+@font-face {
+  font-family: cinzel;
+  src: url(../fonts/cinzel.ttf);
+  font-display: swap;
+}
+.ff-cinzel {
+  font-family: cinzel!important;
+}
+@font-face {
+  font-family: cointa;
+  src: url(../fonts/cointa.ttf);
+  font-display: swap;
+}
+.ff-cointa {
+  font-family: cointa!important;
+}
+@font-face {
+  font-family: concert;
+  src: url(../fonts/concert.ttf);
+  font-display: swap;
+}
+.ff-concert {
+  font-family: concert!important;
+}
+@font-face {
+  font-family: cool;
+  src: url(../fonts/cool.ttf);
+  font-display: swap;
+}
+.ff-cool {
+  font-family: cool!important;
+}
+@font-face {
+  font-family: coolvetica;
+  src: url(../fonts/coolvetica.otf);
+  font-display: swap;
+}
+.ff-coolvetica {
+  font-family: coolvetica!important;
+}
+@font-face {
+  font-family: courgette;
+  src: url(../fonts/courgette.ttf);
+  font-display: swap;
+}
+.ff-courgette {
+  font-family: courgette!important;
+}
+@font-face {
+  font-family: daylove;
+  src: url(../fonts/daylove.ttf);
+  font-display: swap;
+}
+.ff-daylove {
+  font-family: daylove!important;
+}
+@font-face {
+  font-family: digigraphics;
+  src: url(../fonts/digigraphics.ttf);
+  font-display: swap;
+}
+.ff-digigraphics {
+  font-family: digigraphics!important;
+}
+@font-face {
+  font-family: digitalanarchy;
+  src: url(../fonts/digitalanarchy.ttf);
+  font-display: swap;
+}
+.ff-digitalanarchy {
+  font-family: digitalanarchy!important;
+}
+@font-face {
+  font-family: dmsans;
+  src: url(../fonts/dmsans.ttf);
+  font-display: swap;
+}
+.ff-dmsans {
+  font-family: dmsans!important;
+}
+@font-face {
+  font-family: dreamwood;
+  src: url(../fonts/dreamwood.ttf);
+  font-display: swap;
+}
+.ff-dreamwood {
+  font-family: dreamwood!important;
+}
+@font-face {
+  font-family: editundo;
+  src: url(../fonts/editundo.ttf);
+  font-display: swap;
+}
+.ff-editundo {
+  font-family: editundo!important;
+}
+@font-face {
+  font-family: edundot;
+  src: url(../fonts/edundot.ttf);
+  font-display: swap;
+}
+.ff-edundot {
+  font-family: edundot!important;
+}
+@font-face {
+  font-family: edunline;
+  src: url(../fonts/edunline.ttf);
+  font-display: swap;
+}
+.ff-edunline {
+  font-family: edunline!important;
+}
+@font-face {
+  font-family: federo;
+  src: url(../fonts/federo.ttf);
+  font-display: swap;
+}
+.ff-federo {
+  font-family: federo!important;
+}
+@font-face {
+  font-family: fontello;
+  src: url(../fonts/fontello.eot);
+  font-display: swap;
+}
+.ff-fontello {
+  font-family: fontello!important;
+}
+@font-face {
+  font-family: fontello;
+  src: url(../fonts/fontello.ttf);
+  font-display: swap;
+}
+.ff-fontello {
+  font-family: fontello!important;
+}
+@font-face {
+  font-family: fontello;
+  src: url(../fonts/fontello.woff);
+  font-display: swap;
+}
+.ff-fontello {
+  font-family: fontello!important;
+}
+@font-face {
+  font-family: free_serif;
+  src: url(../fonts/free_serif.otf);
+  font-display: swap;
+}
+.ff-free_serif {
+  font-family: free_serif!important;
+}
+@font-face {
+  font-family: friday;
+  src: url(../fonts/friday.otf);
+  font-display: swap;
+}
+.ff-friday {
+  font-family: friday!important;
+}
+@font-face {
+  font-family: ghostlike;
+  src: url(../fonts/ghostlike.ttf);
+  font-display: swap;
+}
+.ff-ghostlike {
+  font-family: ghostlike!important;
+}
+@font-face {
+  font-family: glacial;
+  src: url(../fonts/glacial.otf);
+  font-display: swap;
+}
+.ff-glacial {
+  font-family: glacial!important;
+}
+@font-face {
+  font-family: glitter;
+  src: url(../fonts/glitter.ttf);
+  font-display: swap;
+}
+.ff-glitter {
+  font-family: glitter!important;
+}
+@font-face {
+  font-family: glory;
+  src: url(../fonts/glory.otf);
+  font-display: swap;
+}
+.ff-glory {
+  font-family: glory!important;
+}
+@font-face {
+  font-family: grinched;
+  src: url(../fonts/grinched.otf);
+  font-display: swap;
+}
+.ff-grinched {
+  font-family: grinched!important;
+}
+@font-face {
+  font-family: grinched2;
+  src: url(../fonts/grinched2.otf);
+  font-display: swap;
+}
+.ff-grinched2 {
+  font-family: grinched2!important;
+}
+@font-face {
+  font-family: handlee;
+  src: url(../fonts/handlee.ttf);
+  font-display: swap;
+}
+.ff-handlee {
+  font-family: handlee!important;
+}
+@font-face {
+  font-family: happyending;
+  src: url(../fonts/happyending.ttf);
+  font-display: swap;
+}
+.ff-happyending {
+  font-family: happyending!important;
+}
+@font-face {
+  font-family: happyschool;
+  src: url(../fonts/happyschool.ttf);
+  font-display: swap;
+}
+.ff-happyschool {
+  font-family: happyschool!important;
+}
+@font-face {
+  font-family: heartbeat;
+  src: url(../fonts/heartbeat.ttf);
+  font-display: swap;
+}
+.ff-heartbeat {
+  font-family: heartbeat!important;
+}
+@font-face {
+  font-family: heartbit;
+  src: url(../fonts/heartbit.otf);
+  font-display: swap;
+}
+.ff-heartbit {
+  font-family: heartbit!important;
+}
+@font-face {
+  font-family: hellohoney;
+  src: url(../fonts/hellohoney.otf);
+  font-display: swap;
+}
+.ff-hellohoney {
+  font-family: hellohoney!important;
+}
+@font-face {
+  font-family: heycomic;
+  src: url(../fonts/heycomic.ttf);
+  font-display: swap;
+}
+.ff-heycomic {
+  font-family: heycomic!important;
+}
+@font-face {
+  font-family: hollens;
+  src: url(../fonts/hollens.otf);
+  font-display: swap;
+}
+.ff-hollens {
+  font-family: hollens!important;
+}
+@font-face {
+  font-family: homemade_apple;
+  src: url(../fonts/homemade_apple.ttf);
+  font-display: swap;
+}
+.ff-homemade_apple {
+  font-family: homemade_apple!important;
+}
+@font-face {
+  font-family: homemadesausage;
+  src: url(../fonts/homemadesausage.ttf);
+  font-display: swap;
+}
+.ff-homemadesausage {
+  font-family: homemadesausage!important;
+}
+@font-face {
+  font-family: indieflower;
+  src: url(../fonts/indieflower.ttf);
+  font-display: swap;
+}
+.ff-indieflower {
+  font-family: indieflower!important;
+}
+@font-face {
+  font-family: inlove;
+  src: url(../fonts/inlove.ttf);
+  font-display: swap;
+}
+.ff-inlove {
+  font-family: inlove!important;
+}
+@font-face {
+  font-family: inter_regular;
+  src: url(../fonts/inter_regular.ttf);
+  font-display: swap;
+}
+.ff-inter_regular {
+  font-family: inter_regular!important;
+}
+@font-face {
+  font-family: itim;
+  src: url(../fonts/itim.ttf);
+  font-display: swap;
+}
+.ff-itim {
+  font-family: itim!important;
+}
+@font-face {
+  font-family: josefin;
+  src: url(../fonts/josefin.ttf);
+  font-display: swap;
+}
+.ff-josefin {
+  font-family: josefin!important;
+}
+@font-face {
+  font-family: juliaantoni;
+  src: url(../fonts/juliaantoni.ttf);
+  font-display: swap;
+}
+.ff-juliaantoni {
+  font-family: juliaantoni!important;
+}
+@font-face {
+  font-family: justbreathe;
+  src: url(../fonts/justbreathe.otf);
+  font-display: swap;
+}
+.ff-justbreathe {
+  font-family: justbreathe!important;
+}
+@font-face {
+  font-family: kalam;
+  src: url(../fonts/kalam.ttf);
+  font-display: swap;
+}
+.ff-kalam {
+  font-family: kalam!important;
+}
+@font-face {
+  font-family: katrine;
+  src: url(../fonts/katrine.ttf);
+  font-display: swap;
+}
+.ff-katrine {
+  font-family: katrine!important;
+}
+@font-face {
+  font-family: kgchasing;
+  src: url(../fonts/kgchasing.ttf);
+  font-display: swap;
+}
+.ff-kgchasing {
+  font-family: kgchasing!important;
+}
+@font-face {
+  font-family: kgroyal;
+  src: url(../fonts/kgroyal.ttf);
+  font-display: swap;
+}
+.ff-kgroyal {
+  font-family: kgroyal!important;
+}
+@font-face {
+  font-family: kids;
+  src: url(../fonts/kids.ttf);
+  font-display: swap;
+}
+.ff-kids {
+  font-family: kids!important;
+}
+@font-face {
+  font-family: kinlove;
+  src: url(../fonts/kinlove.ttf);
+  font-display: swap;
+}
+.ff-kinlove {
+  font-family: kinlove!important;
+}
+@font-face {
+  font-family: knewave;
+  src: url(../fonts/knewave.ttf);
+  font-display: swap;
+}
+.ff-knewave {
+  font-family: knewave!important;
+}
+@font-face {
+  font-family: lamor;
+  src: url(../fonts/lamor.ttf);
+  font-display: swap;
+}
+.ff-lamor {
+  font-family: lamor!important;
+}
+@font-face {
+  font-family: librebaskerville_regular;
+  src: url(../fonts/librebaskerville_regular.ttf);
+  font-display: swap;
+}
+.ff-librebaskerville_regular {
+  font-family: librebaskerville_regular!important;
+}
+@font-face {
+  font-family: lietome;
+  src: url(../fonts/lietome.otf);
+  font-display: swap;
+}
+.ff-lietome {
+  font-family: lietome!important;
+}
+@font-face {
+  font-family: lifesaves;
+  src: url(../fonts/lifesaves.ttf);
+  font-display: swap;
+}
+.ff-lifesaves {
+  font-family: lifesaves!important;
+}
+@font-face {
+  font-family: lobster;
+  src: url(../fonts/lobster.otf);
+  font-display: swap;
+}
+.ff-lobster {
+  font-family: lobster!important;
+}
+@font-face {
+  font-family: love1;
+  src: url(../fonts/love1.ttf);
+  font-display: swap;
+}
+.ff-love1 {
+  font-family: love1!important;
+}
+@font-face {
+  font-family: love2;
+  src: url(../fonts/love2.ttf);
+  font-display: swap;
+}
+.ff-love2 {
+  font-family: love2!important;
+}
+@font-face {
+  font-family: lovea;
+  src: url(../fonts/lovea.ttf);
+  font-display: swap;
+}
+.ff-lovea {
+  font-family: lovea!important;
+}
+@font-face {
+  font-family: lovely;
+  src: url(../fonts/lovely.otf);
+  font-display: swap;
+}
+.ff-lovely {
+  font-family: lovely!important;
+}
+@font-face {
+  font-family: lovemy;
+  src: url(../fonts/lovemy.ttf);
+  font-display: swap;
+}
+.ff-lovemy {
+  font-family: lovemy!important;
+}
+@font-face {
+  font-family: ltcomical;
+  src: url(../fonts/ltcomical.ttf);
+  font-display: swap;
+}
+.ff-ltcomical {
+  font-family: ltcomical!important;
+}
+@font-face {
+  font-family: lyra;
+  src: url(../fonts/lyra.otf);
+  font-display: swap;
+}
+.ff-lyra {
+  font-family: lyra!important;
+}
+@font-face {
+  font-family: madelican;
+  src: url(../fonts/madelican.otf);
+  font-display: swap;
+}
+.ff-madelican {
+  font-family: madelican!important;
+}
+@font-face {
+  font-family: madeline;
+  src: url(../fonts/madeline.otf);
+  font-display: swap;
+}
+.ff-madeline {
+  font-family: madeline!important;
+}
+@font-face {
+  font-family: magdonlina;
+  src: url(../fonts/magdonlina.ttf);
+  font-display: swap;
+}
+.ff-magdonlina {
+  font-family: magdonlina!important;
+}
+@font-face {
+  font-family: magtina;
+  src: url(../fonts/magtina.otf);
+  font-display: swap;
+}
+.ff-magtina {
+  font-family: magtina!important;
+}
+@font-face {
+  font-family: magtina;
+  src: url(../fonts/magtina.ttf);
+  font-display: swap;
+}
+.ff-magtina {
+  font-family: magtina!important;
+}
+@font-face {
+  font-family: maple;
+  src: url(../fonts/maple.otf);
+  font-display: swap;
+}
+.ff-maple {
+  font-family: maple!important;
+}
+@font-face {
+  font-family: marcellus;
+  src: url(../fonts/marcellus.ttf);
+  font-display: swap;
+}
+.ff-marcellus {
+  font-family: marcellus!important;
+}
+@font-face {
+  font-family: marry;
+  src: url(../fonts/marry.ttf);
+  font-display: swap;
+}
+.ff-marry {
+  font-family: marry!important;
+}
+@font-face {
+  font-family: metal;
+  src: url(../fonts/metal.ttf);
+  font-display: swap;
+}
+.ff-metal {
+  font-family: metal!important;
+}
+@font-face {
+  font-family: mirza;
+  src: url(../fonts/mirza.ttf);
+  font-display: swap;
+}
+.ff-mirza {
+  font-family: mirza!important;
+}
+@font-face {
+  font-family: montez;
+  src: url(../fonts/montez.ttf);
+  font-display: swap;
+}
+.ff-montez {
+  font-family: montez!important;
+}
+@font-face {
+  font-family: mossion;
+  src: url(../fonts/mossion.otf);
+  font-display: swap;
+}
+.ff-mossion {
+  font-family: mossion!important;
+}
+@font-face {
+  font-family: mylove;
+  src: url(../fonts/mylove.ttf);
+  font-display: swap;
+}
+.ff-mylove {
+  font-family: mylove!important;
+}
+@font-face {
+  font-family: natyl;
+  src: url(../fonts/natyl.ttf);
+  font-display: swap;
+}
+.ff-natyl {
+  font-family: natyl!important;
+}
+@font-face {
+  font-family: neonpixel;
+  src: url(../fonts/neonpixel.ttf);
+  font-display: swap;
+}
+.ff-neonpixel {
+  font-family: neonpixel!important;
+}
+@font-face {
+  font-family: opensans;
+  src: url(../fonts/opensans.ttf);
+  font-display: swap;
+}
+.ff-opensans {
+  font-family: opensans!important;
+}
+@font-face {
+  font-family: oregano;
+  src: url(../fonts/oregano.ttf);
+  font-display: swap;
+}
+.ff-oregano {
+  font-family: oregano!important;
+}
+@font-face {
+  font-family: pacifico;
+  src: url(../fonts/pacifico.ttf);
+  font-display: swap;
+}
+.ff-pacifico {
+  font-family: pacifico!important;
+}
+@font-face {
+  font-family: passion;
+  src: url(../fonts/passion.ttf);
+  font-display: swap;
+}
+.ff-passion {
+  font-family: passion!important;
+}
+@font-face {
+  font-family: philosoper;
+  src: url(../fonts/philosoper.ttf);
+  font-display: swap;
+}
+.ff-philosoper {
+  font-family: philosoper!important;
+}
+@font-face {
+  font-family: pinkerton_script_regular;
+  src: url(../fonts/pinkerton_script_regular.otf);
+  font-display: swap;
+}
+.ff-pinkerton_script_regular {
+  font-family: pinkerton_script_regular!important;
+}
+@font-face {
+  font-family: pinkerton_upcase_regular;
+  src: url(../fonts/pinkerton_upcase_regular.otf);
+  font-display: swap;
+}
+.ff-pinkerton_upcase_regular {
+  font-family: pinkerton_upcase_regular!important;
+}
+@font-face {
+  font-family: pinyonscript_regular;
+  src: url(../fonts/pinyonscript_regular.otf);
+  font-display: swap;
+}
+.ff-pinyonscript_regular {
+  font-family: pinyonscript_regular!important;
+}
+@font-face {
+  font-family: plante;
+  src: url(../fonts/plante.ttf);
+  font-display: swap;
+}
+.ff-plante {
+  font-family: plante!important;
+}
+@font-face {
+  font-family: playtime;
+  src: url(../fonts/playtime.otf);
+  font-display: swap;
+}
+.ff-playtime {
+  font-family: playtime!important;
+}
+@font-face {
+  font-family: pompiere;
+  src: url(../fonts/pompiere.ttf);
+  font-display: swap;
+}
+.ff-pompiere {
+  font-family: pompiere!important;
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/poppins.ttf);
+  font-display: swap;
+}
+.ff-poppins {
+  font-family: poppins!important;
+}
+@font-face {
+  font-family: presstart;
+  src: url(../fonts/presstart.ttf);
+  font-display: swap;
+}
+.ff-presstart {
+  font-family: presstart!important;
+}
+@font-face {
+  font-family: qafinte;
+  src: url(../fonts/qafinte.otf);
+  font-display: swap;
+}
+.ff-qafinte {
+  font-family: qafinte!important;
+}
+@font-face {
+  font-family: quanto;
+  src: url(../fonts/quanto.ttf);
+  font-display: swap;
+}
+.ff-quanto {
+  font-family: quanto!important;
+}
+@font-face {
+  font-family: quickkiss;
+  src: url(../fonts/quickkiss.ttf);
+  font-display: swap;
+}
+.ff-quickkiss {
+  font-family: quickkiss!important;
+}
+@font-face {
+  font-family: rampartone;
+  src: url(../fonts/rampartone.ttf);
+  font-display: swap;
+}
+.ff-rampartone {
+  font-family: rampartone!important;
+}
+@font-face {
+  font-family: rancho;
+  src: url(../fonts/rancho.ttf);
+  font-display: swap;
+}
+.ff-rancho {
+  font-family: rancho!important;
+}
+@font-face {
+  font-family: rastica;
+  src: url(../fonts/rastica.otf);
+  font-display: swap;
+}
+.ff-rastica {
+  font-family: rastica!important;
+}
+@font-face {
+  font-family: reemkufi;
+  src: url(../fonts/reemkufi.ttf);
+  font-display: swap;
+}
+.ff-reemkufi {
+  font-family: reemkufi!important;
+}
+@font-face {
+  font-family: reeniebeanie;
+  src: url(../fonts/reeniebeanie.ttf);
+  font-display: swap;
+}
+.ff-reeniebeanie {
+  font-family: reeniebeanie!important;
+}
+@font-face {
+  font-family: remachine;
+  src: url(../fonts/remachine.ttf);
+  font-display: swap;
+}
+.ff-remachine {
+  font-family: remachine!important;
+}
+@font-face {
+  font-family: rilenda;
+  src: url(../fonts/rilenda.otf);
+  font-display: swap;
+}
+.ff-rilenda {
+  font-family: rilenda!important;
+}
+@font-face {
+  font-family: ringlove;
+  src: url(../fonts/ringlove.otf);
+  font-display: swap;
+}
+.ff-ringlove {
+  font-family: ringlove!important;
+}
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/roboto.ttf);
+  font-display: swap;
+}
+.ff-roboto {
+  font-family: roboto!important;
+}
+@font-face {
+  font-family: rosalia;
+  src: url(../fonts/rosalia.ttf);
+  font-display: swap;
+}
+.ff-rosalia {
+  font-family: rosalia!important;
+}
+@font-face {
+  font-family: rosalia2;
+  src: url(../fonts/rosalia2.ttf);
+  font-display: swap;
+}
+.ff-rosalia2 {
+  font-family: rosalia2!important;
+}
+@font-face {
+  font-family: scrament;
+  src: url(../fonts/scrament.ttf);
+  font-display: swap;
+}
+.ff-scrament {
+  font-family: scrament!important;
+}
+@font-face {
+  font-family: screamingneon;
+  src: url(../fonts/screamingneon.ttf);
+  font-display: swap;
+}
+.ff-screamingneon {
+  font-family: screamingneon!important;
+}
+@font-face {
+  font-family: selfdecepti;
+  src: url(../fonts/selfdecepti.ttf);
+  font-display: swap;
+}
+.ff-selfdecepti {
+  font-family: selfdecepti!important;
+}
+@font-face {
+  font-family: selly;
+  src: url(../fonts/selly.ttf);
+  font-display: swap;
+}
+.ff-selly {
+  font-family: selly!important;
+}
+@font-face {
+  font-family: shiftynote;
+  src: url(../fonts/shiftynote.ttf);
+  font-display: swap;
+}
+.ff-shiftynote {
+  font-family: shiftynote!important;
+}
+@font-face {
+  font-family: signika;
+  src: url(../fonts/signika.ttf);
+  font-display: swap;
+}
+.ff-signika {
+  font-family: signika!important;
+}
+@font-face {
+  font-family: singleday;
+  src: url(../fonts/singleday.ttf);
+  font-display: swap;
+}
+.ff-singleday {
+  font-family: singleday!important;
+}
+@font-face {
+  font-family: spiritednote;
+  src: url(../fonts/spiritednote.ttf);
+  font-display: swap;
+}
+.ff-spiritednote {
+  font-family: spiritednote!important;
+}
+@font-face {
+  font-family: squaresandserif;
+  src: url(../fonts/squaresandserif.ttf);
+  font-display: swap;
+}
+.ff-squaresandserif {
+  font-family: squaresandserif!important;
+}
+@font-face {
+  font-family: statisfy;
+  src: url(../fonts/statisfy.ttf);
+  font-display: swap;
+}
+.ff-statisfy {
+  font-family: statisfy!important;
+}
+@font-face {
+  font-family: still;
+  src: url(../fonts/still.ttf);
+  font-display: swap;
+}
+.ff-still {
+  font-family: still!important;
+}
+@font-face {
+  font-family: stylish;
+  src: url(../fonts/stylish.ttf);
+  font-display: swap;
+}
+.ff-stylish {
+  font-family: stylish!important;
+}
+@font-face {
+  font-family: sueellenfransisco;
+  src: url(../fonts/sueellenfransisco.ttf);
+  font-display: swap;
+}
+.ff-sueellenfransisco {
+  font-family: sueellenfransisco!important;
+}
+@font-face {
+  font-family: sugiyama;
+  src: url(../fonts/sugiyama.ttf);
+  font-display: swap;
+}
+.ff-sugiyama {
+  font-family: sugiyama!important;
+}
+@font-face {
+  font-family: summer;
+  src: url(../fonts/summer.ttf);
+  font-display: swap;
+}
+.ff-summer {
+  font-family: summer!important;
+}
+@font-face {
+  font-family: summerday;
+  src: url(../fonts/summerday.ttf);
+  font-display: swap;
+}
+.ff-summerday {
+  font-family: summerday!important;
+}
+@font-face {
+  font-family: sweet;
+  src: url(../fonts/sweet.ttf);
+  font-display: swap;
+}
+.ff-sweet {
+  font-family: sweet!important;
+}
+@font-face {
+  font-family: sweetie;
+  src: url(../fonts/sweetie.ttf);
+  font-display: swap;
+}
+.ff-sweetie {
+  font-family: sweetie!important;
+}
+@font-face {
+  font-family: sweetsensations;
+  src: url(../fonts/sweetsensations.ttf);
+  font-display: swap;
+}
+.ff-sweetsensations {
+  font-family: sweetsensations!important;
+}
+@font-face {
+  font-family: sweetyellow;
+  src: url(../fonts/sweetyellow.ttf);
+  font-display: swap;
+}
+.ff-sweetyellow {
+  font-family: sweetyellow!important;
+}
+@font-face {
+  font-family: tangerine;
+  src: url(../fonts/tangerine.ttf);
+  font-display: swap;
+}
+.ff-tangerine {
+  font-family: tangerine!important;
+}
+@font-face {
+  font-family: texgyreadventor;
+  src: url(../fonts/texgyreadventor.otf);
+  font-display: swap;
+}
+.ff-texgyreadventor {
+  font-family: texgyreadventor!important;
+}
+@font-face {
+  font-family: thankyousomuch;
+  src: url(../fonts/thankyousomuch.otf);
+  font-display: swap;
+}
+.ff-thankyousomuch {
+  font-family: thankyousomuch!important;
+}
+@font-face {
+  font-family: theheart;
+  src: url(../fonts/theheart.ttf);
+  font-display: swap;
+}
+.ff-theheart {
+  font-family: theheart!important;
+}
+@font-face {
+  font-family: theseasons;
+  src: url(../fonts/theseasons.otf);
+  font-display: swap;
+}
+.ff-theseasons {
+  font-family: theseasons!important;
+}
+@font-face {
+  font-family: titanone;
+  src: url(../fonts/titanone.ttf);
+  font-display: swap;
+}
+.ff-titanone {
+  font-family: titanone!important;
+}
+@font-face {
+  font-family: valentday;
+  src: url(../fonts/valentday.otf);
+  font-display: swap;
+}
+.ff-valentday {
+  font-family: valentday!important;
+}
+@font-face {
+  font-family: valeyola;
+  src: url(../fonts/valeyola.otf);
+  font-display: swap;
+}
+.ff-valeyola {
+  font-family: valeyola!important;
+}
+@font-face {
+  font-family: vibes;
+  src: url(../fonts/vibes.ttf);
+  font-display: swap;
+}
+.ff-vibes {
+  font-family: vibes!important;
+}
+@font-face {
+  font-family: watermelon;
+  src: url(../fonts/watermelon.ttf);
+  font-display: swap;
+}
+.ff-watermelon {
+  font-family: watermelon!important;
+}
+@font-face {
+  font-family: wedding;
+  src: url(../fonts/wedding.otf);
+  font-display: swap;
+}
+.ff-wedding {
+  font-family: wedding!important;
+}

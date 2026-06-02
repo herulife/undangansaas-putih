@@ -1,0 +1,178 @@
+============================================================
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+Platform Undangan Digital – LinkUndangan (MVP)
+Versi: 1.0
+Tanggal: 31 Mei 2026
+Status: Draft – Ready for Development
+============================================================
+
+1. RINGKASAN PRODUK
+-------------------
+Nama Produk      : LinkUndangan
+Tagline          : "Buat undangan digitalmu, gratis dan mudah"
+Jenis Platform   : Web-based (responsive), SPA
+Value Proposition: Membuat undangan digital tanpa biaya, tanpa masa aktif, 
+                   dapat diedit kapan saja, mudah disebar via tautan.
+Target Pengguna  : Individu/pasangan yang mengadakan acara (pernikahan, 
+                   khitanan, ulang tahun, wisuda, anniversary, dll.)
+Model Bisnis     : Freemium (gratis + paket premium mulai Rp39k)
+
+2. TUJUAN PRODUK
+----------------
+- Pengguna dapat membuat undangan digital dalam waktu < 5 menit.
+- Tautan undangan tidak kedaluwarsa.
+- Antarmuka sederhana dan intuitif (non-teknis bisa pakai).
+- Fitur dasar cukup untuk menggantikan undangan fisik.
+- Mendukung pelacakan konfirmasi tamu (RSVP) dan buku tamu.
+
+3. FITUR FUNGSIONAL (MVP)
+--------------------------
+
+3.1 Manajemen Pengguna
+ID     | Fitur                         | Deskripsi
+U-01   | Registrasi/Login via WA       | Input nomor WA, kirim OTP (simulasi), verifikasi.
+U-02   | Dashboard                     | Daftar undangan + tombol buat baru.
+U-03   | Logout                        | Hapus sesi dari localStorage.
+
+3.2 Pembuatan Undangan
+ID     | Fitur                         | Deskripsi
+I-01   | Pilih Jenis Acara             | Radio: Pernikahan, Khitanan, Ulang Tahun, Wisuda, Anniversary, Lainnya.
+I-02   | Data Acara                    | Nama acara, tanggal, waktu, alamat, link Google Maps (opsional).
+I-03   | Pilih Template                | Galeri minimal 6 template (gambar preview, nama, harga).
+I-04   | Kustomisasi Dasar             | Upload foto sampul, galeri foto (3-20), musik latar (opsional), 
+                                   warna tema (5 pilihan), font (3 pilihan).
+I-05   | Titip Kado (opsional)         | Toggle aktif/nonaktif, input rekening/tautan donasi.
+I-06   | Preview                       | Ringkasan undangan sebelum publikasi.
+I-07   | Publikasi                     | Generate slug unik, simpan ke localStorage, alert sukses.
+
+3.3 Pengelolaan Undangan (Setelah Terbit)
+ID     | Fitur                         | Deskripsi
+M-01   | Edit Undangan                 | Ubah semua data kapan saja.
+M-02   | Statistik Dasar               | Jumlah buka undangan, RSVP hadir/tidak, pesan buku tamu (simulasi).
+M-03   | Kelola Tamu                   | Input manual daftar tamu (nama, nomor WA), edit, hapus.
+M-04   | Bagikan & QR                  | Tampilkan tautan, QR code placeholder, copy link, share WA.
+M-05   | Hapus Undangan                | Konfirmasi hapus dari localStorage.
+
+3.4 Halaman Tamu (Guest View)
+ID     | Fitur                         | Deskripsi
+G-01   | Tampilan Undangan             | Responsif: sampul, nama acara, tanggal, waktu, alamat.
+G-02   | Countdown Timer               | Hitung mundur ke tanggal acara (jika belum lewat).
+G-03   | Peta Lokasi                   | Tombol buka Google Maps.
+G-04   | Galeri Foto                   | Grid foto yang diupload.
+G-05   | Musik Latar                   | Pemutar audio (play/pause).
+G-06   | RSVP                          | Form nama, hadir/tidak, jumlah tamu, pesan. Data disimpan.
+G-07   | Buku Tamu                     | Menampilkan pesan tamu + form untuk menulis pesan baru.
+G-08   | Titip Kado                    | Menampilkan rekening/tautan donasi (jika diaktifkan).
+G-09   | Simpan ke Google Calendar     | Tombol dengan alert simulasi.
+G-10   | Bagikan Undangan              | Tombol share ke WhatsApp (alert).
+
+3.5 Layanan "Dibuatin Admin"
+ID     | Fitur                         | Deskripsi
+A-01   | Form Permintaan               | Setelah login, form singkat kirim data ke admin.
+A-02   | Notifikasi Admin              | Alert "Permintaan dikirim, admin akan menghubungi via WA".
+
+4. ATURAN BISNIS
+----------------
+- Undangan tidak memiliki masa aktif (tautan abadi kecuali dihapus pembuat).
+- Setiap undangan memiliki slug unik (format: inv_timestamp).
+- Tamu tidak perlu login untuk mengisi RSVP atau buku tamu.
+- Data disimpan di localStorage browser (untuk mockup).
+- Paket premium hanya display (tidak ada pembayaran sungguhan di mockup).
+- Pengguna dapat membuat undangan tidak terbatas.
+
+5. ALUR PENGGUNA (RINGKASAN)
+----------------------------
+1) Buka website -> Klik "Buat Undangan" -> Login via WA -> Dashboard
+2) Buat undangan baru -> Isi data -> Pilih template -> Kustomisasi -> Preview -> Publikasi -> Dapat tautan
+3) Kelola undangan -> Dashboard -> Pilih undangan -> Edit / Statistik / Kelola Tamu / Bagikan / Hapus
+4) Tamu buka tautan -> Lihat undangan -> RSVP / Tulis pesan / Lihat peta / Kirim kado (opsional)
+5) Layanan admin -> Login -> Pilih "Dibuatin Admin" -> Kirim data -> Admin proses (simulasi)
+
+6. KEBUTUHAN NON-FUNGSIONAL
+---------------------------
+- Platform: Web, browser modern (Chrome, Firefox, Safari, Edge)
+- Responsivitas: Mobile-first, adaptif tablet & desktop
+- Performa: Muat halaman < 3 detik (mockup ringan)
+- Keamanan: Tidak ada persyaratan khusus untuk mockup
+- Aksesibilitas: Kontras cukup, label form, navigasi keyboard
+- Dependensi: FontAwesome, Google Fonts (CDN). Tanpa backend.
+
+7. STRUKTUR DATA (localStorage)
+-------------------------------
+User:
+{
+  phone: "081234567890",
+  loggedIn: true,
+  name: "User 081234567890"
+}
+
+Invitation:
+{
+  id: "inv_1717180800000",
+  slug: "inv_1717180800000",
+  eventType: "Pernikahan",
+  eventName: "Pernikahan Andi & Sari",
+  eventDate: "2026-12-20",
+  eventTime: "10:00",
+  address: "Jl. Merdeka No. 1, Jakarta",
+  mapsLink: "https://maps.google.com/...",
+  template: "Elegan-Gold",
+  coverPhoto: "filename.jpg",
+  gallery: ["foto1.jpg", "foto2.jpg"],
+  musicUrl: "",
+  colorTheme: "Emas",
+  font: "Serif",
+  giftEnabled: true,
+  giftLink: "https://saweria.co/...",
+  guestList: [{ name: "Budi", phone: "0812..." }],
+  rsvpList: [{ name: "Budi", status: "Hadir", guests: 2, message: "Selamat!" }],
+  guestbook: [{ name: "Ani", message: "Semoga bahagia" }],
+  stats: { views: 42, rsvpHadir: 15, rsvpTidak: 3, messages: 8 }
+}
+
+8. HALAMAN & NAVIGASI
+---------------------
+| Halaman            | Simulasi URL       | Deskripsi
+| Beranda            | #beranda           | Landing page + showcase template + fitur
+| Login              | #login             | Form WA OTP
+| Dashboard          | #dashboard         | Daftar undangan milik user
+| Buat Undangan      | #create            | Multi-step form
+| Kelola Undangan    | #manage?id=xxx     | Edit, statistik, bagikan, hapus
+| Guest View         | #invite?slug=xxx   | Tampilan tamu (bisa modal atau halaman terpisah)
+
+9. BATASAN (OUT OF SCOPE) – TIDAK termasuk di MVP ini
+------------------------------------------------------
+- AI Assistant (pengingat otomatis)
+- Guestlist Intelligence (upload Excel, tag VIP)
+- Digital Photobooth
+- Collaborative Playlist
+- To-Do List & Budgeting
+- Vendor Management & AI Analysis
+- Seating Arrangement
+- Ekspor laporan ke PDF/Excel
+- Pembayaran online sungguhan
+- Backend API dan database sungguhan
+- Autentikasi OTP sungguhan
+- Admin panel untuk semua user
+
+10. METRIK KESUKSESAN (MVP)
+---------------------------
+- Waktu pembuatan undangan < 5 menit
+- > 90% pengguna yang memulai form berhasil publikasi
+- Rata-rata undangan per user: 1-3
+- Tingkat kepuasan (survei) > 4/5
+
+11. LAMPIRAN
+------------
+- Prompt untuk Stitch AI (terpisah)
+- Diagram alir (terpisah)
+- Desain referensi: indoinvite.com
+
+12. PERSETUJUAN
+---------------
+Peran               | Nama               | Tanggal      | Tanda Tangan
+Product Owner       | [Nama Anda]        | 31/05/2026   | _________
+Lead Developer      | _______            | _______      | _________
+Designer            | _______            | _______      | _________
+
+-- End of PRD --

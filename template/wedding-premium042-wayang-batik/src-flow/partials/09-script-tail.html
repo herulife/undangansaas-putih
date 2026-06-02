@@ -1,0 +1,361 @@
+<div id="custom_element">
+    
+</div>
+<script src="./assets/js/linkundangan-helpers.js"></script>
+<script src="./assets/vendor/moment/moment.min.js"></script>
+<script>moment.locale('id');</script>
+<script>console.log("Analytics disabled for local template 042");</script>
+<script src="./assets/js/animation-scroll.js"></script>
+<script src="./assets/vendor/toast/toastr.min.js"></script>
+<script src="./assets/js/clipboard.min.js"></script>
+<script src="./assets/vendor/uuid/uuid.js"></script>
+<script>console.log("Websocket library disabled for local template 042");</script>
+<script src="./assets/js/jquery-easing.js"></script>
+<script src="./assets/js/image-slider.js"></script>
+<script>
+console.log("===============================================");
+console.log("%c𝗦𝗘𝗖𝗨𝗥𝗜𝗧𝗬 𝗡𝗢𝗧𝗜𝗖𝗘", "color:red;font-size:17px;");
+console.log(`===============================================
+
+Halo Kak Mohon Maaf Sekali, Saat ini kami tidak membuka program Bug Bounty atau menerima laporan kerentanan keamanan :).
+
+Segala bentuk pengujian keamanan tanpa izin resmi merupakan tindakan yang tidak diperkenankan.
+
+Terima kasih atas pengertiannya.
+
+===============================================
+
+`);
+</script>        <script src="./assets/js/bootstrap5-template.bundle.min.js"></script>
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/template-042.js" id='particles-js'></script>
+
+<script src="./assets/js/jquery.zoomslider.min.js"></script>
+
+<script src="./assets/js/bootstrap5.bundle.min.js"></script>
+<script>
+    var coverModal = new bootstrap.Modal(document.getElementById('coverModal'), {
+      keyboard: false
+    });
+    coverModal.show();
+    var btnOpen = document.querySelector('.open-invitation');
+    let settimeOutbtnRead = null;
+    btnOpen.addEventListener('click',function(e){
+        window.scrollTo(0,0);
+        coverModal.hide();
+         
+        try{
+            audio.play();
+        }catch(e){}
+        try{
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                  audio.pause();
+                } else {
+                  if(document.querySelector(".backsound.play")!=null)audio.play();
+                }
+            });
+        }catch(e){}
+                var counterDownAjax = 0;
+        const paramsMethodGet = new URLSearchParams(window.location.search);
+        let toGuest = encodeURIComponent((paramsMethodGet.get("to") || ""));
+        if(toGuest == ""){
+             const arrayUrlPath = window.location.pathname.split("/to/");
+             if(arrayUrlPath.length > 1){
+                toGuest = arrayUrlPath[arrayUrlPath.length-1];
+             }
+        }
+        var urlCounterViewer = '/counterviewer/267104?to='+toGuest;
+        var _0x4b0b=["\x47\x45\x54","\x6F\x70\x65\x6E","\x6F\x6E\x72\x65\x61\x64\x79\x73\x74\x61\x74\x65\x63\x68\x61\x6E\x67\x65","\x72\x65\x61\x64\x79\x53\x74\x61\x74\x65","\x73\x74\x61\x74\x75\x73","\x72\x65\x73\x70\x6F\x6E\x73\x65\x54\x65\x78\x74","\x70\x61\x72\x73\x65","\x73\x65\x6E\x64"];var interValCounter=setInterval(function(){counterDownAjax++;if(counterDownAjax=== 10){var _0xafa5x2= new XMLHttpRequest();_0xafa5x2[_0x4b0b[1]](_0x4b0b[0],urlCounterViewer,true);_0xafa5x2[_0x4b0b[2]]= function(){if(this[_0x4b0b[3]]== 4&& this[_0x4b0b[4]]== 200){var _0xafa5x3=JSON[_0x4b0b[6]](this[_0x4b0b[5]])}};_0xafa5x2[_0x4b0b[7]]();clearInterval(interValCounter)}},1000)
+        try{
+            //document.documentElement.requestFullscreen();
+        }catch(e){}
+        try{
+            swiper.autoplay.stop();
+        }catch(e){}
+        try{
+             
+                clearTimeout(settimeOutbtnRead);
+                settimeOutbtnRead = setTimeout(function(){ $("#button-mode-read").click();}, 750);
+                    }catch(e){console.log(e);}
+    });
+</script><script>
+(function(){
+  const form = document.getElementById('form-comment');
+  const list = document.querySelector('.container-wishes');
+  const summary = document.getElementById('attendance-summary');
+  window.loadComment = function(){ return false; };
+  window.showAttendanceSummary = function(){ return false; };
+  if (summary && !summary.innerHTML.trim()) summary.innerHTML = '<div class="col-sm-4 my-1 text-center"><div class="p-3 mx-1 rounded h-100"><h2 class="display-6 fw-bold"><strong>0</strong></h2><div style="font-size:10pt">Konfirmasi lokal</div></div></div>';
+  if (form) {
+    form.addEventListener('submit', function(event){
+      event.preventDefault();
+      const name = form.querySelector('.input-name, input[name="name"]')?.value || 'Tamu Undangan';
+      const message = form.querySelector('textarea, input[name="contents"]')?.value || 'Terima kasih atas doanya.';
+      if (list) {
+        const item = document.createElement('div');
+        item.className = 'wish';
+        item.innerHTML = '<div><i class="fa fa-user-circle" aria-hidden="true"></i> <label class="user"></label><div class="time">Baru saja</div><p class="message"></p></div>';
+        item.querySelector('.user').textContent = name;
+        item.querySelector('.message').textContent = message;
+        list.prepend(item);
+      }
+      try { toastr.success('Ucapan tersimpan di demo lokal.'); } catch(e) { alert('Ucapan tersimpan di demo lokal.'); }
+      form.reset();
+    }, true);
+  }
+})();
+</script>
+<script src="./assets/vendor/photoswipe/photoswipe.min.js"></script> 
+<script src="./assets/vendor/photoswipe/photoswipe-ui-default.min.js"></script> 
+<script>
+    var imagesGalleries,ImageSwipeitems;
+    var setImageSwipe = function(){
+        imagesGalleries = document.querySelectorAll(".gallery,#nav-cerita ul img,#nav-cerita .story img");
+        ImageSwipeitems = [];
+        imagesGalleries.forEach(function(e,i){
+            if(e.tagName === "IMG"){
+                e.addEventListener("click",function(el){
+                    openPhotoSwipe(i);
+                });
+                var gap = 712 / e.clientWidth;
+                var newWidht = 712;
+                var newHeight = e.clientHeight * gap;
+                var srcImg = e.getAttribute("src");
+                ImageSwipeitems.push(
+                    {
+                        src: srcImg,
+                        w: newWidht,
+                        h: newHeight
+                    }
+                );
+            }else{
+                try{
+                    var elementStyle = e.currentStyle || window.getComputedStyle(e, false);
+                    var srcImg = elementStyle.backgroundImage.slice(4, -1).replace(/"/g, "");
+                    if(srcImg != ""){
+                        e.addEventListener("click",function(el){
+                            openPhotoSwipe(i);
+                        });
+                        var gap = 712 / e.clientWidth;
+                        var newWidht = 712;
+                        var newHeight = e.clientHeight * gap;
+                        ImageSwipeitems.push(
+                            {
+                                src: srcImg,
+                                w: newWidht,
+                                h: newHeight
+                            }
+                        );
+                    }
+                }catch(e){}
+            }
+        })
+    }
+    var openPhotoSwipe = function(idx){
+        setImageSwipe();
+        var pswpElement = document.querySelector('.pswp');
+        var options = {
+            index:idx,
+            history: false,
+          	focus: false,
+    
+            showAnimationDuration: 0,
+            hideAnimationDuration: 0,
+            shareEl : false,
+        };
+        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, ImageSwipeitems, options);
+        gallery.init();
+        gallery.listen('destroy', () => {
+          setTimeout(function(){
+              document.querySelector(".pswp").className="pswp";
+          }, 500);
+          console.log("closedd");
+        });
+    }
+    $(document).ready(function(e){
+        setImageSwipe();
+    });
+</script>
+                        <script>
+var audio = new Audio('./assets/audio/islamic-wedding-backsound.m4a');
+audio.loop = true;
+var countDownDate = new Date('May 31, 2026 08:00:00').getTime();
+</script>
+                <div id="fixed-btn2top" class="shadow">
+            <button id="button-to-top" style="border:none;background:#ffffff;width:35px;font-size:10pt;padding:2px 7px;border-radius:9px;color:var(--bs-secondary);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path  d="M20.26,12.948l-7.15-4.766c-0.672-0.448-1.547-0.448-2.219,0l-7.15,4.766C3.278,13.257,3,13.777,3,14.333l0,0 c0,1.329,1.481,2.121,2.587,1.384L12,11.442l6.413,4.276C19.519,16.455,21,15.662,21,14.333l0,0 C21,13.776,20.722,13.257,20.26,12.948z" fill="#0c4643" />
+            </svg>
+            <br/><span style="font-size:7pt;color:var(--primaryColor)">Top</span></button>
+        </div>
+        <div id="fixed-btnread" class="shadow">
+            <button id="button-mode-read" style="border:none;background:#ffffff;font-size:10pt;padding:2px 7px;border-radius:9px;color:var(--bs-secondary);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="width:17px;height:17px">
+              <path  d="M15 3C8.9134751 3 3.87999 7.5533546 3.1132812 13.439453 A 1.0001 1.0001 0 1 0 5.0957031 13.697266C5.7349943 8.7893639 9.9085249 5 15 5C17.766872 5 20.250574 6.1285473 22.058594 7.9414062L20 10L26 11L25 5L23.470703 6.5292969C21.300701 4.3575454 18.309289 3 15 3 z M 25.912109 15.417969 A 1.0001 1.0001 0 0 0 24.904297 16.302734C24.265006 21.210636 20.091475 25 15 25C11.977904 25 9.2987537 23.65024 7.4648438 21.535156L9 20L3 19L4 25L6.0488281 22.951172C8.2452659 25.422716 11.436061 27 15 27C21.086525 27 26.12001 22.446646 26.886719 16.560547 A 1.0001 1.0001 0 0 0 25.912109 15.417969 z" fill="#0c4643" />
+            </svg><br/><span style="font-size:7pt;color:var(--primaryColor)">Read</span><br>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path  d="M21,11.109L21,11.109c0-1.329-1.481-2.122-2.587-1.385L12,14L5.587,9.725C4.481,8.988,3,9.78,3,11.109v0 c0,0.556,0.278,1.076,0.741,1.385l7.15,4.766c0.672,0.448,1.547,0.448,2.219,0l7.15-4.766C20.722,12.185,21,11.666,21,11.109z" fill="#0c4643" />
+            </svg>
+            </button>
+        </div>
+    	<script>
+(function(){
+  function safeText(value){ return (value || '').replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, ''); }
+  const params = new URLSearchParams(window.location.search);
+  let guestName = params.get('to');
+  if (!guestName) {
+    const parts = window.location.pathname.split('/to/');
+    if (parts.length > 1) guestName = decodeURIComponent(parts[parts.length - 1]);
+  }
+  guestName = safeText(guestName) || 'Penerima Undangan';
+  document.querySelectorAll('.penerima').forEach((el) => { el.innerHTML = guestName.replace(/\n/g, '<br/>'); });
+  document.querySelectorAll('input.input-name').forEach((el) => { el.value = guestName === 'Penerima Undangan' ? '' : guestName; });
+  document.querySelectorAll('input.verfiedname').forEach((el) => { el.value = guestName === 'Penerima Undangan' ? '' : guestName; });
+  document.querySelectorAll('.link-guestbook').forEach((el) => { el.setAttribute('href', '#guestbook?to=' + encodeURIComponent(guestName)); });
+  document.querySelectorAll('.link-reservation').forEach((el) => { el.setAttribute('href', '#reservation-local'); });
+  document.addEventListener('click', function(event){
+    const copyButton = event.target.closest('.btn-copy');
+    if (!copyButton) return;
+    const target = document.querySelector(copyButton.getAttribute('data-clipboard-target'));
+    if (target && navigator.clipboard) navigator.clipboard.writeText(target.value || target.textContent || '');
+  }, true);
+  window.socket = {send(){},close(){},addEventListener(){},removeEventListener(){},readyState:3};
+  window.initSocket = function(){};
+  window.speedAutoScroll = 1250;
+  window.rangeAutoScroll = 275;
+  window.easingAutoScroll = 'easeInOutQuad';
+})();
+</script>
+<script id="local-template-controls">
+(function(){
+  var localReadTimer = null;
+  var scrollRange = window.rangeAutoScroll || 275;
+  var scrollSpeed = window.speedAutoScroll || 1250;
+  var scrollInterval = window.intervalAutoScroll || 2000;
+
+  function currentAudio() {
+    if (!window.audio) {
+      window.audio = new Audio('./assets/audio/islamic-wedding-backsound.m4a');
+      window.audio.loop = true;
+    }
+    window.audio.loop = true;
+    return window.audio;
+  }
+
+  function setSoundState(isPlaying) {
+    var button = document.querySelector('.backsound');
+    if (!button) return;
+    button.classList.toggle('play', isPlaying);
+    button.classList.toggle('pause', !isPlaying);
+  }
+
+  function playSound() {
+    var sound = currentAudio();
+    var playPromise = sound.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(function(){ setSoundState(false); });
+    }
+    setSoundState(true);
+  }
+
+  function pauseSound() {
+    currentAudio().pause();
+    setSoundState(false);
+  }
+
+  function stopReadMode(button) {
+    clearInterval(localReadTimer);
+    if (window.interValScrolling) clearInterval(window.interValScrolling);
+    localReadTimer = null;
+    window.interValScrolling = null;
+    if (window.jQuery) jQuery('html, body').stop(true);
+    if (button) {
+      button.classList.remove('active');
+      var spinner = button.querySelector('svg');
+      if (spinner) spinner.classList.remove('animationSpin');
+    }
+    document.body.style.overflow = '';
+  }
+
+  function startReadMode(button) {
+    stopReadMode(button);
+    button.classList.add('active');
+    var spinner = button.querySelector('svg');
+    if (spinner) spinner.classList.add('animationSpin');
+    var step = function(){
+      var maxScroll = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight) - window.innerHeight;
+      if (window.scrollY >= maxScroll - 8) {
+        stopReadMode(button);
+        return;
+      }
+      document.body.style.overflow = 'hidden';
+      if (window.jQuery) {
+        jQuery('html, body').stop(true).animate({ scrollTop: Math.min(window.scrollY + scrollRange, maxScroll) }, scrollSpeed, window.easingAutoScroll || 'easeInOutQuad');
+      } else {
+        window.scrollTo({ top: Math.min(window.scrollY + scrollRange, maxScroll), behavior: 'smooth' });
+      }
+    };
+    step();
+    localReadTimer = setInterval(step, scrollInterval);
+  }
+
+  document.addEventListener('click', function(event){
+    var openInvitationButton = event.target.closest('button.open-invitation');
+    if (openInvitationButton) {
+      playSound();
+      return;
+    }
+
+    var soundButton = event.target.closest('.backsound');
+    if (soundButton) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      if (soundButton.classList.contains('play')) pauseSound();
+      else playSound();
+      return;
+    }
+
+    var readButton = event.target.closest('#button-mode-read');
+    if (readButton) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      if (readButton.classList.contains('active')) stopReadMode(readButton);
+      else startReadMode(readButton);
+      return;
+    }
+
+    var topButton = event.target.closest('#button-to-top');
+    if (topButton) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      stopReadMode(document.querySelector('#button-mode-read'));
+      if (window.jQuery) jQuery('html, body').stop(true).animate({ scrollTop: 0 }, 900);
+      else window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, true);
+
+  document.addEventListener('visibilitychange', function(){
+    if (document.hidden) currentAudio().pause();
+    else if (document.querySelector('.backsound.play')) playSound();
+  });
+
+  function bindInitialState() {
+    setSoundState(true);
+    var openButton = document.querySelector('button.open-invitation');
+    if (openButton) {
+      openButton.addEventListener('click', function(){
+        playSound();
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bindInitialState);
+  else bindInitialState();
+})();
+</script>
+    	<script id="custom_js">
+            
+        </script>
+    </body>
+</html>

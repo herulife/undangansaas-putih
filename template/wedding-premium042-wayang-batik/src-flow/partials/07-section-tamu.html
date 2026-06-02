@@ -1,0 +1,135 @@
+<div id="nav-tamu" class="sheet bg-white position-relative" role="tabpanel" aria-labelledby="nav-tamu-tab">
+                    <section class="position-relative bg-transparent rounded-0 border-0 rounded-0 p-0 p-0" >
+                        <div class="container overflow-hidden">
+                            <div class="frame card border-0 bg-transparent d-flex flex-column justify-content-center">
+                                <div class="text-center">
+                                  <img src="./assets/ornaments/ornament-gunungan-gold.png" class="do-animate membesar animate animate-iddle5" style="max-width:150px">
+                                </div>
+                                <div class="content-text content-invitation">
+                                    <h2 class="h1 fs-1 mb-5 text-center ff-wedding">Kirim Pesan</h2>
+                                    <div>Berikan ucapan terbaikmu</div>
+                                    <div class="invitation-comment-form">
+    <form id='form-comment' class="ff-poppins position-relative rounded shadow py-2 px-3" method='POST' action='/attendance'>
+        <input type="hidden" name="_token" value="ZiaYUxFfjMeNe2V1FuvymDPqF9xsIHDlURsInE2j"> 
+        <input type='hidden' name='input[invitation_id]' value='267104' />
+        <div class='form-group'>
+            <label class="label-name">Nama</label>
+            <input type='hidden' class='verfiedname' value=''>
+            <input type='text'  name='input[name]' required class='form-control input-name' placeholder="Nama" value=''>
+        </div>
+        <div class='form-group'>
+            <label class="label-attendance">Konfirmasi Kehadiran</label>
+            <select id="attendance-option" class='form-control form-select select-attendance' name='input[confirm]'>
+                <option>Saya berencana hadir</option>
+                <option>Saya masih ragu</option>
+                <option>Maaf saya tidak bisa hadir</option>
+            </select>
+        </div>
+        <div class="d-none">
+            <input type='text'  name='input[additional_1]' class='form-control input-additional_1 d-none'/>
+            <input type='text'  name='input[additional_2]' class='form-control input-additional_2 d-none'/>
+            <input type='text'  name='input[additional_3]' class='form-control input-additional_3 d-none'/>
+        </div>
+        <div class='form-group'>
+            <label class="label-message">Pesan</label>
+            <textarea class='form-control textarea-message' placeholder="Pesan" maxlength='2000' rows='4' name='input[contents]'></textarea>
+        </div>
+        <div>
+            <img id="preview-sticker" class="d-none" style="width:99px;height:auto;border-radius:9px" src="./assets/stickers/sticker001.gif" alt="preview Sticker" />
+        </div>
+        <div class="my-1">
+            <button type="button" style="border-radius:50px" class="btn btn-sm btn-primary px-3" data-bs-toggle="modal" data-bs-target="#stickersModal">
+              <i class="fa">&#xf118;</i> Stiker
+            </button>
+            <a href="#" style="border-radius:50px;text-decoration:none" class="btn btn-sm btn-warning px-3" onclick="event.preventDefault();this.nextElementSibling.value='';document.querySelector('#preview-sticker').className='d-none';">Batal</a>
+            <input type="hidden" id="input-sticker" name="input[sticker]" value=""/>
+        </div>
+        <div class='form-group clearfix'>
+            <button class='btn btn-sm btn-primary float-end btn-sendcomment px-3' style="min-width:99px;border-radius:50px">Kirim 
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <img class="loading-ajax" style='display:none' width="29px" src="./assets/images/loading.gif" alt="Loading" loading="lazy">
+            </button>
+        </div>
+    </form>
+    <div id="summary-attendance">
+        <hr/>
+        <h2 class="attendance-summary text-center"><span class="d-inline-block fs-5 px-5 pb-1 rounded text-white" style="background-color: #072d2e;">Kehadiran</h2>
+        <div class="row justify-content-center" id="attendance-summary">
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <div class="ps-2 pt-2 rounded shadow-inset">
+            <div class="container-wishes">
+                <div class='wishes'>
+                </div>
+            </div>
+        </div>
+        <div id='pagination-wished' class="text-center">
+            <div style="height:69px">
+                <div class="loading m-1">
+                    <div class="text-center">--Loading--</div>
+                    <div class="d-flex">
+                        <span class="flex-fill"></span>
+                        <img width="33px" src="./assets/images/loading.gif" alt="Loading" loading="lazy"/>
+                        <span class="flex-fill"></span>
+                    </div>
+                </div>
+            </div>
+            <a id="loadmorefeed" href="./invcode/wedding-premium042" class="border-3 btn btn-primary d-inline-block px-5 rounded-pill" style="text-shadow: none;"><i class="fas fa-sync-alt"></i>  Tampilkan lainnya</a>
+        </div>
+    </div> 
+        <hr/>
+    <div id="rsv-container" class="bg-white border m-auto p-5 py-5 rounded shadow-inset text-center text-secondary" style="width: fit-content;">
+        <div>
+            <h4>RSVP Form</h4>
+            <div>
+                <a href="./reservation/input/267104/UDG202308090264" class="d-inline-block ff-glacial fs-5 link-reservation mb-2 px-5 py-2 shadow text-white" style="text-shadow: none;background-color: #1a6264;outline: 3px solid #1a6264;margin: 3px;outline-offset: 3px;">
+                    <span id="notif-count-rsv" class="count-rsv">0</span>
+                    <span>--Reservasi--</span>
+                </a>
+            </div>
+        </div>
+        <div class="ff-glacial fs-4">Kehadiran</div>
+        <div class="ff-inter_regular">Isi form rsvp jika kamu berencana hadir</div>
+    </div>
+        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div>
+                        <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep1" viewBox="0 0 1600 100" style="width: 100%;height: auto;max-height: none;" data-height="100">
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
+                            C979.5,96,980,56,1040,56z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8
+                            c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M1400,96c19.5,0,32.7-4.3,43.7-10c-35.2-17.3-54.1-45.7-115.5-45.7c-32.3,0-52.8,7.9-70.2,17.8
+                            c6.4-1.3,13.6-2.1,22-2.1C1340.1,56,1340.3,96,1400,96z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M320,56c6.6,0,12.4,0.5,17.7,1.3c-17-9.6-37.3-17-68.5-17c-60.4,0-79.5,27.8-114,45.2
+                            c11.2,6,24.6,10.5,44.8,10.5C260,96,259.9,56,320,56z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M680,96c23.7,0,38.1-6.3,50.5-13.9C699.6,64.8,679,40.3,622.2,40.3c-30,0-49.8,6.8-66.3,15.8
+                            c1.3,0,2.7-0.1,4.1-0.1C619.7,56,620.2,96,680,96z"></path>
+                            <path class="" style="opacity: 1;fill: #fbe5d3;" d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
+                            z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4
+                            C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M1205.4,85c-0.2,0-0.4,0-0.6,0c-19.5,0-19.5-13-39-13s-19.4,12.9-39,12.9c0,0-5.9,0-12.3,0.1
+                            c11.4,6.3,24.9,11,45.5,11C1180.6,96,1194.1,91.2,1205.4,85z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M1447.4,83.9c-2.4,0.7-5.2,1.1-8.6,1.1c-19.3,0-19.6-13-39-13s-19.6,13-39,13c-3,0-5.5-0.3-7.7-0.8
+                            c11.6,6.6,25.4,11.8,46.9,11.8C1421.8,96,1435.7,90.7,1447.4,83.9z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M985.8,72c-17.6,0.8-18.3,13-37,13c-19.4,0-19.5-13-39-13c-18.2,0-19.6,11.4-35.5,12.8
+                            c11.4,6.3,25,11.2,45.7,11.2C953.7,96,968.5,83.2,985.8,72z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M743.8,73.5c-10.3,3.4-13.6,11.5-29,11.5c-19.4,0-19.5-13-39-13s-19.5,13-39,13c-0.9,0-1.7,0-2.5-0.1
+                            c11.4,6.3,25,11.1,45.7,11.1C712.4,96,727.3,84.2,743.8,73.5z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M265.5,72.3c-1.5-0.2-3.2-0.3-5.1-0.3c-19.4,0-19.6,13-39,13c-19.4,0-19.6-13-39-13
+                            c-15.9,0-18.9,8.7-30.1,11.9C164.1,90.6,178,96,200,96C233.7,96,248.4,83.4,265.5,72.3z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M1692.3,96V85c0,0,0,0-19.5,0s-19.6-13-39-13s-19.6,13-39,13c-0.1,0-0.2,0-0.4,0c11.4,6.2,24.9,11,45.6,11
+                            C1669.9,96,1684.8,96,1692.3,96z"></path>
+                            <path class="" style="opacity: 1;fill: #fff7e8" d="M25.5,72C6,72,6.1,84.9-13.5,84.9L-20,85v8.9C0.7,90.1,12.6,80.6,25.9,72C25.8,72,25.7,72,25.5,72z"></path>
+                            <path class="" style="fill: rgb(253 238 209);" d="M-40,95.6C20.3,95.6,20.1,56,80,56s60,40,120,40s59.9-40,120-40s60.3,40,120,40s60.3-40,120-40
+                            s60.2,40,120,40s60.1-40,120-40s60.5,40,120,40s60-40,120-40s60.4,40,120,40s59.9-40,120-40s60.3,40,120,40s60.2-40,120-40
+                            s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z"></path>
+                            </svg> 
+                      </div>
+                </div>

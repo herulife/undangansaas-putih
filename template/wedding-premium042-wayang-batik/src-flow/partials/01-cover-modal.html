@@ -1,0 +1,97 @@
+<body>
+                        	<div id='loadingpage' style='display:flex;flex-direction: column;justify-content: center;position:fixed;width:100vw;color:#452626;height:107vh;z-index:9999;top:0;left:0;text-align:center;padding:7px;font-family: dmsans;opacity:1;text-shadow:none;'>
+    <div style="background:white;background-position:center;display:flex;flex-direction: column;justify-content: center;align-items: center;height: 100%;">
+        <div class="animate-iddle9" style="display:flex;flex-direction: column;justify-content: center;align-items:center">
+            <div class="coffee"><div></div><div></div><div></div></div><div class="plate"></div>
+            <div style="font-size: 9pt;text-shadow:none;padding: 1px 9px;background-color: #6c3333;color: white;margin-top: 2px;transform: skewX(353deg);padding:1px 33px;text-shadow:none;filter:none;" class="typing-loading loop">LOADING...</div>
+        </div>
+                    <p style="font-family:'ltcomical';color: #6c3333;font-size: 19px;" id="textLoadingWait">Mohon Tunggu...</p>
+            </div>
+    <div style="height: 7vh;position: sticky;z-index: 27;top:0;">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style=" background-color: #ffffff00;margin-top: -1px;width:100%;height:100%">
+            <path style="fill: #ffffffeb;" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path style="fill: #ffffff6e;" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path style="fill: #ffffff;" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+</div>
+<script>
+const invID = "267104";
+const invCode = "UDG202308090264";
+let isFirstload = true;
+document.addEventListener('DOMContentLoaded', function(){
+  const loading = document.getElementById('loadingpage');
+  if (loading) loading.remove();
+});
+</script>
+<div class="modal fade" id="coverModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+    <div class="bg-cover" style="background-color:white;background-image:linear-gradient(1deg, #6b6b6be3, #ffffff00),url('./assets/ornaments/ornament-cover-batik.jpg?v=2026052414');background-size:cover;background-position: center top;"></div>
+    <div id="particles-js" style="position: fixed;z-index: 0;height: 100%;width: 100%;"></div>
+      <div class="modal-body container d-flex flex-column justify-content-center  overflow-visible">
+         <div class='card border-0 shadow-none text-center overflow-auto py-5 overflow-hidden'>
+            <div class="py-5 mt-1 rounded px-3" style="text-shadow: none;color: white;">
+
+                <div class='display-6 ff-abril fw-bold mb-1 mb-4'>The Wedding Of</div>
+                <div class='h2 judul text-center ff-alata my-1'>
+                    <div class="ff-cinzel fs-3">Anissa</div> 
+                    <div class="align-middle ff-vibes fw-bold mb-1 mt-3">&amp;</div>
+                    <div class="ff-cinzel fs-3">Hamzah</div>
+                </div>
+                <div class="to">
+                    <p class="mb-1">Kepada Yth.</p>
+                    <span class="mt-5 mb-5 fw-bold penerima ff-ltcomical"> Penerima Undangan </span>
+                    <div class="my-3 text-center">
+                        <button type="button" class="border border-1 border-3 btn btn-sm ff-ltcomical fw-bold open-invitation text-white" style="background-color: #371c07;border-color: white!important;font-size:14pt">
+                            <i class="align-middle fas me-1 "></i>
+                            Buka Undangan
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="container-fluid class-crush p-0">
+            <div class="navmenu" style="z-index: 99999;max-width:333px;margin: 0% auto;left:0;right:0">
+        	    <div class="navigation open">
+        	        <div class="d-flex justify-content-center align-items-center">
+        	            <ul class="left">
+        	                <li data-targetid="#nav-perihal">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                    <path d="M10.75 5C4.320313 5 0 9.347656 0 15.8125C0 22.984375 5.785156 27.753906 11.375 32.375C14.125 34.648438 16.976563 37.015625 19.1875 39.65625C19.378906 39.882813 19.640625 40 19.9375 40L20.0625 40C20.359375 40 20.621094 39.882813 20.8125 39.65625C21.675781 38.625 22.765625 37.519531 24 36.375C25.398438 38.636719 26.792969 40.972656 27.71875 43.34375C27.824219 43.621094 28.0625 43.8125 28.34375 43.90625L28.4375 43.9375C28.539063 43.972656 28.644531 44 28.75 44C28.929688 44 29.09375 43.941406 29.25 43.84375C31.523438 42.480469 34.195313 41.496094 36.78125 40.53125C42.109375 38.542969 47.609375 36.480469 49.4375 31.125C51.097656 26.261719 48.957031 21.882813 44.09375 20.21875C43.410156 19.984375 42.660156 19.875 41.875 19.875C40.953125 19.875 40.0625 20.039063 39.21875 20.28125C39.75 18.832031 40 17.355469 40 15.8125C40 9.347656 35.679688 5 29.25 5C25.066406 5 21.535156 8.496094 20 10.28125C18.464844 8.496094 14.929688 5 10.75 5 Z M 10.75 7C15.214844 7 19.148438 12.382813 19.1875 12.4375C19.375 12.699219 19.679688 12.875 20 12.875C20.320313 12.875 20.625 12.699219 20.8125 12.4375C20.851563 12.382813 24.78125 7 29.25 7C34.5625 7 38 10.460938 38 15.8125C38 17.742188 37.5 19.566406 36.5 21.375C36.332031 21.460938 36.144531 21.542969 36 21.625C35.242188 19.835938 33.492188 16.597656 30.46875 15.5625C29.40625 15.199219 28.347656 15 27.3125 15C23.71875 15 20.824219 17.21875 19.5625 20.90625C17.914063 25.730469 20.265625 30.234375 22.9375 34.625C21.824219 35.640625 20.839844 36.601563 20 37.53125C17.800781 35.089844 15.195313 32.941406 12.65625 30.84375C7.183594 26.320313 2 22.042969 2 15.8125C2 10.460938 5.433594 7 10.75 7Z" fill="#A15F9F"></path>
+                                </svg>
+                            </li>
+        	                <li data-targetid="#nav-acara">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M6 1L6 3L5 3C3.9 3 3 3.9 3 5L3 19C3 20.1 3.9 21 5 21L19 21C20.1 21 21 20.1 21 19L21 5C21 3.9 20.1 3 19 3L18 3L18 1L16 1L16 3L8 3L8 1L6 1 z M 5 8L19 8L19 19L5 19L5 8 z M 13 13L13 17L17 17L17 13L13 13 z" fill="#A15F9F"></path>
+                                </svg>
+        	                </li>
+        	            </ul>
+        	            <div class="humberger-btn text-center">
+        	                <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                              <path d="M7.9785156 5.9804688 A 2.0002 2.0002 0 0 0 6.5859375 9.4140625L12.171875 15L6.5859375 20.585938 A 2.0002 2.0002 0 1 0 9.4140625 23.414062L15 17.828125L20.585938 23.414062 A 2.0002 2.0002 0 1 0 23.414062 20.585938L17.828125 15L23.414062 9.4140625 A 2.0002 2.0002 0 0 0 21.960938 5.9804688 A 2.0002 2.0002 0 0 0 20.585938 6.5859375L15 12.171875L9.4140625 6.5859375 A 2.0002 2.0002 0 0 0 7.9785156 5.9804688 z" fill="#6BAFC4" />
+                            </svg>
+                            <svg class="expand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                              <path d="M3 9C1.34375 9 0 10.34375 0 12C0 13.65625 1.34375 15 3 15C4.65625 15 6 13.65625 6 12C6 10.34375 4.65625 9 3 9 Z M 12 9C10.34375 9 9 10.34375 9 12C9 13.65625 10.34375 15 12 15C13.65625 15 15 13.65625 15 12C15 10.34375 13.65625 9 12 9 Z M 21 9C19.34375 9 18 10.34375 18 12C18 13.65625 19.34375 15 21 15C22.65625 15 24 13.65625 24 12C24 10.34375 22.65625 9 21 9Z" fill="#6BAFC4" />
+                            </svg>
+        	            </div>
+        	            <ul class="right">
+        	                <li data-targetid="#nav-galeri">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M5 3C3.897 3 3 3.897 3 5L3 9C3 10.103 3.897 11 5 11L9 11C10.103 11 11 10.103 11 9L11 5C11 3.897 10.103 3 9 3L5 3 z M 15 3C13.897 3 13 3.897 13 5L13 9C13 10.103 13.897 11 15 11L19 11C20.103 11 21 10.103 21 9L21 5C21 3.897 20.103 3 19 3L15 3 z M 6 6L8 6L8 8L6 8L6 6 z M 17 6C17.552 6 18 6.448 18 7C18 7.552 17.552 8 17 8C16.448 8 16 7.552 16 7C16 6.448 16.448 6 17 6 z M 5 13C3.897 13 3 13.897 3 15L3 19C3 20.103 3.897 21 5 21L9 21C10.103 21 11 20.103 11 19L11 15C11 13.897 10.103 13 9 13L5 13 z M 15 13C13.897 13 13 13.897 13 15L13 19C13 20.103 13.897 21 15 21L19 21C20.103 21 21 20.103 21 19L21 15C21 13.897 20.103 13 19 13L15 13 z M 7 16C7.552 16 8 16.448 8 17C8 17.552 7.552 18 7 18C6.448 18 6 17.552 6 17C6 16.448 6.448 16 7 16 z M 16 16L18 16L18 18L16 18L16 16 z" fill="#A15F9F"></path>
+                                </svg>
+        	                </li>
+        	                <li data-targetid="#nav-tamu">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M12 3C8.14 3 5 6.141 5 10C5 12.410337 6.2256309 14.541088 8.0859375 15.800781C4.5135649 17.328535 2 20.878337 2 25L4 25C4 20.59 7.59 17 12 17C13.44 17 14.790937 17.380547 15.960938 18.060547C16.370938 17.510547 16.829844 17.000781 17.339844 16.550781C16.886742 16.262444 16.400847 16.021871 15.900391 15.808594C17.767985 14.550033 19 12.415944 19 10C19 6.141 15.86 3 12 3 z M 12 5C14.757 5 17 7.243 17 10C17 12.757 14.757 15 12 15C9.243 15 7 12.757 7 10C7 7.243 9.243 5 12 5 z M 24 16C19.6 16 16 19.6 16 24C16 28.4 19.6 32 24 32C28.4 32 32 28.4 32 24C32 19.6 28.4 16 24 16 z M 24 18C27.3 18 30 20.7 30 24C30 27.3 27.3 30 24 30C20.7 30 18 27.3 18 24C18 20.7 20.7 18 24 18 z M 27 21.300781L23.699219 24.599609L21.400391 22.300781L20 23.699219L23.699219 27.400391L28.400391 22.699219L27 21.300781 z" fill="#A15F9F"></path>
+                                </svg>
+        	                </li>
+        	            </ul>
+        	        </div>
+        	    </div>
+        	</div>
+            <div id="nav-tabContent">

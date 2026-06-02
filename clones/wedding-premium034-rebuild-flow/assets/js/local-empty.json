@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "message": "Mode lokal",
+  "data": {
+    "invitation_setting": {
+      "sound": "./assets/audio/background-music.mp3",
+      "countdown_date": "June 08, 2026 03:32:03"
+    },
+    "invitation": {
+      "custom_css": "",
+      "custom_js": "",
+      "custom_js2": ""
+    }
+  },
+  "attendance": [],
+  "contents": [],
+  "summary": [],
+  "numb_of_reservations": 0
+}

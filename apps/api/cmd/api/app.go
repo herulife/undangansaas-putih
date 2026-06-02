@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/http"
+	"time"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/cors"
@@ -9,11 +10,15 @@ import (
 )
 
 type app struct {
-	db *pgxpool.Pool
+	db      *pgxpool.Pool
+	limiter *rateLimiter
 }
 
 func newApp(db *pgxpool.Pool) *app {
-	return &app{db: db}
+	return &app{
+		db:      db,
+		limiter: newRateLimiter(),
+	}
 }
 
 func (a *app) routes() http.Handler {
@@ -35,14 +40,14 @@ func (a *app) routes() http.Handler {
 		r.With(a.RequireAuth).Patch("/auth/me", a.updateProfile)
 		r.With(a.RequireAuth).Patch("/auth/password", a.changePassword)
 		r.Get("/templates", a.listTemplates)
-		r.Get("/invitations", a.listInvitations)
+		r.With(a.RequireAuth).Get("/invitations", a.listInvitations)
 		r.With(a.RequireAuth).Post("/invitations", a.createInvitation)
 		r.Get("/invitations/{slug}", a.getInvitation)
 		r.With(a.RequireAuth).Patch("/invitations/{slug}", a.updateInvitation)
-		r.Post("/invitations/{slug}/rsvp", a.createRSVP)
+		r.With(a.RateLimit("rsvp", 3, time.Hour)).Post("/invitations/{slug}/rsvp", a.createRSVP)
 		r.With(a.RequireAuth).Get("/invitations/{slug}/rsvps", a.listRSVPs)
-		r.Post("/ai/images", a.generateImage)
-		r.With(a.RequireAuth).Post("/uploads", a.uploadMedia)
+		r.With(a.RequireAuth, a.RateLimit("ai-image", 10, time.Hour)).Post("/ai/images", a.generateImage)
+		r.With(a.RequireAuth, a.RateLimit("upload", 60, time.Hour)).Post("/uploads", a.uploadMedia)
 		r.Handle("/uploads/*", http.StripPrefix("/api/uploads/", http.FileServer(http.Dir(uploadDir()))))
 
 		r.Group(func(r chi.Router) {
@@ -51,13 +56,17 @@ func (a *app) routes() http.Handler {
 			r.Post("/admin/users", a.createAdminUser)
 			r.Patch("/admin/users/{id}", a.updateAdminUser)
 			r.Patch("/admin/users/{id}/password", a.resetAdminUserPassword)
+			r.Post("/admin/payments/manual", a.createManualPayment)
+			r.Post("/admin/templates", a.createAdminTemplate)
+			r.Patch("/admin/templates/{id}", a.updateAdminTemplate)
 		})
 	})
 
 	router.Route("/api/v1", func(r chi.Router) {
 		r.Get("/health", a.health)
 		r.Get("/templates", a.listTemplates)
-		r.Post("/events", a.trackEvent)
+		r.With(a.RateLimit("event", 120, time.Minute)).Post("/events", a.trackEvent)
+		r.Get("/og/{slug}.svg", a.dynamicOGSVG)
 
 		r.Group(func(r chi.Router) {
 			r.Use(a.RequireAuth)

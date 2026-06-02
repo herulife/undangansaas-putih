@@ -1,0 +1,917 @@
+@font-face {
+  font-family: "DMSansLocal";
+  src: url("/assets/fonts/188-dmsans.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spirited";
+  src: url("/assets/fonts/290-spiritednote.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TheSeasons";
+  src: url("/assets/fonts/307-theseasons.otf") format("opentype");
+  font-display: swap;
+}
+
+:root {
+  --ink: #29323d;
+  --muted: #5f5a50;
+  --deep: #154445;
+  --primary: #6d5409;
+  --gold: #aa770f;
+  --brown: #3c2315;
+  --rose: #8c3449;
+  --paper: #f8f7f6;
+  --paper-soft: rgba(246, 244, 237, 0.78);
+  --line: rgba(109, 84, 9, 0.2);
+  --shadow: 2px 4px 16px rgba(0, 0, 0, 0.18);
+  --parallax-y: 0px;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "DMSansLocal", system-ui, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #e9e5df;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(233, 229, 223, 0.88)),
+    url("/assets/images/130-bg-invitation.jpg") center / 520px repeat;
+  text-shadow: none;
+}
+
+body:not(.is-open) {
+  overflow: hidden;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+.cover {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  overflow: hidden;
+  background: var(--deep);
+  opacity: 1;
+  transition: opacity 1.3s ease, visibility 1.3s ease;
+}
+
+.cover.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cover::before,
+.cover::after,
+.section::before,
+.section::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  max-width: 199px;
+  height: 50%;
+  max-height: 199px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.72));
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.cover::before,
+.section::before {
+  top: 0;
+  left: 0;
+  background-image: url("/assets/ornaments/084-top-left.png");
+  background-position: top left;
+  animation: iddle1 7s ease-in-out infinite alternate-reverse;
+}
+
+.cover::after,
+.section::after {
+  right: 0;
+  bottom: 0;
+  background-image: url("/assets/ornaments/085-bottom-right.png");
+  background-position: bottom right;
+  animation: iddle2 7s ease-in-out infinite alternate-reverse;
+}
+
+.cover__media {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(44deg, rgba(40, 62, 58, 0.82), rgba(253, 224, 135, 0)),
+    linear-gradient(180deg, rgba(21, 68, 69, 0.1), rgba(21, 68, 69, 0.78)),
+    url("/assets/images/002-4.webp") center / cover;
+  transform: scale(1.05);
+  animation: coverZoom 18s ease-in-out infinite alternate;
+}
+
+.cover__panel {
+  position: relative;
+  z-index: 2;
+  width: min(430px, 100%);
+  margin: 39px;
+  padding: 99px 18px;
+  color: #fde5b6;
+  text-align: center;
+  text-shadow: 2px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cover .eyebrow,
+.cover__guest,
+.cover .guest-name {
+  color: #fde5b6;
+}
+
+.cover h1,
+.hero h2,
+.closing h2 {
+  margin: 0;
+  color: var(--rose);
+  font-family: "Spirited", "TheSeasons", serif;
+  font-size: 4.15rem;
+  line-height: 0.9;
+  font-weight: 400;
+}
+
+.cover h1 {
+  color: #fde5b6;
+}
+
+.cover__guest {
+  margin: 26px 0 6px;
+}
+
+.guest-name {
+  margin: 0 0 24px;
+  font-weight: 800;
+}
+
+.primary-action,
+.secondary-action {
+  position: relative;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  border: 0;
+  border-radius: 50rem;
+  background: var(--deep);
+  color: #fff;
+  padding: 0 22px;
+  font-weight: 800;
+  box-shadow: 0 12px 28px rgba(21, 68, 69, 0.26);
+}
+
+.primary-action__icon,
+.primary-action svg {
+  width: 20px;
+  height: 20px;
+}
+
+.primary-action svg path,
+.bottom-nav svg path,
+.floating-actions svg path {
+  fill: currentColor;
+}
+
+.page-shell {
+  width: min(430px, 100%);
+  margin: 0 auto;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(246, 244, 237, 0.7)),
+    url("/assets/images/130-bg-invitation.jpg") center / 520px repeat;
+  box-shadow: 0 0 0 1px rgba(109, 84, 9, 0.1), 0 16px 46px rgba(0, 0, 0, 0.14);
+}
+
+.section {
+  position: relative;
+  z-index: 1;
+  min-height: 100svh;
+  padding: 139px 12px 112px;
+  overflow: hidden;
+  background: radial-gradient(rgba(255, 255, 255, 0.16), var(--paper-soft));
+  border-radius: 19px;
+}
+
+.section:nth-of-type(even) {
+  background:
+    linear-gradient(360deg, rgba(255, 255, 255, 0.43), rgba(255, 255, 255, 0.22)),
+    radial-gradient(rgba(255, 255, 255, 0.16), var(--paper-soft));
+}
+
+.section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.section-heading {
+  max-width: 560px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  top: -73px;
+  right: -27px;
+  width: 219px;
+  height: 218px;
+  z-index: -1;
+  background: url("/assets/ornaments/087-palmpink.png") center / contain no-repeat;
+  filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.64));
+  opacity: 0.75;
+  animation: iddle4 7s ease-in-out infinite alternate-reverse;
+  pointer-events: none;
+}
+
+.section-heading h2,
+.events h2,
+.story h2,
+.gallery-section h2,
+.rsvp h2 {
+  margin: 0;
+  color: var(--brown);
+  font-family: "TheSeasons", Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1.08;
+}
+
+.section-heading p:last-child {
+  margin: 12px auto 0;
+  color: var(--muted);
+}
+
+.hero {
+  display: grid;
+  align-content: center;
+  gap: 28px;
+  text-align: center;
+  background:
+    linear-gradient(360deg, rgba(255, 255, 255, 0.43), rgba(255, 255, 255, 0.22)),
+    url("/assets/images/083-pexels-nadi-lindsay-2789545.jpg") center / cover;
+}
+
+.hero::before,
+.hero::after {
+  opacity: 0.68;
+}
+
+.hero__visual {
+  position: relative;
+  width: min(300px, 86%);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.18));
+}
+
+.hero__frame,
+.hero__portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero__frame {
+  animation: iddle7 9s ease-in-out infinite;
+}
+
+.hero__portrait {
+  inset: 22%;
+  width: 56%;
+  height: 56%;
+  margin: auto;
+  border-radius: 50rem;
+  object-fit: cover;
+}
+
+.hero__lead {
+  margin: 12px 0;
+  color: var(--muted);
+}
+
+.date-lockup {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 14px;
+  width: min(360px, 100%);
+  margin: 18px auto;
+  color: var(--brown);
+}
+
+.date-lockup span {
+  border-block: 2px solid var(--gold);
+  padding: 5px 0;
+  font-weight: 700;
+}
+
+.date-lockup strong {
+  min-width: 74px;
+  border-inline: 5px solid var(--gold);
+  color: var(--brown);
+  font-family: "TheSeasons", Georgia, serif;
+  font-size: 4.6rem;
+  line-height: 0.9;
+}
+
+.countdown-label {
+  margin: 6px 0 12px;
+  color: var(--muted);
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: min(420px, 100%);
+  margin: 0 auto;
+}
+
+.countdown div {
+  min-height: 70px;
+  border-radius: 33px;
+  background: #6e5d3a;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  padding: 8px;
+}
+
+.countdown strong {
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.countdown span {
+  font-size: 0.72rem;
+}
+
+.couple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.person,
+.event-card,
+.story-item,
+.note-box,
+.rsvp-form,
+.closing__inner {
+  border: 1px solid var(--line);
+  border-radius: 33px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 5px inset rgba(0, 0, 0, 0.12), 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.person {
+  padding: 11px;
+  text-align: center;
+}
+
+.person img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+.person h3 {
+  margin: 12px 0 4px;
+  color: var(--brown);
+  font-family: "TheSeasons", Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.person p,
+.event-card p,
+.story-item p,
+.note-box p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.ampersand {
+  color: var(--gold);
+  font-family: "Spirited", "TheSeasons", serif;
+  font-size: 3.7rem;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.event-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.event-card {
+  padding: 22px 16px;
+  text-align: center;
+}
+
+.event-card__label {
+  color: var(--rose) !important;
+  font-family: "Spirited", serif;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.event-card h3 {
+  margin: 8px 0;
+  color: var(--brown);
+  font-size: 1.25rem;
+}
+
+.event-card strong {
+  display: block;
+  margin-top: 10px;
+}
+
+.note-box {
+  margin-top: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+.timeline {
+  display: grid;
+  gap: 16px;
+}
+
+.story-item {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+}
+
+.story-item img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+.story-item time {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.story-item h3 {
+  margin: 0;
+  color: var(--brown);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.gallery__item {
+  border: 0;
+  border-radius: 17px;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+}
+
+.gallery__item img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  transition: transform 240ms ease;
+}
+
+.gallery__item:hover img {
+  transform: scale(1.04);
+}
+
+.rsvp-form {
+  display: grid;
+  gap: 14px;
+  width: min(520px, 100%);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.rsvp-form label {
+  display: grid;
+  gap: 6px;
+  color: var(--brown);
+  font-weight: 800;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--ink);
+  padding: 11px 12px;
+}
+
+.form-note {
+  min-height: 24px;
+  margin: 0;
+  color: var(--rose);
+  font-weight: 800;
+  text-align: center;
+}
+
+.closing {
+  display: grid;
+  place-items: center;
+  min-height: 80svh;
+  text-align: center;
+}
+
+.closing__inner {
+  width: min(520px, 100%);
+  padding: 28px 20px;
+}
+
+.closing__inner img {
+  width: min(220px, 70%);
+  height: auto;
+  margin: 0 auto 12px;
+}
+
+.floating-actions,
+.bottom-nav {
+  opacity: 1;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+body:not(.is-open) .floating-actions,
+body:not(.is-open) .bottom-nav {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.floating-actions {
+  position: fixed;
+  right: max(9px, calc((100vw - 430px) / 2 + 9px));
+  top: 50%;
+  z-index: 30;
+  display: grid;
+  gap: 8px;
+  transform: translateY(-50%);
+}
+
+.float-button {
+  width: 42px;
+  min-height: 48px;
+  border: 1px solid rgba(109, 84, 9, 0.2);
+  border-radius: 9px 0;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  place-items: center;
+  gap: 2px;
+  padding: 7px 5px;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.float-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.float-button--round {
+  min-height: 42px;
+  border-radius: 50rem;
+}
+
+.float-button:first-child {
+  border-radius: 9px 0;
+}
+
+.float-button:last-child {
+  border-radius: 0 11px;
+}
+
+.float-button.is-active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.audio-off,
+.float-button.is-playing .audio-on {
+  display: block;
+}
+
+.audio-on,
+.float-button.is-playing .audio-off {
+  display: none;
+}
+
+.float-button.is-playing .audio-on {
+  animation: iddle8 5s linear infinite;
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 50%;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 30;
+  width: min(360px, calc(100% - 34px));
+  min-height: 52px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  padding: 7px;
+  border: 1px solid rgba(109, 84, 9, 0.18);
+  border-radius: 50rem;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+  transform: translateX(-50%);
+  backdrop-filter: blur(12px);
+}
+
+.bottom-nav a {
+  display: grid;
+  place-items: center;
+  min-height: 38px;
+  border-radius: 50rem;
+  color: var(--primary);
+}
+
+.bottom-nav svg {
+  width: 18px;
+  height: 18px;
+}
+
+.lightbox {
+  width: min(760px, calc(100% - 28px));
+  border: 0;
+  border-radius: 8px;
+  padding: 0;
+  background: transparent;
+}
+
+.lightbox::backdrop {
+  background: rgba(5, 16, 16, 0.76);
+}
+
+.lightbox img {
+  width: 100%;
+  max-height: 82svh;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: -14px;
+  right: -10px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50rem;
+  background: #fff;
+  color: var(--deep);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.turun {
+  position: relative;
+  top: -999px;
+  transition: top 2.5s;
+}
+
+.turun.animate {
+  top: 0;
+}
+
+.naik {
+  position: relative;
+  top: 999px;
+  transition: top 2.5s;
+}
+
+.naik.animate {
+  top: 0;
+}
+
+.kekiri {
+  position: relative;
+  right: -999px;
+  transition: right 2.5s;
+}
+
+.kekiri.animate {
+  right: 0;
+}
+
+.kekanan {
+  position: relative;
+  left: -999px;
+  transition: left 2.5s;
+}
+
+.kekanan.animate {
+  left: 0;
+}
+
+.membesar {
+  transform: scale(0);
+  transition: transform 2.5s;
+}
+
+.membesar.animate {
+  transform: scale(1);
+}
+
+.muncul {
+  opacity: 0;
+  transition: opacity 1.9s;
+}
+
+.muncul.animate {
+  opacity: 1;
+}
+
+.melebar {
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 1.9s;
+}
+
+.melebar.animate {
+  max-width: 500px;
+}
+
+.animate.fadeIn,
+.animate.animate__fadeIn {
+  animation: fadeIn 2.5s both;
+}
+
+.animate.fadeOut,
+.animate.animate__fadeOut {
+  animation: fadeOut 2.5s both;
+}
+
+@keyframes coverZoom {
+  from {
+    transform: scale(1.03);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes iddle1 {
+  0%,
+  100% {
+    transform: translate3d(0, var(--parallax-y), 0) scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(-33px, calc(var(--parallax-y) - 33px), 0) scale(0.9) rotate(5deg);
+  }
+}
+
+@keyframes iddle2 {
+  0%,
+  100% {
+    transform: translate3d(0, var(--parallax-y), 0) scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(33px, calc(var(--parallax-y) + 33px), 0) scale(0.9) rotate(5deg);
+  }
+}
+
+@keyframes iddle4 {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg) translate(0, 0);
+  }
+
+  50% {
+    transform: scale(0.9) rotate(5deg) translate(-33px, 33px);
+  }
+}
+
+@keyframes iddle7 {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes iddle8 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 760px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .cover h1,
+  .hero h2,
+  .closing h2 {
+    font-size: 3.35rem;
+  }
+
+  .section {
+    padding-inline: 14px;
+  }
+}

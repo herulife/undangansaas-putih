@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light only" />
+    <title>Raras &amp; Danis - Adat Sunda</title>
+    <meta name="description" content="Minggu, 16 Agustus 2026" />
+    <meta property="og:title" content="Raras &amp; Danis - Adat Sunda" />
+    <meta property="og:description" content="Minggu, 16 Agustus 2026" />
+    <meta property="og:image" content="./assets/images/og-cover.webp" />
+    <meta property="og:type" content="website" />
+    <link rel="preload" as="image" href="./assets/images/hero-couple.webp" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div id="cover" class="cover" aria-modal="true" role="dialog">
+      <div class="cover__photo"></div>
+      <div class="cover__shade"></div>
+      <div class="petal-field" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <img class="ornament ornament--cover-top" src="./assets/ornaments/floral-top-left.png" alt="" />
+      <img class="ornament ornament--cover-bottom" src="./assets/ornaments/floral-bottom-right.png" alt="" />
+      <div class="cover__content">
+        <p class="eyebrow">The Wedding Of</p>
+        <h1><span>Raras</span><em>&amp;</em><span>Danis</span></h1>
+        <div class="guest-box">
+          <p>Kepada Yth.</p>
+          <strong class="guest-name">Tamu Undangan</strong>
+        </div>
+        <button class="open-button" type="button">
+          <span>Buka Undangan</span>
+        </button>
+      </div>
+    </div>
+
+    <main class="phone-shell" id="top">
+      <div class="ambient ambient--left parallax-layer" data-speed="-0.08" aria-hidden="true"></div>
+      <div class="ambient ambient--right parallax-layer" data-speed="0.11" aria-hidden="true"></div>
+      <div class="paper-grain" aria-hidden="true"></div>
+      <nav class="bottom-nav" aria-label="Navigasi undangan">
+        <button type="button" data-target="#couple" aria-label="Mempelai">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.4-8.3C.7 9.7 2.1 6 5.6 5.4c2-.3 3.4.6 4.4 1.8 1-1.2 2.4-2.1 4.4-1.8 3.5.6 4.9 4.3 3 7.3C19 16.6 12 21 12 21z"/></svg>
+        </button>
+        <button type="button" data-target="#event" aria-label="Acara">
+          <svg viewBox="0 0 24 24"><path d="M7 2h2v3h6V2h2v3h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2V2zm12 8H5v10h14V10z"/></svg>
+        </button>
+        <button type="button" data-target="#home" aria-label="Cover">
+          <svg viewBox="0 0 24 24"><path d="M12 3 3 10v10h6v-6h6v6h6V10l-9-7z"/></svg>
+        </button>
+        <button type="button" data-target="#gallery" aria-label="Galeri">
+          <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
+        </button>
+        <button type="button" data-target="#rsvp" aria-label="RSVP">
+          <svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5z"/></svg>
+        </button>
+      </nav>
+
+      <div class="floating-actions" aria-label="Kontrol undangan">
+        <button id="toTop" type="button" aria-label="Kembali ke atas">
+          <svg viewBox="0 0 24 24"><path d="m12 7 7 7-1.4 1.4L12 9.8l-5.6 5.6L5 14l7-7z"/></svg>
+          <span>Top</span>
+        </button>
+        <button id="audioToggle" class="active" type="button" aria-label="Matikan musik">
+          <svg class="icon-audio-on" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5-2.1-1.4 1.4A5 5 0 0 1 16.5 12a5 5 0 0 1-1.4 3.6l1.4 1.4a7 7 0 0 0 0-10.1z"/></svg>
+          <svg class="icon-audio-off" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4zm12.6 3 2.2-2.2-1.4-1.4-2.2 2.2L13 8.4 11.6 9.8l2.2 2.2-2.2 2.2 1.4 1.4 2.2-2.2 2.2 2.2 1.4-1.4-2.2-2.2z"/></svg>
+          <span>Musik</span>
+        </button>
+        <button id="readToggle" class="active" type="button" aria-label="Jeda auto scroll">
+          <svg viewBox="0 0 24 24"><path d="M17.7 6.3A8 8 0 1 0 20 12h-2a6 6 0 1 1-1.8-4.2L13 11h8V3l-3.3 3.3z"/></svg>
+          <span>Read</span>
+        </button>
+      </div>
+
+      <section class="hero section" id="home">
+        <div class="hero__slider" aria-hidden="true"></div>
+        <div class="section-wave section-wave--top" aria-hidden="true"></div>
+        <img class="ornament ornament--hero-top parallax-layer" data-speed="-0.13" src="./assets/ornaments/floral-top-left.png" alt="" />
+        <img class="ornament ornament--hero-bottom parallax-layer" data-speed="0.16" src="./assets/ornaments/floral-bottom-right.png" alt="" />
+        <div class="hero__content reveal zoom-in">
+          <p class="script-title">Wedding Of</p>
+          <div class="frame-photo parallax-layer" data-speed="-0.04">
+            <img class="frame-photo__ornament" src="./assets/ornaments/frame-050.png" alt="" />
+            <div class="frame-photo__image"></div>
+          </div>
+          <h2 class="couple-names"><span>Raras</span><em>&amp;</em><span>Danis</span></h2>
+          <p class="hero__copy">Akan menyelenggarakan acara pernikahan</p>
+          <p class="hero__hashtag reveal rotate-soft">#RarasDanisNgahiji</p>
+          <div class="date-card">
+            <span>Minggu</span>
+            <strong>16</strong>
+            <span>Agustus 2026</span>
+          </div>
+          <div class="countdown" aria-label="Hitung mundur">
+            <div><strong data-count="days">00</strong><span>Hari</span></div>
+            <div><strong data-count="hours">00</strong><span>Jam</span></div>
+            <div><strong data-count="minutes">00</strong><span>Menit</span></div>
+            <div><strong data-count="seconds">00</strong><span>Detik</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="couple">
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+        <img class="section-ornament section-ornament--left parallax-layer" data-speed="0.12" src="./assets/ornaments/palm-pink.png" alt="" />
+        <img class="corner-frame corner-frame--top-right parallax-layer" data-speed="-0.06" src="./assets/ornaments/floral-bottom-right.png" alt="" />
+        <div class="section-card reveal fade-up">
+          <p class="section-kicker">Assalamualaikum Wr. Wb.</p>
+          <p>Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami.</p>
+          <div class="profile-grid">
+            <article class="profile reveal slide-left">
+              <div class="profile__photo profile__photo--bride"></div>
+              <h3>Raras Ayuningtyas</h3>
+              <p>Putri Bapak H. Asep &amp; Ibu Hj. Nining</p>
+            </article>
+            <img class="profile-separator" src="./assets/ornaments/separator.png" alt="" />
+            <article class="profile reveal slide-right">
+              <div class="profile__photo profile__photo--groom"></div>
+              <h3>Danis Pratama</h3>
+              <p>Putra Bapak H. Dedi &amp; Ibu Hj. Ratna</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story" id="story">
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+        <img class="corner-frame corner-frame--bottom-left parallax-layer" data-speed="0.1" src="./assets/ornaments/floral-top-left.png" alt="" />
+        <div class="section-card reveal fade-up">
+          <p class="section-kicker">Carita Asih</p>
+          <h2>Ngahiji Dina Rasa</h2>
+          <div class="timeline">
+            <article class="reveal slide-left">
+              <span>2022</span>
+              <h3>Patepang</h3>
+              <p>Berawal dari pertemuan sederhana, obrolan kecil menjadi doa yang diam-diam tumbuh.</p>
+            </article>
+            <article class="reveal slide-right">
+              <span>2025</span>
+              <h3>Ngalamar</h3>
+              <p>Dua keluarga dipertemukan dalam niat baik, membawa restu menuju hari bahagia.</p>
+            </article>
+            <article class="reveal slide-left">
+              <span>2026</span>
+              <h3>Nikah</h3>
+              <p>InsyaAllah kami memulai perjalanan baru dengan doa dan kasih dari orang-orang terdekat.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section event" id="event">
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+        <img class="section-ornament section-ornament--right parallax-layer" data-speed="-0.11" src="./assets/ornaments/palm-pink.png" alt="" />
+        <img class="corner-frame corner-frame--top-left parallax-layer" data-speed="0.07" src="./assets/ornaments/floral-top-left.png" alt="" />
+        <div class="section-card reveal fade-up">
+          <p class="section-kicker">Waktu dan Tempat</p>
+          <h2>Save The Date</h2>
+          <article class="event-card reveal zoom-in">
+            <span>Akad Nikah</span>
+            <h3>Minggu, 16 Agustus 2026</h3>
+            <p>Pukul 08.00 WIB</p>
+            <strong>Masjid Raya Al Jabbar Bandung</strong>
+          </article>
+          <article class="event-card reveal zoom-in">
+            <span>Resepsi &amp; Mapag Panganten</span>
+            <h3>Minggu, 16 Agustus 2026</h3>
+            <p>Pukul 11.00 - 14.00 WIB</p>
+            <strong>Gedung Pusdai Jawa Barat, Jl. Diponegoro No. 63, Kota Bandung</strong>
+          </article>
+          <iframe
+            class="map"
+            loading="lazy"
+            title="Peta lokasi pernikahan"
+            src="https://maps.google.com/maps?q=Gedung%20Pusdai%20Jawa%20Barat%20Bandung&hl=id&z=15&amp;output=embed"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+        <img class="corner-frame corner-frame--top-right parallax-layer" data-speed="-0.08" src="./assets/ornaments/floral-bottom-right.png" alt="" />
+        <div class="section-card reveal fade-up">
+          <p class="section-kicker">Prewedding</p>
+          <h2>Galeri Kami</h2>
+          <div class="gallery-grid">
+            <button class="gallery-item tall reveal slide-left" type="button" data-full="./assets/images/prewed-1.webp"><img src="./assets/images/prewed-1.webp" alt="Foto prewedding Raras dan Danis" loading="lazy" /></button>
+            <button class="gallery-item reveal slide-right" type="button" data-full="./assets/images/prewed-2.webp"><img src="./assets/images/prewed-2.webp" alt="Foto prewedding di teras taman" loading="lazy" /></button>
+            <button class="gallery-item reveal slide-right" type="button" data-full="./assets/images/prewed-3.webp"><img src="./assets/images/prewed-3.webp" alt="Foto prewedding candid" loading="lazy" /></button>
+            <button class="gallery-item wide reveal fade-up" type="button" data-full="./assets/images/prewed-4.webp"><img src="./assets/images/prewed-4.webp" alt="Foto pengantin adat Sunda" loading="lazy" /></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rsvp" id="rsvp">
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+        <img class="corner-frame corner-frame--bottom-left parallax-layer" data-speed="0.09" src="./assets/ornaments/floral-top-left.png" alt="" />
+        <div class="section-card reveal fade-up">
+          <p class="section-kicker">Ucapan dan Doa</p>
+          <h2>Konfirmasi Kehadiran</h2>
+          <form id="rsvpForm" class="rsvp-form">
+            <input name="name" type="text" placeholder="Nama" autocomplete="name" />
+            <select name="attendance" aria-label="Konfirmasi Kehadiran">
+              <option value="hadir">InsyaAllah hadir</option>
+              <option value="tidak">Mohon maaf belum bisa hadir</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Tulis ucapan terbaik"></textarea>
+            <button type="submit">Kirim Ucapan</button>
+          </form>
+          <div class="wishes" aria-live="polite">
+            <article>
+              <strong>Tamu Undangan</strong>
+              <p>Selamat menempuh hidup baru, semoga menjadi keluarga sakinah mawaddah warahmah.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gift">
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+        <div class="section-card reveal fade-up">
+          <p class="section-kicker">Kado Pernikahan</p>
+          <h2>Tanda Kasih</h2>
+          <div class="gift-card">
+            <span>BCA</span>
+            <strong>1234567890</strong>
+            <p>a.n. Raras Ayuningtyas</p>
+            <button type="button" data-copy="1234567890">Salin Rekening</button>
+          </div>
+          <div class="gift-card">
+            <span>Alamat Kado</span>
+            <strong>Keluarga Raras &amp; Danis</strong>
+            <p>Jl. Rancabolang No. 16, Kota Bandung</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section closing">
+        <div class="section-divider" aria-hidden="true"><span></span></div>
+        <img class="ornament ornament--closing-top parallax-layer" data-speed="-0.11" src="./assets/ornaments/floral-top-left.png" alt="" />
+        <img class="ornament ornament--closing-bottom parallax-layer" data-speed="0.12" src="./assets/ornaments/floral-bottom-right.png" alt="" />
+        <div class="section-card reveal zoom-in">
+          <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+          <h2>Hatur Nuhun</h2>
+          <p class="closing-names">Raras <span>&amp;</span> Danis</p>
+        </div>
+      </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" hidden>
+      <button type="button" aria-label="Tutup galeri">&times;</button>
+      <img alt="Preview galeri" />
+    </div>
+
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>

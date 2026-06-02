@@ -1,0 +1,20 @@
+flowchart TD
+    A[Mulai] --> B{Buka Website/Aplikasi}
+    B --> C[Pilih 'Buat Gratis']
+    C --> D[Registrasi via WhatsApp]
+    D --> E{Login Berhasil?}
+    E -- Tidak --> D
+    E -- Ya --> F{Pilih Metode}
+    F -- Buat Sendiri --> G[Isi Detail Acara]
+    F -- Minta Dibuatin Admin --> H[Kirim Data ke Admin]
+    H --> I[Admin Proses Undangan]
+    I --> J[Preview Hasil]
+    J --> K{Pelanggan Suka?}
+    K -- Tidak --> I
+    K -- Ya --> L[Bayar Setelah Jadi]
+    G --> M[Pilih Tema Premium]
+    M --> N[Kustomisasi: Font, Warna, Galeri]
+    N --> O[Publikasi Undangan]
+    O --> P[Sebar Tautan ke Tamu]
+    L --> O
+    P --> Q[Selesai]

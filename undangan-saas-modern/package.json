@@ -1,0 +1,11 @@
+{
+  "name": "undangan-saas-modern",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "dev:api": "cd apps/api && go run ./cmd/api",
+    "test:api": "cd apps/api && go test ./..."
+  }
+}
+

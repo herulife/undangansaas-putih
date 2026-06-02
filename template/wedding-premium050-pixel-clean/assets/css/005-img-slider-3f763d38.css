@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+
+#generateImageSlider{
+    position: relative;
+}
+
+#generateImageSlider .imgslide-container{
+    position: relative;
+    max-width: 800px;
+    height: 450px;
+    padding: 19px;
+    margin: 19px;
+    margin-top:39px;
+    border: 19px inset #c0c0c05c;
+    outline: 5px solid #c0c0c05c;
+    outline-offset: 19px;
+    border-radius:0!important;
+}
+
+#generateImageSlider .imgslide-container::before{
+    content: '';
+    background-image: url(../ornaments/098-pin-3f7631.png);
+    width: 54px;
+    height: 54px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -73px;
+    border-radius: 9px;
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+    z-index: 9;
+    filter: contrast(0.7);
+    opacity:0.5;
+}
+
+#generateImageSlider .imgSlider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#generateImageSlider .imgSlider-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: 0;
+  transition: background-image 0.5s ease-in-out;
+  background-image: linear-gradient(360deg, #0000008c, #000000b0);
+}
+
+#generateImageSlider .imgSlider-images {
+  position: relative;
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+  align-items: center;
+}
+
+#generateImageSlider .imgSlider-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: transparent;
+  box-shadow:none;
+  /*background-color:#ffffff1f;*/
+  border-radius:0!important;
+  transform: none;
+}
+
+#generateImageSlider .nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: white;
+  border: none;    
+  font-size: 33px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  text-shadow:1px 1px 3px gray;
+}
+
+#generateImageSlider .prev {
+  left: 9px;
+}
+
+#generateImageSlider .next {
+  right: 9px;
+}
+.d-none{
+	display:none;
+}

@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Link Undangan - Digital Invitation Builder</title>
+    <meta
+      name="description"
+      content="Implementasi prototype Link Undangan dari desain Stitch: landing, template, login WhatsApp, dashboard, customization, admin service, publish success, dan guest invitation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" data-route="home" aria-label="Link Undangan">
+          <span class="brand-mark">LU</span>
+          <span>Link Undangan</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a href="#home" data-route="home">Beranda</a>
+          <a href="#templates" data-route="templates">Template</a>
+          <a href="#pricing" data-route="pricing">Harga</a>
+          <a href="#method" data-route="method">Dashboard</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <button class="ghost-button" type="button" data-route="login">Login</button>
+          <button class="primary-button" type="button" data-route="login">Buat Gratis</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="screen active" id="home" data-screen="home">
+          <div class="hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Heritage Modern Wedding SaaS</p>
+              <h1>Undangan online premium, selesai tanpa ribet.</h1>
+              <p>
+                Buat undangan digital elegan dengan template pilihan, RSVP,
+                buku tamu, peta, musik, titip kado, dan link siap sebar.
+              </p>
+              <div class="hero-actions">
+                <button class="primary-button xl" type="button" data-route="login">Buat Gratis</button>
+                <button class="secondary-button xl" type="button" data-route="pricing">Lihat Harga</button>
+              </div>
+              <div class="trust-row" aria-label="Ringkasan layanan">
+                <span>Tanpa masa aktif</span>
+                <span>Edit kapan saja</span>
+                <span>Bayar pas sudah jadi</span>
+              </div>
+            </div>
+
+            <div class="hero-preview reveal">
+              <div class="browser-card">
+                <div class="browser-dots"><span></span><span></span><span></span></div>
+                <div class="builder-preview">
+                  <aside>
+                    <strong>Elegan-Gold</strong>
+                    <button type="button">Font</button>
+                    <button type="button">Warna</button>
+                    <button type="button">Foto</button>
+                    <button type="button">Musik</button>
+                  </aside>
+                  <div class="invite-card">
+                    <img src="assets/images/ornament-melati.png" alt="" />
+                    <p>The Wedding of</p>
+                    <h2>Raka &amp; Dinda</h2>
+                    <span>22 November 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-strip reveal">
+            <article>
+              <span>01</span>
+              <h3>Pilih template</h3>
+              <p>Galeri premium dengan preview desktop dan mobile.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Kustomisasi</h3>
+              <p>Data acara, foto, musik, peta, dan kado virtual.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Publikasi</h3>
+              <p>Link unik siap dibagikan ke WhatsApp dan media sosial.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="templates" data-screen="templates">
+          <div class="section-head">
+            <p class="eyebrow">Template Gallery</p>
+            <h2>Pilih gaya undangan</h2>
+            <p>Filter template berdasarkan nuansa, kategori acara, dan fitur.</p>
+          </div>
+
+          <div class="filter-bar">
+            <button class="chip active" type="button">Semua</button>
+            <button class="chip" type="button">Wedding</button>
+            <button class="chip" type="button">Adat Jawa</button>
+            <button class="chip" type="button">Premium</button>
+            <button class="chip" type="button">Minimal</button>
+          </div>
+
+          <div class="template-grid">
+            <article class="template-card featured">
+              <div class="template-image emerald">
+                <img src="assets/images/prewed-garden.png" alt="Preview template Elegan-Gold" />
+              </div>
+              <div>
+                <span class="badge">Premium</span>
+                <h3>Elegan-Gold</h3>
+                <p>Deep emerald, gold filigree, musik, RSVP, maps, dan titip kado.</p>
+                <div class="card-actions">
+                  <button class="secondary-button" type="button" data-route="template-detail">Lihat Detail</button>
+                  <button class="primary-button" type="button" data-route="customize">Pilih</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="template-card">
+              <div class="template-image ivory">
+                <img src="assets/images/prewed-terrace.png" alt="Preview template Ivory Garden" />
+              </div>
+              <div>
+                <span class="badge">Best Seller</span>
+                <h3>Ivory Garden</h3>
+                <p>Floral lembut, layout bersih, cocok untuk wedding modern.</p>
+                <div class="card-actions">
+                  <button class="secondary-button" type="button" data-route="template-detail">Lihat Detail</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="template-card">
+              <div class="template-image maroon">
+                <img src="assets/images/prewed-close.png" alt="Preview template Royal Maroon" />
+              </div>
+              <div>
+                <span class="badge">Adat</span>
+                <h3>Royal Maroon</h3>
+                <p>Hangat, klasik, dan kuat untuk resepsi adat Indonesia.</p>
+                <div class="card-actions">
+                  <button class="secondary-button" type="button" data-route="template-detail">Lihat Detail</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen" id="template-detail" data-screen="template-detail">
+          <div class="detail-layout">
+            <div class="mockup-panel">
+              <div class="mockup-toolbar">
+                <button class="pill active" type="button">Builder</button>
+                <button class="pill" type="button">Live</button>
+              </div>
+              <img src="assets/images/prewed-garden.png" alt="Preview besar template Elegan-Gold" />
+              <div class="preview-actions">
+                <button class="glass-button" type="button">Live Preview</button>
+                <button class="glass-button" type="button">Mobile View</button>
+              </div>
+            </div>
+
+            <aside class="detail-sidebar">
+              <p class="eyebrow">Template Detail</p>
+              <h2>Elegan-Gold</h2>
+              <p>Modern classic wedding suite with deep emerald accents and Indonesian cultural touches.</p>
+              <div class="feature-list">
+                <div><span>Music</span><strong>Musik auto-play setelah undangan dibuka.</strong></div>
+                <div><span>Maps</span><strong>Integrasi Google Maps untuk lokasi acara.</strong></div>
+                <div><span>RSVP</span><strong>Konfirmasi kehadiran dan buku tamu digital.</strong></div>
+                <div><span>Gift</span><strong>Titip kado virtual dan salin rekening.</strong></div>
+              </div>
+              <button class="primary-button wide" type="button" data-route="customize">Pilih Template Ini</button>
+              <p class="price-note">Mulai dari <strong>Rp 149.000</strong></p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="screen" id="pricing" data-screen="pricing">
+          <div class="section-head">
+            <p class="eyebrow">Pricing</p>
+            <h2>Paket fleksibel</h2>
+            <p>Mulai sendiri gratis, naikkan paket saat butuh fitur premium atau bantuan admin.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <span class="badge">Gratis</span>
+              <h3>Buat Sendiri</h3>
+              <strong>Rp 0</strong>
+              <p>Untuk mencoba flow undangan digital dan publish link demo.</p>
+              <button class="secondary-button wide" type="button" data-route="login">Mulai</button>
+            </article>
+            <article class="price-card highlight">
+              <span class="badge">Favorit</span>
+              <h3>Premium</h3>
+              <strong>Rp 149.000</strong>
+              <p>Template premium, edit tanpa batas, musik, maps, RSVP, dan kado.</p>
+              <button class="primary-button wide" type="button" data-route="login">Pilih Premium</button>
+            </article>
+            <article class="price-card">
+              <span class="badge">Full Service</span>
+              <h3>Dibuatkan Admin</h3>
+              <strong>Custom</strong>
+              <p>Kirim data mentah, admin proses, bayar setelah preview sesuai.</p>
+              <button class="secondary-button wide" type="button" data-route="admin">Minta Admin</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="screen auth-screen" id="login" data-screen="login">
+          <div class="auth-card">
+            <p class="eyebrow">Login WhatsApp</p>
+            <h2>Masuk dengan nomor WA</h2>
+            <p>Masukkan nomor WhatsApp untuk menerima OTP simulasi.</p>
+            <label>
+              Nomor WhatsApp
+              <input id="phoneInput" type="tel" placeholder="08xx xxxx xxxx" />
+            </label>
+            <button class="primary-button wide" type="button" id="sendOtp">Kirim OTP</button>
+            <button class="link-button" type="button" data-route="home">Kembali ke beranda</button>
+          </div>
+        </section>
+
+        <section class="screen auth-screen" id="otp" data-screen="otp">
+          <div class="auth-card">
+            <p class="eyebrow">Verifikasi OTP</p>
+            <h2>Masukkan kode 123456</h2>
+            <p>Untuk prototype ini, kode OTP sudah disimulasikan.</p>
+            <div class="otp-row">
+              <input class="otp-box" maxlength="1" value="1" />
+              <input class="otp-box" maxlength="1" value="2" />
+              <input class="otp-box" maxlength="1" value="3" />
+              <input class="otp-box" maxlength="1" value="4" />
+              <input class="otp-box" maxlength="1" value="5" />
+              <input class="otp-box" maxlength="1" value="6" />
+            </div>
+            <button class="primary-button wide" type="button" id="verifyOtp">Verifikasi &amp; Masuk</button>
+            <button class="link-button" type="button" data-route="login">Ubah nomor</button>
+          </div>
+        </section>
+
+        <section class="screen" id="method" data-screen="method">
+          <div class="dashboard-shell">
+            <aside class="side-menu">
+              <strong>Dashboard</strong>
+              <button class="active" type="button" data-route="method">Metode</button>
+              <button type="button" data-route="templates">Template</button>
+              <button type="button" data-route="customize">Editor</button>
+              <button type="button" data-route="admin">Admin</button>
+            </aside>
+            <div class="dashboard-content">
+              <div class="section-head left">
+                <p class="eyebrow">Pilih Metode</p>
+                <h2>Bagaimana undangan dibuat?</h2>
+                <p>Pilih jalur self-service atau full-service bersama admin Link Undangan.</p>
+              </div>
+              <div class="method-grid">
+                <article class="method-card">
+                  <span class="badge">Metode A</span>
+                  <h3>Buat Sendiri</h3>
+                  <p>Isi data acara, pilih template, kustomisasi, lalu publikasi link.</p>
+                  <ul>
+                    <li>Data acara lengkap</li>
+                    <li>Template premium</li>
+                    <li>Preview real-time</li>
+                  </ul>
+                  <button class="primary-button wide" type="button" data-route="customize">Mulai Buat</button>
+                </article>
+                <article class="method-card">
+                  <span class="badge">Metode B</span>
+                  <h3>Minta Dibuatin Admin</h3>
+                  <p>Kirim foto, teks, peta, dan konsep. Admin proses sampai siap publish.</p>
+                  <ul>
+                    <li>Upload data mentah</li>
+                    <li>Preview dan revisi</li>
+                    <li>Bayar pas sudah jadi</li>
+                  </ul>
+                  <button class="secondary-button wide" type="button" data-route="admin">Kirim Data</button>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="customize" data-screen="customize">
+          <div class="editor-layout">
+            <aside class="editor-sidebar">
+              <p class="eyebrow">Event Data</p>
+              <label>Jenis Acara <select><option>Wedding</option><option>Engagement</option></select></label>
+              <label>Nama Pasangan <input value="Raka & Dinda" /></label>
+              <label>Tanggal <input type="date" value="2026-11-22" /></label>
+              <label>Jam <input type="time" value="09:00" /></label>
+              <label>Venue <input value="Gedung Pakuan, Bandung" /></label>
+              <div class="custom-tabs">
+                <button class="active" type="button">Font</button>
+                <button type="button">Warna</button>
+                <button type="button">Foto</button>
+                <button type="button">Musik</button>
+                <button type="button">Kado</button>
+              </div>
+              <button class="primary-button wide" type="button" data-route="publish">Publikasi Undangan</button>
+            </aside>
+
+            <div class="editor-canvas">
+              <div class="canvas-head">
+                <div>
+                  <p class="eyebrow">Live Preview</p>
+                  <h2>Elegan-Gold</h2>
+                </div>
+                <button class="secondary-button" type="button" data-route="guest">Lihat Tamu</button>
+              </div>
+              <div class="phone-preview">
+                <img class="phone-ornament top" src="assets/images/ornament-melati.png" alt="" />
+                <img class="phone-ornament bottom" src="assets/images/ornament-melati.png" alt="" />
+                <div class="phone-photo"><img src="assets/images/couple-main.png" alt="Preview pengantin" /></div>
+                <p>The Wedding of</p>
+                <h3>Raka &amp; Dinda</h3>
+                <span>Minggu, 22 November 2026</span>
+                <button type="button">Buka Undangan</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="admin" data-screen="admin">
+          <div class="dashboard-shell">
+            <aside class="side-menu">
+              <strong>Admin Service</strong>
+              <button class="active" type="button">Brief</button>
+              <button type="button">Preview</button>
+              <button type="button">Revisi</button>
+              <button type="button">Bayar</button>
+            </aside>
+            <div class="dashboard-content">
+              <div class="section-head left">
+                <p class="eyebrow">Minta Dibuatin Admin</p>
+                <h2>Kirim data mentah, admin proses.</h2>
+                <p>Flow full-service dengan status preview, revisi, dan bayar pas sudah jadi.</p>
+              </div>
+              <div class="admin-grid">
+                <article class="upload-card">
+                  <span class="badge">Upload</span>
+                  <h3>Foto, teks, peta</h3>
+                  <p>Drop file atau kirim via WhatsApp admin.</p>
+                  <button class="secondary-button" type="button">Pilih File</button>
+                </article>
+                <article class="timeline-card">
+                  <div class="step done"><span></span><strong>Data diterima</strong><p>Brief pelanggan lengkap.</p></div>
+                  <div class="step active"><span></span><strong>Admin proses</strong><p>Template dipilih dan dikustomisasi.</p></div>
+                  <div class="step"><span></span><strong>Preview dikirim</strong><p>Pelanggan review hasil.</p></div>
+                  <div class="step"><span></span><strong>Bayar &amp; publish</strong><p>Link undangan siap sebar.</p></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="publish" data-screen="publish">
+          <canvas id="confetti" aria-hidden="true"></canvas>
+          <div class="publish-card">
+            <div class="success-icon">OK</div>
+            <p class="eyebrow">Publish Success</p>
+            <h2>Undangan Anda berhasil dipublikasikan!</h2>
+            <p>Satu langkah besar menuju perayaan yang tak terlupakan.</p>
+            <label>
+              Tautan Undangan Anda
+              <div class="copy-row">
+                <input id="inviteLink" value="linkundangan.com/inv/xyz" readonly />
+                <button class="primary-button" type="button" id="copyLink">Salin</button>
+              </div>
+            </label>
+            <div class="share-grid">
+              <button type="button">WhatsApp</button>
+              <button type="button">Instagram</button>
+              <button type="button">Facebook</button>
+              <button type="button">Email</button>
+            </div>
+            <div class="publish-actions">
+              <button class="secondary-button" type="button" data-route="guest">Lihat Pratinjau</button>
+              <button class="primary-button" type="button" data-route="method">Kembali ke Dashboard</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="guest" data-screen="guest">
+          <div class="guest-wrap">
+            <div class="guest-phone">
+              <section class="guest-cover">
+                <img src="assets/images/ornament-melati.png" alt="" />
+                <p>The Wedding of</p>
+                <h2>Raka &amp; Dinda</h2>
+                <span>Kepada Yth. Tamu Undangan</span>
+                <button type="button" id="openGuest">Buka Undangan</button>
+              </section>
+              <section class="guest-content">
+                <div class="guest-hero">
+                  <img src="assets/images/couple-main.png" alt="Foto pasangan" />
+                  <h3>Raka &amp; Dinda</h3>
+                  <p>Minggu, 22 November 2026</p>
+                </div>
+                <div class="guest-feature-grid">
+                  <article><strong>RSVP</strong><span>Konfirmasi hadir</span></article>
+                  <article><strong>Buku Tamu</strong><span>Tulis doa</span></article>
+                  <article><strong>Kado</strong><span>Titip hadiah</span></article>
+                  <article><strong>Peta</strong><span>Lihat lokasi</span></article>
+                </div>
+                <form class="guest-form">
+                  <input placeholder="Nama tamu" />
+                  <textarea placeholder="Tulis ucapan"></textarea>
+                  <button type="button">Kirim Ucapan</button>
+                </form>
+              </section>
+            </div>
+            <aside class="guest-notes">
+              <p class="eyebrow">Guest Mobile Invitation</p>
+              <h2>Pengalaman tamu lengkap</h2>
+              <p>Undangan mobile dengan cover, RSVP, buku tamu, kado virtual, maps, dan share.</p>
+              <button class="secondary-button" type="button" data-route="customize">Kembali ke Editor</button>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

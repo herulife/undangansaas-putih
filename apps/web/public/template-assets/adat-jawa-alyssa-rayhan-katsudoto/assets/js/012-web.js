@@ -1,0 +1,1 @@
+window.PhosphorIcons = window.PhosphorIcons || {};

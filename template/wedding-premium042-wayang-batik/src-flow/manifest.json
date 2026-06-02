@@ -1,0 +1,14 @@
+{
+  "partials": [
+    "00-head-and-service.html",
+    "01-cover-modal.html",
+    "02-section-cover.html",
+    "03-section-perihal.html",
+    "04-section-acara.html",
+    "05-section-cerita.html",
+    "06-section-galeri.html",
+    "07-section-tamu.html",
+    "08-section-lainnya.html",
+    "09-script-tail.html"
+  ]
+}

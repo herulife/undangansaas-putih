@@ -1,0 +1,1376 @@
+@font-face {
+  font-family: abril;
+  src: url(./142-abril.ttf);
+  font-display: swap;
+}
+.ff-abril {
+  font-family: abril!important;
+}
+@font-face {
+  font-family: aero;
+  src: url(./143-aero.ttf);
+  font-display: swap;
+}
+.ff-aero {
+  font-family: aero!important;
+}
+@font-face {
+  font-family: agatha;
+  src: url(./144-agatha.ttf);
+  font-display: swap;
+}
+.ff-agatha {
+  font-family: agatha!important;
+}
+@font-face {
+  font-family: aladin;
+  src: url(./145-aladin.ttf);
+  font-display: swap;
+}
+.ff-aladin {
+  font-family: aladin!important;
+}
+@font-face {
+  font-family: alata;
+  src: url(./146-alata.ttf);
+  font-display: swap;
+}
+.ff-alata {
+  font-family: alata!important;
+}
+@font-face {
+  font-family: alesa;
+  src: url(./147-alesa.ttf);
+  font-display: swap;
+}
+.ff-alesa {
+  font-family: alesa!important;
+}
+@font-face {
+  font-family: aller;
+  src: url(./148-aller.ttf);
+  font-display: swap;
+}
+.ff-aller {
+  font-family: aller!important;
+}
+@font-face {
+  font-family: amsterdam;
+  src: url(./149-amsterdam.ttf);
+  font-display: swap;
+}
+.ff-amsterdam {
+  font-family: amsterdam!important;
+}
+@font-face {
+  font-family: andina;
+  src: url(./150-andina.otf);
+  font-display: swap;
+}
+.ff-andina {
+  font-family: andina!important;
+}
+@font-face {
+  font-family: angelique;
+  src: url(./151-angelique.otf);
+  font-display: swap;
+}
+.ff-angelique {
+  font-family: angelique!important;
+}
+@font-face {
+  font-family: anydore;
+  src: url(./152-anydore.otf);
+  font-display: swap;
+}
+.ff-anydore {
+  font-family: anydore!important;
+}
+@font-face {
+  font-family: ardila;
+  src: url(./153-ardila.otf);
+  font-display: swap;
+}
+.ff-ardila {
+  font-family: ardila!important;
+}
+@font-face {
+  font-family: arefruqaa;
+  src: url(./154-arefruqaa.ttf);
+  font-display: swap;
+}
+.ff-arefruqaa {
+  font-family: arefruqaa!important;
+}
+@font-face {
+  font-family: autumn;
+  src: url(./155-autumn.ttf);
+  font-display: swap;
+}
+.ff-autumn {
+  font-family: autumn!important;
+}
+@font-face {
+  font-family: babynote;
+  src: url(./156-babynote.ttf);
+  font-display: swap;
+}
+.ff-babynote {
+  font-family: babynote!important;
+}
+@font-face {
+  font-family: baksosapi;
+  src: url(./157-baksosapi.otf);
+  font-display: swap;
+}
+.ff-baksosapi {
+  font-family: baksosapi!important;
+}
+@font-face {
+  font-family: beautifully_delicious;
+  src: url(./158-beautifully-delicious.ttf);
+  font-display: swap;
+}
+.ff-beautifully_delicious {
+  font-family: beautifully_delicious!important;
+}
+@font-face {
+  font-family: bestfriendsignature;
+  src: url(./159-bestfriendsignature.ttf);
+  font-display: swap;
+}
+.ff-bestfriendsignature {
+  font-family: bestfriendsignature!important;
+}
+@font-face {
+  font-family: bigday;
+  src: url(./160-bigday.ttf);
+  font-display: swap;
+}
+.ff-bigday {
+  font-family: bigday!important;
+}
+@font-face {
+  font-family: birthdaynumber;
+  src: url(./161-birthdaynumber.ttf);
+  font-display: swap;
+}
+.ff-birthdaynumber {
+  font-family: birthdaynumber!important;
+}
+@font-face {
+  font-family: bismillah;
+  src: url(./162-bismillah.ttf);
+  font-display: swap;
+}
+.ff-bismillah {
+  font-family: bismillah!important;
+}
+@font-face {
+  font-family: boldblaster;
+  src: url(./163-boldblaster.otf);
+  font-display: swap;
+}
+.ff-boldblaster {
+  font-family: boldblaster!important;
+}
+@font-face {
+  font-family: boogalo;
+  src: url(./164-boogalo.ttf);
+  font-display: swap;
+}
+.ff-boogalo {
+  font-family: boogalo!important;
+}
+@font-face {
+  font-family: breadley;
+  src: url(./165-breadley.ttf);
+  font-display: swap;
+}
+.ff-breadley {
+  font-family: breadley!important;
+}
+@font-face {
+  font-family: bubblegum;
+  src: url(./166-bubblegum.ttf);
+  font-display: swap;
+}
+.ff-bubblegum {
+  font-family: bubblegum!important;
+}
+@font-face {
+  font-family: bunch;
+  src: url(./167-bunch.ttf);
+  font-display: swap;
+}
+.ff-bunch {
+  font-family: bunch!important;
+}
+@font-face {
+  font-family: buongiorno_rastellino;
+  src: url(./168-buongiorno-rastellino.otf);
+  font-display: swap;
+}
+.ff-buongiorno_rastellino {
+  font-family: buongiorno_rastellino!important;
+}
+@font-face {
+  font-family: buzz;
+  src: url(./169-buzz.ttf);
+  font-display: swap;
+}
+.ff-buzz {
+  font-family: buzz!important;
+}
+@font-face {
+  font-family: cabin;
+  src: url(./170-cabin.ttf);
+  font-display: swap;
+}
+.ff-cabin {
+  font-family: cabin!important;
+}
+@font-face {
+  font-family: cabolafe;
+  src: url(./171-cabolafe.otf);
+  font-display: swap;
+}
+.ff-cabolafe {
+  font-family: cabolafe!important;
+}
+@font-face {
+  font-family: caranda;
+  src: url(./172-caranda.ttf);
+  font-display: swap;
+}
+.ff-caranda {
+  font-family: caranda!important;
+}
+@font-face {
+  font-family: casseron;
+  src: url(./173-casseron.otf);
+  font-display: swap;
+}
+.ff-casseron {
+  font-family: casseron!important;
+}
+@font-face {
+  font-family: caveat;
+  src: url(./174-caveat.ttf);
+  font-display: swap;
+}
+.ff-caveat {
+  font-family: caveat!important;
+}
+@font-face {
+  font-family: charming;
+  src: url(./175-charming.otf);
+  font-display: swap;
+}
+.ff-charming {
+  font-family: charming!important;
+}
+@font-face {
+  font-family: cheri;
+  src: url(./176-cheri.ttf);
+  font-display: swap;
+}
+.ff-cheri {
+  font-family: cheri!important;
+}
+@font-face {
+  font-family: chocolate;
+  src: url(./177-chocolate.ttf);
+  font-display: swap;
+}
+.ff-chocolate {
+  font-family: chocolate!important;
+}
+@font-face {
+  font-family: chunky;
+  src: url(./178-chunky.otf);
+  font-display: swap;
+}
+.ff-chunky {
+  font-family: chunky!important;
+}
+@font-face {
+  font-family: cinzel;
+  src: url(./179-cinzel.ttf);
+  font-display: swap;
+}
+.ff-cinzel {
+  font-family: cinzel!important;
+}
+@font-face {
+  font-family: cointa;
+  src: url(./180-cointa.ttf);
+  font-display: swap;
+}
+.ff-cointa {
+  font-family: cointa!important;
+}
+@font-face {
+  font-family: concert;
+  src: url(./181-concert.ttf);
+  font-display: swap;
+}
+.ff-concert {
+  font-family: concert!important;
+}
+@font-face {
+  font-family: cool;
+  src: url(./182-cool.ttf);
+  font-display: swap;
+}
+.ff-cool {
+  font-family: cool!important;
+}
+@font-face {
+  font-family: coolvetica;
+  src: url(./183-coolvetica.otf);
+  font-display: swap;
+}
+.ff-coolvetica {
+  font-family: coolvetica!important;
+}
+@font-face {
+  font-family: courgette;
+  src: url(./184-courgette.ttf);
+  font-display: swap;
+}
+.ff-courgette {
+  font-family: courgette!important;
+}
+@font-face {
+  font-family: daylove;
+  src: url(./185-daylove.ttf);
+  font-display: swap;
+}
+.ff-daylove {
+  font-family: daylove!important;
+}
+@font-face {
+  font-family: digigraphics;
+  src: url(./186-digigraphics.ttf);
+  font-display: swap;
+}
+.ff-digigraphics {
+  font-family: digigraphics!important;
+}
+@font-face {
+  font-family: digitalanarchy;
+  src: url(./187-digitalanarchy.ttf);
+  font-display: swap;
+}
+.ff-digitalanarchy {
+  font-family: digitalanarchy!important;
+}
+@font-face {
+  font-family: dmsans;
+  src: url(./188-dmsans.ttf);
+  font-display: swap;
+}
+.ff-dmsans {
+  font-family: dmsans!important;
+}
+@font-face {
+  font-family: dreamwood;
+  src: url(./189-dreamwood.ttf);
+  font-display: swap;
+}
+.ff-dreamwood {
+  font-family: dreamwood!important;
+}
+@font-face {
+  font-family: editundo;
+  src: url(./190-editundo.ttf);
+  font-display: swap;
+}
+.ff-editundo {
+  font-family: editundo!important;
+}
+@font-face {
+  font-family: edundot;
+  src: url(./191-edundot.ttf);
+  font-display: swap;
+}
+.ff-edundot {
+  font-family: edundot!important;
+}
+@font-face {
+  font-family: edunline;
+  src: url(./192-edunline.ttf);
+  font-display: swap;
+}
+.ff-edunline {
+  font-family: edunline!important;
+}
+@font-face {
+  font-family: federo;
+  src: url(./193-federo.ttf);
+  font-display: swap;
+}
+.ff-federo {
+  font-family: federo!important;
+}
+@font-face {
+  font-family: fontello;
+  src: url(./194-fontello.eot);
+  font-display: swap;
+}
+.ff-fontello {
+  font-family: fontello!important;
+}
+@font-face {
+  font-family: fontello;
+  src: url(./195-fontello.ttf);
+  font-display: swap;
+}
+.ff-fontello {
+  font-family: fontello!important;
+}
+@font-face {
+  font-family: fontello;
+  src: url(./196-fontello.woff);
+  font-display: swap;
+}
+.ff-fontello {
+  font-family: fontello!important;
+}
+@font-face {
+  font-family: free_serif;
+  src: url(./197-free-serif.otf);
+  font-display: swap;
+}
+.ff-free_serif {
+  font-family: free_serif!important;
+}
+@font-face {
+  font-family: friday;
+  src: url(./198-friday.otf);
+  font-display: swap;
+}
+.ff-friday {
+  font-family: friday!important;
+}
+@font-face {
+  font-family: ghostlike;
+  src: url(./199-ghostlike.ttf);
+  font-display: swap;
+}
+.ff-ghostlike {
+  font-family: ghostlike!important;
+}
+@font-face {
+  font-family: glacial;
+  src: url(./200-glacial.otf);
+  font-display: swap;
+}
+.ff-glacial {
+  font-family: glacial!important;
+}
+@font-face {
+  font-family: glitter;
+  src: url(./201-glitter.ttf);
+  font-display: swap;
+}
+.ff-glitter {
+  font-family: glitter!important;
+}
+@font-face {
+  font-family: glory;
+  src: url(./202-glory.otf);
+  font-display: swap;
+}
+.ff-glory {
+  font-family: glory!important;
+}
+@font-face {
+  font-family: grinched;
+  src: url(./203-grinched.otf);
+  font-display: swap;
+}
+.ff-grinched {
+  font-family: grinched!important;
+}
+@font-face {
+  font-family: grinched2;
+  src: url(./204-grinched2.otf);
+  font-display: swap;
+}
+.ff-grinched2 {
+  font-family: grinched2!important;
+}
+@font-face {
+  font-family: handlee;
+  src: url(./205-handlee.ttf);
+  font-display: swap;
+}
+.ff-handlee {
+  font-family: handlee!important;
+}
+@font-face {
+  font-family: happyending;
+  src: url(./206-happyending.ttf);
+  font-display: swap;
+}
+.ff-happyending {
+  font-family: happyending!important;
+}
+@font-face {
+  font-family: happyschool;
+  src: url(./207-happyschool.ttf);
+  font-display: swap;
+}
+.ff-happyschool {
+  font-family: happyschool!important;
+}
+@font-face {
+  font-family: heartbeat;
+  src: url(./208-heartbeat.ttf);
+  font-display: swap;
+}
+.ff-heartbeat {
+  font-family: heartbeat!important;
+}
+@font-face {
+  font-family: heartbit;
+  src: url(./209-heartbit.otf);
+  font-display: swap;
+}
+.ff-heartbit {
+  font-family: heartbit!important;
+}
+@font-face {
+  font-family: hellohoney;
+  src: url(./210-hellohoney.otf);
+  font-display: swap;
+}
+.ff-hellohoney {
+  font-family: hellohoney!important;
+}
+@font-face {
+  font-family: heycomic;
+  src: url(./211-heycomic.ttf);
+  font-display: swap;
+}
+.ff-heycomic {
+  font-family: heycomic!important;
+}
+@font-face {
+  font-family: hollens;
+  src: url(./212-hollens.otf);
+  font-display: swap;
+}
+.ff-hollens {
+  font-family: hollens!important;
+}
+@font-face {
+  font-family: homemade_apple;
+  src: url(./213-homemade-apple.ttf);
+  font-display: swap;
+}
+.ff-homemade_apple {
+  font-family: homemade_apple!important;
+}
+@font-face {
+  font-family: homemadesausage;
+  src: url(./214-homemadesausage.ttf);
+  font-display: swap;
+}
+.ff-homemadesausage {
+  font-family: homemadesausage!important;
+}
+@font-face {
+  font-family: indieflower;
+  src: url(./215-indieflower.ttf);
+  font-display: swap;
+}
+.ff-indieflower {
+  font-family: indieflower!important;
+}
+@font-face {
+  font-family: inlove;
+  src: url(./216-inlove.ttf);
+  font-display: swap;
+}
+.ff-inlove {
+  font-family: inlove!important;
+}
+@font-face {
+  font-family: inter_regular;
+  src: url(./217-inter-regular.ttf);
+  font-display: swap;
+}
+.ff-inter_regular {
+  font-family: inter_regular!important;
+}
+@font-face {
+  font-family: itim;
+  src: url(./218-itim.ttf);
+  font-display: swap;
+}
+.ff-itim {
+  font-family: itim!important;
+}
+@font-face {
+  font-family: josefin;
+  src: url(./219-josefin.ttf);
+  font-display: swap;
+}
+.ff-josefin {
+  font-family: josefin!important;
+}
+@font-face {
+  font-family: juliaantoni;
+  src: url(./220-juliaantoni.ttf);
+  font-display: swap;
+}
+.ff-juliaantoni {
+  font-family: juliaantoni!important;
+}
+@font-face {
+  font-family: justbreathe;
+  src: url(./221-justbreathe.otf);
+  font-display: swap;
+}
+.ff-justbreathe {
+  font-family: justbreathe!important;
+}
+@font-face {
+  font-family: kalam;
+  src: url(./222-kalam.ttf);
+  font-display: swap;
+}
+.ff-kalam {
+  font-family: kalam!important;
+}
+@font-face {
+  font-family: katrine;
+  src: url(./223-katrine.ttf);
+  font-display: swap;
+}
+.ff-katrine {
+  font-family: katrine!important;
+}
+@font-face {
+  font-family: kgchasing;
+  src: url(./224-kgchasing.ttf);
+  font-display: swap;
+}
+.ff-kgchasing {
+  font-family: kgchasing!important;
+}
+@font-face {
+  font-family: kgroyal;
+  src: url(./225-kgroyal.ttf);
+  font-display: swap;
+}
+.ff-kgroyal {
+  font-family: kgroyal!important;
+}
+@font-face {
+  font-family: kids;
+  src: url(./226-kids.ttf);
+  font-display: swap;
+}
+.ff-kids {
+  font-family: kids!important;
+}
+@font-face {
+  font-family: kinlove;
+  src: url(./227-kinlove.ttf);
+  font-display: swap;
+}
+.ff-kinlove {
+  font-family: kinlove!important;
+}
+@font-face {
+  font-family: knewave;
+  src: url(./228-knewave.ttf);
+  font-display: swap;
+}
+.ff-knewave {
+  font-family: knewave!important;
+}
+@font-face {
+  font-family: lamor;
+  src: url(./229-lamor.ttf);
+  font-display: swap;
+}
+.ff-lamor {
+  font-family: lamor!important;
+}
+@font-face {
+  font-family: librebaskerville_regular;
+  src: url(./230-librebaskerville-regular.ttf);
+  font-display: swap;
+}
+.ff-librebaskerville_regular {
+  font-family: librebaskerville_regular!important;
+}
+@font-face {
+  font-family: lietome;
+  src: url(./231-lietome.otf);
+  font-display: swap;
+}
+.ff-lietome {
+  font-family: lietome!important;
+}
+@font-face {
+  font-family: lifesaves;
+  src: url(./232-lifesaves.ttf);
+  font-display: swap;
+}
+.ff-lifesaves {
+  font-family: lifesaves!important;
+}
+@font-face {
+  font-family: lobster;
+  src: url(./233-lobster.otf);
+  font-display: swap;
+}
+.ff-lobster {
+  font-family: lobster!important;
+}
+@font-face {
+  font-family: love1;
+  src: url(./234-love1.ttf);
+  font-display: swap;
+}
+.ff-love1 {
+  font-family: love1!important;
+}
+@font-face {
+  font-family: love2;
+  src: url(./235-love2.ttf);
+  font-display: swap;
+}
+.ff-love2 {
+  font-family: love2!important;
+}
+@font-face {
+  font-family: lovea;
+  src: url(./236-lovea.ttf);
+  font-display: swap;
+}
+.ff-lovea {
+  font-family: lovea!important;
+}
+@font-face {
+  font-family: lovely;
+  src: url(./237-lovely.otf);
+  font-display: swap;
+}
+.ff-lovely {
+  font-family: lovely!important;
+}
+@font-face {
+  font-family: lovemy;
+  src: url(./238-lovemy.ttf);
+  font-display: swap;
+}
+.ff-lovemy {
+  font-family: lovemy!important;
+}
+@font-face {
+  font-family: ltcomical;
+  src: url(./239-ltcomical.ttf);
+  font-display: swap;
+}
+.ff-ltcomical {
+  font-family: ltcomical!important;
+}
+@font-face {
+  font-family: lyra;
+  src: url(./240-lyra.otf);
+  font-display: swap;
+}
+.ff-lyra {
+  font-family: lyra!important;
+}
+@font-face {
+  font-family: madelican;
+  src: url(./241-madelican.otf);
+  font-display: swap;
+}
+.ff-madelican {
+  font-family: madelican!important;
+}
+@font-face {
+  font-family: madeline;
+  src: url(./242-madeline.otf);
+  font-display: swap;
+}
+.ff-madeline {
+  font-family: madeline!important;
+}
+@font-face {
+  font-family: magdonlina;
+  src: url(./243-magdonlina.ttf);
+  font-display: swap;
+}
+.ff-magdonlina {
+  font-family: magdonlina!important;
+}
+@font-face {
+  font-family: magtina;
+  src: url(./244-magtina.otf);
+  font-display: swap;
+}
+.ff-magtina {
+  font-family: magtina!important;
+}
+@font-face {
+  font-family: magtina;
+  src: url(./245-magtina.ttf);
+  font-display: swap;
+}
+.ff-magtina {
+  font-family: magtina!important;
+}
+@font-face {
+  font-family: maple;
+  src: url(./246-maple.otf);
+  font-display: swap;
+}
+.ff-maple {
+  font-family: maple!important;
+}
+@font-face {
+  font-family: marcellus;
+  src: url(./247-marcellus.ttf);
+  font-display: swap;
+}
+.ff-marcellus {
+  font-family: marcellus!important;
+}
+@font-face {
+  font-family: marry;
+  src: url(./248-marry.ttf);
+  font-display: swap;
+}
+.ff-marry {
+  font-family: marry!important;
+}
+@font-face {
+  font-family: metal;
+  src: url(./249-metal.ttf);
+  font-display: swap;
+}
+.ff-metal {
+  font-family: metal!important;
+}
+@font-face {
+  font-family: mirza;
+  src: url(./250-mirza.ttf);
+  font-display: swap;
+}
+.ff-mirza {
+  font-family: mirza!important;
+}
+@font-face {
+  font-family: montez;
+  src: url(./251-montez.ttf);
+  font-display: swap;
+}
+.ff-montez {
+  font-family: montez!important;
+}
+@font-face {
+  font-family: mossion;
+  src: url(./252-mossion.otf);
+  font-display: swap;
+}
+.ff-mossion {
+  font-family: mossion!important;
+}
+@font-face {
+  font-family: mylove;
+  src: url(./253-mylove.ttf);
+  font-display: swap;
+}
+.ff-mylove {
+  font-family: mylove!important;
+}
+@font-face {
+  font-family: natyl;
+  src: url(./254-natyl.ttf);
+  font-display: swap;
+}
+.ff-natyl {
+  font-family: natyl!important;
+}
+@font-face {
+  font-family: neonpixel;
+  src: url(./255-neonpixel.ttf);
+  font-display: swap;
+}
+.ff-neonpixel {
+  font-family: neonpixel!important;
+}
+@font-face {
+  font-family: opensans;
+  src: url(./256-opensans.ttf);
+  font-display: swap;
+}
+.ff-opensans {
+  font-family: opensans!important;
+}
+@font-face {
+  font-family: oregano;
+  src: url(./257-oregano.ttf);
+  font-display: swap;
+}
+.ff-oregano {
+  font-family: oregano!important;
+}
+@font-face {
+  font-family: pacifico;
+  src: url(./258-pacifico.ttf);
+  font-display: swap;
+}
+.ff-pacifico {
+  font-family: pacifico!important;
+}
+@font-face {
+  font-family: passion;
+  src: url(./259-passion.ttf);
+  font-display: swap;
+}
+.ff-passion {
+  font-family: passion!important;
+}
+@font-face {
+  font-family: philosoper;
+  src: url(./260-philosoper.ttf);
+  font-display: swap;
+}
+.ff-philosoper {
+  font-family: philosoper!important;
+}
+@font-face {
+  font-family: pinkerton_script_regular;
+  src: url(./261-pinkerton-script-regular.otf);
+  font-display: swap;
+}
+.ff-pinkerton_script_regular {
+  font-family: pinkerton_script_regular!important;
+}
+@font-face {
+  font-family: pinkerton_upcase_regular;
+  src: url(./262-pinkerton-upcase-regular.otf);
+  font-display: swap;
+}
+.ff-pinkerton_upcase_regular {
+  font-family: pinkerton_upcase_regular!important;
+}
+@font-face {
+  font-family: pinyonscript_regular;
+  src: url(./263-pinyonscript-regular.otf);
+  font-display: swap;
+}
+.ff-pinyonscript_regular {
+  font-family: pinyonscript_regular!important;
+}
+@font-face {
+  font-family: plante;
+  src: url(./264-plante.ttf);
+  font-display: swap;
+}
+.ff-plante {
+  font-family: plante!important;
+}
+@font-face {
+  font-family: playtime;
+  src: url(./265-playtime.otf);
+  font-display: swap;
+}
+.ff-playtime {
+  font-family: playtime!important;
+}
+@font-face {
+  font-family: pompiere;
+  src: url(./266-pompiere.ttf);
+  font-display: swap;
+}
+.ff-pompiere {
+  font-family: pompiere!important;
+}
+@font-face {
+  font-family: poppins;
+  src: url(./267-poppins.ttf);
+  font-display: swap;
+}
+.ff-poppins {
+  font-family: poppins!important;
+}
+@font-face {
+  font-family: presstart;
+  src: url(./268-presstart.ttf);
+  font-display: swap;
+}
+.ff-presstart {
+  font-family: presstart!important;
+}
+@font-face {
+  font-family: qafinte;
+  src: url(./269-qafinte.otf);
+  font-display: swap;
+}
+.ff-qafinte {
+  font-family: qafinte!important;
+}
+@font-face {
+  font-family: quanto;
+  src: url(./270-quanto.ttf);
+  font-display: swap;
+}
+.ff-quanto {
+  font-family: quanto!important;
+}
+@font-face {
+  font-family: quickkiss;
+  src: url(./271-quickkiss.ttf);
+  font-display: swap;
+}
+.ff-quickkiss {
+  font-family: quickkiss!important;
+}
+@font-face {
+  font-family: rampartone;
+  src: url(./272-rampartone.ttf);
+  font-display: swap;
+}
+.ff-rampartone {
+  font-family: rampartone!important;
+}
+@font-face {
+  font-family: rancho;
+  src: url(./273-rancho.ttf);
+  font-display: swap;
+}
+.ff-rancho {
+  font-family: rancho!important;
+}
+@font-face {
+  font-family: rastica;
+  src: url(./274-rastica.otf);
+  font-display: swap;
+}
+.ff-rastica {
+  font-family: rastica!important;
+}
+@font-face {
+  font-family: reemkufi;
+  src: url(./275-reemkufi.ttf);
+  font-display: swap;
+}
+.ff-reemkufi {
+  font-family: reemkufi!important;
+}
+@font-face {
+  font-family: reeniebeanie;
+  src: url(./276-reeniebeanie.ttf);
+  font-display: swap;
+}
+.ff-reeniebeanie {
+  font-family: reeniebeanie!important;
+}
+@font-face {
+  font-family: remachine;
+  src: url(./277-remachine.ttf);
+  font-display: swap;
+}
+.ff-remachine {
+  font-family: remachine!important;
+}
+@font-face {
+  font-family: rilenda;
+  src: url(./278-rilenda.otf);
+  font-display: swap;
+}
+.ff-rilenda {
+  font-family: rilenda!important;
+}
+@font-face {
+  font-family: ringlove;
+  src: url(./279-ringlove.otf);
+  font-display: swap;
+}
+.ff-ringlove {
+  font-family: ringlove!important;
+}
+@font-face {
+  font-family: roboto;
+  src: url(./280-roboto.ttf);
+  font-display: swap;
+}
+.ff-roboto {
+  font-family: roboto!important;
+}
+@font-face {
+  font-family: rosalia;
+  src: url(./281-rosalia.ttf);
+  font-display: swap;
+}
+.ff-rosalia {
+  font-family: rosalia!important;
+}
+@font-face {
+  font-family: rosalia2;
+  src: url(./282-rosalia2.ttf);
+  font-display: swap;
+}
+.ff-rosalia2 {
+  font-family: rosalia2!important;
+}
+@font-face {
+  font-family: scrament;
+  src: url(./283-scrament.ttf);
+  font-display: swap;
+}
+.ff-scrament {
+  font-family: scrament!important;
+}
+@font-face {
+  font-family: screamingneon;
+  src: url(./284-screamingneon.ttf);
+  font-display: swap;
+}
+.ff-screamingneon {
+  font-family: screamingneon!important;
+}
+@font-face {
+  font-family: selfdecepti;
+  src: url(./285-selfdecepti.ttf);
+  font-display: swap;
+}
+.ff-selfdecepti {
+  font-family: selfdecepti!important;
+}
+@font-face {
+  font-family: selly;
+  src: url(./286-selly.ttf);
+  font-display: swap;
+}
+.ff-selly {
+  font-family: selly!important;
+}
+@font-face {
+  font-family: shiftynote;
+  src: url(./287-shiftynote.ttf);
+  font-display: swap;
+}
+.ff-shiftynote {
+  font-family: shiftynote!important;
+}
+@font-face {
+  font-family: signika;
+  src: url(./288-signika.ttf);
+  font-display: swap;
+}
+.ff-signika {
+  font-family: signika!important;
+}
+@font-face {
+  font-family: singleday;
+  src: url(./289-singleday.ttf);
+  font-display: swap;
+}
+.ff-singleday {
+  font-family: singleday!important;
+}
+@font-face {
+  font-family: spiritednote;
+  src: url(./290-spiritednote.ttf);
+  font-display: swap;
+}
+.ff-spiritednote {
+  font-family: spiritednote!important;
+}
+@font-face {
+  font-family: squaresandserif;
+  src: url(./291-squaresandserif.ttf);
+  font-display: swap;
+}
+.ff-squaresandserif {
+  font-family: squaresandserif!important;
+}
+@font-face {
+  font-family: statisfy;
+  src: url(./292-statisfy.ttf);
+  font-display: swap;
+}
+.ff-statisfy {
+  font-family: statisfy!important;
+}
+@font-face {
+  font-family: still;
+  src: url(./293-still.ttf);
+  font-display: swap;
+}
+.ff-still {
+  font-family: still!important;
+}
+@font-face {
+  font-family: stylish;
+  src: url(./294-stylish.ttf);
+  font-display: swap;
+}
+.ff-stylish {
+  font-family: stylish!important;
+}
+@font-face {
+  font-family: sueellenfransisco;
+  src: url(./295-sueellenfransisco.ttf);
+  font-display: swap;
+}
+.ff-sueellenfransisco {
+  font-family: sueellenfransisco!important;
+}
+@font-face {
+  font-family: sugiyama;
+  src: url(./296-sugiyama.ttf);
+  font-display: swap;
+}
+.ff-sugiyama {
+  font-family: sugiyama!important;
+}
+@font-face {
+  font-family: summer;
+  src: url(./297-summer.ttf);
+  font-display: swap;
+}
+.ff-summer {
+  font-family: summer!important;
+}
+@font-face {
+  font-family: summerday;
+  src: url(./298-summerday.ttf);
+  font-display: swap;
+}
+.ff-summerday {
+  font-family: summerday!important;
+}
+@font-face {
+  font-family: sweet;
+  src: url(./299-sweet.ttf);
+  font-display: swap;
+}
+.ff-sweet {
+  font-family: sweet!important;
+}
+@font-face {
+  font-family: sweetie;
+  src: url(./300-sweetie.ttf);
+  font-display: swap;
+}
+.ff-sweetie {
+  font-family: sweetie!important;
+}
+@font-face {
+  font-family: sweetsensations;
+  src: url(./301-sweetsensations.ttf);
+  font-display: swap;
+}
+.ff-sweetsensations {
+  font-family: sweetsensations!important;
+}
+@font-face {
+  font-family: sweetyellow;
+  src: url(./302-sweetyellow.ttf);
+  font-display: swap;
+}
+.ff-sweetyellow {
+  font-family: sweetyellow!important;
+}
+@font-face {
+  font-family: tangerine;
+  src: url(./303-tangerine.ttf);
+  font-display: swap;
+}
+.ff-tangerine {
+  font-family: tangerine!important;
+}
+@font-face {
+  font-family: texgyreadventor;
+  src: url(./304-texgyreadventor.otf);
+  font-display: swap;
+}
+.ff-texgyreadventor {
+  font-family: texgyreadventor!important;
+}
+@font-face {
+  font-family: thankyousomuch;
+  src: url(./305-thankyousomuch.otf);
+  font-display: swap;
+}
+.ff-thankyousomuch {
+  font-family: thankyousomuch!important;
+}
+@font-face {
+  font-family: theheart;
+  src: url(./306-theheart.ttf);
+  font-display: swap;
+}
+.ff-theheart {
+  font-family: theheart!important;
+}
+@font-face {
+  font-family: theseasons;
+  src: url(./307-theseasons.otf);
+  font-display: swap;
+}
+.ff-theseasons {
+  font-family: theseasons!important;
+}
+@font-face {
+  font-family: titanone;
+  src: url(./308-titanone.ttf);
+  font-display: swap;
+}
+.ff-titanone {
+  font-family: titanone!important;
+}
+@font-face {
+  font-family: valentday;
+  src: url(./309-valentday.otf);
+  font-display: swap;
+}
+.ff-valentday {
+  font-family: valentday!important;
+}
+@font-face {
+  font-family: valeyola;
+  src: url(./310-valeyola.otf);
+  font-display: swap;
+}
+.ff-valeyola {
+  font-family: valeyola!important;
+}
+@font-face {
+  font-family: vibes;
+  src: url(./311-vibes.ttf);
+  font-display: swap;
+}
+.ff-vibes {
+  font-family: vibes!important;
+}
+@font-face {
+  font-family: watermelon;
+  src: url(./312-watermelon.ttf);
+  font-display: swap;
+}
+.ff-watermelon {
+  font-family: watermelon!important;
+}
+@font-face {
+  font-family: wedding;
+  src: url(./313-wedding.otf);
+  font-display: swap;
+}
+.ff-wedding {
+  font-family: wedding!important;
+}

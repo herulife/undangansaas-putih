@@ -1,0 +1,44 @@
+.clean-lightbox {
+  align-items: center;
+  background: rgba(5, 5, 5, 0.78);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 18px;
+  position: fixed;
+  z-index: 1000000;
+}
+
+.clean-lightbox img {
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.38);
+  max-height: 86vh;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.clean-lightbox button {
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  color: #3c2315;
+  font-size: 26px;
+  height: 42px;
+  line-height: 1;
+  position: fixed;
+  right: 18px;
+  top: 18px;
+  width: 42px;
+}
+
+.local-mode-note {
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(130, 91, 42, 0.25);
+  border-radius: 10px;
+  color: #725735;
+  font: 600 13px/1.5 system-ui, sans-serif;
+  margin-top: 10px;
+  padding: 12px;
+  text-align: center;
+}
