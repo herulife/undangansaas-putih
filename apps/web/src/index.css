@@ -9098,3 +9098,887 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.adminyo-dashboard {
+  --ay-bg: #f6f7f9;
+  --ay-blue: #1687f3;
+  --ay-blue-soft: #eaf5ff;
+  --ay-danger: #ef5b64;
+  --ay-danger-soft: #fff0f2;
+  --ay-green: #18a957;
+  --ay-green-soft: #ebf8ef;
+  --ay-line: #e7ebf0;
+  --ay-muted: #87919d;
+  --ay-panel: #ffffff;
+  --ay-text: #20242a;
+  --ay-warning: #d6a100;
+  --ay-warning-soft: #fff8df;
+  background: var(--ay-bg);
+  color: var(--ay-text);
+  display: grid;
+  gap: 0;
+  grid-template-columns: 300px minmax(0, 1fr);
+  padding: 42px;
+}
+
+.adminyo-dashboard .saas-sidebar,
+.adminyo-dashboard .saas-main {
+  background: var(--ay-panel);
+  border: 1px solid var(--ay-line);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.adminyo-dashboard .saas-sidebar {
+  border-radius: 8px 0 0 8px;
+  border-right: 0;
+  color: var(--ay-text);
+  min-height: calc(100vh - 84px);
+  overflow: hidden;
+  padding: 0;
+  position: sticky;
+  top: 42px;
+}
+
+.adminyo-dashboard .saas-main {
+  border-radius: 0 8px 8px 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.adminyo-dashboard .brand-link {
+  display: none;
+}
+
+.adminyo-dashboard .user-panel {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid var(--ay-line);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 44px minmax(0, 1fr) 18px;
+  padding: 22px 20px;
+}
+
+.adminyo-dashboard .user-panel::after {
+  color: var(--ay-muted);
+  content: "v";
+  font-size: 12px;
+  text-align: right;
+}
+
+.adminyo-dashboard .avatar {
+  align-items: center;
+  background: linear-gradient(145deg, #f2f5f8, #e6ecf2);
+  border: 1px solid #dce3eb;
+  border-radius: 50%;
+  color: #26313f;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.adminyo-dashboard .user-panel strong {
+  color: var(--ay-text);
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.adminyo-dashboard .user-panel p {
+  align-items: center;
+  color: var(--ay-muted);
+  display: flex;
+  font-size: 11px;
+  gap: 7px;
+  margin: 3px 0 0;
+}
+
+.adminyo-dashboard .user-panel p span {
+  background: var(--ay-green);
+  border-radius: 999px;
+  display: inline-flex;
+  height: 7px;
+  width: 7px;
+}
+
+.adminyo-dashboard .user-panel small {
+  color: #9aa4b1;
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-top: 4px;
+}
+
+.adminyo-dashboard .sidebar-menu {
+  padding: 20px 14px 28px;
+}
+
+.adminyo-dashboard .nav-treeview > p {
+  color: #a0a8b1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 22px 12px 8px;
+  text-transform: uppercase;
+}
+
+.adminyo-dashboard .nav-treeview:first-child > p {
+  margin-top: 0;
+}
+
+.adminyo-dashboard .sidebar-menu a {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: #6f7884;
+  display: grid;
+  font-size: 13px;
+  gap: 9px;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  min-height: 44px;
+  padding: 10px 12px;
+}
+
+.adminyo-dashboard .sidebar-menu a:hover {
+  background: #f7fafc;
+  color: var(--ay-text);
+}
+
+.adminyo-dashboard .sidebar-menu a.active {
+  background: var(--ay-blue-soft);
+  color: var(--ay-blue);
+  font-weight: 800;
+}
+
+.adminyo-dashboard .nav-icon {
+  align-items: center;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 900;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+.adminyo-dashboard .sidebar-menu strong {
+  font-size: 13px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.adminyo-dashboard .sidebar-menu small {
+  background: var(--ay-green);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 3px 7px;
+}
+
+.adminyo-dashboard .saas-topbar {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid var(--ay-line);
+  box-shadow: none;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  min-height: 70px;
+  padding: 0 22px;
+}
+
+.adminyo-dashboard .saas-topbar-title span {
+  color: var(--ay-muted);
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.adminyo-dashboard .saas-topbar h1 {
+  color: var(--ay-text);
+  font-size: 18px;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.adminyo-dashboard .topbar-actions {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.adminyo-dashboard .topbar-actions a,
+.adminyo-dashboard .topbar-actions button {
+  align-items: center;
+  border-radius: 6px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  min-height: 34px;
+  padding: 8px 12px;
+}
+
+.adminyo-dashboard .topbar-actions a:not(.topbar-primary) {
+  background: #f8fafc;
+  border: 1px solid var(--ay-line);
+  color: #687382;
+}
+
+.adminyo-dashboard .topbar-primary {
+  background: var(--ay-blue);
+  border: 1px solid var(--ay-blue);
+  box-shadow: 0 10px 18px rgba(22, 135, 243, 0.2);
+  color: #fff;
+}
+
+.adminyo-dashboard .topbar-logout {
+  background: #fff;
+  border: 1px solid var(--ay-line);
+  color: #687382;
+  cursor: pointer;
+}
+
+.adminyo-dashboard .saas-content {
+  padding: 0;
+}
+
+.adminyo-dashboard .tier-expiry-banner {
+  background: var(--ay-warning-soft);
+  border: 1px solid #f4dd8a;
+  border-radius: 8px;
+  color: #7a5700;
+  margin: 16px 22px 0;
+  padding: 14px 16px;
+}
+
+.adminyo-dashboard .content-header {
+  align-items: center;
+  border-bottom: 1px solid var(--ay-line);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 18px 22px 16px;
+}
+
+.adminyo-dashboard .data-source,
+.adminyo-dashboard .eyebrow {
+  color: var(--ay-muted);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.adminyo-dashboard .content-header h2 {
+  color: var(--ay-text);
+  font-size: 22px;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1.15;
+  margin: 4px 0 0;
+}
+
+.adminyo-dashboard .content-header nav {
+  align-items: center;
+  color: var(--ay-muted);
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 7px;
+}
+
+.adminyo-dashboard .content-header a {
+  color: var(--ay-blue);
+}
+
+.adminyo-dashboard .reservation-tabs {
+  align-items: center;
+  border-bottom: 1px solid var(--ay-line);
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 14px 22px;
+}
+
+.adminyo-dashboard .reservation-tabs button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--ay-muted);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  gap: 7px;
+  padding: 6px 0;
+  white-space: nowrap;
+}
+
+.adminyo-dashboard .reservation-tabs button span {
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  height: 12px;
+  opacity: 0.65;
+  width: 12px;
+}
+
+.adminyo-dashboard .reservation-tabs button.active {
+  color: var(--ay-green);
+}
+
+.adminyo-dashboard .reservation-tabs button.active span {
+  background: var(--ay-green-soft);
+}
+
+.adminyo-dashboard .metric-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 16px 22px 0;
+}
+
+.adminyo-dashboard .metric-card.small-box {
+  background: #fff;
+  border: 1px solid var(--ay-line);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  color: var(--ay-text);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  min-height: 104px;
+  overflow: hidden;
+  padding: 14px 12px;
+}
+
+.adminyo-dashboard .metric-card p {
+  color: var(--ay-muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 0 0 7px;
+  text-transform: none;
+}
+
+.adminyo-dashboard .metric-card strong {
+  color: var(--ay-text);
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.adminyo-dashboard .metric-card span {
+  border-radius: 0 0 0 8px;
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  margin: 12px -12px -14px;
+  padding: 7px 12px;
+}
+
+.adminyo-dashboard .metric-card.success span {
+  background: var(--ay-green-soft);
+  color: #1a7d44;
+}
+
+.adminyo-dashboard .metric-card.info span {
+  background: var(--ay-blue-soft);
+  color: #146ebd;
+}
+
+.adminyo-dashboard .metric-card.warning span {
+  background: var(--ay-warning-soft);
+  color: #8a6500;
+}
+
+.adminyo-dashboard .metric-card.danger span {
+  background: var(--ay-danger-soft);
+  color: #bf3945;
+}
+
+.adminyo-dashboard .metric-sparkline {
+  align-self: center;
+  height: 40px;
+  width: 112px;
+}
+
+.adminyo-dashboard .metric-sparkline path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.5;
+}
+
+.adminyo-dashboard .metric-sparkline.success path {
+  stroke: var(--ay-green);
+}
+
+.adminyo-dashboard .metric-sparkline.info path {
+  stroke: var(--ay-blue);
+}
+
+.adminyo-dashboard .metric-sparkline.warning path {
+  stroke: var(--ay-warning);
+}
+
+.adminyo-dashboard .metric-sparkline.danger path {
+  stroke: var(--ay-danger);
+}
+
+.adminyo-dashboard .upgrade-banner {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--ay-line);
+  border-left: 4px solid var(--ay-warning);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+  color: var(--ay-text);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr) auto;
+  margin: 16px 22px;
+  padding: 14px 16px;
+}
+
+.adminyo-dashboard .upgrade-banner strong {
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.adminyo-dashboard .upgrade-banner p {
+  color: var(--ay-muted);
+  font-size: 12px;
+  margin: 0;
+}
+
+.adminyo-dashboard .upgrade-banner span {
+  background: var(--ay-warning-soft);
+  border-radius: 999px;
+  color: #8a6500;
+  font-size: 12px;
+  font-weight: 850;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+.adminyo-dashboard .form-card,
+.adminyo-dashboard .module-card,
+.adminyo-dashboard .table-card,
+.adminyo-dashboard .template-mini-card {
+  background: #fff;
+  border: 1px solid var(--ay-line);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+.adminyo-dashboard .form-card,
+.adminyo-dashboard .module-card,
+.adminyo-dashboard .table-card {
+  margin: 16px 22px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.adminyo-dashboard .box-header,
+.adminyo-dashboard .table-head {
+  align-items: center;
+  border-bottom: 1px solid var(--ay-line);
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  min-height: 58px;
+  padding: 13px 16px;
+}
+
+.adminyo-dashboard .form-card h2,
+.adminyo-dashboard .module-card h2,
+.adminyo-dashboard .table-card h2 {
+  color: var(--ay-text);
+  font-size: 18px;
+  font-weight: 850;
+  letter-spacing: 0;
+  margin: 3px 0 0;
+}
+
+.adminyo-dashboard .invite-form,
+.adminyo-dashboard .ai-generator-form {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 16px;
+}
+
+.adminyo-dashboard .invite-form label,
+.adminyo-dashboard .ai-generator-form label {
+  color: #46515e;
+  display: grid;
+  font-size: 12px;
+  font-weight: 800;
+  gap: 7px;
+}
+
+.adminyo-dashboard .invite-form input,
+.adminyo-dashboard .invite-form select,
+.adminyo-dashboard .invite-form textarea,
+.adminyo-dashboard .ai-generator-form input,
+.adminyo-dashboard .ai-generator-form select,
+.adminyo-dashboard .ai-generator-form textarea,
+.adminyo-dashboard .table-tools input,
+.adminyo-dashboard .table-tools select {
+  background: #fff;
+  border: 1px solid var(--ay-line);
+  border-radius: 6px;
+  box-shadow: none;
+  color: var(--ay-text);
+  font-size: 13px;
+  min-height: 38px;
+  padding: 9px 11px;
+}
+
+.adminyo-dashboard .invite-form input:focus,
+.adminyo-dashboard .invite-form select:focus,
+.adminyo-dashboard .invite-form textarea:focus,
+.adminyo-dashboard .ai-generator-form input:focus,
+.adminyo-dashboard .ai-generator-form select:focus,
+.adminyo-dashboard .ai-generator-form textarea:focus,
+.adminyo-dashboard .table-tools input:focus,
+.adminyo-dashboard .table-tools select:focus {
+  border-color: rgba(22, 135, 243, 0.65);
+  outline: 3px solid rgba(22, 135, 243, 0.12);
+}
+
+.adminyo-dashboard .button.primary {
+  background: var(--ay-blue);
+  border: 1px solid var(--ay-blue);
+  border-radius: 6px;
+  box-shadow: 0 10px 18px rgba(22, 135, 243, 0.18);
+  color: #fff;
+  min-height: 38px;
+  padding: 9px 14px;
+}
+
+.adminyo-dashboard .button.secondary {
+  background: #f8fafc;
+  border: 1px solid var(--ay-line);
+  border-radius: 6px;
+  color: #5c6673;
+}
+
+.adminyo-dashboard .form-message,
+.adminyo-dashboard .created-link {
+  color: var(--ay-muted);
+  font-size: 12px;
+  margin: 0;
+}
+
+.adminyo-dashboard .created-link a {
+  color: var(--ay-blue);
+  font-weight: 800;
+}
+
+.adminyo-dashboard .table-tools {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+}
+
+.adminyo-dashboard .table-tools label {
+  display: inline-flex;
+  position: relative;
+}
+
+.adminyo-dashboard .table-tools label span {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.adminyo-dashboard .table-tools input {
+  min-width: 210px;
+}
+
+.adminyo-dashboard .invite-list {
+  display: block;
+  overflow-x: auto;
+}
+
+.adminyo-dashboard .invite-table-labels,
+.adminyo-dashboard .invite-row {
+  align-items: center;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1.25fr 1fr 0.9fr 0.72fr 0.72fr minmax(260px, auto);
+  min-width: 900px;
+}
+
+.adminyo-dashboard .invite-table-labels {
+  background: #fbfcfd;
+  border-bottom: 1px solid var(--ay-line);
+  color: #99a2ad;
+  font-size: 11px;
+  font-weight: 850;
+  padding: 10px 16px;
+}
+
+.adminyo-dashboard .invite-row {
+  background: #fff;
+  border-bottom: 1px solid #eff2f5;
+  padding: 15px 16px;
+}
+
+.adminyo-dashboard .invite-row:last-child {
+  border-bottom: 0;
+}
+
+.adminyo-dashboard .invite-row:hover {
+  background: #fbfcfd;
+}
+
+.adminyo-dashboard .invite-row strong {
+  color: var(--ay-text);
+  display: block;
+  font-size: 13px;
+  font-weight: 850;
+  margin-bottom: 4px;
+}
+
+.adminyo-dashboard .invite-row p,
+.adminyo-dashboard .invite-row span,
+.adminyo-dashboard .invite-row time {
+  color: #6f7884;
+  font-size: 12px;
+  margin: 0;
+}
+
+.adminyo-dashboard .adminlte-badge {
+  background: var(--ay-green-soft);
+  border-radius: 999px;
+  color: #168247;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 850;
+  justify-content: center;
+  padding: 6px 9px;
+  white-space: nowrap;
+}
+
+.adminyo-dashboard .row-actions {
+  display: flex;
+  gap: 7px;
+  justify-content: flex-end;
+}
+
+.adminyo-dashboard .row-actions a,
+.adminyo-dashboard .row-actions button,
+.adminyo-dashboard .template-mini-card a {
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid var(--ay-line);
+  border-radius: 6px;
+  color: #5c6673;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 850;
+  min-height: 32px;
+  padding: 7px 9px;
+}
+
+.adminyo-dashboard .row-actions a:nth-child(2),
+.adminyo-dashboard .row-actions button,
+.adminyo-dashboard .template-mini-card a {
+  background: var(--ay-blue);
+  border-color: var(--ay-blue);
+  color: #fff;
+}
+
+.adminyo-dashboard .module-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 16px 22px 22px;
+}
+
+.adminyo-dashboard .module-card {
+  margin: 0;
+  padding: 16px;
+}
+
+.adminyo-dashboard .module-card.span-2 {
+  grid-column: span 2;
+}
+
+.adminyo-dashboard .module-card > p {
+  color: #687382;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.adminyo-dashboard .builder-flow-list,
+.adminyo-dashboard .module-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.adminyo-dashboard .builder-flow-list span {
+  background: var(--ay-green-soft);
+  border-radius: 999px;
+  color: #168247;
+  font-size: 11px;
+  font-weight: 850;
+  padding: 7px 10px;
+}
+
+.adminyo-dashboard .template-mini-card {
+  display: grid;
+  gap: 9px;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.adminyo-dashboard .template-mini-card strong {
+  color: var(--ay-text);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.adminyo-dashboard .template-mini-card span,
+.adminyo-dashboard .template-mini-card small {
+  color: var(--ay-muted);
+  font-size: 11px;
+}
+
+.adminyo-dashboard .placeholder-table {
+  border: 1px solid var(--ay-line);
+  border-radius: 8px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+
+.adminyo-dashboard .placeholder-table span {
+  border-bottom: 1px solid #eff2f5;
+  color: #687382;
+  display: block;
+  font-size: 12px;
+  padding: 12px;
+}
+
+.adminyo-dashboard .placeholder-table span:last-child {
+  border-bottom: 0;
+}
+
+@media (max-width: 1180px) {
+  .adminyo-dashboard {
+    grid-template-columns: 260px minmax(0, 1fr);
+    padding: 24px;
+  }
+
+  .adminyo-dashboard .saas-sidebar {
+    min-height: calc(100vh - 48px);
+    top: 24px;
+  }
+
+  .adminyo-dashboard .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .adminyo-dashboard .module-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .adminyo-dashboard {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+
+  .adminyo-dashboard .saas-sidebar,
+  .adminyo-dashboard .saas-main {
+    border-radius: 8px;
+  }
+
+  .adminyo-dashboard .saas-sidebar {
+    border-right: 1px solid var(--ay-line);
+    min-height: auto;
+    position: relative;
+    top: 0;
+  }
+
+  .adminyo-dashboard .sidebar-menu {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .adminyo-dashboard .nav-treeview > p {
+    grid-column: 1 / -1;
+  }
+
+  .adminyo-dashboard .saas-topbar,
+  .adminyo-dashboard .content-header,
+  .adminyo-dashboard .upgrade-banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .adminyo-dashboard .topbar-actions,
+  .adminyo-dashboard .table-tools {
+    flex-wrap: wrap;
+  }
+
+  .adminyo-dashboard .upgrade-banner {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .adminyo-dashboard .metric-grid,
+  .adminyo-dashboard .module-grid,
+  .adminyo-dashboard .invite-form,
+  .adminyo-dashboard .ai-generator-form,
+  .adminyo-dashboard .sidebar-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .adminyo-dashboard .module-card.span-2 {
+    grid-column: auto;
+  }
+
+  .adminyo-dashboard .metric-card.small-box {
+    grid-template-columns: minmax(0, 1fr) 96px;
+  }
+
+  .adminyo-dashboard .metric-sparkline {
+    width: 96px;
+  }
+
+  .adminyo-dashboard .table-tools input {
+    min-width: 0;
+    width: 100%;
+  }
+}

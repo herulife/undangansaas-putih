@@ -2888,25 +2888,25 @@ export function DashboardPage({
   const totalPremium = invitations.filter((item) => item.status.toLowerCase() === 'published').length
   const totalFree = invitations.length - totalPremium
   const metrics = [
-    { caption: 'Template premium aktif', icon: 'PR', label: 'Versi Premium', tone: 'info', value: totalPremium },
-    { caption: 'Undangan free tersimpan', icon: 'FR', label: 'Versi Gratis', tone: 'success', value: totalFree },
-    { caption: 'Semua undangan user', icon: 'UD', label: 'Total Undangan', tone: 'warning', value: invitations.length },
-    { caption: 'Konfirmasi kehadiran', icon: 'RS', label: 'Total RSVP', tone: 'danger', value: totalRSVP },
+    { caption: 'From Jan 01, 2025 - Apr 30, 2025', label: 'Total Published', tone: 'success', trend: [8, 9, 8, 10, 12, 11, 14, 13], value: totalPremium },
+    { caption: 'From Jan 01, 2025 - Apr 30, 2025', label: 'Total Draft', tone: 'danger', trend: [13, 12, 13, 11, 10, 10, 8, 9], value: totalFree },
+    { caption: 'From Jan 01, 2025 - Apr 30, 2025', label: 'Total Undangan', tone: 'info', trend: [7, 8, 10, 11, 10, 12, 13, 12], value: invitations.length },
+    { caption: 'From Jan 01, 2025 - Apr 30, 2025', label: 'Total RSVP', tone: 'warning', trend: [14, 13, 12, 13, 11, 10, 9, 8], value: totalRSVP },
   ]
 
   return (
-    <main className="saas-dashboard adminlte-v3 min-screen">
+    <main className="saas-dashboard adminyo-dashboard min-screen">
       <DashboardSidebar activeModule={activeModule} authUser={authUser} />
       <section className="saas-main">
         <header className="saas-topbar">
           <div className="saas-topbar-title">
-            <span>Dashboard</span>
+            <span>Workspace</span>
             <h1>{moduleTitle}</h1>
           </div>
           <div className="topbar-actions">
             <a href="/builder-preview">Builder Engine</a>
             <a className="topbar-primary" href="/dashboard/undangan#buat-undangan">
-              Buat Undangan Baru
+              + New invitation
             </a>
             <button className="topbar-logout" onClick={logout} type="button">Keluar</button>
           </div>
@@ -2920,7 +2920,7 @@ export function DashboardPage({
               <p className="data-source">
                 {isDataLoading ? 'Memuat data...' : source === 'api' ? 'API production tersambung' : 'Mode fallback aktif'}
               </p>
-              <h2>{moduleTitle}</h2>
+              <h2>All Invitation</h2>
             </div>
             <nav aria-label="Breadcrumb">
               <a href="/dashboard/undangan">Home</a>
@@ -2931,15 +2931,24 @@ export function DashboardPage({
 
           {activeModule === 'undangan' ? (
             <>
+              <div className="reservation-tabs" aria-label="Invitation filters">
+                {['All invitation', 'Online invitation', 'Direct order'].map((item, index) => (
+                  <button className={index === 0 ? 'active' : ''} key={item} type="button">
+                    <span aria-hidden="true" />
+                    {item}
+                  </button>
+                ))}
+              </div>
+
               <section className="metric-grid">
                 {metrics.map((item) => (
                   <article className={`metric-card small-box ${item.tone}`} key={item.label}>
                     <div>
-                      <strong>{item.value}</strong>
                       <p>{item.label}</p>
+                      <strong>{item.value}</strong>
                       <span>{item.caption}</span>
                     </div>
-                    <i aria-hidden="true">{item.icon}</i>
+                    <Sparkline points={item.trend} tone={item.tone} />
                   </article>
                 ))}
               </section>
@@ -3013,14 +3022,28 @@ export function DashboardPage({
               <section className="table-card">
                 <div className="table-head">
                   <div>
-                    <p className="eyebrow">Data table</p>
-                    <h2>List Daftar Undanganmu</h2>
+                    <p className="eyebrow">Booking list</p>
+                    <h2>Daftar Undangan</h2>
                   </div>
-                  <div className="filter-pills">
-                    {['All', 'Free', 'Premium', 'Custom Design', 'Trash'].map((item) => (
-                      <button key={item} type="button">{item}</button>
-                    ))}
+                  <div className="table-tools">
+                    <label>
+                      <span>Search</span>
+                      <input placeholder="Search..." type="search" />
+                    </label>
+                    <select aria-label="Filter template floor">
+                      <option>All status</option>
+                      <option>Published</option>
+                      <option>Draft</option>
+                    </select>
                   </div>
+                </div>
+                <div className="invite-table-labels">
+                  <span>Full name</span>
+                  <span>Template</span>
+                  <span>Event date</span>
+                  <span>Guests</span>
+                  <span>Status</span>
+                  <span>Action</span>
                 </div>
                 <div className="invite-list">
                   {invitations.map((item) => (
@@ -3030,6 +3053,8 @@ export function DashboardPage({
                         <span>/{item.slug}</span>
                       </div>
                       <p>{item.template}</p>
+                      <time>{item.eventDate}</time>
+                      <span>{item.rsvpCount} Guests</span>
                       <b className="adminlte-badge">{item.rsvpCount} RSVP</b>
                       <div className="row-actions">
                         <a href={`/dashboard/edit/${item.slug}`}>Edit Konten</a>
@@ -3082,21 +3107,45 @@ export function DashboardPage({
   )
 }
 
+function Sparkline({ points, tone }: { points: number[]; tone: string }) {
+  const max = Math.max(...points)
+  const min = Math.min(...points)
+  const range = Math.max(1, max - min)
+  const path = points
+    .map((point, index) => {
+      const x = (index / Math.max(1, points.length - 1)) * 112
+      const y = 34 - ((point - min) / range) * 26
+      return `${index === 0 ? 'M' : 'L'} ${x.toFixed(1)} ${y.toFixed(1)}`
+    })
+    .join(' ')
+
+  return (
+    <svg
+      aria-hidden="true"
+      className={`metric-sparkline ${tone}`}
+      focusable="false"
+      viewBox="0 0 112 40"
+    >
+      <path d={path} />
+    </svg>
+  )
+}
+
 const dashboardModules = [
-  { group: 'Main Navigation', id: 'undangan', label: 'Dashboard Undangan', href: '/dashboard/undangan', icon: 'DU', badge: 'Live' },
-  { group: 'Main Navigation', id: 'builder', label: 'Builder Engine', href: '/dashboard/builder', icon: 'BE' },
-  { group: 'Main Navigation', id: 'template', label: 'Template Catalog', href: '/dashboard/template', icon: 'TC' },
-  { group: 'Assets', id: 'media', label: 'Media Manager', href: '/dashboard/media', icon: 'MM' },
-  { group: 'Admin', id: 'transaksi', label: 'Order & Transaksi', href: '/dashboard/transaksi', icon: 'OT' },
-  { group: 'Admin', id: 'report', label: 'Report', href: '/dashboard/report', icon: 'RP' },
-  { group: 'Admin', id: 'visitor', label: 'Realtime Visitor', href: '/dashboard/visitor', icon: 'RV' },
-  { group: 'Business', id: 'reseller', label: 'Reseller & Mitra', href: '/dashboard/reseller', icon: 'RM' },
-  { group: 'Business', id: 'langganan', label: 'Langganan', href: '/dashboard/langganan', icon: 'LG' },
-  { group: 'Business', id: 'voucher', label: 'Gunakan Voucher', href: '/dashboard/voucher', icon: 'VC' },
-  { group: 'System', id: 'pengaturan', label: 'Pengaturan', href: '/dashboard/pengaturan', icon: 'PG' },
+  { group: 'Overview', id: 'undangan', label: 'Overview', href: '/dashboard/undangan', icon: 'OV', badge: 'Live' },
+  { group: 'Daily Operation', id: 'builder', label: 'Builder Engine', href: '/dashboard/builder', icon: 'BE' },
+  { group: 'Daily Operation', id: 'template', label: 'Template Catalog', href: '/dashboard/template', icon: 'TC' },
+  { group: 'Daily Operation', id: 'media', label: 'Media Manager', href: '/dashboard/media', icon: 'MM' },
+  { group: 'Accounting', id: 'transaksi', label: 'Order & Transaksi', href: '/dashboard/transaksi', icon: 'OT' },
+  { group: 'Accounting', id: 'report', label: 'Report', href: '/dashboard/report', icon: 'RP' },
+  { group: 'System Option', id: 'visitor', label: 'Realtime Visitor', href: '/dashboard/visitor', icon: 'RV' },
+  { group: 'System Option', id: 'reseller', label: 'Reseller & Mitra', href: '/dashboard/reseller', icon: 'RM' },
+  { group: 'System Option', id: 'langganan', label: 'Langganan', href: '/dashboard/langganan', icon: 'LG' },
+  { group: 'Others', id: 'voucher', label: 'Gunakan Voucher', href: '/dashboard/voucher', icon: 'VC' },
+  { group: 'Others', id: 'pengaturan', label: 'Pengaturan', href: '/dashboard/pengaturan', icon: 'PG' },
 ]
 
-const dashboardModuleGroups = ['Main Navigation', 'Assets', 'Admin', 'Business', 'System']
+const dashboardModuleGroups = ['Overview', 'Daily Operation', 'Accounting', 'System Option', 'Others']
 
 function getDashboardModule(pathname: string) {
   const module = pathname.split('/').filter(Boolean)[1]
