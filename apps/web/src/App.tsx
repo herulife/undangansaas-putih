@@ -2887,14 +2887,20 @@ export function DashboardPage({
   const moduleTitle = dashboardModules.find((item) => item.id === activeModule)?.label ?? 'Undangan Online'
   const totalPremium = invitations.filter((item) => item.status.toLowerCase() === 'published').length
   const totalFree = invitations.length - totalPremium
+  const metrics = [
+    { caption: 'Template premium aktif', icon: 'PR', label: 'Versi Premium', tone: 'info', value: totalPremium },
+    { caption: 'Undangan free tersimpan', icon: 'FR', label: 'Versi Gratis', tone: 'success', value: totalFree },
+    { caption: 'Semua undangan user', icon: 'UD', label: 'Total Undangan', tone: 'warning', value: invitations.length },
+    { caption: 'Konfirmasi kehadiran', icon: 'RS', label: 'Total RSVP', tone: 'danger', value: totalRSVP },
+  ]
 
   return (
-    <main className="saas-dashboard min-screen">
+    <main className="saas-dashboard adminlte-v3 min-screen">
       <DashboardSidebar activeModule={activeModule} authUser={authUser} />
       <section className="saas-main">
         <header className="saas-topbar">
-          <div>
-            <span>MENU</span>
+          <div className="saas-topbar-title">
+            <span>Dashboard</span>
             <h1>{moduleTitle}</h1>
           </div>
           <div className="topbar-actions">
@@ -2909,22 +2915,31 @@ export function DashboardPage({
         <section className="saas-content">
           <TierExpiryBanner />
 
-          <p className="data-source">
-            Data dashboard: {isDataLoading ? 'memuat...' : source === 'api' ? 'tersambung ke API' : 'API belum aktif'}
-          </p>
+          <div className="content-header">
+            <div>
+              <p className="data-source">
+                {isDataLoading ? 'Memuat data...' : source === 'api' ? 'API production tersambung' : 'Mode fallback aktif'}
+              </p>
+              <h2>{moduleTitle}</h2>
+            </div>
+            <nav aria-label="Breadcrumb">
+              <a href="/dashboard/undangan">Home</a>
+              <span>/</span>
+              <b>{moduleTitle}</b>
+            </nav>
+          </div>
 
           {activeModule === 'undangan' ? (
             <>
               <section className="metric-grid">
-                {[
-                  ['Versi Premium', totalPremium],
-                  ['Versi Gratis', totalFree],
-                  ['Total Undangan', invitations.length],
-                  ['Total RSVP', totalRSVP],
-                ].map(([label, value]) => (
-                  <article className="metric-card" key={label}>
-                    <p>{label}</p>
-                    <strong>{value}</strong>
+                {metrics.map((item) => (
+                  <article className={`metric-card small-box ${item.tone}`} key={item.label}>
+                    <div>
+                      <strong>{item.value}</strong>
+                      <p>{item.label}</p>
+                      <span>{item.caption}</span>
+                    </div>
+                    <i aria-hidden="true">{item.icon}</i>
                   </article>
                 ))}
               </section>
@@ -2936,7 +2951,7 @@ export function DashboardPage({
               </section>
 
               <section className="form-card" id="buat-undangan">
-                <div>
+                <div className="box-header">
                   <p className="eyebrow">Create invitation</p>
                   <h2>Buat undangan baru</h2>
                 </div>
@@ -2997,7 +3012,10 @@ export function DashboardPage({
 
               <section className="table-card">
                 <div className="table-head">
-                  <h2>List Daftar Undanganmu</h2>
+                  <div>
+                    <p className="eyebrow">Data table</p>
+                    <h2>List Daftar Undanganmu</h2>
+                  </div>
                   <div className="filter-pills">
                     {['All', 'Free', 'Premium', 'Custom Design', 'Trash'].map((item) => (
                       <button key={item} type="button">{item}</button>
@@ -3012,7 +3030,7 @@ export function DashboardPage({
                         <span>/{item.slug}</span>
                       </div>
                       <p>{item.template}</p>
-                      <b>{item.rsvpCount} RSVP</b>
+                      <b className="adminlte-badge">{item.rsvpCount} RSVP</b>
                       <div className="row-actions">
                         <a href={`/dashboard/edit/${item.slug}`}>Edit Konten</a>
                         <a href={`/u/${item.slug}`}>Preview</a>
@@ -3065,18 +3083,20 @@ export function DashboardPage({
 }
 
 const dashboardModules = [
-  { id: 'undangan', label: 'Undangan Online', href: '/dashboard/undangan', icon: 'UD' },
-  { id: 'builder', label: 'Builder Engine', href: '/dashboard/builder', icon: 'BE' },
-  { id: 'template', label: 'Template Catalog', href: '/dashboard/template', icon: 'TP' },
-  { id: 'media', label: 'Media Manager', href: '/dashboard/media', icon: 'MD' },
-  { id: 'transaksi', label: 'Order | Transaksi', href: '/dashboard/transaksi', icon: 'TR' },
-  { id: 'report', label: 'Report', href: '/dashboard/report', icon: 'RP' },
-  { id: 'visitor', label: 'Realtime Visitor', href: '/dashboard/visitor', icon: 'RV' },
-  { id: 'reseller', label: 'Reseller | Mitra', href: '/dashboard/reseller', icon: 'RS' },
-  { id: 'langganan', label: 'Langganan', href: '/dashboard/langganan', icon: 'LG' },
-  { id: 'voucher', label: 'Gunakan Voucher', href: '/dashboard/voucher', icon: 'VC' },
-  { id: 'pengaturan', label: 'Pengaturan', href: '/dashboard/pengaturan', icon: 'PG' },
+  { group: 'Main Navigation', id: 'undangan', label: 'Dashboard Undangan', href: '/dashboard/undangan', icon: 'DU', badge: 'Live' },
+  { group: 'Main Navigation', id: 'builder', label: 'Builder Engine', href: '/dashboard/builder', icon: 'BE' },
+  { group: 'Main Navigation', id: 'template', label: 'Template Catalog', href: '/dashboard/template', icon: 'TC' },
+  { group: 'Assets', id: 'media', label: 'Media Manager', href: '/dashboard/media', icon: 'MM' },
+  { group: 'Admin', id: 'transaksi', label: 'Order & Transaksi', href: '/dashboard/transaksi', icon: 'OT' },
+  { group: 'Admin', id: 'report', label: 'Report', href: '/dashboard/report', icon: 'RP' },
+  { group: 'Admin', id: 'visitor', label: 'Realtime Visitor', href: '/dashboard/visitor', icon: 'RV' },
+  { group: 'Business', id: 'reseller', label: 'Reseller & Mitra', href: '/dashboard/reseller', icon: 'RM' },
+  { group: 'Business', id: 'langganan', label: 'Langganan', href: '/dashboard/langganan', icon: 'LG' },
+  { group: 'Business', id: 'voucher', label: 'Gunakan Voucher', href: '/dashboard/voucher', icon: 'VC' },
+  { group: 'System', id: 'pengaturan', label: 'Pengaturan', href: '/dashboard/pengaturan', icon: 'PG' },
 ]
+
+const dashboardModuleGroups = ['Main Navigation', 'Assets', 'Admin', 'Business', 'System']
 
 function getDashboardModule(pathname: string) {
   const module = pathname.split('/').filter(Boolean)[1]
@@ -3100,22 +3120,33 @@ function DashboardSidebar({
 
   return (
     <aside className="saas-sidebar">
-      <a className="sidebar-brand" href="/">
-        <span>U</span>
-        undanganku
+      <a className="sidebar-brand brand-link" href="/">
+        <span className="brand-image">U</span>
+        <b>undang</b>
+        <em>panel</em>
       </a>
-      <div className="sidebar-user">
+      <div className="sidebar-user user-panel">
         <div className="avatar">{initials}</div>
-        <p>User ID : {authUser?.id?.slice(0, 8) ?? 'LOCAL'}</p>
-        <strong>{displayName}</strong>
-        <small>Paket : {(authUser?.tier ?? 'free').toUpperCase()}</small>
+        <div>
+          <strong>{displayName}</strong>
+          <p><span /> Online</p>
+          <small>{authUser?.role === 'admin' ? 'SUPERADMIN' : 'USER'} - {(authUser?.tier ?? 'free').toUpperCase()}</small>
+        </div>
       </div>
       <nav className="sidebar-menu">
-        {dashboardModules.map((item) => (
-          <a className={activeModule === item.id ? 'active' : ''} href={item.href} key={item.id}>
-            <span>{item.icon}</span>
-            {item.label}
-          </a>
+        {dashboardModuleGroups.map((group) => (
+          <div className="nav-treeview" key={group}>
+            <p>{group}</p>
+            {dashboardModules
+              .filter((item) => item.group === group)
+              .map((item) => (
+                <a className={activeModule === item.id ? 'active' : ''} href={item.href} key={item.id}>
+                  <span className="nav-icon">{item.icon}</span>
+                  <strong>{item.label}</strong>
+                  {item.badge ? <small>{item.badge}</small> : null}
+                </a>
+              ))}
+          </div>
         ))}
       </nav>
     </aside>
