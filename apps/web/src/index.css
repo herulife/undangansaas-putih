@@ -9982,3 +9982,641 @@ h1 {
     width: 100%;
   }
 }
+
+.fan-dashboard {
+  --fan-blue: #2f9af5;
+  --fan-blue-dark: #207fe8;
+  --fan-bg: #eef7ff;
+  --fan-card: #ffffff;
+  --fan-line: #e9f0f8;
+  --fan-muted: #8d9bab;
+  --fan-text: #3d4755;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(255, 255, 255, 0.5), transparent 26%),
+    linear-gradient(135deg, #87d9ff 0%, #2f99f1 100%);
+  grid-template-columns: 238px minmax(0, 1fr);
+  min-height: 100vh;
+  padding: 34px;
+}
+
+.fan-dashboard .saas-sidebar {
+  background: linear-gradient(180deg, #38aaf8 0%, #2788ee 100%);
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 28px 60px rgba(28, 96, 182, 0.24);
+  color: #fff;
+  min-height: calc(100vh - 68px);
+  padding: 0;
+  top: 34px;
+}
+
+.fan-dashboard .saas-main {
+  background: rgba(255, 255, 255, 0.96);
+  border: 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 28px 60px rgba(28, 96, 182, 0.18);
+}
+
+.fan-dashboard .brand-link {
+  align-items: center;
+  color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  min-height: 74px;
+  padding: 20px 18px 8px;
+}
+
+.fan-dashboard .brand-image {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+  display: inline-flex;
+  font-weight: 900;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.fan-dashboard .brand-link b,
+.fan-dashboard .brand-link em {
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.fan-dashboard .brand-link em {
+  font-weight: 650;
+  opacity: 0.72;
+}
+
+.fan-dashboard .user-panel {
+  background: transparent;
+  border: 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 20px 20px 26px;
+  text-align: center;
+}
+
+.fan-dashboard .user-panel::after {
+  display: none;
+}
+
+.fan-dashboard .avatar {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(232, 246, 255, 0.92));
+  border: 5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  box-shadow: 0 18px 35px rgba(19, 89, 176, 0.25);
+  color: var(--fan-blue-dark);
+  font-size: 18px;
+  height: 78px;
+  width: 78px;
+}
+
+.fan-dashboard .user-panel strong {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  max-width: 170px;
+}
+
+.fan-dashboard .user-panel p {
+  color: rgba(255, 255, 255, 0.86);
+  justify-content: center;
+  margin: 2px 0 0;
+}
+
+.fan-dashboard .user-panel p span {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.fan-dashboard .user-panel small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.fan-dashboard .sidebar-menu {
+  display: grid;
+  gap: 9px;
+  padding: 0 20px 28px;
+}
+
+.fan-dashboard .nav-treeview {
+  display: contents;
+}
+
+.fan-dashboard .nav-treeview > p {
+  display: none;
+}
+
+.fan-dashboard .sidebar-menu a {
+  background: transparent;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.76);
+  gap: 10px;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  min-height: 42px;
+  padding: 10px 13px;
+}
+
+.fan-dashboard .sidebar-menu a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+.fan-dashboard .sidebar-menu a.active {
+  background: #fff;
+  color: var(--fan-blue-dark);
+  box-shadow: 0 12px 28px rgba(18, 83, 170, 0.18);
+}
+
+.fan-dashboard .nav-icon {
+  height: 22px;
+  width: 22px;
+}
+
+.fan-dashboard .nav-icon svg,
+.fan-dashboard .topbar-icon svg {
+  display: block;
+  height: 18px;
+  width: 18px;
+}
+
+.fan-dashboard .sidebar-menu strong {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.fan-dashboard .sidebar-menu small {
+  background: rgba(47, 154, 245, 0.12);
+  color: var(--fan-blue-dark);
+}
+
+.fan-dashboard .saas-topbar {
+  background: transparent;
+  border: 0;
+  min-height: 78px;
+  padding: 24px 34px 10px;
+}
+
+.fan-dashboard .saas-topbar-title span {
+  color: var(--fan-muted);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.fan-dashboard .saas-topbar h1 {
+  color: var(--fan-text);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.fan-dashboard .topbar-actions {
+  gap: 12px;
+}
+
+.fan-dashboard .topbar-icon {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: #95a1af;
+  cursor: pointer;
+  display: inline-flex;
+  height: 34px;
+  justify-content: center;
+  padding: 0;
+  width: 34px;
+}
+
+.fan-dashboard .topbar-icon:hover {
+  background: #eef7ff;
+  color: var(--fan-blue-dark);
+}
+
+.fan-dashboard .topbar-actions a:not(.topbar-primary),
+.fan-dashboard .topbar-logout {
+  background: #fff;
+  border: 1px solid var(--fan-line);
+  color: #718096;
+}
+
+.fan-dashboard .topbar-primary {
+  background: linear-gradient(135deg, #27a5fb, #2676ec);
+  border: 0;
+  box-shadow: 0 14px 26px rgba(39, 134, 236, 0.28);
+}
+
+.fan-dashboard .content-header {
+  border: 0;
+  padding: 0 34px 8px;
+}
+
+.fan-dashboard .content-header h2 {
+  color: var(--fan-text);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.fan-dashboard .content-header nav {
+  color: var(--fan-muted);
+}
+
+.fan-dashboard .reservation-tabs {
+  border: 0;
+  justify-content: flex-end;
+  margin-top: -34px;
+  padding: 0 34px 12px;
+}
+
+.fan-dashboard .reservation-tabs button {
+  color: #a5afba;
+  font-size: 11px;
+  padding: 6px 0;
+  position: relative;
+}
+
+.fan-dashboard .reservation-tabs button span {
+  display: none;
+}
+
+.fan-dashboard .reservation-tabs button.active {
+  color: var(--fan-blue-dark);
+}
+
+.fan-dashboard .reservation-tabs button.active::after {
+  background: var(--fan-blue-dark);
+  border-radius: 999px;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.fan-dashboard .metric-grid {
+  gap: 22px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 14px 34px 0;
+}
+
+.fan-dashboard .metric-card.small-box {
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 18px 30px rgba(50, 103, 180, 0.14);
+  color: #fff;
+  grid-template-columns: minmax(0, 1fr) 72px;
+  min-height: 92px;
+  padding: 18px 17px;
+}
+
+.fan-dashboard .metric-card.success {
+  background: linear-gradient(135deg, #66dc77, #44c955);
+}
+
+.fan-dashboard .metric-card.info {
+  background: linear-gradient(135deg, #9ea8ff, #627cf0);
+}
+
+.fan-dashboard .metric-card.danger {
+  background: linear-gradient(135deg, #ff83dc, #f452c8);
+}
+
+.fan-dashboard .metric-card.warning {
+  background: linear-gradient(135deg, #ffc680, #ff9e57);
+}
+
+.fan-dashboard .metric-card p,
+.fan-dashboard .metric-card span {
+  background: transparent;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.74);
+  margin: 0;
+  padding: 0;
+}
+
+.fan-dashboard .metric-card p {
+  font-size: 12px;
+}
+
+.fan-dashboard .metric-card strong {
+  color: #fff;
+  font-size: clamp(20px, 2.2vw, 26px);
+  line-height: 1.1;
+  margin: 8px 0 7px;
+  overflow-wrap: anywhere;
+}
+
+.fan-dashboard .metric-sparkline {
+  opacity: 0.74;
+  width: 72px;
+}
+
+.fan-dashboard .metric-sparkline path {
+  stroke: #fff;
+}
+
+.fan-dashboard .dashboard-visual-grid {
+  align-items: start;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  padding: 22px 34px 0;
+}
+
+.fan-dashboard .chart-card,
+.fan-dashboard .income-card {
+  background: #fff;
+  border: 1px solid var(--fan-line);
+  border-radius: 8px;
+  box-shadow: 0 18px 40px rgba(54, 101, 166, 0.12);
+}
+
+.fan-dashboard .chart-card {
+  min-height: 270px;
+  padding: 22px 24px;
+}
+
+.fan-dashboard .income-card {
+  min-height: 270px;
+  padding: 22px;
+}
+
+.fan-dashboard .chart-head {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.fan-dashboard .chart-head h2 {
+  color: var(--fan-text);
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0;
+  margin: 4px 0 0;
+}
+
+.fan-dashboard .chart-head > span {
+  color: var(--fan-muted);
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.fan-dashboard .bar-chart {
+  align-items: end;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  height: 178px;
+  margin-top: 30px;
+  padding: 0 12px;
+}
+
+.fan-dashboard .bar-column {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  height: 100%;
+}
+
+.fan-dashboard .bar-column > div {
+  align-items: end;
+  border-bottom: 1px solid var(--fan-line);
+  display: flex;
+  gap: 5px;
+  height: 140px;
+  justify-content: center;
+  width: 100%;
+}
+
+.fan-dashboard .bar {
+  border-radius: 999px 999px 0 0;
+  display: block;
+  min-height: 18px;
+  width: 10px;
+}
+
+.fan-dashboard .bar.invitation {
+  background: linear-gradient(180deg, #70d5ff, #2fa3f7);
+}
+
+.fan-dashboard .bar.rsvp {
+  background: linear-gradient(180deg, #ffd38e, #ff9e57);
+}
+
+.fan-dashboard .bar-column small {
+  color: var(--fan-muted);
+  font-size: 10px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.fan-dashboard .income-donut {
+  align-items: center;
+  background:
+    radial-gradient(circle at center, #fff 0 50%, transparent 52%),
+    conic-gradient(#51c6f4 0 46%, #ffb45d 46% 79%, #69d36c 79% 100%);
+  border-radius: 50%;
+  display: grid;
+  height: 156px;
+  justify-content: center;
+  margin: 24px auto 18px;
+  place-items: center;
+  text-align: center;
+  width: 156px;
+}
+
+.fan-dashboard .income-donut strong,
+.fan-dashboard .income-donut span {
+  display: block;
+  grid-area: 1 / 1;
+}
+
+.fan-dashboard .income-donut strong {
+  color: var(--fan-text);
+  font-size: 17px;
+  font-weight: 900;
+  max-width: 104px;
+  overflow-wrap: anywhere;
+  transform: translateY(-8px);
+}
+
+.fan-dashboard .income-donut span {
+  color: var(--fan-muted);
+  font-size: 11px;
+  font-weight: 800;
+  transform: translateY(16px);
+}
+
+.fan-dashboard .income-legend {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.fan-dashboard .income-legend span {
+  color: #647282;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.fan-dashboard .income-legend b {
+  background: #51c6f4;
+  border-radius: 2px;
+  display: inline-block;
+  height: 8px;
+  margin-right: 5px;
+  width: 8px;
+}
+
+.fan-dashboard .income-legend span:nth-child(2) b {
+  background: #ffb45d;
+}
+
+.fan-dashboard .income-legend span:nth-child(3) b {
+  background: #69d36c;
+}
+
+.fan-dashboard .upgrade-banner,
+.fan-dashboard .form-card,
+.fan-dashboard .module-card,
+.fan-dashboard .table-card,
+.fan-dashboard .template-mini-card {
+  border: 1px solid var(--fan-line);
+  border-radius: 8px;
+  box-shadow: 0 18px 40px rgba(54, 101, 166, 0.1);
+}
+
+.fan-dashboard .upgrade-banner,
+.fan-dashboard .form-card,
+.fan-dashboard .table-card {
+  margin-left: 34px;
+  margin-right: 34px;
+}
+
+.fan-dashboard .upgrade-banner {
+  background: linear-gradient(135deg, #fff, #f5fbff);
+  border-left: 0;
+  margin-top: 22px;
+}
+
+.fan-dashboard .upgrade-banner span {
+  background: #fff3dc;
+  color: #d07900;
+}
+
+.fan-dashboard .box-header,
+.fan-dashboard .table-head {
+  border-bottom: 1px solid var(--fan-line);
+}
+
+.fan-dashboard .invite-table-labels {
+  background: #f9fcff;
+}
+
+.fan-dashboard .adminlte-badge {
+  background: #e9f9ef;
+  color: #20a65a;
+}
+
+.fan-dashboard .row-actions a:nth-child(2),
+.fan-dashboard .row-actions button,
+.fan-dashboard .template-mini-card a,
+.fan-dashboard .button.primary {
+  background: linear-gradient(135deg, #27a5fb, #2676ec);
+  border: 0;
+  color: #fff;
+}
+
+.fan-dashboard .module-grid {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+@media (max-width: 1180px) {
+  .fan-dashboard {
+    grid-template-columns: 220px minmax(0, 1fr);
+    padding: 20px;
+  }
+
+  .fan-dashboard .saas-sidebar {
+    min-height: calc(100vh - 40px);
+    top: 20px;
+  }
+
+  .fan-dashboard .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fan-dashboard .dashboard-visual-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .fan-dashboard {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+
+  .fan-dashboard .saas-sidebar,
+  .fan-dashboard .saas-main {
+    border-radius: 8px;
+  }
+
+  .fan-dashboard .saas-sidebar {
+    min-height: auto;
+    position: relative;
+    top: 0;
+  }
+
+  .fan-dashboard .sidebar-menu {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fan-dashboard .reservation-tabs {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  .fan-dashboard .topbar-actions {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .fan-dashboard .metric-grid,
+  .fan-dashboard .sidebar-menu,
+  .fan-dashboard .income-legend {
+    grid-template-columns: 1fr;
+  }
+
+  .fan-dashboard .saas-topbar,
+  .fan-dashboard .content-header,
+  .fan-dashboard .reservation-tabs,
+  .fan-dashboard .metric-grid,
+  .fan-dashboard .dashboard-visual-grid,
+  .fan-dashboard .module-grid {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .fan-dashboard .upgrade-banner,
+  .fan-dashboard .form-card,
+  .fan-dashboard .table-card {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}

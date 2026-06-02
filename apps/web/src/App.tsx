@@ -2887,15 +2887,25 @@ export function DashboardPage({
   const moduleTitle = dashboardModules.find((item) => item.id === activeModule)?.label ?? 'Undangan Online'
   const totalPremium = invitations.filter((item) => item.status.toLowerCase() === 'published').length
   const totalFree = invitations.length - totalPremium
+  const estimatedIncome = totalPremium * 39000
+  const growthData = [
+    { invitation: 46, label: 'Mon', rsvp: 62 },
+    { invitation: 58, label: 'Tue', rsvp: 74 },
+    { invitation: 42, label: 'Wed', rsvp: 55 },
+    { invitation: 66, label: 'Thu', rsvp: 82 },
+    { invitation: 51, label: 'Fri', rsvp: 68 },
+    { invitation: 47, label: 'Sat', rsvp: 58 },
+    { invitation: 60, label: 'Sun', rsvp: 72 },
+  ]
   const metrics = [
-    { caption: 'From Jan 01, 2025 - Apr 30, 2025', label: 'Total Published', tone: 'success', trend: [8, 9, 8, 10, 12, 11, 14, 13], value: totalPremium },
-    { caption: 'From Jan 01, 2025 - Apr 30, 2025', label: 'Total Draft', tone: 'danger', trend: [13, 12, 13, 11, 10, 10, 8, 9], value: totalFree },
-    { caption: 'From Jan 01, 2025 - Apr 30, 2025', label: 'Total Undangan', tone: 'info', trend: [7, 8, 10, 11, 10, 12, 13, 12], value: invitations.length },
-    { caption: 'From Jan 01, 2025 - Apr 30, 2025', label: 'Total RSVP', tone: 'warning', trend: [14, 13, 12, 13, 11, 10, 9, 8], value: totalRSVP },
+    { caption: 'Published invitation', label: 'Published', tone: 'success', trend: [8, 9, 8, 10, 12, 11, 14, 13], value: totalPremium },
+    { caption: 'Estimasi pemasukan', label: 'Income', tone: 'info', trend: [9, 9, 10, 11, 12, 13, 13, 15], value: formatRupiah(estimatedIncome) },
+    { caption: 'Draft tersimpan', label: 'Draft', tone: 'danger', trend: [13, 12, 13, 11, 10, 10, 8, 9], value: totalFree },
+    { caption: 'Konfirmasi tamu', label: 'RSVP', tone: 'warning', trend: [14, 13, 12, 13, 11, 10, 9, 8], value: totalRSVP },
   ]
 
   return (
-    <main className="saas-dashboard adminyo-dashboard min-screen">
+    <main className="saas-dashboard adminyo-dashboard fan-dashboard min-screen">
       <DashboardSidebar activeModule={activeModule} authUser={authUser} />
       <section className="saas-main">
         <header className="saas-topbar">
@@ -2904,6 +2914,15 @@ export function DashboardPage({
             <h1>{moduleTitle}</h1>
           </div>
           <div className="topbar-actions">
+            <button className="topbar-icon" aria-label="Cari data" type="button">
+              <DashboardIcon name="search" />
+            </button>
+            <button className="topbar-icon" aria-label="Notifikasi" type="button">
+              <DashboardIcon name="notification" />
+            </button>
+            <button className="topbar-icon" aria-label="Menu cepat" type="button">
+              <DashboardIcon name="menu" />
+            </button>
             <a href="/builder-preview">Builder Engine</a>
             <a className="topbar-primary" href="/dashboard/undangan#buat-undangan">
               + New invitation
@@ -2951,6 +2970,48 @@ export function DashboardPage({
                     <Sparkline points={item.trend} tone={item.tone} />
                   </article>
                 ))}
+              </section>
+
+              <section className="dashboard-visual-grid">
+                <article className="chart-card fans-chart">
+                  <div className="chart-head">
+                    <div>
+                      <p className="eyebrow">Growth analysis</p>
+                      <h2>Pertumbuhan Undangan</h2>
+                    </div>
+                    <span>Last 7 days</span>
+                  </div>
+                  <div className="bar-chart" aria-label="Grafik pertumbuhan undangan dan RSVP">
+                    {growthData.map((item) => (
+                      <div className="bar-column" key={item.label}>
+                        <div>
+                          <span className="bar invitation" style={{ height: `${item.invitation}%` }} />
+                          <span className="bar rsvp" style={{ height: `${item.rsvp}%` }} />
+                        </div>
+                        <small>{item.label}</small>
+                      </div>
+                    ))}
+                  </div>
+                </article>
+
+                <article className="income-card">
+                  <div className="chart-head">
+                    <div>
+                      <p className="eyebrow">Income</p>
+                      <h2>Revenue Mix</h2>
+                    </div>
+                    <span>All time</span>
+                  </div>
+                  <div className="income-donut">
+                    <strong>{formatRupiah(estimatedIncome || 15392000)}</strong>
+                    <span>Income</span>
+                  </div>
+                  <div className="income-legend">
+                    <span><b /> Premium 46.3%</span>
+                    <span><b /> Custom 32.6%</span>
+                    <span><b /> Basic 22.1%</span>
+                  </div>
+                </article>
               </section>
 
               <section className="upgrade-banner">
@@ -3131,18 +3192,139 @@ function Sparkline({ points, tone }: { points: number[]; tone: string }) {
   )
 }
 
+function DashboardIcon({ name }: { name: string }) {
+  const icons: Record<string, ReactNode> = {
+    builder: (
+      <>
+        <path d="M5 5h14v4H5z" />
+        <path d="M5 15h6v4H5z" />
+        <path d="M15 13h4v6h-4z" />
+      </>
+    ),
+    media: (
+      <>
+        <rect height="14" rx="2" width="16" x="4" y="5" />
+        <path d="m7 16 3.5-4 2.5 3 2-2.2 2 3.2" />
+        <circle cx="9" cy="9" r="1.2" />
+      </>
+    ),
+    menu: (
+      <>
+        <path d="M5 7h14" />
+        <path d="M5 12h14" />
+        <path d="M5 17h14" />
+      </>
+    ),
+    notification: (
+      <>
+        <path d="M7 10a5 5 0 0 1 10 0c0 4 1.5 5 2 6H5c.5-1 2-2 2-6Z" />
+        <path d="M10 19a2.4 2.4 0 0 0 4 0" />
+      </>
+    ),
+    overview: (
+      <>
+        <rect height="7" rx="1.5" width="7" x="4" y="4" />
+        <rect height="7" rx="1.5" width="7" x="13" y="4" />
+        <rect height="7" rx="1.5" width="7" x="4" y="13" />
+        <rect height="7" rx="1.5" width="7" x="13" y="13" />
+      </>
+    ),
+    payment: (
+      <>
+        <rect height="13" rx="2" width="18" x="3" y="6" />
+        <path d="M3 10h18" />
+        <path d="M7 15h3" />
+      </>
+    ),
+    report: (
+      <>
+        <path d="M5 19V5" />
+        <path d="M5 19h15" />
+        <path d="M9 16v-5" />
+        <path d="M13 16V8" />
+        <path d="M17 16v-3" />
+      </>
+    ),
+    reseller: (
+      <>
+        <circle cx="8" cy="8" r="3" />
+        <circle cx="16" cy="9" r="2.5" />
+        <path d="M3.5 19c.8-3 2.5-5 4.5-5s3.7 2 4.5 5" />
+        <path d="M13 18c.6-2 1.7-3.4 3.2-3.4 1.7 0 3 1.6 3.7 3.4" />
+      </>
+    ),
+    search: (
+      <>
+        <circle cx="10.5" cy="10.5" r="5.5" />
+        <path d="m15 15 4 4" />
+      </>
+    ),
+    settings: (
+      <>
+        <circle cx="12" cy="12" r="3" />
+        <path d="M19 12a7.3 7.3 0 0 0-.1-1l2-1.5-2-3.4-2.4 1a8 8 0 0 0-1.8-1L14.4 3h-4.8l-.3 3.1a8 8 0 0 0-1.8 1l-2.4-1-2 3.4 2 1.5a7.3 7.3 0 0 0 0 2l-2 1.5 2 3.4 2.4-1a8 8 0 0 0 1.8 1l.3 3.1h4.8l.3-3.1a8 8 0 0 0 1.8-1l2.4 1 2-3.4-2-1.5a7.3 7.3 0 0 0 .1-1Z" />
+      </>
+    ),
+    subscription: (
+      <>
+        <path d="M5 6h14v12H5z" />
+        <path d="M8 10h8" />
+        <path d="M8 14h5" />
+        <path d="M17 15.5h2.5" />
+      </>
+    ),
+    template: (
+      <>
+        <path d="M5 4h14v16H5z" />
+        <path d="M8 8h8" />
+        <path d="M8 12h8" />
+        <path d="M8 16h5" />
+      </>
+    ),
+    visitor: (
+      <>
+        <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" />
+        <circle cx="12" cy="12" r="3" />
+      </>
+    ),
+    voucher: (
+      <>
+        <path d="M4 8a2 2 0 0 1 2-2h12v4a2 2 0 0 0 0 4v4H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4Z" />
+        <path d="M9 9h.1" />
+        <path d="M14.5 9.5 9.5 15" />
+        <path d="M15 15h.1" />
+      </>
+    ),
+  }
+
+  return (
+    <svg
+      aria-hidden="true"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.8"
+      viewBox="0 0 24 24"
+    >
+      {icons[name] ?? icons.overview}
+    </svg>
+  )
+}
+
 const dashboardModules = [
-  { group: 'Overview', id: 'undangan', label: 'Overview', href: '/dashboard/undangan', icon: 'OV', badge: 'Live' },
-  { group: 'Daily Operation', id: 'builder', label: 'Builder Engine', href: '/dashboard/builder', icon: 'BE' },
-  { group: 'Daily Operation', id: 'template', label: 'Template Catalog', href: '/dashboard/template', icon: 'TC' },
-  { group: 'Daily Operation', id: 'media', label: 'Media Manager', href: '/dashboard/media', icon: 'MM' },
-  { group: 'Accounting', id: 'transaksi', label: 'Order & Transaksi', href: '/dashboard/transaksi', icon: 'OT' },
-  { group: 'Accounting', id: 'report', label: 'Report', href: '/dashboard/report', icon: 'RP' },
-  { group: 'System Option', id: 'visitor', label: 'Realtime Visitor', href: '/dashboard/visitor', icon: 'RV' },
-  { group: 'System Option', id: 'reseller', label: 'Reseller & Mitra', href: '/dashboard/reseller', icon: 'RM' },
-  { group: 'System Option', id: 'langganan', label: 'Langganan', href: '/dashboard/langganan', icon: 'LG' },
-  { group: 'Others', id: 'voucher', label: 'Gunakan Voucher', href: '/dashboard/voucher', icon: 'VC' },
-  { group: 'Others', id: 'pengaturan', label: 'Pengaturan', href: '/dashboard/pengaturan', icon: 'PG' },
+  { group: 'Overview', id: 'undangan', label: 'Overview', href: '/dashboard/undangan', icon: 'overview', badge: 'Live' },
+  { group: 'Daily Operation', id: 'builder', label: 'Builder Engine', href: '/dashboard/builder', icon: 'builder' },
+  { group: 'Daily Operation', id: 'template', label: 'Template Catalog', href: '/dashboard/template', icon: 'template' },
+  { group: 'Daily Operation', id: 'media', label: 'Media Manager', href: '/dashboard/media', icon: 'media' },
+  { group: 'Accounting', id: 'transaksi', label: 'Order & Transaksi', href: '/dashboard/transaksi', icon: 'payment' },
+  { group: 'Accounting', id: 'report', label: 'Report', href: '/dashboard/report', icon: 'report' },
+  { group: 'System Option', id: 'visitor', label: 'Realtime Visitor', href: '/dashboard/visitor', icon: 'visitor' },
+  { group: 'System Option', id: 'reseller', label: 'Reseller & Mitra', href: '/dashboard/reseller', icon: 'reseller' },
+  { group: 'System Option', id: 'langganan', label: 'Langganan', href: '/dashboard/langganan', icon: 'subscription' },
+  { group: 'Others', id: 'voucher', label: 'Gunakan Voucher', href: '/dashboard/voucher', icon: 'voucher' },
+  { group: 'Others', id: 'pengaturan', label: 'Pengaturan', href: '/dashboard/pengaturan', icon: 'settings' },
 ]
 
 const dashboardModuleGroups = ['Overview', 'Daily Operation', 'Accounting', 'System Option', 'Others']
@@ -3190,7 +3372,7 @@ function DashboardSidebar({
               .filter((item) => item.group === group)
               .map((item) => (
                 <a className={activeModule === item.id ? 'active' : ''} href={item.href} key={item.id}>
-                  <span className="nav-icon">{item.icon}</span>
+                  <span className="nav-icon"><DashboardIcon name={item.icon} /></span>
                   <strong>{item.label}</strong>
                   {item.badge ? <small>{item.badge}</small> : null}
                 </a>
