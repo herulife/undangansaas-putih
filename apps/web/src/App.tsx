@@ -2884,10 +2884,16 @@ export function DashboardPage({
 
   const dashboardPath = window.location.pathname
   const activeModule = getDashboardModule(dashboardPath)
-  const moduleTitle = dashboardModules.find((item) => item.id === activeModule)?.label ?? 'Undangan Online'
+  const displayName = authUser?.displayName || authUser?.email?.split('@')[0] || 'Sahabat Undangan'
   const totalPremium = invitations.filter((item) => item.status.toLowerCase() === 'published').length
   const totalFree = invitations.length - totalPremium
   const estimatedIncome = totalPremium * 39000
+  const todayLabel = new Intl.DateTimeFormat('en-GB', {
+    day: '2-digit',
+    month: 'long',
+    weekday: 'short',
+    year: 'numeric',
+  }).format(new Date())
   const growthData = [
     { invitation: 46, label: 'Mon', rsvp: 62 },
     { invitation: 58, label: 'Tue', rsvp: 74 },
@@ -2898,35 +2904,35 @@ export function DashboardPage({
     { invitation: 60, label: 'Sun', rsvp: 72 },
   ]
   const metrics = [
-    { caption: 'Published invitation', label: 'Published', tone: 'success', trend: [8, 9, 8, 10, 12, 11, 14, 13], value: totalPremium },
-    { caption: 'Estimasi pemasukan', label: 'Income', tone: 'info', trend: [9, 9, 10, 11, 12, 13, 13, 15], value: formatRupiah(estimatedIncome) },
-    { caption: 'Draft tersimpan', label: 'Draft', tone: 'danger', trend: [13, 12, 13, 11, 10, 10, 8, 9], value: totalFree },
-    { caption: 'Konfirmasi tamu', label: 'RSVP', tone: 'warning', trend: [14, 13, 12, 13, 11, 10, 9, 8], value: totalRSVP },
+    { caption: '+3.2% from last month', icon: 'wallet', label: 'Account Balance', tone: 'success', trend: [8, 9, 8, 10, 12, 11, 14, 13], value: formatRupiah(estimatedIncome || 35340890) },
+    { caption: '-2.1% from last month', icon: 'payment', label: 'Total Expenses', tone: 'danger', trend: [13, 12, 13, 11, 10, 10, 8, 9], value: formatRupiah(totalFree * 15000 || 9845200) },
+    { caption: '+4.5% from last month', icon: 'subscription', label: 'Total Savings', tone: 'info', trend: [9, 9, 10, 11, 12, 13, 13, 15], value: formatRupiah(totalRSVP * 10000 || 18420750) },
   ]
 
   return (
-    <main className="saas-dashboard adminyo-dashboard fan-dashboard min-screen">
-      <DashboardSidebar activeModule={activeModule} authUser={authUser} />
+    <main className="saas-dashboard adminyo-dashboard oripio-dashboard min-screen">
+      <DashboardSidebar activeModule={activeModule} authUser={authUser} logout={logout} />
       <section className="saas-main">
         <header className="saas-topbar">
-          <div className="saas-topbar-title">
-            <span>Workspace</span>
-            <h1>{moduleTitle}</h1>
-          </div>
+          <button className="sidebar-collapse" aria-label="Collapse sidebar" type="button">
+            <DashboardIcon name="chevron" />
+          </button>
+          <label className="oripio-search">
+            <DashboardIcon name="search" />
+            <input aria-label="Search" placeholder="Search" type="search" />
+            <kbd>Ctrl K</kbd>
+          </label>
           <div className="topbar-actions">
             <button className="topbar-icon" aria-label="Cari data" type="button">
-              <DashboardIcon name="search" />
+              <DashboardIcon name="help" />
+            </button>
+            <button className="topbar-icon" aria-label="Pesan" type="button">
+              <DashboardIcon name="mail" />
             </button>
             <button className="topbar-icon" aria-label="Notifikasi" type="button">
               <DashboardIcon name="notification" />
             </button>
-            <button className="topbar-icon" aria-label="Menu cepat" type="button">
-              <DashboardIcon name="menu" />
-            </button>
-            <a href="/builder-preview">Builder Engine</a>
-            <a className="topbar-primary" href="/dashboard/undangan#buat-undangan">
-              + New invitation
-            </a>
+            <span className="topbar-avatar">{displayName.charAt(0).toUpperCase()}</span>
             <button className="topbar-logout" onClick={logout} type="button">Keluar</button>
           </div>
         </header>
@@ -2934,17 +2940,19 @@ export function DashboardPage({
         <section className="saas-content">
           <TierExpiryBanner />
 
-          <div className="content-header">
+          <div className="content-header oripio-welcome">
             <div>
+              <h2>Welcome back {displayName}</h2>
               <p className="data-source">
                 {isDataLoading ? 'Memuat data...' : source === 'api' ? 'API production tersambung' : 'Mode fallback aktif'}
               </p>
-              <h2>All Invitation</h2>
             </div>
             <nav aria-label="Breadcrumb">
-              <a href="/dashboard/undangan">Home</a>
-              <span>/</span>
-              <b>{moduleTitle}</b>
+              <span className="oripio-date"><DashboardIcon name="calendar" /> {todayLabel}</span>
+              <a className="oripio-export" href="/dashboard/report">
+                <DashboardIcon name="download" />
+                Export
+              </a>
             </nav>
           </div>
 
@@ -2962,12 +2970,20 @@ export function DashboardPage({
               <section className="metric-grid">
                 {metrics.map((item) => (
                   <article className={`metric-card small-box ${item.tone}`} key={item.label}>
+                    <span className="metric-icon"><DashboardIcon name={item.icon} /></span>
+                    <button className="metric-more" aria-label={`More ${item.label}`} type="button">...</button>
                     <div>
                       <p>{item.label}</p>
                       <strong>{item.value}</strong>
                       <span>{item.caption}</span>
                     </div>
                     <Sparkline points={item.trend} tone={item.tone} />
+                    {item.label === 'Account Balance' ? (
+                      <div className="wallet-actions">
+                        <a href="/dashboard/transaksi"><DashboardIcon name="download" /> Send Money</a>
+                        <button type="button"><DashboardIcon name="download" /> Request Money</button>
+                      </div>
+                    ) : null}
                   </article>
                 ))}
               </section>
@@ -2976,10 +2992,10 @@ export function DashboardPage({
                 <article className="chart-card fans-chart">
                   <div className="chart-head">
                     <div>
-                      <p className="eyebrow">Growth analysis</p>
-                      <h2>Pertumbuhan Undangan</h2>
+                      <p className="eyebrow">Overview</p>
+                      <h2>Ringkasan Pertumbuhan</h2>
                     </div>
-                    <span>Last 7 days</span>
+                    <span>Earnings / This Year</span>
                   </div>
                   <div className="bar-chart" aria-label="Grafik pertumbuhan undangan dan RSVP">
                     {growthData.map((item) => (
@@ -2998,7 +3014,7 @@ export function DashboardPage({
                   <div className="chart-head">
                     <div>
                       <p className="eyebrow">Income</p>
-                      <h2>Revenue Mix</h2>
+                      <h2>Active Revenue</h2>
                     </div>
                     <span>All time</span>
                   </div>
@@ -3201,6 +3217,62 @@ function DashboardIcon({ name }: { name: string }) {
         <path d="M15 13h4v6h-4z" />
       </>
     ),
+    calendar: (
+      <>
+        <rect height="16" rx="2" width="18" x="3" y="5" />
+        <path d="M8 3v4" />
+        <path d="M16 3v4" />
+        <path d="M3 10h18" />
+      </>
+    ),
+    chevron: (
+      <>
+        <path d="m15 18-6-6 6-6" />
+        <path d="m20 18-6-6 6-6" />
+      </>
+    ),
+    download: (
+      <>
+        <path d="M12 4v10" />
+        <path d="m8 10 4 4 4-4" />
+        <path d="M5 20h14" />
+      </>
+    ),
+    feedback: (
+      <>
+        <path d="M4 5h16v11H8l-4 4z" />
+        <path d="M8 9h8" />
+        <path d="M8 13h5" />
+      </>
+    ),
+    help: (
+      <>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M9.8 9a2.4 2.4 0 1 1 3.7 2c-.9.6-1.5 1.1-1.5 2.2" />
+        <path d="M12 17h.1" />
+      </>
+    ),
+    invoice: (
+      <>
+        <path d="M7 3h10l2 2v16l-3-1.5-2 1-2-1-2 1-2-1-3 1.5V5a2 2 0 0 1 2-2Z" />
+        <path d="M9 8h6" />
+        <path d="M9 12h6" />
+        <path d="M9 16h4" />
+      </>
+    ),
+    logout: (
+      <>
+        <path d="M10 5H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4" />
+        <path d="M14 16l4-4-4-4" />
+        <path d="M18 12H9" />
+      </>
+    ),
+    mail: (
+      <>
+        <rect height="14" rx="2" width="18" x="3" y="5" />
+        <path d="m4 7 8 6 8-6" />
+      </>
+    ),
     media: (
       <>
         <rect height="14" rx="2" width="16" x="4" y="5" />
@@ -3295,6 +3367,13 @@ function DashboardIcon({ name }: { name: string }) {
         <path d="M15 15h.1" />
       </>
     ),
+    wallet: (
+      <>
+        <path d="M5 7h13a2 2 0 0 1 2 2v9H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11" />
+        <path d="M16 12h4" />
+        <path d="M16 12a1.5 1.5 0 1 0 0 3h4" />
+      </>
+    ),
   }
 
   return (
@@ -3314,20 +3393,19 @@ function DashboardIcon({ name }: { name: string }) {
 }
 
 const dashboardModules = [
-  { group: 'Overview', id: 'undangan', label: 'Overview', href: '/dashboard/undangan', icon: 'overview', badge: 'Live' },
-  { group: 'Daily Operation', id: 'builder', label: 'Builder Engine', href: '/dashboard/builder', icon: 'builder' },
-  { group: 'Daily Operation', id: 'template', label: 'Template Catalog', href: '/dashboard/template', icon: 'template' },
-  { group: 'Daily Operation', id: 'media', label: 'Media Manager', href: '/dashboard/media', icon: 'media' },
-  { group: 'Accounting', id: 'transaksi', label: 'Order & Transaksi', href: '/dashboard/transaksi', icon: 'payment' },
-  { group: 'Accounting', id: 'report', label: 'Report', href: '/dashboard/report', icon: 'report' },
-  { group: 'System Option', id: 'visitor', label: 'Realtime Visitor', href: '/dashboard/visitor', icon: 'visitor' },
-  { group: 'System Option', id: 'reseller', label: 'Reseller & Mitra', href: '/dashboard/reseller', icon: 'reseller' },
-  { group: 'System Option', id: 'langganan', label: 'Langganan', href: '/dashboard/langganan', icon: 'subscription' },
-  { group: 'Others', id: 'voucher', label: 'Gunakan Voucher', href: '/dashboard/voucher', icon: 'voucher' },
-  { group: 'Others', id: 'pengaturan', label: 'Pengaturan', href: '/dashboard/pengaturan', icon: 'settings' },
+  { group: 'MAIN MENU', id: 'undangan', label: 'Dashboard', href: '/dashboard/undangan', icon: 'overview' },
+  { group: 'MAIN MENU', id: 'report', label: 'Analytics', href: '/dashboard/report', icon: 'report', badge: '20' },
+  { group: 'MAIN MENU', id: 'transaksi', label: 'Transactions', href: '/dashboard/transaksi', icon: 'payment' },
+  { group: 'MAIN MENU', id: 'template', label: 'Invoices', href: '/dashboard/template', icon: 'invoice' },
+  { group: 'FEATURES', id: 'builder', label: 'Recurring', href: '/dashboard/builder', icon: 'builder', badge: '16' },
+  { group: 'FEATURES', id: 'langganan', label: 'Subscriptions', href: '/dashboard/langganan', icon: 'subscription' },
+  { group: 'FEATURES', id: 'reseller', label: 'Feedback', href: '/dashboard/reseller', icon: 'feedback' },
+  { group: 'GENERAL', id: 'pengaturan', label: 'Settings', href: '/dashboard/pengaturan', icon: 'settings' },
+  { group: 'GENERAL', id: 'media', label: 'Help Desk', href: '/dashboard/media', icon: 'help' },
+  { group: 'GENERAL', id: 'logout', label: 'Log out', href: '#logout', icon: 'logout' },
 ]
 
-const dashboardModuleGroups = ['Overview', 'Daily Operation', 'Accounting', 'System Option', 'Others']
+const dashboardModuleGroups = ['MAIN MENU', 'FEATURES', 'GENERAL']
 
 function getDashboardModule(pathname: string) {
   const module = pathname.split('/').filter(Boolean)[1]
@@ -3337,9 +3415,11 @@ function getDashboardModule(pathname: string) {
 function DashboardSidebar({
   activeModule,
   authUser,
+  logout,
 }: {
   activeModule: string
   authUser: AuthUser | null
+  logout: () => void
 }) {
   const displayName = authUser?.displayName || authUser?.email || 'User'
   const initials = displayName
@@ -3352,9 +3432,8 @@ function DashboardSidebar({
   return (
     <aside className="saas-sidebar">
       <a className="sidebar-brand brand-link" href="/">
-        <span className="brand-image">U</span>
-        <b>undang</b>
-        <em>panel</em>
+        <span className="brand-image"><DashboardIcon name="wallet" /></span>
+        <b>Oripio</b>
       </a>
       <div className="sidebar-user user-panel">
         <div className="avatar">{initials}</div>
@@ -3370,16 +3449,32 @@ function DashboardSidebar({
             <p>{group}</p>
             {dashboardModules
               .filter((item) => item.group === group)
-              .map((item) => (
-                <a className={activeModule === item.id ? 'active' : ''} href={item.href} key={item.id}>
-                  <span className="nav-icon"><DashboardIcon name={item.icon} /></span>
-                  <strong>{item.label}</strong>
-                  {item.badge ? <small>{item.badge}</small> : null}
-                </a>
-              ))}
+              .map((item) => {
+                const content = (
+                  <>
+                    <span className="nav-icon"><DashboardIcon name={item.icon} /></span>
+                    <strong>{item.label}</strong>
+                    {item.badge ? <small>{item.badge}</small> : null}
+                  </>
+                )
+                return item.id === 'logout' ? (
+                  <button className="sidebar-logout-link" key={item.id} onClick={logout} type="button">
+                    {content}
+                  </button>
+                ) : (
+                  <a className={activeModule === item.id ? 'active' : ''} href={item.href} key={item.id}>
+                    {content}
+                  </a>
+                )
+              })}
           </div>
         ))}
       </nav>
+      <div className="sidebar-upgrade">
+        <strong>Upgrade Pro!</strong>
+        <p>Higher productivity with better organization.</p>
+        <a href="/dashboard/langganan"><DashboardIcon name="subscription" /> Upgrade</a>
+      </div>
     </aside>
   )
 }

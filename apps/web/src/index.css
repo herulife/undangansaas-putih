@@ -10620,3 +10620,888 @@ h1 {
     margin-right: 18px;
   }
 }
+
+.oripio-dashboard {
+  --or-bg: #ececec;
+  --or-card: #ffffff;
+  --or-line: #ecefeb;
+  --or-muted: #7b827f;
+  --or-soft: #f6f7f5;
+  --or-text: #1f2421;
+  --or-green: #0f9b63;
+  --or-green-dark: #087b4c;
+  --or-green-soft: #e8f5ef;
+  background: var(--or-bg);
+  color: var(--or-text);
+  grid-template-columns: 220px minmax(0, 1fr);
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.oripio-dashboard .saas-sidebar,
+.oripio-dashboard .saas-main {
+  background: #f7f7f6;
+  border: 0;
+  box-shadow: none;
+}
+
+.oripio-dashboard .saas-sidebar {
+  border-radius: 14px 0 0 14px;
+  color: var(--or-text);
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 48px);
+  overflow: hidden;
+  padding: 0 18px 18px;
+  position: sticky;
+  top: 24px;
+}
+
+.oripio-dashboard .saas-main {
+  border-radius: 0 14px 14px 0;
+  min-width: 0;
+  overflow: hidden;
+  padding: 0 14px 14px 0;
+}
+
+.oripio-dashboard .brand-link {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  min-height: 66px;
+  padding: 10px 0;
+}
+
+.oripio-dashboard .brand-image {
+  align-items: center;
+  background: linear-gradient(135deg, #1ab981, #0c8f60);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 10px 22px rgba(15, 155, 99, 0.24);
+  color: #fff;
+  display: inline-flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.oripio-dashboard .brand-image svg {
+  height: 17px;
+  width: 17px;
+}
+
+.oripio-dashboard .brand-link b {
+  color: var(--or-text);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.oripio-dashboard .user-panel {
+  display: none;
+}
+
+.oripio-dashboard .sidebar-menu {
+  display: block;
+  flex: 1;
+  padding: 0;
+}
+
+.oripio-dashboard .nav-treeview {
+  display: block;
+  margin-top: 16px;
+}
+
+.oripio-dashboard .nav-treeview > p {
+  color: #9a9f9c;
+  display: block;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.oripio-dashboard .sidebar-menu a,
+.oripio-dashboard .sidebar-menu button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: #686f6b;
+  cursor: pointer;
+  display: grid;
+  font-size: 13px;
+  gap: 11px;
+  grid-template-columns: 20px minmax(0, 1fr) auto;
+  min-height: 40px;
+  padding: 10px 11px;
+  text-align: left;
+  width: 100%;
+}
+
+.oripio-dashboard .sidebar-menu a:hover,
+.oripio-dashboard .sidebar-menu button:hover {
+  background: #eef3f0;
+  color: var(--or-green-dark);
+}
+
+.oripio-dashboard .sidebar-menu a.active {
+  background: #dfeee7;
+  color: var(--or-green-dark);
+}
+
+.oripio-dashboard .nav-icon {
+  color: currentColor;
+  display: inline-flex;
+  height: 20px;
+  width: 20px;
+}
+
+.oripio-dashboard .nav-icon svg {
+  height: 18px;
+  width: 18px;
+}
+
+.oripio-dashboard .sidebar-menu strong {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.oripio-dashboard .sidebar-menu small {
+  background: #fff;
+  border-radius: 999px;
+  color: var(--or-text);
+  font-size: 10px;
+  font-weight: 850;
+  padding: 3px 7px;
+}
+
+.oripio-dashboard .sidebar-upgrade {
+  background: linear-gradient(180deg, #05995d, #057343);
+  border-radius: 8px;
+  color: #fff;
+  margin-top: 24px;
+  padding: 18px 12px;
+  text-align: center;
+}
+
+.oripio-dashboard .sidebar-upgrade strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.oripio-dashboard .sidebar-upgrade p {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 11px;
+  line-height: 1.45;
+  margin: 7px 0 14px;
+}
+
+.oripio-dashboard .sidebar-upgrade a {
+  align-items: center;
+  background: #fff;
+  border-radius: 6px;
+  color: var(--or-green-dark);
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 900;
+  gap: 7px;
+  justify-content: center;
+  min-height: 30px;
+  padding: 7px 16px;
+  width: 100%;
+}
+
+.oripio-dashboard .sidebar-upgrade svg {
+  height: 15px;
+  width: 15px;
+}
+
+.oripio-dashboard .saas-topbar {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  display: flex;
+  gap: 14px;
+  min-height: 66px;
+  padding: 0 8px 0 12px;
+}
+
+.oripio-dashboard .sidebar-collapse {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--or-line);
+  border-radius: 8px;
+  color: #9ba09d;
+  cursor: pointer;
+  display: inline-flex;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.oripio-dashboard .sidebar-collapse svg {
+  height: 16px;
+  width: 16px;
+}
+
+.oripio-dashboard .oripio-search {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--or-line);
+  border-radius: 8px;
+  color: #969c99;
+  display: flex;
+  gap: 9px;
+  min-height: 38px;
+  padding: 0 12px;
+  width: min(360px, 44vw);
+}
+
+.oripio-dashboard .oripio-search svg {
+  height: 16px;
+  width: 16px;
+}
+
+.oripio-dashboard .oripio-search input {
+  background: transparent;
+  border: 0;
+  color: var(--or-text);
+  flex: 1;
+  font-size: 12px;
+  min-width: 0;
+  outline: 0;
+}
+
+.oripio-dashboard .oripio-search kbd {
+  background: #f2f3f1;
+  border: 0;
+  border-radius: 5px;
+  color: #858b88;
+  font-size: 10px;
+  font-weight: 850;
+  padding: 4px 6px;
+}
+
+.oripio-dashboard .topbar-actions {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.oripio-dashboard .topbar-icon {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--or-line);
+  border-radius: 8px;
+  color: #4f5753;
+  cursor: pointer;
+  display: inline-flex;
+  height: 34px;
+  justify-content: center;
+  padding: 0;
+  width: 34px;
+}
+
+.oripio-dashboard .topbar-icon svg {
+  height: 17px;
+  width: 17px;
+}
+
+.oripio-dashboard .topbar-avatar {
+  align-items: center;
+  background: linear-gradient(145deg, #f1c6a9, #684331);
+  border-radius: 8px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 900;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.oripio-dashboard .topbar-logout {
+  background: transparent;
+  border: 0;
+  color: #8b928e;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 850;
+  padding: 7px 2px;
+}
+
+.oripio-dashboard .saas-content {
+  padding: 0;
+}
+
+.oripio-dashboard .tier-expiry-banner {
+  margin: 0 10px 12px 0;
+}
+
+.oripio-dashboard .content-header {
+  align-items: center;
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 8px 18px 12px;
+}
+
+.oripio-dashboard .oripio-welcome h2 {
+  color: var(--or-text);
+  font-size: clamp(24px, 2.5vw, 32px);
+  font-weight: 950;
+  letter-spacing: 0;
+  line-height: 1.1;
+  margin: 0 0 7px;
+}
+
+.oripio-dashboard .data-source {
+  color: var(--or-muted);
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: none;
+}
+
+.oripio-dashboard .content-header nav {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.oripio-dashboard .oripio-date,
+.oripio-dashboard .oripio-export {
+  align-items: center;
+  background: #fff;
+  border-radius: 999px;
+  color: var(--or-text);
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  gap: 8px;
+  min-height: 38px;
+  padding: 9px 13px;
+}
+
+.oripio-dashboard .oripio-date svg,
+.oripio-dashboard .oripio-export svg {
+  height: 15px;
+  width: 15px;
+}
+
+.oripio-dashboard .oripio-export {
+  background: #1f2421;
+  color: #fff;
+}
+
+.oripio-dashboard .reservation-tabs {
+  display: none;
+}
+
+.oripio-dashboard .metric-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  padding: 0 8px 0 12px;
+}
+
+.oripio-dashboard .metric-card.small-box {
+  background: #fff;
+  border: 1px solid var(--or-line);
+  border-radius: 8px;
+  box-shadow: none;
+  color: var(--or-text);
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) auto;
+  min-height: 128px;
+  padding: 20px;
+  position: relative;
+}
+
+.oripio-dashboard .metric-card:first-child {
+  grid-row: span 2;
+  min-height: 250px;
+}
+
+.oripio-dashboard .metric-icon {
+  align-items: center;
+  background: var(--or-green-soft);
+  border-radius: 8px;
+  color: var(--or-green-dark);
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.oripio-dashboard .metric-icon svg {
+  height: 17px;
+  width: 17px;
+}
+
+.oripio-dashboard .metric-card > div:not(.wallet-actions) {
+  grid-column: 2 / 3;
+  min-width: 0;
+}
+
+.oripio-dashboard .metric-card p {
+  color: var(--or-text);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0;
+  margin: 2px 0 14px;
+  text-transform: none;
+}
+
+.oripio-dashboard .metric-card strong {
+  color: var(--or-text);
+  display: block;
+  font-size: clamp(25px, 2.7vw, 38px);
+  font-weight: 950;
+  letter-spacing: 0;
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.oripio-dashboard .metric-card span:not(.metric-icon) {
+  background: transparent;
+  border-radius: 0;
+  color: var(--or-muted);
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 11px 0 0;
+  padding: 0;
+}
+
+.oripio-dashboard .metric-card span:not(.metric-icon)::first-letter {
+  color: var(--or-green);
+}
+
+.oripio-dashboard .metric-more {
+  align-items: center;
+  background: #f4f5f3;
+  border: 0;
+  border-radius: 7px;
+  color: #7f8782;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  grid-column: 3 / 4;
+  height: 28px;
+  justify-content: center;
+  width: 28px;
+}
+
+.oripio-dashboard .metric-sparkline {
+  display: none;
+}
+
+.oripio-dashboard .wallet-actions {
+  align-self: end;
+  display: grid;
+  gap: 10px;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 22px;
+}
+
+.oripio-dashboard .wallet-actions a,
+.oripio-dashboard .wallet-actions button {
+  align-items: center;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 900;
+  gap: 8px;
+  justify-content: center;
+  min-height: 40px;
+  padding: 10px 12px;
+}
+
+.oripio-dashboard .wallet-actions a {
+  background: var(--or-green);
+  color: #fff;
+}
+
+.oripio-dashboard .wallet-actions button {
+  background: #f0f1ef;
+  color: var(--or-text);
+}
+
+.oripio-dashboard .wallet-actions svg {
+  height: 15px;
+  width: 15px;
+}
+
+.oripio-dashboard .dashboard-visual-grid {
+  align-items: start;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  padding: 16px 8px 0 12px;
+}
+
+.oripio-dashboard .chart-card,
+.oripio-dashboard .income-card {
+  background: #fff;
+  border: 1px solid var(--or-line);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.oripio-dashboard .chart-card {
+  min-height: 294px;
+  padding: 22px 24px;
+}
+
+.oripio-dashboard .income-card {
+  min-height: 294px;
+  padding: 22px;
+}
+
+.oripio-dashboard .chart-head {
+  align-items: flex-start;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.oripio-dashboard .chart-head .eyebrow {
+  color: var(--or-green);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.oripio-dashboard .chart-head h2 {
+  color: var(--or-text);
+  font-size: 19px;
+  font-weight: 950;
+  letter-spacing: 0;
+  margin: 4px 0 0;
+}
+
+.oripio-dashboard .chart-head > span {
+  color: var(--or-muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.oripio-dashboard .bar-chart {
+  align-items: end;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  height: 198px;
+  margin-top: 30px;
+  padding: 0 8px;
+}
+
+.oripio-dashboard .bar-column {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  height: 100%;
+}
+
+.oripio-dashboard .bar-column > div {
+  align-items: end;
+  background:
+    repeating-linear-gradient(to top, transparent 0 39px, #f0f2ef 40px);
+  display: flex;
+  gap: 0;
+  height: 160px;
+  justify-content: center;
+  width: 100%;
+}
+
+.oripio-dashboard .bar {
+  border-radius: 9px 9px 0 0;
+  display: block;
+  min-height: 18px;
+  width: 27px;
+}
+
+.oripio-dashboard .bar.invitation {
+  background: #dcefe9;
+}
+
+.oripio-dashboard .bar.rsvp {
+  background: var(--or-green);
+  box-shadow: 0 8px 16px rgba(15, 155, 99, 0.22);
+  margin-left: -17px;
+  width: 20px;
+}
+
+.oripio-dashboard .bar-column small {
+  color: #8f9692;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.oripio-dashboard .income-donut {
+  align-items: center;
+  background:
+    radial-gradient(circle at center, #fff 0 54%, transparent 55%),
+    conic-gradient(var(--or-green) 0 46%, #dfeee7 46% 79%, #f0f1ef 79% 100%);
+  border-radius: 50%;
+  display: grid;
+  height: 150px;
+  justify-content: center;
+  margin: 24px auto 20px;
+  place-items: center;
+  width: 150px;
+}
+
+.oripio-dashboard .income-donut strong,
+.oripio-dashboard .income-donut span {
+  display: block;
+  grid-area: 1 / 1;
+  text-align: center;
+}
+
+.oripio-dashboard .income-donut strong {
+  color: var(--or-text);
+  font-size: 16px;
+  font-weight: 950;
+  max-width: 110px;
+  overflow-wrap: anywhere;
+  transform: translateY(-8px);
+}
+
+.oripio-dashboard .income-donut span {
+  color: var(--or-muted);
+  font-size: 11px;
+  font-weight: 800;
+  transform: translateY(16px);
+}
+
+.oripio-dashboard .income-legend {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+}
+
+.oripio-dashboard .income-legend span {
+  color: #626a66;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.oripio-dashboard .income-legend b {
+  background: var(--or-green);
+  border-radius: 3px;
+  display: inline-block;
+  height: 8px;
+  margin-right: 7px;
+  width: 8px;
+}
+
+.oripio-dashboard .income-legend span:nth-child(2) b {
+  background: #b9ded1;
+}
+
+.oripio-dashboard .income-legend span:nth-child(3) b {
+  background: #ecefeb;
+}
+
+.oripio-dashboard .upgrade-banner {
+  display: none;
+}
+
+.oripio-dashboard .form-card,
+.oripio-dashboard .table-card,
+.oripio-dashboard .module-card,
+.oripio-dashboard .template-mini-card {
+  background: #fff;
+  border: 1px solid var(--or-line);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.oripio-dashboard .form-card,
+.oripio-dashboard .table-card {
+  margin: 16px 8px 0 12px;
+}
+
+.oripio-dashboard .box-header,
+.oripio-dashboard .table-head {
+  border-bottom: 1px solid var(--or-line);
+  padding: 15px 16px;
+}
+
+.oripio-dashboard .box-header .eyebrow,
+.oripio-dashboard .table-head .eyebrow {
+  color: var(--or-green);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.oripio-dashboard .form-card h2,
+.oripio-dashboard .table-card h2,
+.oripio-dashboard .module-card h2 {
+  color: var(--or-text);
+  font-size: 18px;
+  font-weight: 950;
+  letter-spacing: 0;
+  margin: 3px 0 0;
+}
+
+.oripio-dashboard .invite-form,
+.oripio-dashboard .ai-generator-form {
+  padding: 16px;
+}
+
+.oripio-dashboard .invite-form input,
+.oripio-dashboard .invite-form select,
+.oripio-dashboard .invite-form textarea,
+.oripio-dashboard .ai-generator-form input,
+.oripio-dashboard .ai-generator-form select,
+.oripio-dashboard .ai-generator-form textarea,
+.oripio-dashboard .table-tools input,
+.oripio-dashboard .table-tools select {
+  background: #f9faf8;
+  border: 1px solid var(--or-line);
+  border-radius: 7px;
+  color: var(--or-text);
+}
+
+.oripio-dashboard .button.primary,
+.oripio-dashboard .row-actions a:nth-child(2),
+.oripio-dashboard .row-actions button,
+.oripio-dashboard .template-mini-card a {
+  background: var(--or-green);
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+}
+
+.oripio-dashboard .invite-table-labels {
+  background: #f7f8f6;
+  color: #8d9691;
+}
+
+.oripio-dashboard .invite-row {
+  border-bottom: 1px solid var(--or-line);
+}
+
+.oripio-dashboard .adminlte-badge {
+  background: #e8f7ef;
+  color: var(--or-green-dark);
+}
+
+.oripio-dashboard .module-grid {
+  padding: 0 8px 16px 12px;
+}
+
+@media (max-width: 1180px) {
+  .oripio-dashboard {
+    grid-template-columns: 210px minmax(0, 1fr);
+    padding: 16px;
+  }
+
+  .oripio-dashboard .saas-sidebar {
+    min-height: calc(100vh - 32px);
+    top: 16px;
+  }
+
+  .oripio-dashboard .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .oripio-dashboard .metric-card:first-child {
+    grid-row: auto;
+  }
+
+  .oripio-dashboard .dashboard-visual-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .oripio-dashboard {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+
+  .oripio-dashboard .saas-sidebar,
+  .oripio-dashboard .saas-main {
+    border-radius: 12px;
+  }
+
+  .oripio-dashboard .saas-sidebar {
+    min-height: auto;
+    position: relative;
+    top: 0;
+  }
+
+  .oripio-dashboard .sidebar-menu {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .oripio-dashboard .nav-treeview {
+    display: contents;
+  }
+
+  .oripio-dashboard .nav-treeview > p {
+    grid-column: 1 / -1;
+    margin-top: 12px;
+  }
+
+  .oripio-dashboard .sidebar-upgrade {
+    display: none;
+  }
+
+  .oripio-dashboard .saas-topbar,
+  .oripio-dashboard .content-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .oripio-dashboard .oripio-search {
+    width: 100%;
+  }
+
+  .oripio-dashboard .topbar-actions,
+  .oripio-dashboard .content-header nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .oripio-dashboard .metric-grid,
+  .oripio-dashboard .sidebar-menu,
+  .oripio-dashboard .wallet-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .oripio-dashboard .metric-card.small-box {
+    grid-template-columns: 36px minmax(0, 1fr) auto;
+    padding: 16px;
+  }
+
+  .oripio-dashboard .bar {
+    width: 18px;
+  }
+
+  .oripio-dashboard .bar.rsvp {
+    margin-left: -11px;
+    width: 14px;
+  }
+}
