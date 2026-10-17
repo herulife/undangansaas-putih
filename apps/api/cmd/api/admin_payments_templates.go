@@ -89,6 +89,13 @@ func (a *app) createManualPayment(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Send payment confirmation email (non-blocking)
+	var userName, userEmail string
+	_ = a.db.QueryRow(r.Context(), `select display_name, email from users where id = $1`, payload.UserID).Scan(&userName, &userEmail)
+	if userEmail != "" {
+		go emailPaymentConfirmation(userName, userEmail, string(tier), payload.AmountIDR)
+	}
+
 	writeJSON(w, map[string]any{
 		"id":            paymentID,
 		"provider":      "manual",
@@ -283,6 +290,6 @@ func (a *app) dynamicOGSVG(w http.ResponseWriter, r *http.Request) {
   <text x="120" y="292" font-family="Georgia, serif" font-size="84" font-weight="700" fill="#24382e">%s</text>
   <text x="120" y="374" font-family="Arial, sans-serif" font-size="32" fill="#6a5b42">%s</text>
   <text x="120" y="470" font-family="Arial, sans-serif" font-size="28" fill="#1f4f3a">Kepada Yth. Tamu Undangan</text>
-  <text x="120" y="512" font-family="Arial, sans-serif" font-size="24" fill="#977333">undanganku</text>
+  <text x="120" y="512" font-family="Arial, sans-serif" font-size="24" fill="#977333">LinkUndang</text>
 </svg>`, html.EscapeString(title), html.EscapeString(templateName))
 }

@@ -11,7 +11,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /out/api ./cmd/api
 FROM debian:bookworm-slim
 
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends ca-certificates \
+  && apt-get install -y --no-install-recommends ca-certificates webp \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app

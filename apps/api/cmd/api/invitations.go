@@ -32,6 +32,7 @@ func (a *app) listInvitations(w http.ResponseWriter, r *http.Request) {
 		left join users on users.id = invitations.user_id
 		left join rsvps on rsvps.invitation_id = invitations.id
 		where ($1 = 'admin' or invitations.user_id = $2::uuid)
+			and invitations.deleted_at is null
 		group by invitations.id, templates.name, templates.slug, users.tier, users.tier_expires_at
 		order by invitations.created_at desc
 	`, user.Role, user.ID)
@@ -179,6 +180,7 @@ func (a *app) getInvitation(w http.ResponseWriter, r *http.Request) {
 		left join users on users.id = invitations.user_id
 		left join rsvps on rsvps.invitation_id = invitations.id
 		where invitations.slug = $1
+			and invitations.deleted_at is null
 		group by invitations.id, templates.name, templates.slug, users.tier, users.tier_expires_at
 	`, slug).Scan(&item.ID, &item.Slug, &item.Title, &item.Couple, &item.Template, &item.TemplateSlug, &item.EventDate, &item.Status, &config, &item.RSVPCount, &item.Watermark, &item.CreatedAt)
 
@@ -248,6 +250,7 @@ func (a *app) updateInvitation(w http.ResponseWriter, r *http.Request) {
 			config = $6::jsonb,
 			updated_at = now()
 		where slug = $1
+			and deleted_at is null
 			and ($7 = 'admin' or user_id = $8::uuid)
 		returning id, slug, title, couple, event_date::text, status, config, created_at
 	`, slug, payload.Title, payload.Couple, payload.EventDate, payload.Status, string(config), user.Role, user.ID).Scan(

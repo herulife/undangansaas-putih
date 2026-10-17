@@ -1,9 +1,11 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"net/http"
+	"net/url"
 	"strings"
 	"time"
 
@@ -43,6 +45,15 @@ func (a *app) register(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Send welcome email (non-blocking)
+	go emailWelcome(displayName, email)
+
+	// Send email verification link (non-blocking)
+	if rawToken, err := a.createAuthToken(r.Context(), user.ID, purposeEmailVerification, 24*time.Hour); err == nil {
+		link := publicWebURL() + "/verify-email?token=" + url.QueryEscape(rawToken)
+		go emailVerifyAddress(displayName, email, link)
+	}
+
 	a.writeAuthResponse(w, user, http.StatusCreated)
 }
 
@@ -63,11 +74,11 @@ func (a *app) login(w http.ResponseWriter, r *http.Request) {
 	var user authUserPublic
 	var hash string
 	err := a.db.QueryRow(r.Context(), `
-		select id::text, email, display_name, role, tier, coalesce(password_hash, '')
+		select id::text, email, display_name, role, tier, email_verified, coalesce(password_hash, '')
 		from users
 		where lower(email) = lower($1)
 			and status <> 'suspended'
-	`, email).Scan(&user.ID, &user.Email, &user.DisplayName, &user.Role, &user.Tier, &hash)
+	`, email).Scan(&user.ID, &user.Email, &user.DisplayName, &user.Role, &user.Tier, &user.EmailVerified, &hash)
 	if errors.Is(err, pgx.ErrNoRows) || bcrypt.CompareHashAndPassword([]byte(hash), []byte(password)) != nil {
 		writeError(w, http.StatusUnauthorized, errors.New("invalid email or password"))
 		return
@@ -89,10 +100,10 @@ func (a *app) authMe(w http.ResponseWriter, r *http.Request) {
 
 	var user authUserPublic
 	err := a.db.QueryRow(r.Context(), `
-		select id::text, email, display_name, role, tier
+		select id::text, email, display_name, role, tier, email_verified
 		from users
 		where id = $1
-	`, current.ID).Scan(&user.ID, &user.Email, &user.DisplayName, &user.Role, &user.Tier)
+	`, current.ID).Scan(&user.ID, &user.Email, &user.DisplayName, &user.Role, &user.Tier, &user.EmailVerified)
 	if err != nil {
 		writeError(w, http.StatusUnauthorized, errors.New("user not found"))
 		return
@@ -130,8 +141,8 @@ func (a *app) updateProfile(w http.ResponseWriter, r *http.Request) {
 		update users
 		set email = $1, display_name = $2
 		where id = $3
-		returning id::text, email, display_name, role, tier
-	`, email, displayName, current.ID).Scan(&user.ID, &user.Email, &user.DisplayName, &user.Role, &user.Tier)
+		returning id::text, email, display_name, role, tier, email_verified
+	`, email, displayName, current.ID).Scan(&user.ID, &user.Email, &user.DisplayName, &user.Role, &user.Tier, &user.EmailVerified)
 	if err != nil {
 		writeError(w, http.StatusConflict, errors.New("email already registered"))
 		return
@@ -198,13 +209,16 @@ func (a *app) insertUser(r *http.Request, email string, displayName string, pass
 	err := a.db.QueryRow(r.Context(), `
 		insert into users (email, display_name, password_hash, role, tier, status)
 		values ($1, $2, $3, 'user', 'free', 'active')
-		returning id::text, email, display_name, role, tier
-	`, email, displayName, passwordHash).Scan(&user.ID, &user.Email, &user.DisplayName, &user.Role, &user.Tier)
+		returning id::text, email, display_name, role, tier, email_verified
+	`, email, displayName, passwordHash).Scan(&user.ID, &user.Email, &user.DisplayName, &user.Role, &user.Tier, &user.EmailVerified)
 	return user, err
 }
 
 func (a *app) writeAuthResponse(w http.ResponseWriter, user authUserPublic, status int) {
-	token, err := signJWT(user.ID, authTokenTTL, env("JWT_SECRET", "dev-secret-change-me"))
+	var tokenVersion int
+	_ = a.db.QueryRow(context.Background(), `select coalesce(token_version, 0) from users where id = $1::uuid`, user.ID).Scan(&tokenVersion)
+
+	token, err := signJWTWithVersion(user.ID, tokenVersion, authTokenTTL, env("JWT_SECRET", "dev-secret-change-me"))
 	if err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return
@@ -213,6 +227,26 @@ func (a *app) writeAuthResponse(w http.ResponseWriter, user authUserPublic, stat
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(status)
 	_ = json.NewEncoder(w).Encode(authResponse{Token: token, User: user})
+}
+
+func (a *app) logout(w http.ResponseWriter, r *http.Request) {
+	user, ok := currentUserFromContext(r.Context())
+	if !ok {
+		writeError(w, http.StatusUnauthorized, errors.New("authentication required"))
+		return
+	}
+
+	if _, err := a.db.Exec(r.Context(), `
+		update users
+		set token_version = coalesce(token_version, 0) + 1,
+			updated_at = now()
+		where id = $1::uuid
+	`, user.ID); err != nil {
+		writeError(w, http.StatusInternalServerError, err)
+		return
+	}
+
+	w.WriteHeader(http.StatusNoContent)
 }
 
 func normalizeEmail(value string) string {

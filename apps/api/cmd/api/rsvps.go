@@ -1,9 +1,11 @@
 package main
 
 import (
+	"encoding/csv"
 	"encoding/json"
 	"errors"
 	"net/http"
+	"strconv"
 	"strings"
 	"time"
 
@@ -20,6 +22,10 @@ func (a *app) createRSVP(w http.ResponseWriter, r *http.Request) {
 	}
 	if payload.Name == "" {
 		writeError(w, http.StatusBadRequest, errors.New("name is required"))
+		return
+	}
+	if strings.TrimSpace(payload.Website) != "" {
+		writeError(w, http.StatusBadRequest, errors.New("submission rejected"))
 		return
 	}
 	payload.Status = strings.ToLower(strings.TrimSpace(payload.Status))
@@ -98,10 +104,10 @@ func (a *app) createRSVP(w http.ResponseWriter, r *http.Request) {
 
 	var item rsvp
 	err = tx.QueryRow(r.Context(), `
-		insert into rsvps (invitation_id, name, message, status, guests)
-		values ($1, $2, $3, $4, $5)
+		insert into rsvps (invitation_id, name, message, status, guests, guest_id)
+		values ($1, $2, $3, $4, $5, nullif($6, '')::uuid)
 		returning id, name, message, status, guests, created_at
-	`, invitationID, strings.TrimSpace(payload.Name), strings.TrimSpace(payload.Message), payload.Status, payload.Guests).Scan(
+	`, invitationID, strings.TrimSpace(payload.Name), strings.TrimSpace(payload.Message), payload.Status, payload.Guests, strings.TrimSpace(payload.GuestID)).Scan(
 		&item.ID,
 		&item.Name,
 		&item.Message,
@@ -116,6 +122,12 @@ func (a *app) createRSVP(w http.ResponseWriter, r *http.Request) {
 	if err := tx.Commit(r.Context()); err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return
+	}
+
+	if owner.Email != "" {
+		var ownerName string
+		_ = a.db.QueryRow(r.Context(), `select coalesce(display_name, '') from users where id = $1::uuid`, owner.ID).Scan(&ownerName)
+		go emailRSVPNotification(ownerName, owner.Email, item.Name, item.Status, item.Guests, item.Message, slug)
 	}
 
 	w.Header().Set("Content-Type", "application/json")
@@ -156,4 +168,71 @@ func (a *app) listRSVPs(w http.ResponseWriter, r *http.Request) {
 	}
 
 	writeJSON(w, items)
+}
+
+func (a *app) deleteRSVP(w http.ResponseWriter, r *http.Request) {
+	slug := chi.URLParam(r, "slug")
+	rsvpID := chi.URLParam(r, "rsvpId")
+	user, ok := currentUserFromContext(r.Context())
+	if !ok {
+		writeError(w, http.StatusUnauthorized, errors.New("authentication required"))
+		return
+	}
+
+	tag, err := a.db.Exec(r.Context(), `
+		delete from rsvps using invitations
+		where rsvps.id = $1::uuid
+			and rsvps.invitation_id = invitations.id
+			and invitations.slug = $2
+			and ($3 = 'admin' or invitations.user_id = $4::uuid)
+	`, rsvpID, slug, user.Role, user.ID)
+	if err != nil {
+		writeError(w, http.StatusInternalServerError, err)
+		return
+	}
+	if tag.RowsAffected() == 0 {
+		writeError(w, http.StatusNotFound, errors.New("rsvp not found"))
+		return
+	}
+
+	w.WriteHeader(http.StatusNoContent)
+}
+
+func (a *app) exportRSVPsCSV(w http.ResponseWriter, r *http.Request) {
+	slug := chi.URLParam(r, "slug")
+	user, ok := currentUserFromContext(r.Context())
+	if !ok {
+		writeError(w, http.StatusUnauthorized, errors.New("authentication required"))
+		return
+	}
+
+	rows, err := a.db.Query(r.Context(), `
+		select rsvps.name, rsvps.status, rsvps.guests, rsvps.message, rsvps.created_at
+		from rsvps
+		join invitations on invitations.id = rsvps.invitation_id
+		where invitations.slug = $1
+			and ($2 = 'admin' or invitations.user_id = $3::uuid)
+		order by rsvps.created_at desc
+	`, slug, user.Role, user.ID)
+	if err != nil {
+		writeError(w, http.StatusInternalServerError, err)
+		return
+	}
+	defer rows.Close()
+
+	w.Header().Set("Content-Type", "text/csv; charset=utf-8")
+	w.Header().Set("Content-Disposition", "attachment; filename=rsvps.csv")
+	writer := csv.NewWriter(w)
+	writer.Write([]string{"name", "status", "guests", "message", "created_at"})
+
+	for rows.Next() {
+		var name, status, message string
+		var guests int
+		var createdAt time.Time
+		if err := rows.Scan(&name, &status, &guests, &message, &createdAt); err != nil {
+			continue
+		}
+		writer.Write([]string{name, status, strconv.Itoa(guests), message, createdAt.Format(time.RFC3339)})
+	}
+	writer.Flush()
 }

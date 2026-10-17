@@ -6,6 +6,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"strings"
 	"time"
@@ -17,6 +18,7 @@ type uploadResponse struct {
 	FileName string `json:"fileName"`
 	URL      string `json:"url"`
 	Type     string `json:"type"`
+	Size     int64  `json:"sizeBytes"`
 }
 
 func (a *app) uploadMedia(w http.ResponseWriter, r *http.Request) {
@@ -52,6 +54,24 @@ func (a *app) uploadMedia(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Enforce storage limit per tier.
+	features := featuresForUser(user, time.Now()).Features
+	if features.StorageLimitBytes > 0 {
+		var used int64
+		if err := a.db.QueryRow(r.Context(), `
+			select coalesce(sum(size_bytes), 0)
+			from media_assets
+			where user_id = $1::uuid
+		`, user.ID).Scan(&used); err != nil {
+			writeError(w, http.StatusInternalServerError, err)
+			return
+		}
+		if used+int64(header.Size) > features.StorageLimitBytes {
+			writeError(w, http.StatusRequestEntityTooLarge, errors.New("storage limit reached for current tier"))
+			return
+		}
+	}
+
 	dir := filepath.Join(uploadDir(), mediaType, user.ID)
 	if err := os.MkdirAll(dir, 0o755); err != nil {
 		writeError(w, http.StatusInternalServerError, err)
@@ -65,18 +85,64 @@ func (a *app) uploadMedia(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
-	defer out.Close()
-
 	if _, err := io.Copy(out, io.LimitReader(file, maxUploadSize)); err != nil {
+		out.Close()
+		writeError(w, http.StatusInternalServerError, err)
+		return
+	}
+	out.Close()
+
+	// Best-effort WebP conversion for images when cwebp is available.
+	if mediaType == "images" && ext != ".webp" {
+		if converted, ok := convertToWebP(path); ok {
+			_ = os.Remove(path)
+			fileName = converted.fileName
+			path = converted.path
+		}
+	}
+
+	info, err := os.Stat(path)
+	sizeBytes := int64(0)
+	if err == nil {
+		sizeBytes = info.Size()
+	}
+
+	url := fmt.Sprintf("/api/uploads/%s/%s/%s", mediaType, user.ID, fileName)
+	if _, err := a.db.Exec(r.Context(), `
+		insert into media_assets (user_id, file_name, url, media_type, provider, size_bytes)
+		values ($1::uuid, $2, $3, $4, 'local', $5)
+	`, user.ID, fileName, url, mediaType, sizeBytes); err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
 
 	writeJSON(w, uploadResponse{
 		FileName: fileName,
-		URL:      fmt.Sprintf("/api/uploads/%s/%s/%s", mediaType, user.ID, fileName),
+		URL:      url,
 		Type:     mediaType,
+		Size:     sizeBytes,
 	})
+}
+
+type convertedWebP struct {
+	fileName string
+	path     string
+}
+
+func convertToWebP(path string) (convertedWebP, bool) {
+	if _, err := exec.LookPath("cwebp"); err != nil {
+		return convertedWebP{}, false
+	}
+	target := strings.TrimSuffix(path, filepath.Ext(path)) + ".webp"
+	cmd := exec.Command("cwebp", "-quiet", "-q", "80", path, "-o", target)
+	if err := cmd.Run(); err != nil {
+		_ = os.Remove(target)
+		return convertedWebP{}, false
+	}
+	if _, err := os.Stat(target); err != nil {
+		return convertedWebP{}, false
+	}
+	return convertedWebP{fileName: filepath.Base(target), path: target}, true
 }
 
 func uploadKind(contentType string, fileName string) (string, string, bool) {

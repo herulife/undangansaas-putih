@@ -54,6 +54,8 @@ type rsvpRequest struct {
 	Message string `json:"message"`
 	Status  string `json:"status"`
 	Guests  int    `json:"guests"`
+	GuestID string `json:"guestId"`
+	Website string `json:"website"`
 }
 
 type rsvp struct {
@@ -96,6 +98,7 @@ type authUser struct {
 	TierExpiresAt *time.Time
 	IsB2B         bool
 	ClientLimit   int
+	TokenVersion  int
 }
 
 type tierFeatureSet struct {
@@ -112,6 +115,7 @@ type tierFeatureSet struct {
 	PrioritySupport  bool     `json:"prioritySupport"`
 	RevenueShare     int      `json:"revenueShare"`
 	RSVPLimit        int      `json:"rsvpLimit"`
+	StorageLimitBytes int64    `json:"storageLimitBytes"`
 	UnlimitedGallery bool     `json:"unlimitedGallery"`
 	Watermark        bool     `json:"watermark"`
 	WhiteLabel       bool     `json:"whiteLabel"`
@@ -161,17 +165,31 @@ type changePasswordRequest struct {
 	NewPassword     string `json:"newPassword"`
 }
 
+type verifyEmailRequest struct {
+	Token string `json:"token"`
+}
+
+type forgotPasswordRequest struct {
+	Email string `json:"email"`
+}
+
+type resetPasswordRequest struct {
+	Token    string `json:"token"`
+	Password string `json:"password"`
+}
+
 type authResponse struct {
 	Token string         `json:"token"`
 	User  authUserPublic `json:"user"`
 }
 
 type authUserPublic struct {
-	ID          string   `json:"id"`
-	Email       string   `json:"email"`
-	DisplayName string   `json:"displayName"`
-	Role        string   `json:"role"`
-	Tier        tierName `json:"tier"`
+	ID            string   `json:"id"`
+	Email         string   `json:"email"`
+	DisplayName   string   `json:"displayName"`
+	Role          string   `json:"role"`
+	Tier          tierName `json:"tier"`
+	EmailVerified bool     `json:"emailVerified"`
 }
 
 type adminUser struct {

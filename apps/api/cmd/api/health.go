@@ -17,7 +17,7 @@ func (a *app) health(w http.ResponseWriter, r *http.Request) {
 	}
 
 	writeJSON(w, map[string]string{
-		"service": "cintabuku-undangan-api",
+		"service": "linkundang-api",
 		"status":  status,
 	})
 }

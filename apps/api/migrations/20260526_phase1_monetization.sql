@@ -139,7 +139,7 @@ begin
 end $$;
 
 insert into users (email, display_name, role, tier, tier_expires_at, is_b2b, client_limit)
-values ('demo@cintabuku.local', 'Demo User', 'user', 'free', null, false, 1)
+values ('demo@linkundang.local', 'Demo User', 'user', 'free', null, false, 1)
 on conflict do nothing;
 
 insert into templates (name, slug, category, config_schema, tier_access, assets_url, preview_url, is_active)

@@ -99,6 +99,7 @@ func featuresForTier(tier tierName) tierFeatureSet {
 			PrioritySupport:  true,
 			RevenueShare:     20,
 			RSVPLimit:        10000,
+			StorageLimitBytes: 20 << 30,
 			UnlimitedGallery: true,
 			Watermark:        false,
 			WhiteLabel:       true,
@@ -114,6 +115,7 @@ func featuresForTier(tier tierName) tierFeatureSet {
 			MaxGallery:       nil,
 			PrioritySupport:  true,
 			RSVPLimit:        1000,
+			StorageLimitBytes: 5 << 30,
 			UnlimitedGallery: true,
 			Watermark:        false,
 		}
@@ -125,6 +127,7 @@ func featuresForTier(tier tierName) tierFeatureSet {
 			Flags:        []string{featureAnalyticsBasic, featureExportCSV, featureWatermarkRemove},
 			MaxGallery:   &maxGalleryCreator,
 			RSVPLimit:    300,
+			StorageLimitBytes: 1 << 30,
 			Watermark:    false,
 		}
 	default:
@@ -133,6 +136,7 @@ func featuresForTier(tier tierName) tierFeatureSet {
 			Flags:      []string{featureAnalyticsBasic},
 			MaxGallery: &maxGalleryFree,
 			RSVPLimit:  50,
+			StorageLimitBytes: 100 << 20,
 			Watermark:  true,
 		}
 	}

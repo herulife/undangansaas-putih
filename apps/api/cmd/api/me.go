@@ -156,5 +156,12 @@ func (a *app) publishInvitation(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Send publish notification email (non-blocking)
+	var userName, userEmail string
+	_ = a.db.QueryRow(r.Context(), `select display_name, email from users where id = $1`, user.ID).Scan(&userName, &userEmail)
+	if userEmail != "" {
+		go emailInvitationPublished(userName, userEmail, item.Title, item.Slug)
+	}
+
 	writeJSON(w, item)
 }

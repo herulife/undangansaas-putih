@@ -5,6 +5,7 @@ import (
 	"errors"
 	"log"
 	"net/http"
+	"time"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 )
@@ -30,7 +31,24 @@ func main() {
 
 	api := newApp(db)
 
-	log.Printf("CintaBuku API listening on :%s", port)
+	go func() {
+		if n, err := api.downgradeExpiredTiers(ctx); err != nil {
+			log.Printf("tier expiry cron: %v", err)
+		} else if n > 0 {
+			log.Printf("tier expiry cron: downgraded %d user(s)", n)
+		}
+		ticker := time.NewTicker(time.Hour)
+		defer ticker.Stop()
+		for range ticker.C {
+			if n, err := api.downgradeExpiredTiers(ctx); err != nil {
+				log.Printf("tier expiry cron: %v", err)
+			} else if n > 0 {
+				log.Printf("tier expiry cron: downgraded %d user(s)", n)
+			}
+		}
+	}()
+
+	log.Printf("LinkUndang API listening on :%s", port)
 	if err := http.ListenAndServe(":"+port, api.routes()); err != nil && !errors.Is(err, http.ErrServerClosed) {
 		log.Fatal(err)
 	}
