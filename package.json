@@ -1,5 +1,5 @@
 {
-  "name": "cintabuku-undangan",
+  "name": "linkundang",
   "private": true,
   "scripts": {
     "dev:web": "npm --prefix apps/web run dev",

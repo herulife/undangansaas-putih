@@ -7,3 +7,8 @@ build/
 !.env.example
 *.log
 .tmp-*
+
+# Build artifacts / backups
+/apps/api/api
+*.bak
+*.backup

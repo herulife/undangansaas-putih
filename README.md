@@ -1,6 +1,6 @@
-# CintaBuku Undangan SaaS
+# LinkUndang Undangan SaaS
 
-Fondasi awal SaaS undangan digital untuk domain `cintabuku.site`.
+Fondasi awal SaaS undangan digital untuk domain `linkundang.web.id`.
 
 ## Struktur
 
@@ -77,14 +77,14 @@ docker compose --env-file .env.production -f docker-compose.production.yml up -d
 
 Service production:
 
-- `undangansaas-web` - static Vite React via Nginx.
-- `undangansaas-api` - Go API.
-- `undangansaas-db` - PostgreSQL.
+- `linkundang-web` - static Vite React via Nginx.
+- `linkundang-api` - Go API.
+- `linkundang-db` - PostgreSQL.
 
 Health check setelah deploy:
 
 ```bash
-curl http://undangansaas-api:8088/api/health
+curl http://linkundang-api:8088/api/health
 ```
 
 ## Roadmap MVP

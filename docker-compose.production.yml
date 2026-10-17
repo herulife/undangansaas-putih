@@ -1,32 +1,34 @@
 services:
-  undangansaas-db:
+  linkundang-db:
     image: postgres:15-alpine
-    container_name: undangansaas-db
+    container_name: linkundang-db
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-undangan_user}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
       POSTGRES_DB: ${POSTGRES_DB:-undangan}
     volumes:
-      - undangansaas_db:/var/lib/postgresql/data
+      - linkundang_db:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-undangan_user} -d ${POSTGRES_DB:-undangan}"]
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-      - app-network
+      app-network:
+        ipv4_address: 172.19.0.10
 
-  undangansaas-api:
+  linkundang-api:
     build:
       context: ./apps/api
-    container_name: undangansaas-api
+    container_name: linkundang-api
     restart: unless-stopped
     environment:
       APP_PORT: "8088"
-      DATABASE_URL: postgres://${POSTGRES_USER:-undangan_user}:${POSTGRES_PASSWORD:-change-me}@undangansaas-db:5432/${POSTGRES_DB:-undangan}?sslmode=disable
-      APP_PUBLIC_URL: ${APP_PUBLIC_URL:-https://undangan.cintabuku.site}
-      WEB_ORIGIN: ${WEB_ORIGIN:-https://undangan.cintabuku.site,https://undang.cintabuku.site}
+      DATABASE_URL: postgres://${POSTGRES_USER:-undangan_user}:${POSTGRES_PASSWORD:-change-me}@linkundang-db:5432/${POSTGRES_DB:-undangan}?sslmode=disable
+      APP_PUBLIC_URL: ${APP_PUBLIC_URL:-https://linkundang.web.id}
+      WEB_ORIGIN: ${WEB_ORIGIN:-https://linkundang.web.id,https://www.linkundang.web.id}
+      WEB_INTERNAL_URL: ${WEB_INTERNAL_URL:-http://linkundang-web}
       JWT_SECRET: ${JWT_SECRET:-dev-secret-change-me}
       AI_IMAGE_PROVIDER: ${AI_IMAGE_PROVIDER:-openai}
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
@@ -36,29 +38,41 @@ services:
       NVIDIA_API_KEY: ${NVIDIA_API_KEY:-}
       NVIDIA_IMAGE_ENDPOINT: ${NVIDIA_IMAGE_ENDPOINT:-https://ai.api.nvidia.com/v1/genai/stabilityai/stable-diffusion-xl}
       GENERATED_ASSET_DIR: /app/uploads
+      MIDTRANS_BASE_URL: ${MIDTRANS_BASE_URL:-https://app.sandbox.midtrans.com}
+      MIDTRANS_SERVER_KEY: ${MIDTRANS_SERVER_KEY:-}
+      MIDTRANS_CLIENT_KEY: ${MIDTRANS_CLIENT_KEY:-}
+      MIDTRANS_WEBHOOK_SECRET: ${MIDTRANS_WEBHOOK_SECRET:-}
+      MIDTRANS_CALLBACK_FINISH: ${MIDTRANS_CALLBACK_FINISH:-https://linkundang.web.id/dashboard}
+      EMAIL_PROVIDER: ${EMAIL_PROVIDER:-resend}
+      EMAIL_API_KEY: ${EMAIL_API_KEY:-}
+      EMAIL_FROM: ${EMAIL_FROM:-LinkUndang <noreply@linkundang.web.id>}
     depends_on:
-      undangansaas-db:
+      linkundang-db:
         condition: service_healthy
     volumes:
-      - undangansaas_uploads:/app/uploads
+      - linkundang_uploads:/app/uploads
     expose:
       - "8088"
     networks:
-      - app-network
+      app-network:
+        ipv4_address: 172.19.0.2
 
-  undangansaas-web:
+  linkundang-web:
     build:
       context: ./apps/web
       args:
         VITE_API_URL: ${VITE_API_URL:-}
-    container_name: undangansaas-web
+    container_name: linkundang-web
     restart: unless-stopped
     depends_on:
-      - undangansaas-api
+      - linkundang-api
+    volumes:
+      - ./template:/usr/share/nginx/html/template-assets:ro
     expose:
       - "80"
     networks:
-      - app-network
+      app-network:
+        ipv4_address: 172.19.0.7
 
 networks:
   app-network:
@@ -66,5 +80,5 @@ networks:
     name: my-docker-apps_app-network
 
 volumes:
-  undangansaas_db:
-  undangansaas_uploads:
+  linkundang_db:
+  linkundang_uploads:
