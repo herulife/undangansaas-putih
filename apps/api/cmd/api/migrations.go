@@ -251,6 +251,27 @@ func migrate(ctx context.Context, db *pgxpool.Pool) error {
 		alter table rsvps add column if not exists guest_id uuid references guests(id) on delete set null;
 		create index if not exists rsvps_guest_id_idx on rsvps (guest_id);
 
+		-- Guest check-in (QR) & layar sapa
+		alter table guests add column if not exists checkin_token text not null default encode(gen_random_bytes(9), 'hex');
+		alter table guests add column if not exists checked_in_at timestamptz;
+		alter table guests add column if not exists checkin_count integer not null default 0;
+		create unique index if not exists guests_checkin_token_unique on guests (checkin_token);
+		create index if not exists guests_invitation_checkedin_idx on guests (invitation_id, checked_in_at desc);
+
+		alter table invitations add column if not exists checkin_screen_key text not null default encode(gen_random_bytes(9), 'hex');
+
+		create table if not exists checkins (
+			id uuid primary key default gen_random_uuid(),
+			invitation_id uuid not null references invitations(id) on delete cascade,
+			guest_id uuid references guests(id) on delete set null,
+			guest_name text not null default '',
+			source text not null default 'qr',
+			actor_id uuid references users(id) on delete set null,
+			created_at timestamptz not null default now()
+		);
+
+		create index if not exists checkins_invitation_created_idx on checkins (invitation_id, created_at desc);
+
 		create table if not exists media_assets (
 			id uuid primary key default gen_random_uuid(),
 			user_id uuid references users(id) on delete set null,
@@ -320,7 +341,7 @@ func migrate(ctx context.Context, db *pgxpool.Pool) error {
 
 		alter table events drop constraint if exists events_name_check;
 		alter table events add constraint events_name_check
-			check (event_name in ('page_view', 'rsvp_submit', 'share_click', 'upgrade_click', 'publish', 'export_csv', 'guest_opened', 'payment_checkout', 'payment_success', 'whatsapp_send'));
+			check (event_name in ('page_view', 'rsvp_submit', 'share_click', 'upgrade_click', 'publish', 'export_csv', 'guest_opened', 'guest_checkin', 'payment_checkout', 'payment_success', 'whatsapp_send'));
 
 		create table if not exists app_settings (
 			key text primary key,

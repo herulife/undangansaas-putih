@@ -8,6 +8,7 @@ export const dashboardModules = [
   { group: 'FEATURES', id: 'media', label: 'Media & AI', href: '/dashboard/media', icon: 'image' },
   { group: 'FEATURES', id: 'builder', label: 'Builder', href: '/dashboard/builder', icon: 'settings' },
   { group: 'FEATURES', id: 'tamu', label: 'Tamu', href: '/dashboard/tamu', icon: 'group' },
+  { group: 'FEATURES', id: 'checkin', label: 'Check-in', href: '/dashboard/checkin', icon: 'checkin' },
   { group: 'FEATURES', id: 'domain', label: 'Domain', href: '/dashboard/domain', icon: 'globe' },
   { group: 'GENERAL', id: 'report', label: 'Laporan', href: '/dashboard/report', icon: 'report' },
   { group: 'GENERAL', id: 'pengaturan', label: 'Pengaturan', href: '/dashboard/pengaturan', icon: 'settings' },

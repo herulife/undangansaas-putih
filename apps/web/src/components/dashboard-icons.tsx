@@ -205,6 +205,16 @@ export function DashboardIcon({ name }: { name: string }) {
         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
       </>
     ),
+    checkin: (
+      <>
+        <rect height="7" rx="1" width="7" x="3" y="3" />
+        <rect height="7" rx="1" width="7" x="14" y="3" />
+        <rect height="7" rx="1" width="7" x="3" y="14" />
+        <path d="M14 14h3v3" />
+        <path d="M20 20h-3v-3" />
+        <path d="M14 20h.01M20 14h.01" />
+      </>
+    ),
   }
 
   return (

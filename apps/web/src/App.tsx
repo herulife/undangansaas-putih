@@ -10,7 +10,9 @@ import { DashboardPage } from './pages/dashboard/DashboardPage'
 import { EditorPage } from './pages/editor/EditorPage'
 import { AdminConsolePage } from './modules/admin/AdminConsolePage'
 import { PrivacyPage, RefundPage, TermsPage } from './pages/legal/LegalPages'
+import { LayarSapaPage } from './pages/public/LayarSapaPage'
 import { PublicInvitationPage } from './pages/public/PublicInvitationPage'
+import { ScanCheckinPage } from './pages/public/ScanCheckinPage'
 import { templateRegistry } from './templateEngine'
 import { lazy, Suspense, useEffect } from 'react'
 
@@ -165,7 +167,7 @@ export function App() {
       )
     }
     if (authSession.auth.user?.role !== 'admin') {
-      window.location.href = '/dashboard'
+      window.location.assign('/dashboard')
       return null
     }
     return (
@@ -244,6 +246,17 @@ export function App() {
   if (pathname.startsWith('/preview/')) {
     const templateId = pathname.split('/').filter(Boolean)[1] ?? templateRegistry[0].id
     return <DirectTemplatePreviewPage templateId={templateId} />
+  }
+
+  if (pathname.startsWith('/scan/')) {
+    const token = pathname.split('/').filter(Boolean)[1] ?? ''
+    return <ScanCheckinPage token={token} />
+  }
+
+  if (pathname.startsWith('/layar/')) {
+    const slug = pathname.split('/').filter(Boolean)[1] ?? ''
+    const screenKey = new URLSearchParams(window.location.search).get('key') ?? ''
+    return <LayarSapaPage slug={slug} screenKey={screenKey} />
   }
 
   if (pathname.startsWith('/u/')) {

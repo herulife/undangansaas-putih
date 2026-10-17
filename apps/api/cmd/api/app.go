@@ -66,6 +66,14 @@ func (a *app) routes() http.Handler {
 		r.With(a.RequireAuth).Get("/invitations/{slug}/guests", a.listGuests)
 		r.With(a.RequireAuth).Patch("/invitations/{slug}/guests/{guestId}", a.updateGuest)
 		r.With(a.RequireAuth).Delete("/invitations/{slug}/guests/{guestId}", a.deleteGuest)
+
+		// Guest check-in (QR) & layar sapa
+		checkinTier := a.RequireTier([]string{featureGuestCheckin})
+		r.With(a.RequireAuth, checkinTier).Get("/invitations/{slug}/checkin", a.listCheckinGuests)
+		r.With(a.RequireAuth, checkinTier).Get("/invitations/{slug}/checkin/qr/{guestId}", a.checkinGuestQR)
+		r.With(a.RequireAuth, checkinTier).Post("/invitations/{slug}/checkin/reset", a.resetGuestCheckin)
+		r.With(a.RequireAuth, checkinTier).Post("/checkin", a.checkInByToken)
+
 		r.With(a.RequireAuth).Get("/domains", a.listDomains)
 		r.With(a.RequireAuth).Post("/domains", a.createDomain)
 		r.With(a.RequireAuth).Post("/domains/{domainId}/verify", a.verifyDomain)
@@ -112,6 +120,7 @@ func (a *app) routes() http.Handler {
 		r.Get("/templates", a.listTemplates)
 		r.With(a.RateLimit("event", 120, time.Minute)).Post("/events", a.trackEvent)
 		r.With(a.RateLimit("guest-open", 60, time.Minute)).Post("/invitations/{slug}/guests/{guestId}/open", a.markGuestOpened)
+		r.With(a.RateLimit("checkin-feed", 240, time.Minute)).Get("/checkin/{slug}/feed", a.checkinFeed)
 		r.Get("/og/{slug}.svg", a.dynamicOGSVG)
 
 		r.Group(func(r chi.Router) {

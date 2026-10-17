@@ -15,6 +15,7 @@ const (
 	featureCustomDomain     = "custom_domain"
 	featureDynamicOG        = "dynamic_og"
 	featureExportCSV        = "export_csv"
+	featureGuestCheckin     = "guest_checkin"
 	featurePrioritySupport  = "priority_support"
 	featureUnlimitedGallery = "unlimited_gallery"
 	featureWatermarkRemove  = "watermark_remove"
@@ -94,7 +95,7 @@ func featuresForTier(tier tierName) tierFeatureSet {
 			CustomDomain:     true,
 			DynamicOG:        true,
 			ExportCSV:        true,
-			Flags:            []string{featureAnalyticsFull, featureAPIAccess, featureBulkCreate, featureClientDashboard, featureCustomDomain, featureDynamicOG, featureExportCSV, featurePrioritySupport, featureUnlimitedGallery, featureWatermarkRemove, featureWhiteLabel},
+			Flags:            []string{featureAnalyticsFull, featureAPIAccess, featureBulkCreate, featureClientDashboard, featureCustomDomain, featureDynamicOG, featureExportCSV, featureGuestCheckin, featurePrioritySupport, featureUnlimitedGallery, featureWatermarkRemove, featureWhiteLabel},
 			MaxGallery:       nil,
 			PrioritySupport:  true,
 			RevenueShare:     20,
@@ -111,7 +112,7 @@ func featuresForTier(tier tierName) tierFeatureSet {
 			CustomDomain:     true,
 			DynamicOG:        true,
 			ExportCSV:        true,
-			Flags:            []string{featureAnalyticsFull, featureCustomDomain, featureDynamicOG, featureExportCSV, featurePrioritySupport, featureUnlimitedGallery, featureWatermarkRemove},
+			Flags:            []string{featureAnalyticsFull, featureCustomDomain, featureDynamicOG, featureExportCSV, featureGuestCheckin, featurePrioritySupport, featureUnlimitedGallery, featureWatermarkRemove},
 			MaxGallery:       nil,
 			PrioritySupport:  true,
 			RSVPLimit:        1000,
@@ -124,7 +125,7 @@ func featuresForTier(tier tierName) tierFeatureSet {
 			Analytics:    "basic",
 			ActiveMonths: 12,
 			ExportCSV:    true,
-			Flags:        []string{featureAnalyticsBasic, featureExportCSV, featureWatermarkRemove},
+			Flags:        []string{featureAnalyticsBasic, featureExportCSV, featureGuestCheckin, featureWatermarkRemove},
 			MaxGallery:   &maxGalleryCreator,
 			RSVPLimit:    300,
 			StorageLimitBytes: 1 << 30,

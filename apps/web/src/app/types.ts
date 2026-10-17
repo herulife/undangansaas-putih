@@ -334,3 +334,38 @@ export type AdminMediaItem = {
   owner: string
   createdAt: string
 }
+
+export type CheckinGuest = {
+  id: string
+  name: string
+  phone: string
+  status: string
+  token: string
+  personalUrl: string
+  checkedInAt: string | null
+  checkinCount: number
+}
+
+export type CheckinSummary = {
+  total: number
+  checkedIn: number
+  pending: number
+}
+
+export type CheckinListResponse = {
+  slug: string
+  screenKey: string
+  summary: CheckinSummary
+  guests: CheckinGuest[]
+}
+
+export type CheckinResult = {
+  guest: { id: string; name: string; checkedInAt: string | null; checkinCount: number }
+  alreadyCheckedIn: boolean
+  slug: string
+}
+
+export type CheckinFeedItem = {
+  guestName: string
+  createdAt: string
+}

@@ -4,6 +4,7 @@ import { AIAssetGenerator } from '../../components/AIAssetGenerator'
 import { DashboardIcon, Sparkline } from '../../components/dashboard-icons'
 import { EmailVerificationBanner } from '../AuthPages'
 import { BuilderEnginePanel } from './BuilderEnginePanel'
+import { CheckInPanel } from './CheckInPanel'
 import { DashboardSidebar } from './DashboardSidebar'
 import { DomainPanel } from './DomainPanel'
 import { GuestPanel } from './GuestPanel'
@@ -424,6 +425,7 @@ export function DashboardPage({
           ) : null}
           {activeModule === 'transaksi' ? <TransactionsPanel /> : null}
           {activeModule === 'tamu' ? <GuestPanel invitations={invitations} /> : null}
+          {activeModule === 'checkin' ? <CheckInPanel invitations={invitations} /> : null}
           {activeModule === 'report' ? <ReportPanel /> : null}
           {activeModule === 'visitor' ? <RealtimeVisitorPanel /> : null}
           {activeModule === 'reseller' ? <ResellerPanel /> : null}

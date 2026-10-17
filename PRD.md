@@ -454,7 +454,10 @@ Kolom **Status:** ⬜ belum · 🟨 dikerjakan · ✅ selesai.
 
 | ID | Modul | Output | File utama | AC | Depends | Size | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| WP-301 | Guest Mgmt | QR check-in + layar sapa (guest on screen) | `apps/api/cmd/api/checkin.go`, UI check-in | Scan QR → status hadir; layar sapa realtime | WP-107 | XL→pecah | ⬜ |
+| WP-301 | Guest Mgmt | QR check-in + layar sapa (guest on screen) | `apps/api/cmd/api/checkin.go`, UI check-in | Scan QR → status hadir; layar sapa realtime | WP-107 | XL→pecah | ✅ |
+| WP-301a | Guest Mgmt | Backend check-in: token QR per tamu, tabel `checkins`, endpoint check-in/reset/feed, QR PNG | `apps/api/cmd/api/checkin.go`, `migrations.go`, `tiers.go`, `app.go` | Token unik per tamu; check-in idempoten; feed layar sapa terkunci `screenKey`; gating `guest_checkin` | WP-107 | L | ✅ |
+| WP-301b | Guest Mgmt | UI check-in dashboard: scan kamera/manual, status hadir, QR, reset, statistik | `apps/web/src/pages/dashboard/CheckInPanel.tsx` | Pilih undangan → scan token → status hadir; lihat & unduh QR; reset | WP-301a | L | ✅ |
+| WP-301c | Guest Mgmt | Layar sapa fullscreen (polling feed, animasi sambutan) | `apps/web/src/pages/public/LayarSapaPage.tsx`, `App.tsx` | Halaman `/layar/{slug}?key=` menampilkan tamu terbaru realtime | WP-301a | M | ✅ |
 | WP-302 | Guest Mgmt | Seating + kode souvenir + nomor angpao | API + UI seating | Atur meja per tamu; kode souvenir anti double-redeem | WP-301 | L | ⬜ |
 | WP-303 | Komunikasi | Integrasi WA blast via `wa-gateway` + template pesan | `apps/api/cmd/api/whatsapp.go` | Kirim undangan massal + status terkirim | WP-107 | L | ⬜ |
 | WP-304 | Monetisasi | Amplop digital QRIS + gift wishlist | API + publik | Donasi QRIS & wishlist tampil di undangan | WP-201 | M | ⬜ |
@@ -490,6 +493,7 @@ kepemilikan berikut. **Satu file hanya boleh diedit oleh satu WP pada satu waktu
 | `apps/web/src/modules/admin/*` | WP-204, WP-401 |
 | `apps/web/src/modules/guest/*` | WP-107, WP-301, WP-302 |
 | `apps/api/cmd/api/guests.go` | WP-107, WP-301 |
+| `apps/api/cmd/api/checkin.go`, `apps/web/src/pages/dashboard/CheckInPanel.tsx`, `apps/web/src/pages/public/LayarSapaPage.tsx`, `apps/web/src/pages/public/ScanCheckinPage.tsx` | WP-301a, WP-301b, WP-301c |
 | `apps/api/cmd/api/rsvps.go` | WP-108 |
 | `apps/api/cmd/api/payments_*.go` | WP-201, WP-202, WP-203 |
 | `apps/api/cmd/api/events.go` | WP-205 |
