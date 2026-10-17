@@ -289,15 +289,21 @@ func (a *app) updateInvitation(w http.ResponseWriter, r *http.Request) {
 	// Preserve the stored event type when the client does not send one, so
 	// older clients updating a non-wedding invitation do not reset it.
 	if payload.EventType == "" {
-		var existingType, existingChild, existingOrg, existingEvent string
+		var existingType, existingChild, existingParents, existingHost, existingOrg, existingEvent string
 		_ = a.db.QueryRow(r.Context(), `
-			select event_type, child_name, organization_name, event_name
+			select event_type, child_name, parents_name, host_name, organization_name, event_name
 			from invitations
 			where slug = $1 and deleted_at is null and ($2 = 'admin' or user_id = $3::uuid)
-		`, slug, user.Role, user.ID).Scan(&existingType, &existingChild, &existingOrg, &existingEvent)
+		`, slug, user.Role, user.ID).Scan(&existingType, &existingChild, &existingParents, &existingHost, &existingOrg, &existingEvent)
 		payload.EventType = existingType
 		if payload.ChildName == "" {
 			payload.ChildName = existingChild
+		}
+		if payload.ParentsName == "" {
+			payload.ParentsName = existingParents
+		}
+		if payload.HostName == "" {
+			payload.HostName = existingHost
 		}
 		if payload.OrganizationName == "" {
 			payload.OrganizationName = existingOrg
