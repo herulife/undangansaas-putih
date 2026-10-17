@@ -1,4 +1,6 @@
 import { invitationURL } from '../../app/format'
+import { eventTypeMeta, eventTypeOptions, filterTemplatesByCategory } from '../../app/eventTypes'
+import type { EventType } from '../../app/types'
 import type { AIImageInput, AIImageResult, AuthUser, CreateInvitationInput, Invitation, ManualProofInput, MidtransPaymentInput, MidtransPaymentResult, Template, TemplateAdminInput, VoucherValidateResult } from '../../app/types'
 import { AIAssetGenerator } from '../../components/AIAssetGenerator'
 import { DashboardIcon, Sparkline } from '../../components/dashboard-icons'
@@ -85,9 +87,13 @@ export function DashboardPage({
   const [form, setForm] = useState<CreateInvitationInput>({
     couple: '',
     eventDate: '',
+    eventType: 'wedding',
     slug: '',
     templateSlug: firstTemplateSlug,
   })
+  const [templateTouched, setTemplateTouched] = useState(false)
+  const activeEventMeta = eventTypeMeta(form.eventType)
+  const filteredTemplates = filterTemplatesByCategory(templates, form.eventType)
 
   useEffect(() => {
     const candidate = form.slug.trim()
@@ -114,16 +120,18 @@ export function DashboardPage({
     event.preventDefault()
     const createdInvitation = await createInvitation({
       ...form,
-      templateSlug: form.templateSlug || firstTemplateSlug,
+      templateSlug: form.templateSlug || filteredTemplates[0]?.slug || firstTemplateSlug,
     })
     if (createdInvitation) {
       setCreatedLink(invitationURL(createdInvitation.slug))
       setForm({
         couple: '',
         eventDate: '',
+        eventType: 'wedding',
         slug: '',
         templateSlug: firstTemplateSlug,
       })
+      setTemplateTouched(false)
     }
   }
 
@@ -235,15 +243,96 @@ export function DashboardPage({
                 </div>
                 <form className="invite-form" onSubmit={handleSubmit}>
                   <label>
-                    Nama pasangan
-                    <input
-                      onChange={(event) => setForm({ ...form, couple: event.target.value })}
-                      placeholder="Alika & Herman"
-                      required
-                      type="text"
-                      value={form.couple}
-                    />
+                    Jenis acara
+                    <select
+                      onChange={(event) => {
+                        const nextType = event.target.value as EventType
+                        const nextTemplates = filterTemplatesByCategory(templates, nextType)
+                        setForm({
+                          ...form,
+                          eventType: nextType,
+                          templateSlug: templateTouched ? form.templateSlug : nextTemplates[0]?.slug ?? form.templateSlug,
+                        })
+                      }}
+                      value={form.eventType ?? 'wedding'}
+                    >
+                      {eventTypeOptions.map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                    <span className="field-hint">{activeEventMeta.description}</span>
                   </label>
+                  {activeEventMeta.fields.includes('couple') ? (
+                    <label>
+                      Nama pasangan
+                      <input
+                        onChange={(event) => setForm({ ...form, couple: event.target.value })}
+                        placeholder="Alika & Herman"
+                        required
+                        type="text"
+                        value={form.couple}
+                      />
+                    </label>
+                  ) : null}
+                  {activeEventMeta.fields.includes('childName') ? (
+                    <label>
+                      Nama anak
+                      <input
+                        onChange={(event) => setForm({ ...form, childName: event.target.value })}
+                        placeholder="Muhammad Alif"
+                        required
+                        type="text"
+                        value={form.childName ?? ''}
+                      />
+                    </label>
+                  ) : null}
+                  {activeEventMeta.fields.includes('parentsName') ? (
+                    <label>
+                      Nama orang tua
+                      <input
+                        onChange={(event) => setForm({ ...form, parentsName: event.target.value })}
+                        placeholder="Bapak Ahmad & Ibu Siti"
+                        type="text"
+                        value={form.parentsName ?? ''}
+                      />
+                    </label>
+                  ) : null}
+                  {activeEventMeta.fields.includes('eventName') ? (
+                    <label>
+                      Nama acara
+                      <input
+                        onChange={(event) => setForm({ ...form, eventName: event.target.value })}
+                        placeholder={activeEventMeta.value === 'lembaga' ? 'Wisuda Angkatan 2026' : 'Syukuran Rumah Baru'}
+                        required
+                        type="text"
+                        value={form.eventName ?? ''}
+                      />
+                    </label>
+                  ) : null}
+                  {activeEventMeta.fields.includes('hostName') ? (
+                    <label>
+                      Penyelenggara
+                      <input
+                        onChange={(event) => setForm({ ...form, hostName: event.target.value })}
+                        placeholder="Keluarga Besar"
+                        type="text"
+                        value={form.hostName ?? ''}
+                      />
+                    </label>
+                  ) : null}
+                  {activeEventMeta.fields.includes('organizationName') ? (
+                    <label>
+                      Nama lembaga
+                      <input
+                        onChange={(event) => setForm({ ...form, organizationName: event.target.value })}
+                        placeholder="SMA Negeri 1 Jakarta"
+                        type="text"
+                        value={form.organizationName ?? ''}
+                      />
+                    </label>
+                  ) : null}
                   <label>
                     Slug URL
                     <input
@@ -277,10 +366,13 @@ export function DashboardPage({
                   <label>
                     Template
                     <select
-                      onChange={(event) => setForm({ ...form, templateSlug: event.target.value })}
-                      value={form.templateSlug || firstTemplateSlug}
+                      onChange={(event) => {
+                        setTemplateTouched(true)
+                        setForm({ ...form, templateSlug: event.target.value })
+                      }}
+                      value={form.templateSlug || filteredTemplates[0]?.slug || firstTemplateSlug}
                     >
-                      {templates.map((template) => (
+                      {filteredTemplates.map((template) => (
                         <option key={template.id} value={template.slug}>
                           {template.name}
                         </option>

@@ -12,6 +12,8 @@ export type Template = {
   updatedAt?: string
 }
 
+export type EventType = 'wedding' | 'aqiqah' | 'khitanan' | 'syukuran' | 'birthday' | 'lembaga' | 'other'
+
 export type Invitation = {
   id?: string
   slug: string
@@ -19,6 +21,12 @@ export type Invitation = {
   couple: string
   template: string
   templateSlug?: string
+  eventType?: EventType
+  childName?: string
+  parentsName?: string
+  hostName?: string
+  organizationName?: string
+  eventName?: string
   eventDate: string
   status: string
   config?: InvitationConfig
@@ -32,6 +40,12 @@ export type CreateInvitationInput = {
   couple: string
   templateSlug: string
   eventDate: string
+  eventType?: EventType
+  childName?: string
+  parentsName?: string
+  hostName?: string
+  organizationName?: string
+  eventName?: string
   title?: string
   config?: InvitationConfig
 }
@@ -40,6 +54,12 @@ export type UpdateInvitationInput = {
   couple: string
   eventDate: string
   status: string
+  eventType?: EventType
+  childName?: string
+  parentsName?: string
+  hostName?: string
+  organizationName?: string
+  eventName?: string
   title?: string
   config?: InvitationConfig
 }

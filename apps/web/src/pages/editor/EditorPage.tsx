@@ -1,9 +1,9 @@
 import { apiURL, authHeaders } from '../../app/api'
 import { readableStatus } from '../../app/format'
 import type { Invitation, InvitationConfig, InvitationEvent, InvitationStoryItem, PublishInvitationInput, RSVP, UpdateInvitationInput } from '../../app/types'
-import { editorSections } from './editorConfig'
+import { editorSectionsFor } from './editorConfig'
 import type { EditorField } from './editorConfig'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
 
 export function EditorPage({
@@ -31,6 +31,12 @@ export function EditorPage({
     couple: invitation.couple,
     eventDate: invitation.eventDate,
     status: invitation.status.toLowerCase(),
+    eventType: invitation.eventType ?? 'wedding',
+    childName: invitation.childName ?? '',
+    parentsName: invitation.parentsName ?? '',
+    hostName: invitation.hostName ?? '',
+    organizationName: invitation.organizationName ?? '',
+    eventName: invitation.eventName ?? '',
     title: invitation.title || invitation.couple,
     config: {
       ...(invitation.config ?? {}),
@@ -45,7 +51,11 @@ export function EditorPage({
     galleryCount: invitation.config?.gallery?.length ?? 0,
     removeWatermark: !(invitation.watermark ?? true),
   })
-  const [activeSection, setActiveSection] = useState(editorSections[0]?.id ?? 'dasar')
+  const sections = useMemo(() => editorSectionsFor(form.eventType), [form.eventType])
+  const [activeSectionRaw, setActiveSection] = useState(sections[0]?.id ?? 'dasar')
+  const activeSection = sections.some((section) => section.id === activeSectionRaw)
+    ? activeSectionRaw
+    : sections[0]?.id ?? 'dasar'
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -224,7 +234,7 @@ export function EditorPage({
           </div>
           <form className="invite-form editor-form" onSubmit={handleSubmit}>
             <nav className="editor-sections-nav">
-              {editorSections.map((section) => (
+              {sections.map((section) => (
                 <button
                   className={section.id === activeSection ? 'active' : undefined}
                   key={section.id}
@@ -235,7 +245,7 @@ export function EditorPage({
                 </button>
               ))}
             </nav>
-            {editorSections.map((section) => (
+            {sections.map((section) => (
               section.id === activeSection ? (
                 <div className="editor-section active" key={section.id}>
                   <div className="editor-section-head">

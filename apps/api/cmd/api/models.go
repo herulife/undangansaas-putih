@@ -17,36 +17,54 @@ type template struct {
 }
 
 type invitation struct {
-	ID           string         `json:"id"`
-	Slug         string         `json:"slug"`
-	Title        string         `json:"title"`
-	Couple       string         `json:"couple"`
-	Template     string         `json:"template"`
-	TemplateSlug string         `json:"templateSlug"`
-	EventDate    string         `json:"eventDate"`
-	Status       string         `json:"status"`
-	Config       map[string]any `json:"config"`
-	RSVPCount    int            `json:"rsvpCount"`
-	Watermark    bool           `json:"watermark"`
-	CreatedAt    time.Time      `json:"createdAt"`
+	ID               string         `json:"id"`
+	Slug             string         `json:"slug"`
+	Title            string         `json:"title"`
+	Couple           string         `json:"couple"`
+	Template         string         `json:"template"`
+	TemplateSlug     string         `json:"templateSlug"`
+	EventType        string         `json:"eventType"`
+	ChildName        string         `json:"childName"`
+	ParentsName      string         `json:"parentsName"`
+	HostName         string         `json:"hostName"`
+	OrganizationName string         `json:"organizationName"`
+	EventName        string         `json:"eventName"`
+	EventDate        string         `json:"eventDate"`
+	Status           string         `json:"status"`
+	Config           map[string]any `json:"config"`
+	RSVPCount        int            `json:"rsvpCount"`
+	Watermark        bool           `json:"watermark"`
+	CreatedAt        time.Time      `json:"createdAt"`
 }
 
 type createInvitationRequest struct {
-	Slug         string         `json:"slug"`
-	Title        string         `json:"title"`
-	Couple       string         `json:"couple"`
-	TemplateSlug string         `json:"templateSlug"`
-	EventDate    string         `json:"eventDate"`
-	Status       string         `json:"status"`
-	Config       map[string]any `json:"config"`
+	Slug             string         `json:"slug"`
+	Title            string         `json:"title"`
+	Couple           string         `json:"couple"`
+	EventType        string         `json:"eventType"`
+	ChildName        string         `json:"childName"`
+	ParentsName      string         `json:"parentsName"`
+	HostName         string         `json:"hostName"`
+	OrganizationName string         `json:"organizationName"`
+	EventName        string         `json:"eventName"`
+	TemplateSlug     string         `json:"templateSlug"`
+	EventDate        string         `json:"eventDate"`
+	Status           string         `json:"status"`
+	Config           map[string]any `json:"config"`
 }
 
 type updateInvitationRequest struct {
-	Couple    string         `json:"couple"`
-	EventDate string         `json:"eventDate"`
-	Status    string         `json:"status"`
-	Title     string         `json:"title"`
-	Config    map[string]any `json:"config"`
+	Couple           string         `json:"couple"`
+	EventType        string         `json:"eventType"`
+	ChildName        string         `json:"childName"`
+	ParentsName      string         `json:"parentsName"`
+	HostName         string         `json:"hostName"`
+	OrganizationName string         `json:"organizationName"`
+	EventName        string         `json:"eventName"`
+	EventDate        string         `json:"eventDate"`
+	Status           string         `json:"status"`
+	Title            string         `json:"title"`
+	Config           map[string]any `json:"config"`
 }
 
 type rsvpRequest struct {

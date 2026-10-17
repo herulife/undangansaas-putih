@@ -1,3 +1,6 @@
+import { eventTypeOptions } from '../../app/eventTypes'
+import type { EventType } from '../../app/types'
+
 export type EditorField = {
   key: string
   label: string
@@ -5,6 +8,7 @@ export type EditorField = {
   placeholder?: string
   target: 'config' | 'top'
   type: 'date' | 'select' | 'text' | 'textarea' | 'url'
+  visibleFor?: EventType[]
   wide?: boolean
 }
 
@@ -15,14 +19,17 @@ export type EditorSection = {
   id: string
   story?: boolean
   title: string
+  visibleFor?: EventType[]
 }
+
+const eventTypeSelectOptions = eventTypeOptions.map((option) => ({ label: option.label, value: option.value }))
 
 export const editorSections: EditorSection[] = [
   {
-    description: 'Judul, nama pasangan, tanggal, dan status undangan.',
+    description: 'Jenis acara, judul, tanggal, dan status undangan.',
     fields: [
+      { key: 'eventType', label: 'Jenis acara', options: eventTypeSelectOptions, target: 'top', type: 'select' },
       { key: 'title', label: 'Judul undangan', target: 'top', type: 'text' },
-      { key: 'couple', label: 'Nama pasangan', target: 'top', type: 'text' },
       { key: 'eventDate', label: 'Tanggal acara', target: 'top', type: 'date' },
       {
         key: 'status',
@@ -39,6 +46,19 @@ export const editorSections: EditorSection[] = [
     title: 'Informasi Dasar',
   },
   {
+    description: 'Detail acara sesuai jenis undangan.',
+    fields: [
+      { key: 'couple', label: 'Nama pasangan', placeholder: 'Alika & Herman', target: 'top', type: 'text', visibleFor: ['wedding'] },
+      { key: 'childName', label: 'Nama anak', placeholder: 'Muhammad Alif', target: 'top', type: 'text', visibleFor: ['aqiqah', 'khitanan', 'birthday'] },
+      { key: 'parentsName', label: 'Nama orang tua', placeholder: 'Bapak Ahmad & Ibu Siti', target: 'top', type: 'text', visibleFor: ['aqiqah', 'khitanan', 'birthday'] },
+      { key: 'eventName', label: 'Nama acara', placeholder: 'Wisuda Angkatan 2026', target: 'top', type: 'text', visibleFor: ['syukuran', 'lembaga', 'other'] },
+      { key: 'hostName', label: 'Penyelenggara', placeholder: 'Keluarga Besar', target: 'top', type: 'text', visibleFor: ['syukuran', 'other'] },
+      { key: 'organizationName', label: 'Nama lembaga', placeholder: 'SMA Negeri 1 Jakarta', target: 'top', type: 'text', visibleFor: ['lembaga'] },
+    ],
+    id: 'detail',
+    title: 'Detail Acara',
+  },
+  {
     description: 'Nama kedua mempelai beserta nama orang tua.',
     fields: [
       { key: 'bride', label: 'Nama mempelai wanita', placeholder: 'Alyssa Kirana', target: 'config', type: 'text' },
@@ -48,6 +68,7 @@ export const editorSections: EditorSection[] = [
     ],
     id: 'mempelai',
     title: 'Mempelai',
+    visibleFor: ['wedding'],
   },
   {
     description: 'Salam pembuka, kalimat pembuka, dan kutipan ayat.',
@@ -63,7 +84,7 @@ export const editorSections: EditorSection[] = [
     description: 'Jam akad/resepsi serta rangkaian acara tambahan (multi-acara).',
     events: true,
     fields: [
-      { key: 'akadTime', label: 'Jam akad', placeholder: '08.00 WIB', target: 'config', type: 'text' },
+      { key: 'akadTime', label: 'Jam akad', placeholder: '08.00 WIB', target: 'config', type: 'text', visibleFor: ['wedding'] },
       { key: 'receptionTime', label: 'Jam resepsi', placeholder: '11.00 WIB', target: 'config', type: 'text' },
     ],
     id: 'acara',
@@ -104,6 +125,7 @@ export const editorSections: EditorSection[] = [
     id: 'cerita',
     story: true,
     title: 'Love Story',
+    visibleFor: ['wedding'],
   },
   {
     description: 'Tema pakaian tamu undangan.',
@@ -127,10 +149,20 @@ export const editorSections: EditorSection[] = [
   {
     description: 'Tagar pernikahan dan kalimat penutup undangan.',
     fields: [
-      { key: 'hashtag', label: 'Hashtag / tagar', placeholder: '#RayhanAlyssaForever', target: 'config', type: 'text' },
+      { key: 'hashtag', label: 'Hashtag / tagar', placeholder: '#RayhanAlyssaForever', target: 'config', type: 'text', visibleFor: ['wedding'] },
       { key: 'closingText', label: 'Kalimat penutup', placeholder: 'Merupakan kebahagiaan bagi kami apabila...', target: 'config', type: 'textarea', wide: true },
     ],
     id: 'penutup',
     title: 'Hashtag & Penutup',
   },
 ]
+
+export function editorSectionsFor(eventType?: string): EditorSection[] {
+  const type = (eventType ?? 'wedding') as EventType
+  return editorSections
+    .filter((section) => !section.visibleFor || section.visibleFor.includes(type))
+    .map((section) => ({
+      ...section,
+      fields: section.fields.filter((field) => !field.visibleFor || field.visibleFor.includes(type)),
+    }))
+}

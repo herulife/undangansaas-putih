@@ -89,22 +89,32 @@ func (a *app) duplicateInvitation(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var (
-		templateID   string
-		title        string
-		couple       string
-		eventDate    string
-		config       []byte
-		templateName string
-		templateSlug string
+		templateID       string
+		title            string
+		couple           string
+		eventType        string
+		childName        string
+		parentsName      string
+		hostName         string
+		organizationName string
+		eventName        string
+		eventDate        string
+		config           []byte
+		templateName     string
+		templateSlug     string
 	)
 	err := a.db.QueryRow(r.Context(), `
-		select invitations.template_id, invitations.title, invitations.couple, invitations.event_date::text, invitations.config, templates.name, templates.slug
+		select invitations.template_id, invitations.title, invitations.couple,
+			invitations.event_type, invitations.child_name, invitations.parents_name, invitations.host_name, invitations.organization_name, invitations.event_name,
+			invitations.event_date::text, invitations.config, templates.name, templates.slug
 		from invitations
 		join templates on templates.id = invitations.template_id
 		where invitations.slug = $1
 			and invitations.deleted_at is null
 			and ($2 = 'admin' or invitations.user_id = $3::uuid)
-	`, slug, user.Role, user.ID).Scan(&templateID, &title, &couple, &eventDate, &config, &templateName, &templateSlug)
+	`, slug, user.Role, user.ID).Scan(&templateID, &title, &couple,
+		&eventType, &childName, &parentsName, &hostName, &organizationName, &eventName,
+		&eventDate, &config, &templateName, &templateSlug)
 	if err != nil {
 		writeError(w, http.StatusNotFound, errors.New("invitation not found"))
 		return
@@ -125,11 +135,14 @@ func (a *app) duplicateInvitation(w http.ResponseWriter, r *http.Request) {
 	var item invitation
 	var storedConfig []byte
 	err = a.db.QueryRow(r.Context(), `
-		insert into invitations (template_id, slug, title, couple, event_date, status, config, user_id)
-		values ($1, $2, $3, $4, $5::date, 'draft', $6::jsonb, $7::uuid)
-		returning id, slug, title, couple, event_date::text, status, config, created_at
-	`, templateID, newSlug, newTitle, couple, eventDate, string(config), user.ID).Scan(
-		&item.ID, &item.Slug, &item.Title, &item.Couple, &item.EventDate, &item.Status, &storedConfig, &item.CreatedAt,
+		insert into invitations (template_id, slug, title, couple, event_type, child_name, parents_name, host_name, organization_name, event_name, event_date, status, config, user_id)
+		values ($1, $2, $3, $4, $8, $9, $10, $11, $12, $13, $5::date, 'draft', $6::jsonb, $7::uuid)
+		returning id, slug, title, couple, event_type, child_name, parents_name, host_name, organization_name, event_name, event_date::text, status, config, created_at
+	`, templateID, newSlug, newTitle, couple, eventDate, string(config), user.ID,
+		eventType, childName, parentsName, hostName, organizationName, eventName).Scan(
+		&item.ID, &item.Slug, &item.Title, &item.Couple,
+		&item.EventType, &item.ChildName, &item.ParentsName, &item.HostName, &item.OrganizationName, &item.EventName,
+		&item.EventDate, &item.Status, &storedConfig, &item.CreatedAt,
 	)
 	if err != nil {
 		writeError(w, http.StatusBadRequest, errors.New("gagal menduplikasi undangan"))

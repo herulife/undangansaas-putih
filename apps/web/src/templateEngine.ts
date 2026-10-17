@@ -15,9 +15,17 @@ export type TemplateRegistryItem = {
 export type InvitationRenderData = {
   slug: string
   title: string
+  eventType: string
+  invitationNoun: string
+  hostLabel: string
   groomName: string
   brideName: string
   coupleDisplayName: string
+  childName: string
+  parentsName: string
+  hostName: string
+  organizationName: string
+  eventName: string
   eventDay: string
   eventDateText: string
   eventDateISO: string
@@ -294,9 +302,17 @@ export function getTemplateForInvitationSlug(slug?: string | null) {
 export const sampleInvitationData: InvitationRenderData = {
   slug: 'alika-herman',
   title: 'The Wedding Of Alika & Herman',
+  eventType: 'wedding',
+  invitationNoun: 'Pernikahan',
+  hostLabel: 'Mempelai',
   groomName: 'Herman',
   brideName: 'Alika',
   coupleDisplayName: 'Alika & Herman',
+  childName: '',
+  parentsName: '',
+  hostName: '',
+  organizationName: '',
+  eventName: '',
   eventDay: 'Minggu',
   eventDateText: '31 Mei 2026',
   eventDateISO: '2026-05-31',

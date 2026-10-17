@@ -1,3 +1,4 @@
+import { eventTypeMeta } from './eventTypes'
 import type { Invitation, InvitationEvent } from './types'
 import type { InvitationRenderData } from '../templateEngine'
 
@@ -118,15 +119,26 @@ export function toInvitationRenderData(invitation: Invitation, guestName: string
   const config = invitation.config ?? {}
   const date = new Date(invitation.eventDate)
   const validDate = !Number.isNaN(date.getTime())
+  const eventType = invitation.eventType ?? 'wedding'
+  const meta = eventTypeMeta(eventType)
+  const isWedding = eventType === 'wedding'
   const coupleParts = invitation.couple.split(/\s+&\s+/)
-  const groomName = config.groom?.trim() || coupleParts[0] || ''
-  const brideName = config.bride?.trim() || coupleParts[1] || coupleParts[0] || ''
+  const groomName = config.groom?.trim() || (isWedding ? coupleParts[0] || '' : '')
+  const brideName = config.bride?.trim() || (isWedding ? coupleParts[1] || coupleParts[0] || '' : '')
   return {
     slug: invitation.slug,
     title: invitation.title || invitation.couple,
+    eventType,
+    invitationNoun: meta.invitationNoun,
+    hostLabel: isWedding ? 'Mempelai' : meta.label,
     groomName,
     brideName,
     coupleDisplayName: invitation.couple,
+    childName: invitation.childName?.trim() || '',
+    parentsName: invitation.parentsName?.trim() || '',
+    hostName: invitation.hostName?.trim() || '',
+    organizationName: invitation.organizationName?.trim() || '',
+    eventName: invitation.eventName?.trim() || '',
     eventDay: validDate ? new Intl.DateTimeFormat('id-ID', { weekday: 'long' }).format(date) : '',
     eventDateText: validDate ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(date) : invitation.eventDate,
     eventDateISO: invitation.eventDate,

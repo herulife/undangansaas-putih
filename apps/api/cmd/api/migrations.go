@@ -131,10 +131,27 @@ func migrate(ctx context.Context, db *pgxpool.Pool) error {
 		alter table invitations add column if not exists published_at timestamptz;
 		alter table invitations add column if not exists updated_at timestamptz not null default now();
 		alter table invitations add column if not exists deleted_at timestamptz;
+		alter table invitations add column if not exists event_type text not null default 'wedding';
+		alter table invitations add column if not exists child_name text not null default '';
+		alter table invitations add column if not exists parents_name text not null default '';
+		alter table invitations add column if not exists host_name text not null default '';
+		alter table invitations add column if not exists organization_name text not null default '';
+		alter table invitations add column if not exists event_name text not null default '';
+		do $$
+		begin
+			if not exists (select 1 from pg_constraint where conname = 'invitations_event_type_check') then
+				alter table invitations add constraint invitations_event_type_check
+					check (event_type in ('wedding','aqiqah','khitanan','syukuran','birthday','lembaga','other'));
+			end if;
+		end $$;
 
 		update invitations
 		set title = couple
-		where title = '';
+		where title = ''
+			or title is null;
+		update invitations
+		set couple = ''
+		where couple is null;
 
 		create index if not exists invitations_user_created_at_idx on invitations (user_id, created_at desc);
 		create index if not exists invitations_status_idx on invitations (status);

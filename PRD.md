@@ -81,6 +81,11 @@ Tier: `free` / `creator` / `pro` / `business`. Role: `user` / `admin` / `reselle
 Status RSVP: `attending` / `declined` / `pending` (frontend & backend **sudah konsisten**).
 Status invitation: `draft` / `published`.
 
+Jenis acara (`invitations.event_type`, default `wedding`): `wedding` / `aqiqah` / `khitanan` /
+`syukuran` / `birthday` / `lembaga` / `other`. Kolom detail per jenis: `child_name`,
+`parents_name`, `host_name`, `organization_name`, `event_name`. `couple` menyimpan nama
+tampilan hasil turunan (diisi otomatis dari field jenis acara terkait bila kosong).
+
 ### 3.3 Peta endpoint API (dari `app.go`)
 
 Lihat `.opencode/skills/saas-undangan-indonesia/reference/` dan `apps/api/cmd/api/app.go`.
@@ -430,6 +435,13 @@ Kolom **Status:** ⬜ belum · 🟨 dikerjakan · ✅ selesai.
 | WP-106 | Auth | Guard route + flow auth final + header token konsisten | `apps/web/src/App.tsx`, `apps/web/src/app/api.ts` | `/dashboard` & `/admin` terproteksi; semua call ber-token | WP-001 | M | ✅ |
 | WP-107 | Guest Mgmt | Link personal per tamu + tracking dibuka + status RSVP per tamu | `apps/api/cmd/api/guests.go`, guest UI | Tautan unik per tamu; event `guest_opened` tercatat; RSVP terhubung tamu | WP-101 | L | ✅ |
 | WP-108 | Analytics | Dashboard RSVP/buku tamu real + moderasi ucapan | `apps/api/cmd/api/rsvps.go`, dashboard | Owner lihat & moderasi RSVP/ucapan; export CSV | WP-106 | M | ✅ |
+| WP-109 | Platform/Data | Skema multi-event type: kolom `event_type` + detail per jenis acara | `apps/api/cmd/api/migrations.go`, `models.go`, `event_types.go` | Kolom `event_type` (default `wedding`) + `child_name`/`parents_name`/`host_name`/`organization_name`/`event_name`; constraint enum; normalisasi tipe | — | M | ✅ |
+| WP-110 | Platform/API | API create/update/duplicate undangan fleksibel per event type | `apps/api/cmd/api/invitations.go`, `invitations_trash.go` | Create/update/duplicate/list/get mengirim & menyimpan seluruh field event type; `resolveEventDisplayName` menurunkan nama tampilan; update tanpa `eventType` mempertahankan tipe tersimpan | WP-109 | M | ✅ |
+| WP-111 | Builder/Editor | Form pembuatan undangan dinamis per jenis acara | `apps/web/src/pages/dashboard/DashboardPage.tsx`, `apps/web/src/app/eventTypes.ts`, `types.ts` | Pilih jenis acara → field dinamis (pasangan / anak+orang tua / nama acara+penyelenggara / nama lembaga); template terfilter per kategori | WP-110 | L | ✅ |
+| WP-112 | Public Invitation | Terminologi & formatter per event type | `apps/web/src/app/format.ts`, `apps/web/src/templateEngine.ts` | `InvitationRenderData` membawa `eventType`, `invitationNoun`, `hostLabel`, field event; render pakai nama tampilan yang tepat | WP-110 | M | ✅ |
+| WP-113 | Template | Kategori template per event type + filter dengan fallback | `apps/web/src/app/eventTypes.ts`, dashboard form | Template difilter per kategori jenis acara; jika belum ada yang cocok, tampilkan semua (fallback aman) | WP-111 | M | ✅ |
+| WP-114 | Public Invitation | Render publik & OG meta adaptif per event type | `apps/web/src/pages/public/PublicInvitationPage.tsx`, `apps/api/cmd/api/og_page.go` | Halaman publik & meta memakai nama tampilan hasil turunan event type | WP-112 | M | ✅ |
+| WP-115 | Builder/Editor | Section editor per event type | `apps/web/src/pages/editor/editorConfig.ts`, `EditorPage.tsx` | Seksi & field editor tampil sesuai jenis acara (mempelai/love story hanya wedding; detail acara untuk lainnya); ganti jenis acara reaktif | WP-109 | M | ✅ |
 
 ### F2 — Monetisasi & Operasional
 
@@ -497,6 +509,7 @@ kepemilikan berikut. **Satu file hanya boleh diedit oleh satu WP pada satu waktu
 | `apps/api/cmd/api/rsvps.go` | WP-108 |
 | `apps/api/cmd/api/payments_*.go` | WP-201, WP-202, WP-203 |
 | `apps/api/cmd/api/events.go` | WP-205 |
+| `apps/api/cmd/api/event_types.go`, `apps/api/cmd/api/invitations.go`, `apps/web/src/app/eventTypes.ts`, `apps/web/src/pages/editor/editorConfig.ts` | WP-109, WP-110, WP-111, WP-112, WP-113, WP-114, WP-115 |
 | `template/**` | WP-101 |
 
 Ketentuan umum:
