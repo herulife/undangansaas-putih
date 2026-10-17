@@ -1,0 +1,25 @@
+/* --- Dashboard hero & metric cards --- */
+.dashboard {
+  background: #f4f6f9;
+}
+
+.dashboard-hero {
+  background: linear-gradient(135deg, #0b0e16, #1a1d35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.dashboard-hero a {
+  color: #22d3ee;
+  font-weight: 700;
+}
+
+.metric-card,
+.stat-card,
+.event-grid article {
+  background: #ffffff;
+  border: 1px solid #e8eaf1;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(11, 14, 22, 0.05);
+}

@@ -1,0 +1,58 @@
+/* ============================================================
+   LinkUndang — Premium Theme "Modern Bold"
+   ============================================================
+   Override index.css. Impor SETELAH index.css di main.tsx:
+     import './index.css'
+     import './premium-theme.css'
+   Untuk rollback cukup hapus import ini di main.tsx.
+   ============================================================ */
+
+:root {
+  --background: #fafafc;
+  --foreground: #0b0e16;
+  --muted: #5a6172;
+  --card: #ffffff;
+  --line: rgba(11, 14, 22, 0.09);
+  --accent: #4f46e5;
+  --accent-dark: #3730a3;
+  --sage: #0f9d7a;
+  --ui-ink: #0b0e16;
+  --ui-muted: #5a6172;
+  --ui-forest: #123c34;
+  --ui-forest-dark: #0b2a24;
+  --ui-emerald: #0f9d7a;
+  --ui-sage: #7fa8a0;
+  --ui-mint: #e4f4ef;
+  --ui-gold: #c9a227;
+  --ui-gold-soft: #f9f3e0;
+  --ui-cream: #fcfbf7;
+  --ui-paper: #ffffff;
+  --ui-warm-bg: #f4f6f9;
+  --ui-line: #e4e7ee;
+  --ui-rose: #d9738a;
+  --ui-plum: #6b4f9e;
+  --ui-terracotta: #c96f3c;
+  color: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: rgba(79, 70, 229, 0.18);
+}
+
+/* ============================================================
+   LANDING PAGE (ii-*)
+   ============================================================ */
+
+.ii-home {
+  background: #ffffff;
+  color: #0b0e16;
+}

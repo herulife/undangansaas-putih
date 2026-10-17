@@ -1,9 +1,12 @@
+!!! CATATAN: DOKUMEN INI SUDAH USANG (v1.0 = mockup MVP, tanpa backend) !!!
+!!! PRD AKTIF & RENCANA KERJA TERBARU ADA DI: ../../PRD.md            !!!
+!!! Panduan agent: ../../AGENTS.md                                    !!!
 ============================================================
-PRODUCT REQUIREMENTS DOCUMENT (PRD)
+PRODUCT REQUIREMENTS DOCUMENT (PRD) - ARSIP
 Platform Undangan Digital – LinkUndangan (MVP)
 Versi: 1.0
 Tanggal: 31 Mei 2026
-Status: Draft – Ready for Development
+Status: ARSIP (digantikan PRD.md v2.0)
 ============================================================
 
 1. RINGKASAN PRODUK

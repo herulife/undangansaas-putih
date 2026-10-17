@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html translate="no">
     <head>
 <meta charset="UTF-8">
@@ -26,20 +26,6 @@
             <meta name="theme-color" content="#eaeaea" />
         <meta content='#eaeaea' name='msapplication-navbutton-color'/>
         <meta content='#eaeaea' name='apple-mobile-web-app-status-bar-style'/>
-            <!--
-
-⚠️ 𝗦𝗘𝗖𝗨𝗥𝗜𝗧𝗬     𝗡𝗢𝗧𝗜𝗖𝗘 ⚠️
-====================================================================
-
-Halo Kak Mohon Maaf Sekali, Saat ini kami tidak membuka program Bug Bounty atau menerima laporan kerentanan keamanan :).
-
-Segala bentuk pengujian keamanan tanpa izin resmi merupakan tindakan yang tidak diperkenankan.
-
-Terima kasih atas pengertiannya.
-
-
-===================================================================
--->
 <link rel="stylesheet" href="./assets/css/004-coffee-3f763d32.css"/>
 <link rel="stylesheet" href="./assets/css/005-img-slider-3f763d38.css"/>
 <link rel="stylesheet" href="./assets/fonts/006-all-min-3f763d32.css"/>
@@ -582,6 +568,101 @@ a{
 #nav-tamu .card #form-comment, #comment #form-comment{
     height: inherit;
 }
+/* ===== Floating Pill Navmenu (wayang-batik style) ===== */
+.bottom-nav {
+    position: fixed;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    max-width: 333px;
+    margin: 0 auto;
+    transition: bottom .5s;
+}
+.bottom-nav .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-nav .navigation ul {
+    list-style: none;
+    background-color: #ffffffb8;
+    height: 39px;
+    padding: 0 5px;
+    margin: 0;
+    box-shadow: 0px 2px 20px 2px rgba(8, 8, 8, 0.06);
+    z-index: 9999;
+    display: flex;
+    overflow: hidden;
+    flex: 0;
+    transition: flex .5s, opacity .5s;
+}
+.bottom-nav .navigation ul.left {
+    margin-right: -15px;
+    padding-right: 15px;
+    border-top-left-radius: 37px;
+    border-bottom-left-radius: 37px;
+    opacity: 0;
+}
+.bottom-nav .navigation ul.right {
+    margin-left: -15px;
+    padding-left: 15px;
+    border-top-right-radius: 37px;
+    border-bottom-right-radius: 37px;
+    opacity: 0;
+}
+.bottom-nav .navigation ul li {
+    flex: 1;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9px;
+}
+.bottom-nav .navigation ul li svg {
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+}
+.bottom-nav .navigation .humberger-btn {
+    background-color: #ffffff;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px 2px #e5d9c89c;
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-nav .navigation .humberger-btn svg {
+    vertical-align: middle;
+}
+.bottom-nav .navigation .humberger-btn svg.expand { display: inline-block; }
+.bottom-nav .navigation .humberger-btn svg.close { display: none; }
+.bottom-nav .navigation.open ul {
+    width: 100%;
+    flex: 1;
+}
+.bottom-nav .navigation.open ul.left { opacity: 1; }
+.bottom-nav .navigation.open ul.right { opacity: 1; }
+.bottom-nav .navigation.open .humberger-btn svg.expand { display: none; }
+.bottom-nav .navigation.open .humberger-btn svg.close { display: inline-block; }
+@media (min-width: 768px) {
+    .bottom-nav { display: none; }
+}
+body.clean-open .bottom-nav {
+    display: block;
+}
+body:not(.clean-ready) .bottom-nav {
+    display: none;
+}
+#nav-tabContent {
+    padding-bottom: 58px;
+}
         </style>
     <link rel="stylesheet" href="./assets/css/local-overrides.css">
   <link rel="stylesheet" href="./assets/css/clean-runtime.css">
@@ -629,7 +710,7 @@ a{
                     <span class="mt-5 mb-5 fw-bold penerima">Tamu Undangan</span>
                     <div class="my-3 text-center">
                         <button type="button" class="border border-1 border-3 btn btn-sm ff-dmsans fw-bold open-invitation text-white mt-3" style="background-color: #977308;border-color: #ffffff!important;font-size:14pt">
-                            <i class="align-middle fas me-1 "></i>
+                            <i class="align-middle fas me-1 ">ï”˜</i>
                             Buka Undangan
                         </button>
                     </div>
@@ -796,13 +877,13 @@ kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami,
                                         </div>
                                                                                 <div class='content-text membesar do-animate'>
                                             <div class='ff-wedding fs-1 mb-4'>Akad</div>
-                                            <h5 class='fw-bold my-0' style="line-height: 1.5;">📅 12 Desember 2021 <br/> 🕐 Pukul 08:00 WIB</h5>
+                                            <h5 class='fw-bold my-0' style="line-height: 1.5;">ðŸ“… 12 Desember 2021 <br/> ðŸ• Pukul 08:00 WIB</h5>
                                             <span class='fw-normal'>Masjid agung bogor</span>
                                         </div>
                                                                                 <br/>
                                                                                 <div class='content-text membesar do-animate'>
                                             <div class='ff-wedding fs-1 mb-4'>Resepsi</div>
-                                            <h5 class='fw-bold my-0' style="line-height: 1.5;">📅 12 Desember 2024 <br/> 🕐 Pukul 10:00 WIB</h5>
+                                            <h5 class='fw-bold my-0' style="line-height: 1.5;">ðŸ“… 12 Desember 2024 <br/> ðŸ• Pukul 10:00 WIB</h5>
                                             <div class='row justify-content-center '>
                                                 <div class='col-md-6'>
                                                     <p class='p-2'>Jl.kusuma bangsa 05 , rawamangun. Kota Depok</p>
@@ -825,7 +906,7 @@ kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami,
                                                                                 <br/>
                                                                                 <div class='content-text membesar do-animate'>
                                             <div class='ff-wedding fs-1 mb-4'>Ngunduh Mantu</div>
-                                            <h5 class='fw-bold my-0' style="line-height: 1.5;">📅15 Desember 2021 <br/> 🕐 Pukul 08:00 WIB</h5>
+                                            <h5 class='fw-bold my-0' style="line-height: 1.5;">ðŸ“…15 Desember 2021 <br/> ðŸ• Pukul 08:00 WIB</h5>
                                             <div class='row justify-content-center '>
                                                 <div class='col-md-6'>
                                                     <p class='p-2'>Jl.kusuma bangsa 05 , rawamangun. Kota Depok</p>
@@ -1296,7 +1377,87 @@ Atas Nama XXXX
                 </div>
             </div>
         </div>
-            	<div class='backsound play'>
+<div class="bottom-nav">
+  <div class="navigation open">
+    <div class="d-flex justify-content-center align-items-center">
+      <ul class="left">
+        <li data-targetid="#nav-cover">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 3L2 12L3 12L3 21L10 21L10 14L14 14L14 21L21 21L21 12L22 12L12 3 z M 12 5.8398438L19 12.005859L19 19L16 19L16 12L8 12L8 19L5 19L5 12.005859L12 5.8398438 z" fill="#A15F9F"/>
+          </svg>
+        </li>
+        <li data-targetid="#nav-perihal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+            <path d="M10.75 5C4.320313 5 0 9.347656 0 15.8125C0 22.984375 5.785156 27.753906 11.375 32.375C14.125 34.648438 16.976563 37.015625 19.1875 39.65625C19.378906 39.882813 19.640625 40 19.9375 40L20.0625 40C20.359375 40 20.621094 39.882813 20.8125 39.65625C21.675781 38.625 22.765625 37.519531 24 36.375C25.398438 38.636719 26.792969 40.972656 27.71875 43.34375C27.824219 43.621094 28.0625 43.8125 28.34375 43.90625L28.4375 43.9375C28.539063 43.972656 28.644531 44 28.75 44C28.929688 44 29.09375 43.941406 29.25 43.84375C31.523438 42.480469 34.195313 41.496094 36.78125 40.53125C42.109375 38.542969 47.609375 36.480469 49.4375 31.125C51.097656 26.261719 48.957031 21.882813 44.09375 20.21875C43.410156 19.984375 42.660156 19.875 41.875 19.875C40.953125 19.875 40.0625 20.039063 39.21875 20.28125C39.75 18.832031 40 17.355469 40 15.8125C40 9.347656 35.679688 5 29.25 5C25.066406 5 21.535156 8.496094 20 10.28125C18.464844 8.496094 14.929688 5 10.75 5 Z M 10.75 7C15.214844 7 19.148438 12.382813 19.1875 12.4375C19.375 12.699219 19.679688 12.875 20 12.875C20.320313 12.875 20.625 12.699219 20.8125 12.4375C20.851563 12.382813 24.78125 7 29.25 7C34.5625 7 38 10.460938 38 15.8125C38 17.742188 37.5 19.566406 36.5 21.375C36.332031 21.460938 36.144531 21.542969 36 21.625C35.242188 19.835938 33.492188 16.597656 30.46875 15.5625C29.40625 15.199219 28.347656 15 27.3125 15C23.71875 15 20.824219 17.21875 19.5625 20.90625C17.914063 25.730469 20.265625 30.234375 22.9375 34.625C21.824219 35.640625 20.839844 36.601563 20 37.53125C17.800781 35.089844 15.195313 32.941406 12.65625 30.84375C7.183594 26.320313 2 22.042969 2 15.8125C2 10.460938 5.433594 7 10.75 7Z" fill="#A15F9F"/>
+          </svg>
+        </li>
+        <li data-targetid="#nav-acara">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M6 1L6 3L5 3C3.9 3 3 3.9 3 5L3 19C3 20.1 3.9 21 5 21L19 21C20.1 21 21 20.1 21 19L21 5C21 3.9 20.1 3 19 3L18 3L18 1L16 1L16 3L8 3L8 1L6 1 z M 5 8L19 8L19 19L5 19L5 8 z M 13 13L13 17L17 17L17 13L13 13 z" fill="#A15F9F"/>
+          </svg>
+        </li>
+      </ul>
+      <div class="humberger-btn text-center">
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+          <path d="M7.9785156 5.9804688 A 2.0002 2.0002 0 0 0 6.5859375 9.4140625L12.171875 15L6.5859375 20.585938 A 2.0002 2.0002 0 1 0 9.4140625 23.414062L15 17.828125L20.585938 23.414062 A 2.0002 2.0002 0 1 0 23.414062 20.585938L17.828125 15L23.414062 9.4140625 A 2.0002 2.0002 0 0 0 21.960938 5.9804688 A 2.0002 2.0002 0 0 0 20.585938 6.5859375L15 12.171875L9.4140625 6.5859375 A 2.0002 2.0002 0 0 0 7.9785156 5.9804688 z" fill="#6BAFC4"/>
+        </svg>
+        <svg class="expand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M3 9C1.34375 9 0 10.34375 0 12C0 13.65625 1.34375 15 3 15C4.65625 15 6 13.65625 6 12C6 10.34375 4.65625 9 3 9 Z M 12 9C10.34375 9 9 10.34375 9 12C9 13.65625 10.34375 15 12 15C13.65625 15 15 13.65625 15 12C15 10.34375 13.65625 9 12 9 Z M 21 9C19.34375 9 18 10.34375 18 12C18 13.65625 19.34375 15 21 15C22.65625 15 24 13.65625 24 12C24 10.34375 22.65625 9 21 9Z" fill="#6BAFC4"/>
+        </svg>
+      </div>
+      <ul class="right">
+        <li data-targetid="#nav-cerita">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 3L2 21L22 21L22 3L2 3 z M 4 5L20 5L20 19L4 19L4 5 z M 7 8L7 10L13 10L13 8L7 8 z M 7 12L7 14L17 14L17 12L7 12 z M 7 16L7 18L11 18L11 16L7 16 z" fill="#A15F9F"/>
+          </svg>
+        </li>
+        <li data-targetid="#nav-galeri">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M5 3C3.897 3 3 3.897 3 5L3 9C3 10.103 3.897 11 5 11L9 11C10.103 11 11 10.103 11 9L11 5C11 3.897 10.103 3 9 3L5 3 z M 15 3C13.897 3 13 3.897 13 5L13 9C13 10.103 13.897 11 15 11L19 11C20.103 11 21 10.103 21 9L21 5C21 3.897 20.103 3 19 3L15 3 z M 6 6L8 6L8 8L6 8L6 6 z M 17 6C17.552 6 18 6.448 18 7C18 7.552 17.552 8 17 8C16.448 8 16 7.552 16 7C16 6.448 16.448 6 17 6 z M 5 13C3.897 13 3 13.897 3 15L3 19C3 20.103 3.897 21 5 21L9 21C10.103 21 11 20.103 11 19L11 15C11 13.897 10.103 13 9 13L5 13 z M 15 13C13.897 13 13 13.897 13 15L13 19C13 20.103 13.897 21 15 21L19 21C20.103 21 21 20.103 21 19L21 15C21 13.897 20.103 13 19 13L15 13 z M 7 16C7.552 16 8 16.448 8 17C8 17.552 7.552 18 7 18C6.448 18 6 17.552 6 17C6 16.448 6.448 16 7 16 z M 16 16L18 16L18 18L16 18L16 16 z" fill="#A15F9F"/>
+          </svg>
+        </li>
+        <li data-targetid="#nav-tamu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path d="M12 3C8.14 3 5 6.141 5 10C5 12.410337 6.2256309 14.541088 8.0859375 15.800781C4.5135649 17.328535 2 20.878337 2 25L4 25C4 20.59 7.59 17 12 17C13.44 17 14.790937 17.380547 15.960938 18.060547C16.370938 17.510547 16.829844 17.000781 17.339844 16.550781C16.886742 16.262444 16.400847 16.021871 15.900391 15.808594C17.767985 14.550033 19 12.415944 19 10C19 6.141 15.86 3 12 3 z M 12 5C14.757 5 17 7.243 17 10C17 12.757 14.757 15 12 15C9.243 15 7 12.757 7 10C7 7.243 9.243 5 12 5 z M 24 16C19.6 16 16 19.6 16 24C16 28.4 19.6 32 24 32C28.4 32 32 28.4 32 24C32 19.6 28.4 16 24 16 z M 24 18C27.3 18 30 20.7 30 24C30 27.3 27.3 30 24 30C20.7 30 18 27.3 18 24C18 20.7 20.7 18 24 18 z M 27 21.300781L23.699219 24.599609L21.400391 22.300781L20 23.699219L23.699219 27.400391L28.400391 22.699219L27 21.300781 z" fill="#A15F9F"/>
+          </svg>
+        </li>
+        <li data-targetid="#nav-lainnya">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20 6L16 6L16 2L8 2L8 6L4 6C2.9 6 2 6.9 2 8L2 10C2 11.1 2.9 12 4 12L4 20C4 21.1 4.9 22 6 22L18 22C19.1 22 20 21.1 20 20L20 12C21.1 12 22 11.1 22 10L22 8C22 6.9 21.1 6 20 6 z M 10 4L14 4L14 6L10 6L10 4 z M 6 12L18 12L18 20L6 20L6 12 z M 4 8L20 8L20 10L4 10L4 8 z M 9 13L9 17L15 17L15 13L9 13 z" fill="#A15F9F"/>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  function setupBottomNav(){
+    document.querySelectorAll('.bottom-nav li[data-targetid]').forEach(function(item){
+      item.addEventListener('click', function(e){
+        e.stopPropagation();
+        var target = document.querySelector(this.getAttribute('data-targetid'));
+        if (target) {
+          var top = target.getBoundingClientRect().top + window.scrollY;
+          if (window.jQuery) {
+            jQuery('html, body').stop(true).animate({scrollTop: top}, 800);
+          } else {
+            window.scrollTo({top: top, behavior: 'smooth'});
+          }
+        }
+      });
+    });
+    var humberger = document.querySelector('.bottom-nav .humberger-btn');
+    if (humberger) {
+      humberger.addEventListener('click', function(){
+        document.querySelector('.bottom-nav .navigation')?.classList.toggle('open');
+      });
+    }
+  }
+  setupBottomNav();
+});
+</script>
+             	<div class='backsound play'>
     	    <svg xmlns="http://www.w3.org/2000/svg" class='iconplay' viewBox="0 0 128 128">
               <path d="M33.900391 24C32.300391 24 31 25.4 31 27L31 58.199219C31 58.999219 30.2 59.4 29.5 59C26.8 57.4 23.499609 56.699609 20.099609 57.099609C13.199609 57.999609 7.7996094 63.600391 7.0996094 70.400391C6.0996094 79.800391 13.799609 87.6 23.099609 87C30.999609 86.4 37 79.499609 37 71.599609L37 30.5C40.5 31.7 43 35.000391 43 38.900391C43 40.100391 43.700391 41.299219 44.900391 41.699219C47.000391 42.599219 49 41 49 39C49 30.7 42.200391 23.9 33.900391 24 z M 108.68359 36.244141C107.85547 36.262891 107.02422 36.35 106.19922 36.5L76.5 42.400391C70.4 43.700391 66 48.999219 66 55.199219L66 88.199219C66 88.999219 65.2 89.4 64.5 89C61.8 87.4 58.499609 86.699609 55.099609 87.099609C48.299609 87.999609 42.799609 93.500391 42.099609 100.40039C41.099609 109.80039 48.799609 117.6 58.099609 117C65.999609 116.4 72 109.59922 72 101.69922L72 69.5L116 60.699219L116 78.199219C116 78.999219 115.2 79.4 114.5 79C111.8 77.4 108.49961 76.699609 105.09961 77.099609C98.299609 77.999609 92.799609 83.500391 92.099609 90.400391C91.099609 99.800391 98.799609 107.6 108.09961 107C115.99961 106.4 122 99.599219 122 91.699219L122 49.199219C122 44.699219 119.70078 40.499609 115.80078 38.099609C113.62578 36.749609 111.16797 36.187891 108.68359 36.244141 z M 109.16797 42.167969C110.71953 42.205469 112.20039 42.750781 113.40039 43.800781C115.00039 45.100781 116 47.099219 116 49.199219L116 54.5L72 63.300781L72 55.199219C72 51.899219 74.399609 49.000781 77.599609 48.300781L107.59961 42.300781C108.12461 42.200781 108.65078 42.155469 109.16797 42.167969 z M 22 63C27 63 31 67 31 72C31 77 27 81 22 81C17 81 13 77 13 72C13 67 17 63 22 63 z M 107 83C112 83 116 87 116 92C116 97 112 101 107 101C102 101 98 97 98 92C98 87 102 83 107 83 z M 57 93C62 93 66 97 66 102C66 107 62 111 57 111C52 111 48 107 48 102C48 97 52 93 57 93 z" fill="#A15F9F" />
             </svg>
@@ -1345,7 +1506,7 @@ Atas Nama XXXX
               <div class="modal-dialog modal-fullscreen rounded">
                 <div class="modal-content rounded bg-white">
                   <div class="modal-header bg-white">
-                    <h5 class="modal-title" id="exampleModalLabel">😍 Stickers</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">ðŸ˜ Stickers</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body bg-white">
@@ -1353,245 +1514,245 @@ Atas Nama XXXX
                                                                                                                                                                                                 <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="envelope-love.webp" src="./assets/images/030-envelope-love.webp" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="envelope-love.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/030-envelope-love.webp" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker001.gif" src="./assets/images/027-sticker001.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker001.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/027-sticker001.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker0013.gif" src="./assets/images/031-sticker0013.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker0013.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/031-sticker0013.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker002.gif" src="./assets/images/032-sticker002.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker002.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/032-sticker002.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker003.gif" src="./assets/images/033-sticker003.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker003.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/033-sticker003.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker004.gif" src="./assets/images/034-sticker004.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker004.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/034-sticker004.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker005.png" src="./assets/images/035-sticker005.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker005.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/035-sticker005.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker006.png" src="./assets/images/036-sticker006.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker006.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/036-sticker006.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker007.gif" src="./assets/images/037-sticker007.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker007.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/037-sticker007.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker008.gif" src="./assets/images/038-sticker008.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker008.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/038-sticker008.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker009.gif" src="./assets/images/039-sticker009.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker009.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/039-sticker009.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker010.png" src="./assets/images/040-sticker010.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker010.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/040-sticker010.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker011.jpg" src="./assets/images/041-sticker011.jpg" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker011.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/041-sticker011.jpg" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker012.gif" src="./assets/images/042-sticker012.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker012.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/042-sticker012.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker014.gif" src="./assets/images/043-sticker014.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker014.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/043-sticker014.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker015.gif" src="./assets/images/044-sticker015.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker015.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/044-sticker015.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker016.gif" src="./assets/images/045-sticker016.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker016.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/045-sticker016.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker017.gif" src="./assets/images/046-sticker017.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker017.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/046-sticker017.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker018.gif" src="./assets/images/047-sticker018.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker018.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/047-sticker018.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker019.gif" src="./assets/images/048-sticker019.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker019.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/048-sticker019.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker020.gif" src="./assets/images/049-sticker020.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker020.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/049-sticker020.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker021.gif" src="./assets/images/050-sticker021.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker021.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/050-sticker021.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker022.png" src="./assets/images/051-sticker022.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker022.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/051-sticker022.png" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker023.gif" src="./assets/images/052-sticker023.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker023.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/052-sticker023.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker024.gif" src="./assets/images/053-sticker024.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker024.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/053-sticker024.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker025.gif" src="./assets/images/054-sticker025.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker025.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/054-sticker025.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker026.gif" src="./assets/images/055-sticker026.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker026.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/055-sticker026.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker027.gif" src="./assets/images/056-sticker027.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker027.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/056-sticker027.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker028.gif" src="./assets/images/057-sticker028.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker028.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/057-sticker028.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker029.gif" src="./assets/images/058-sticker029.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker029.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/058-sticker029.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker030.gif" src="./assets/images/059-sticker030.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker030.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/059-sticker030.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker031.gif" src="./assets/images/060-sticker031.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker031.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/060-sticker031.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker032.gif" src="./assets/images/061-sticker032.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker032.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/061-sticker032.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker033.gif" src="./assets/images/062-sticker033.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker033.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/062-sticker033.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>
                                                                                                                                                             <div class="col-xl-3 col-md-4 col-sm-6 col-6 my-1">
                                     <div class="card mx-1 shadow border-0 card-sticker" style="height:100%;border-radius:17px" >
                                         <div class="card-body text-center">
-                                            <img data-bs-dismiss="modal" data-img="sticker034.gif" src="./assets/images/063-sticker034.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
+                                            <img data-bs-dismiss="modal" data-img="sticker034.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="./assets/images/063-sticker034.gif" class="ornamen lazyload" loading="lazy" style="max-width:99%;border-radius:17px"/>
                                         </div>
                                     </div>
                                 </div>

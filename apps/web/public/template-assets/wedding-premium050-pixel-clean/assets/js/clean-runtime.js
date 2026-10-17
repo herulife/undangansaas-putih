@@ -2,10 +2,11 @@
   "use strict";
 
   const weddingDate = new Date("2026-06-02T08:00:00+07:00").getTime();
-  const autoStep = 333;
-  const autoDelay = 2000;
-  const autoDuration = 999;
+  const autoStep = 200;
+  const autoDelay = 2800;
+  const autoDuration = 1200;
   const galleryImages = [];
+  const emptyPixel = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
@@ -41,7 +42,7 @@
 
   const getAudio = () => {
     if (!audio) {
-      audio = new Audio("./assets/audio/background-music.mp3");
+      audio = new Audio("./assets/audio/islamic-wedding-backsound.m4a");
       audio.loop = true;
       audio.preload = "none";
       window.audio = audio;
@@ -94,6 +95,22 @@
       const top = node.getBoundingClientRect().top + window.scrollY;
       node.classList.toggle("animate", triggerY > top);
     });
+    updateBottomNav();
+  };
+
+  const updateBottomNav = () => {
+    const links = $$(".bottom-nav li[data-targetid]");
+    if (!links.length) return;
+    const scrollCenter = window.scrollY + window.innerHeight / 3;
+    let active = links[0];
+    links.forEach((link) => {
+      const target = $(link.getAttribute("data-targetid"));
+      if (target) {
+        const top = target.getBoundingClientRect().top + window.scrollY;
+        if (scrollCenter >= top) active = link;
+      }
+    });
+    links.forEach((link) => link.classList.toggle("active", link === active));
   };
 
   const scheduleScrollAnimations = () => {
@@ -285,6 +302,40 @@
     });
   };
 
+  const loadDeferredImages = (root = document) => {
+    $$("img[data-src]", root).forEach((image) => {
+      const source = image.dataset.src;
+      if (!source || image.getAttribute("src") === source) return;
+      image.setAttribute("src", source);
+      image.removeAttribute("data-src");
+    });
+  };
+
+  const setupStickerPicker = () => {
+    const modal = $("#stickersModal");
+    const input = $("#input-sticker");
+    const preview = $("#preview-sticker");
+    const openButton = $('[data-bs-target="#stickersModal"]');
+    const ensureStickerImages = () => loadDeferredImages(modal || document);
+
+    openButton?.addEventListener("click", () => {
+      window.setTimeout(ensureStickerImages, 120);
+    });
+    modal?.addEventListener("show.bs.modal", ensureStickerImages);
+
+    $$(".card-sticker img").forEach((image) => {
+      image.addEventListener("click", () => {
+        const fileName = image.dataset.img || "";
+        const source = image.dataset.src || image.getAttribute("src") || emptyPixel;
+        if (input) input.value = fileName;
+        if (preview && source !== emptyPixel) {
+          preview.setAttribute("src", source);
+          preview.classList.remove("d-none");
+        }
+      });
+    });
+  };
+
   const setupInitialState = () => {
     document.body.classList.add("clean-ready", "modal-open");
     document.body.style.overflow = "hidden";
@@ -303,6 +354,7 @@
     setupNavigation();
     setupForms();
     setupGallery();
+    setupStickerPicker();
     setupBackgroundSlider();
     updateCountdown();
     window.setInterval(updateCountdown, 1000);

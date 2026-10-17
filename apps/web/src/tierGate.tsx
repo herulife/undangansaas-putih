@@ -2,7 +2,7 @@
 import { createContext, type ReactNode, useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { z } from 'zod'
 
-const cacheKey = 'cintabuku:tier-gate:v1'
+const cacheKey = 'linkundang:tier-gate:v1'
 const cacheTtlMs = 5 * 60 * 1000
 const apiBase = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? 'http://localhost:8088' : '')
 
@@ -219,7 +219,7 @@ export function TierExpiryBanner() {
   const gate = useTierGate()
   const [nowMs, setNowMs] = useState(() => Date.now())
   const [dismissedKeys, setDismissedKeys] = useState(() => readDismissedTierBannerKeys())
-  const storageKey = `cintabuku:tier-banner:${gate.tierData.tier}:${gate.tierData.tierExpiresAt ?? 'none'}`
+              const storageKey = `linkundang:tier-banner:${gate.tierData.tier}:${gate.tierData.tierExpiresAt ?? 'none'}`
 
   useEffect(() => {
     const interval = window.setInterval(() => setNowMs(Date.now()), 60_000)
@@ -278,7 +278,7 @@ export function TierExpiryBanner() {
 
 function readDismissedTierBannerKeys() {
   try {
-    const raw = window.sessionStorage.getItem('cintabuku:tier-banner-dismissed')
+    const raw = window.sessionStorage.getItem('linkundang:tier-banner-dismissed')
     const parsed = z.array(z.string()).safeParse(raw ? JSON.parse(raw) : [])
     return parsed.success ? parsed.data : []
   } catch {
@@ -288,7 +288,7 @@ function readDismissedTierBannerKeys() {
 
 function writeDismissedTierBannerKeys(keys: string[]) {
   try {
-    window.sessionStorage.setItem('cintabuku:tier-banner-dismissed', JSON.stringify(keys.slice(-20)))
+    window.sessionStorage.setItem('linkundang:tier-banner-dismissed', JSON.stringify(keys.slice(-20)))
   } catch {
     // Session storage can be unavailable in private contexts.
   }
@@ -309,7 +309,7 @@ export function TierWatermark({
 
   return (
     <a className={className} href="/">
-      Dibuat dengan CintaBuku
+      Dibuat dengan LinkUndang
     </a>
   )
 }

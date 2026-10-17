@@ -1,0 +1,21 @@
+/* --- Features --- */
+.ii-feature-section {
+  background: linear-gradient(180deg, #ffffff, #f6f7fb);
+}
+
+.ii-feature-grid article > span {
+  background: linear-gradient(135deg, #4f46e5, #22d3ee);
+  border-radius: 12px;
+}
+
+.ii-feature-grid h3 {
+  color: #0b0e16;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.ii-feature-grid p,
+.ii-price-grid p {
+  color: #5a6172;
+  line-height: 1.65;
+}

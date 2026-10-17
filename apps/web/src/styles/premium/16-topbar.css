@@ -1,0 +1,32 @@
+/* --- Topbar --- */
+.saas-topbar {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid #e8eaf1;
+}
+
+.saas-topbar span {
+  color: #4f46e5;
+  letter-spacing: 0.14em;
+}
+
+.saas-topbar h1 {
+  font-family: "LinkUndang Inter", ui-sans-serif, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.topbar-actions a {
+  border: 1px solid #e4e7ee;
+  border-radius: 999px;
+  color: #0b0e16;
+  font-weight: 700;
+}
+
+.topbar-actions .topbar-primary {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  border: 0;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
+}

@@ -29,6 +29,8 @@ export type InvitationRenderData = {
   openingText: string
   closingText: string
   backsoundUrl: string
+  guestName?: string
+  countdownTarget?: string
 }
 
 export const templateRegistry: TemplateRegistryItem[] = [
@@ -120,7 +122,174 @@ export const templateRegistry: TemplateRegistryItem[] = [
     thumbnail: '/template-assets/adat-minang-050-klasik-zahra-fadli/assets/images/hero-couple.webp',
     notes: 'Style-adapted variant dari DNA template 050 original: identitas Minang klasik, songket, suntiang, rumah gadang, merah marun-hitam-emas, motion-rich reveal, audio placeholder Minang, auto-scroll, tombol Top/Read/Musik, dan Google Maps aktif.',
   },
+  {
+    id: 'template-floral-elegant',
+    code: 'WEDDING-FLORAL-050',
+    name: 'Premium 050 - Floral Elegant',
+    category: 'wedding',
+    plan: 'premium',
+    publicPath: '/template-assets/wedding-premium050-floral-elegant',
+    sourcePath: '/home/ubuntu24/undangansaas/template/wedding-premium050-floral-elegant',
+    thumbnail: '/template-assets/wedding-premium050-floral-elegant/assets/images/002-4.webp',
+    notes: 'Template wedding floral elegant dengan warna pink dan ornamen bunga.',
+  },
+  {
+    id: 'template-pixel-clean',
+    code: 'WEDDING-PREMIUM050',
+    name: 'Premium 050 - Pixel Clean',
+    category: 'wedding',
+    plan: 'premium',
+    publicPath: '/template-assets/wedding-premium050-pixel-clean',
+    sourcePath: 'D:/UNDANGAN/template/wedding-premium050-pixel-clean',
+    thumbnail: '/template-assets/wedding-premium050-pixel-clean/assets/images/002-4.webp',
+    notes: 'Template wedding premium 050 pixel clean, dasar visual untuk varian adat.',
+  },
 ]
+
+type TemplateTokens = {
+  coupleDemo: string
+  groomDemo: string
+  brideDemo: string
+  dateDemo?: string
+  venueDemo?: string
+}
+
+const templateTokens: Record<string, TemplateTokens> = {
+  'template-042': {
+    coupleDemo: 'Hamzah & Anissa',
+    groomDemo: 'Hamzah',
+    brideDemo: 'Anissa',
+    dateDemo: '31 Mei 2026',
+    venueDemo: 'Masjid agung bogor',
+  },
+  'template-074': {
+    coupleDemo: 'Alika & Herman',
+    groomDemo: 'Herman',
+    brideDemo: 'Alika',
+    dateDemo: '31 Mei 2026',
+    venueDemo: 'Masjid agung bogor',
+  },
+  'template-adat-jawa': {
+    coupleDemo: 'Alyssa & Rayhan',
+    groomDemo: 'Rayhan',
+    brideDemo: 'Alyssa',
+    venueDemo: 'Gedung Juang',
+  },
+  'template-adat-jawa-lottie': {
+    coupleDemo: 'Alyssa & Rayhan',
+    groomDemo: 'Rayhan',
+    brideDemo: 'Alyssa',
+    venueDemo: 'Gedung Juang',
+  },
+  'template-adat-jawa-050-klasik': {
+    coupleDemo: 'Alyssa & Rayhan',
+    groomDemo: 'Rayhan',
+    brideDemo: 'Alyssa',
+    dateDemo: '6 Juni 2026',
+    venueDemo: 'Gedung Juang',
+  },
+  'template-adat-sunda-050-style': {
+    coupleDemo: 'Raras & Danis',
+    groomDemo: 'Danis',
+    brideDemo: 'Raras',
+    dateDemo: '16 Agustus 2026',
+    venueDemo: 'Gedung Pusdai Jawa Barat',
+  },
+  'template-adat-sunda-050-pro': {
+    coupleDemo: 'Raras & Danis',
+    groomDemo: 'Danis',
+    brideDemo: 'Raras',
+    dateDemo: '16 Agustus 2026',
+    venueDemo: 'Gedung Pusdai Jawa Barat',
+  },
+  'template-adat-minang-050-klasik': {
+    coupleDemo: 'Zahra & Fadli',
+    groomDemo: 'Fadli',
+    brideDemo: 'Zahra',
+    dateDemo: '20 Juni 2026',
+    venueDemo: 'Masjid Raya Sumatera Barat',
+  },
+  'template-floral-elegant': {
+    coupleDemo: 'Hamzah & Anissa',
+    groomDemo: 'Hamzah',
+    brideDemo: 'Anissa',
+    dateDemo: '31 Mei 2026',
+    venueDemo: 'Masjid agung bogor',
+  },
+  'template-pixel-clean': {
+    coupleDemo: 'Hamzah & Anissa',
+    groomDemo: 'Hamzah',
+    brideDemo: 'Anissa',
+    dateDemo: '31 Mei 2026',
+    venueDemo: 'Masjid agung bogor',
+  },
+}
+
+type CountdownConfig = {
+  scripts: string[]
+  patterns: RegExp[]
+}
+
+const isoDatePattern = /new Date\("20\d\d-\d\d-\d\dT[^"]+"\)/g
+
+const templateCountdown: Record<string, CountdownConfig> = {
+  'template-042': {
+    scripts: [],
+    patterns: [/new Date\('May 31, 2026 08:00:00'\)/g],
+  },
+  'template-074': {
+    scripts: [],
+    patterns: [/new Date\('May 31 , 2026 03:31:26'\)/g],
+  },
+  'template-adat-jawa-050-klasik': {
+    scripts: ['./assets/js/main.js'],
+    patterns: [isoDatePattern],
+  },
+  'template-adat-minang-050-klasik': {
+    scripts: ['./assets/js/main.js'],
+    patterns: [isoDatePattern],
+  },
+  'template-adat-sunda-050-pro': {
+    scripts: ['./assets/js/main.js'],
+    patterns: [isoDatePattern],
+  },
+  'template-adat-sunda-050-style': {
+    scripts: ['./assets/js/clean-runtime.js'],
+    patterns: [isoDatePattern],
+  },
+  'template-floral-elegant': {
+    scripts: ['./assets/js/clean-runtime.js'],
+    patterns: [isoDatePattern],
+  },
+  'template-pixel-clean': {
+    scripts: ['./assets/js/clean-runtime.js'],
+    patterns: [isoDatePattern],
+  },
+}
+
+const dbSlugToTemplateId: Record<string, string> = {
+  'adat-jawa': 'template-adat-jawa',
+  'adat-jawa-lottie': 'template-adat-jawa-lottie',
+  'premium-042': 'template-042',
+  'premium-074': 'template-074',
+  'wedding-premium050-pixel-clean': 'template-pixel-clean',
+  'adat-jawa-050-klasik': 'template-adat-jawa-050-klasik',
+  'adat-sunda-050-pro': 'template-adat-sunda-050-pro',
+  'adat-sunda-050-style': 'template-adat-sunda-050-style',
+  'adat-minang-050-klasik': 'template-adat-minang-050-klasik',
+  'wedding-premium050-floral-elegant': 'template-floral-elegant',
+}
+
+export function getTemplateForInvitationSlug(slug?: string | null) {
+  if (!slug) {
+    return null
+  }
+  const templateId = dbSlugToTemplateId[slug]
+  if (!templateId) {
+    return null
+  }
+  return templateRegistry.find((template) => template.id === templateId) ?? null
+}
 
 export const sampleInvitationData: InvitationRenderData = {
   slug: 'alika-herman',
@@ -141,6 +310,7 @@ export const sampleInvitationData: InvitationRenderData = {
   closingText:
     'Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.',
   backsoundUrl: '/template-assets/wedding-premium042-wayang-batik/assets/audio/islamic-wedding-backsound.m4a',
+  countdownTarget: '2026-05-31T08:00:00+07:00',
 }
 
 export function getTemplateById(id: string) {
@@ -155,17 +325,78 @@ export async function loadTemplateHtml(template: TemplateRegistryItem) {
   return response.text()
 }
 
+async function inlineScripts(html: string, template: TemplateRegistryItem, scripts: string[]) {
+  let out = html
+  const inlined: string[] = []
+  for (const script of scripts) {
+    const path = script.replace(/^\.?\//, '')
+    const response = await fetch(`${template.publicPath}/${path}`)
+    if (!response.ok) {
+      continue
+    }
+    const code = await response.text()
+    const tag = new RegExp(
+      `<script\\b[^>]*src=["']${escapeRegExp(script)}["'][^>]*>\\s*<\\/script>`,
+      'i',
+    )
+    out = out.replace(tag, '')
+    inlined.push(`<script>\n${code}\n</scr${'ipt>'}`)
+  }
+  if (inlined.length > 0) {
+    out = out.replace(/<\/body>/i, `${inlined.join('\n')}\n</body>`)
+  }
+  return out
+}
+
+export async function renderInvitationTemplateHtml(
+  template: TemplateRegistryItem,
+  data: InvitationRenderData,
+) {
+  const html = await loadTemplateHtml(template)
+  const countdown = templateCountdown[template.id]
+  const prepared = countdown && countdown.scripts.length > 0
+    ? await inlineScripts(html, template, countdown.scripts)
+    : html
+  return renderTemplateHtml(prepared, template, data)
+}
+
 export function renderTemplateHtml(
   html: string,
   template: TemplateRegistryItem,
   data: InvitationRenderData,
 ) {
   let rendered = html
-  const replacements: Array<[RegExp, string]> = [
+  const replacements: Array<[RegExp, string]> = []
+  const tokens = templateTokens[template.id]
+
+  if (tokens) {
+    const couple = escapeHtml(data.coupleDisplayName)
+    replacements.push([new RegExp(escapeRegExp(escapeHtml(tokens.coupleDemo)), 'g'), couple])
+    replacements.push([new RegExp(escapeRegExp(tokens.coupleDemo), 'g'), couple])
+    if (data.groomName) {
+      replacements.push([
+        new RegExp(escapeRegExp(tokens.groomDemo), 'g'),
+        escapeHtml(data.groomName),
+      ])
+    }
+    if (data.brideName) {
+      replacements.push([
+        new RegExp(escapeRegExp(tokens.brideDemo), 'g'),
+        escapeHtml(data.brideName),
+      ])
+    }
+    if (tokens.dateDemo && data.eventDateText) {
+      replacements.push([new RegExp(escapeRegExp(tokens.dateDemo), 'g'), escapeHtml(data.eventDateText)])
+    }
+    if (tokens.venueDemo && data.venueName) {
+      replacements.push([new RegExp(escapeRegExp(tokens.venueDemo), 'g'), escapeHtml(data.venueName)])
+    }
+    rendered = rendered.replace(/\(DEMO TEMPLATE [^)]*\)\s*/g, '')
+  }
+
+  const legacyReplacements: Array<[RegExp, string]> = [
     [/The Wedding Of Alika &amp; Herman/g, escapeHtml(data.title)],
     [/The Wedding Of Alika & Herman/g, escapeHtml(data.title)],
-    [/\(DEMO TEMPLATE WEDDING-PREMIUM042\) Hamzah &amp; Anissa/g, escapeHtml(data.title)],
-    [/\(DEMO TEMPLATE WEDDING-PREMIUM042\) Hamzah & Anissa/g, escapeHtml(data.title)],
     [/Hamzah &amp; Anissa/g, escapeHtml(data.coupleDisplayName)],
     [/Hamzah & Anissa/g, escapeHtml(data.coupleDisplayName)],
     [/Alika/g, escapeHtml(data.brideName)],
@@ -182,8 +413,17 @@ export function renderTemplateHtml(
     [/Alamat lengkap lokasi acara/g, escapeHtml(data.venueAddress)],
   ]
 
-  for (const [pattern, value] of replacements) {
+  const activeReplacements = tokens ? replacements : legacyReplacements
+
+  for (const [pattern, value] of activeReplacements) {
     rendered = rendered.replace(pattern, value)
+  }
+
+  const countdown = templateCountdown[template.id]
+  if (countdown && data.countdownTarget) {
+    for (const pattern of countdown.patterns) {
+      rendered = rendered.replace(pattern, `new Date("${data.countdownTarget}")`)
+    }
   }
 
   rendered = rendered.replace(
@@ -204,10 +444,27 @@ export function renderTemplateHtml(
   )
   rendered = rendered.replace(
     /<head>/i,
-    `<head><base href="${template.publicPath}/"><script>window.__INVITATION_DATA__=${JSON.stringify(data)};</script>`,
+    `<head><base href="${template.publicPath}/"><script>window.__INVITATION_DATA__=${safeJson(data)};</script>${guestShim(data.guestName)}`,
   )
 
   return rendered
+}
+
+function guestShim(guestName?: string) {
+  const guest = guestName?.trim() || ''
+  if (!guest) {
+    return ''
+  }
+  const encoded = JSON.stringify(guest)
+  return `<script>(function(){try{var g=${encoded};var N=window.URLSearchParams;window.URLSearchParams=function(i){if(i==null||i===''||(typeof i==='string'&&i.indexOf('to=')===-1)){var p=new N(i);if(!p.has('to')){p.append('to',g);}return p;}return new N(i);};window.URLSearchParams.prototype=N.prototype;}catch(e){}})();</scr${'ipt>'}`
+}
+
+function safeJson(value: unknown) {
+  return JSON.stringify(value).replaceAll('<', '\\u003c')
+}
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 }
 
 function escapeHtml(value: string) {

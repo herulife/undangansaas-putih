@@ -1,6 +1,6 @@
 const API_BASE = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? "http://127.0.0.1:8088" : "");
-const TOKEN_KEY = "cintabuku.authToken";
-const USER_KEY = "cintabuku.authUser";
+const TOKEN_KEY = "linkundang.authToken";
+const USER_KEY = "linkundang.authUser";
 
 export type ApiInvitation = {
   id: string;

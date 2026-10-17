@@ -1,0 +1,51 @@
+/* --- Pricing --- */
+.ii-pricing {
+  background: #0b0e16;
+  padding: 72px 5vw;
+}
+
+.ii-pricing .ii-heading small {
+  color: #c9a227;
+}
+
+.ii-pricing .ii-heading h2 {
+  color: #ffffff;
+}
+
+.ii-pricing .ii-heading p {
+  color: #9aa1b5;
+}
+
+.ii-price-grid article {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: none;
+  color: #f4f5f7;
+}
+
+.ii-price-grid article.featured {
+  border: 1.5px solid #c9a227;
+  background: linear-gradient(180deg, rgba(201, 162, 39, 0.09), rgba(255, 255, 255, 0.04));
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
+}
+
+.ii-price-grid small {
+  color: #c9a227;
+}
+
+.ii-price-grid strong {
+  color: #ffffff;
+}
+
+.ii-price-grid a {
+  background: linear-gradient(135deg, #c9a227, #d9b344);
+  border-radius: 999px;
+  color: #0b0e16;
+  font-weight: 900;
+}
+
+.ii-price-grid article.featured a {
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: #ffffff;
+}

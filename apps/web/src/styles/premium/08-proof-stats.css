@@ -1,0 +1,26 @@
+/* --- Proof / stats --- */
+.ii-proof {
+  background: linear-gradient(180deg, #ffffff, #f7f8fb);
+}
+
+.ii-proof article,
+.ii-feature-grid article,
+.ii-price-grid article {
+  background: #ffffff;
+  border: 1px solid #e8eaf1;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(11, 14, 22, 0.06);
+}
+
+.ii-proof strong {
+  background: linear-gradient(90deg, #4f46e5, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.ii-proof span {
+  color: #5a6172;
+}

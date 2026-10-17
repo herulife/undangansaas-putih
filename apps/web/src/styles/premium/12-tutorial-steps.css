@@ -1,0 +1,57 @@
+/* --- Tutorial / steps --- */
+.ii-tutorial {
+  background: linear-gradient(180deg, #ffffff, #f6f7fb);
+  padding: 72px 5vw;
+}
+
+.ii-steps {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.ii-steps article {
+  background: #ffffff;
+  border: 1px solid #e8eaf1;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(11, 14, 22, 0.06);
+  padding: 28px;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ii-steps article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 44px rgba(79, 70, 229, 0.12);
+}
+
+.ii-steps article > span {
+  align-items: center;
+  background: linear-gradient(135deg, #4f46e5, #22d3ee);
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.3);
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 15px;
+  font-weight: 900;
+  height: 52px;
+  justify-content: center;
+  width: 52px;
+}
+
+.ii-steps h3 {
+  color: #0b0e16;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 16px 0 8px;
+}
+
+.ii-steps p {
+  color: #5a6172;
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0;
+}

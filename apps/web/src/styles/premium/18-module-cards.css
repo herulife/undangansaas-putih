@@ -1,0 +1,8 @@
+/* --- Module cards --- */
+.module-card,
+.template-mini-card {
+  background: #ffffff;
+  border: 1px solid #e8eaf1;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(11, 14, 22, 0.05);
+}

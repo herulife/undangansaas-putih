@@ -1,0 +1,17 @@
+/* --- Heading section --- */
+.ii-heading small {
+  color: #4f46e5;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+}
+
+.ii-heading h2 {
+  color: #0b0e16;
+  letter-spacing: -0.03em;
+  font-weight: 900;
+  line-height: 1.08;
+}
+
+.ii-heading p {
+  color: #5a6172;
+}

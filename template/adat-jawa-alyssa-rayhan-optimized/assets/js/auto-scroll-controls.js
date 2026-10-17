@@ -1,5 +1,5 @@
 (() => {
-  const sectionPauseMs = 1900;
+  const sectionPauseMs = 3000;
   const openAutoStartDelayMs = 350;
   const minSectionGap = 120;
 
@@ -237,7 +237,7 @@
       return;
     }
 
-    const duration = clamp(Math.abs(distance) * 4.8, 720, 2200);
+    const duration = clamp(Math.abs(distance) * 7, 720, 3000);
     let startTime = 0;
 
     function scrollFrame(timestamp) {

@@ -1,0 +1,64 @@
+/* --- Payment methods --- */
+.ii-payment {
+  background: #0b0e16;
+  padding: 72px 5vw;
+}
+
+.ii-payment .ii-heading small {
+  color: #c9a227;
+}
+
+.ii-payment .ii-heading h2 {
+  color: #ffffff;
+}
+
+.ii-payment .ii-heading p {
+  color: #9aa1b5;
+}
+
+.ii-pay-methods {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.ii-pay-methods article {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  color: #f4f5f7;
+  padding: 26px;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.ii-pay-methods article:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 162, 39, 0.5);
+}
+
+.ii-pay-methods article > span {
+  background: linear-gradient(135deg, #c9a227, #d9b344);
+  border-radius: 14px;
+  display: inline-block;
+  height: 54px;
+  margin-bottom: 16px;
+  width: 54px;
+}
+
+.ii-pay-methods strong {
+  color: #ffffff;
+  display: block;
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.ii-pay-methods p {
+  color: #9aa1b5;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}

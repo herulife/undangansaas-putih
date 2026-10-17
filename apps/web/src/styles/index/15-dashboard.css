@@ -1,0 +1,523 @@
+/* index.css part 15/22 (asli baris 7542-8063) - dashboard */
+.upgrade-banner {
+  background:
+    linear-gradient(135deg, rgba(255, 136, 0, 0.14), transparent 50%),
+    #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.upgrade-banner span {
+  background: #ffecb7;
+  border-radius: 999px;
+  color: #9a4d00;
+}
+
+.module-card.span-2 {
+  background:
+    linear-gradient(135deg, rgba(46, 183, 236, 0.12), transparent 56%),
+    #ffffff;
+}
+
+.builder-flow-list span {
+  background: #e9f8ff;
+  border: 1px solid #bde8f8;
+  border-radius: 8px;
+  color: #075985;
+}
+
+.template-mini-card {
+  text-align: center;
+}
+
+.template-mini-card a {
+  background: #2eb7ec;
+  border-radius: 6px;
+  color: #ffffff;
+  display: inline-flex;
+  font-weight: 900;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 9px 14px;
+}
+
+.wa-dashboard {
+  grid-template-columns: 292px minmax(0, 1fr);
+}
+
+.wa-toast {
+  background: #ffffff;
+  border: 1px solid #d9e6ef;
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(14, 51, 70, 0.16);
+}
+
+.wa-stat-note.good,
+.wa-table em.paid {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.wa-stat-note.danger,
+.wa-table em.pending {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.wa-stat-note.neutral {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+@media (max-width: 980px) {
+  .nav.page-shell {
+    height: auto;
+    min-height: 64px;
+    padding: 10px 16px;
+  }
+
+  .brand {
+    font-size: 15px;
+  }
+
+  .brand::before {
+    height: 24px;
+    width: 30px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .section-heading h1,
+  .builder-preview-heading h1,
+  .saas-topbar h1,
+  .lu-welcome-panel h1,
+  .lu-hero-panel h1 {
+    font-size: 32px;
+  }
+
+  .page-section,
+  .builder-preview-shell {
+    padding-bottom: 42px;
+    padding-top: 42px;
+  }
+
+  .template-grid,
+  .module-grid,
+  .builder-layout,
+  .saas-dashboard,
+  .wa-dashboard,
+  .lu-mockup {
+    grid-template-columns: 1fr;
+  }
+
+  .lu-sidebar,
+  .saas-sidebar,
+  .wa-sidebar {
+    border-right: 0;
+    min-height: auto;
+    position: static;
+  }
+
+  .lu-main,
+  .saas-main,
+  .wa-shell {
+    padding: 14px;
+  }
+
+  .lu-topbar,
+  .saas-topbar,
+  .wa-topbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .template-grid,
+  .lu-template-row,
+  .lu-invitation-grid,
+  .metric-grid,
+  .module-grid,
+  .wa-stat-grid,
+  .wa-bento-grid,
+  .lu-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .template-art {
+    height: 220px;
+  }
+
+  .builder-frame-shell,
+  .lu-phone-frame {
+    border-radius: 34px;
+  }
+}
+
+/* Warm premium palette: emerald, sage, champagne, and charcoal. */
+:root {
+  --ui-ink: #24342d;
+  --ui-muted: #647368;
+  --ui-forest: #244c36;
+  --ui-forest-dark: #183526;
+  --ui-emerald: #1f7a58;
+  --ui-sage: #7f9578;
+  --ui-mint: #dcecdf;
+  --ui-gold: #d5a34b;
+  --ui-gold-soft: #fff0c9;
+  --ui-cream: #fffaf0;
+  --ui-paper: #fffdf8;
+  --ui-warm-bg: #f7f3e9;
+  --ui-line: #d9e2d4;
+  --ui-rose: #b65c67;
+  --ui-plum: #7b536f;
+  --ui-terracotta: #bd6a3c;
+}
+
+.ii-home,
+.paper-grain,
+.builder-preview-page,
+.saas-dashboard,
+.lu-mockup,
+.wa-dashboard {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(213, 163, 75, 0.16), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(31, 122, 88, 0.12), transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, var(--ui-cream) 58%, var(--ui-warm-bg) 100%);
+  color: var(--ui-ink);
+}
+
+.ii-logo > span,
+.brand::before,
+.sidebar-brand span,
+.lu-logo > span,
+.wa-brand::before {
+  background:
+    radial-gradient(circle at 78% 22%, var(--ui-gold) 0 4px, transparent 5px),
+    radial-gradient(circle at 34% 70%, var(--ui-gold) 0 3px, transparent 4px),
+    linear-gradient(135deg, transparent 0 42%, var(--ui-emerald) 43% 60%, transparent 61%),
+    linear-gradient(160deg, #ffffff 0 35%, var(--ui-emerald) 36% 100%);
+  border-color: var(--ui-emerald);
+}
+
+.ii-home,
+.ii-logo,
+.brand,
+.sidebar-brand,
+.lu-logo,
+.wa-brand,
+.ii-hero-copy h1,
+.section-heading h1,
+.builder-preview-heading h1,
+.saas-topbar h1,
+.lu-welcome-panel h1,
+.lu-hero-panel h1,
+.template-body h2,
+.module-card h2,
+.builder-panel h2,
+.lu-section-title h2,
+.wa-panel h2,
+.wa-announcement h2,
+.ii-heading h2,
+.template-body h2,
+.ii-template-card h3 {
+  color: var(--ui-ink);
+}
+
+.ii-nav nav a,
+.nav-links a,
+.lu-menu a,
+.sidebar-menu a,
+.wa-nav a,
+.wa-sidebar-footer a {
+  color: #31483d;
+}
+
+.ii-nav nav a.active::after,
+.ii-nav nav a:hover::after,
+.nav-links a:hover::after {
+  background: var(--ui-gold);
+}
+
+.ii-cta,
+.ii-actions a:first-child,
+.primary,
+.nav-button,
+.topbar-actions .topbar-primary,
+.module-actions .primary,
+.lu-primary-action,
+.lu-create,
+.wa-create,
+.wa-announcement a,
+.ii-more,
+.ii-template-card > a:last-child,
+.ii-price-grid a,
+.template-mini-card a {
+  background: linear-gradient(135deg, var(--ui-emerald), var(--ui-gold));
+  box-shadow: 0 10px 22px rgba(31, 122, 88, 0.22);
+  color: #ffffff;
+}
+
+.secondary,
+.module-actions .secondary,
+.builder-toolbar-actions .secondary,
+.lu-link-button,
+.lu-template-actions a,
+.lu-card-actions a,
+.lu-card-actions button,
+.wa-outline-action,
+.ii-actions a:last-child,
+.ii-template-card > a:nth-last-child(2) {
+  background: #ffffff;
+  border-color: #cbdcc8;
+  color: var(--ui-forest);
+}
+
+.ii-actions a:last-child {
+  border-color: var(--ui-emerald);
+}
+
+.ii-actions a:last-child b,
+.ii-wa b,
+.lu-shortcut-grid span,
+.lu-kpi-grid article > span,
+.lu-user-avatar,
+.wa-avatar,
+.wa-member-row > span,
+.avatar,
+.lu-menu a.active span,
+.lu-menu a:hover span,
+.sidebar-menu a.active span,
+.wa-nav a.active span,
+.ii-feature-grid article > span {
+  background: linear-gradient(135deg, var(--ui-emerald), var(--ui-gold));
+  color: #ffffff;
+}
+
+.ii-hero-copy h1 span,
+.ii-admin-note strong,
+.ii-heading small,
+.eyebrow,
+.lu-topbar span,
+.lu-section-title p,
+.wa-brand span,
+.saas-topbar span,
+.template-body p,
+.builder-panel-head span,
+.builder-status-grid span,
+.ii-proof strong,
+.metric-card strong,
+.lu-stats strong,
+.wa-stat-card strong,
+.ii-price-grid small {
+  color: var(--ui-emerald);
+}
+
+.ii-hero-copy p,
+.ii-heading p,
+.builder-preview-heading p:not(.eyebrow),
+.section-heading p:not(.eyebrow),
+.module-card p,
+.lu-welcome-panel p,
+.wa-panel p,
+.wa-announcement p,
+.template-body span,
+.template-mini-card span,
+.template-mini-card small,
+.lu-template-card span,
+.lu-invitation-card span,
+.lu-row,
+.wa-table td,
+.wa-member-row small,
+.ii-feature-grid p,
+.ii-price-grid p,
+.ii-template-card p {
+  color: var(--ui-muted);
+}
+
+.ii-template-section,
+.ii-feature-section {
+  background: linear-gradient(180deg, #ffffff, var(--ui-cream));
+  border-color: var(--ui-line);
+}
+
+.ii-category,
+.ii-template-card,
+.ii-proof article,
+.ii-feature-grid article,
+.ii-price-grid article,
+.template-card,
+.template-mini-card,
+.module-card,
+.form-card,
+.table-card,
+.builder-panel,
+.builder-preview-stage,
+.template-registry-button,
+.json-card,
+.lu-panel,
+.lu-welcome-panel,
+.lu-note-panel,
+.lu-workflow-panel,
+.lu-template-card,
+.lu-invitation-card,
+.lu-create-modal,
+.wa-stat-card,
+.wa-panel,
+.wa-announcement,
+.upgrade-banner,
+.tier-expiry-banner,
+.metric-card,
+.lu-topbar,
+.saas-topbar,
+.wa-topbar,
+.lu-admin-meta,
+.wa-admin,
+.sidebar-user {
+  background: var(--ui-paper);
+  border-color: var(--ui-line);
+  box-shadow: 0 15px 34px rgba(36, 52, 45, 0.08);
+}
+
+.ii-category.bg-blue > span,
+.ii-category.bg-cyan > span,
+.ii-category.bg-emerald > span {
+  background: linear-gradient(135deg, var(--ui-emerald), var(--ui-sage));
+}
+
+.ii-category.bg-violet > span {
+  background: linear-gradient(135deg, var(--ui-plum), var(--ui-gold));
+}
+
+.ii-category.bg-rose > span {
+  background: linear-gradient(135deg, var(--ui-rose), var(--ui-gold));
+}
+
+.ii-category.bg-amber > span {
+  background: linear-gradient(135deg, var(--ui-gold), var(--ui-terracotta));
+}
+
+.ii-category.bg-lime > span {
+  background: linear-gradient(135deg, var(--ui-sage), #b5b86b);
+}
+
+.ii-category.bg-slate > span {
+  background: linear-gradient(135deg, #4c5147, var(--ui-forest));
+}
+
+.ii-template-card div[aria-label="Rating bintang"] span {
+  background: var(--ui-gold);
+}
+
+.ii-footer {
+  background: var(--ui-forest-dark);
+}
+
+.ii-wa {
+  background: var(--ui-gold);
+  box-shadow: 0 12px 26px rgba(213, 163, 75, 0.28);
+}
+
+.ii-wa b {
+  border: 2px solid var(--ui-cream);
+}
+
+.ii-bottom-nav a {
+  color: var(--ui-forest);
+}
+
+.builder-status-grid article,
+.lu-builder-summary article,
+.lu-stats article,
+.builder-flow-list span {
+  background: #f9fbf5;
+  border-color: var(--ui-line);
+  color: var(--ui-forest);
+}
+
+.template-registry-button.is-active,
+.template-registry-button:hover,
+.lu-shortcut-grid button:hover,
+.lu-category-grid button:hover,
+.lu-segmented button.active,
+.filter-pills button:hover {
+  border-color: var(--ui-gold);
+  box-shadow: 0 15px 34px rgba(213, 163, 75, 0.16);
+  color: var(--ui-forest);
+}
+
+.lu-menu a.active,
+.lu-menu a:hover,
+.sidebar-menu a.active,
+.sidebar-menu a:hover,
+.wa-nav a.active,
+.wa-nav a:hover {
+  background: linear-gradient(135deg, rgba(31, 122, 88, 0.12), rgba(213, 163, 75, 0.16));
+  color: var(--ui-forest);
+}
+
+.lu-template-actions a:first-child,
+.lu-card-actions a:first-child {
+  background: var(--ui-forest);
+}
+
+.lu-template-actions button,
+.lu-card-actions button {
+  background: var(--ui-emerald);
+}
+
+.lu-search,
+.wa-search,
+.invite-form input,
+.invite-form select,
+.editor-form input,
+.editor-form textarea,
+.editor-form select,
+.lu-detail-form input,
+.lu-detail-form select,
+.lu-detail-form textarea {
+  border-color: #cbdcc8;
+  color: var(--ui-ink);
+}
+
+.lu-search:focus,
+.wa-search:focus-within,
+.invite-form input:focus,
+.invite-form select:focus,
+.editor-form input:focus,
+.editor-form textarea:focus,
+.editor-form select:focus,
+.lu-detail-form input:focus,
+.lu-detail-form select:focus,
+.lu-detail-form textarea:focus {
+  border-color: var(--ui-gold);
+  box-shadow: 0 0 0 3px rgba(213, 163, 75, 0.2);
+}
+
+.upgrade-banner {
+  background:
+    linear-gradient(135deg, rgba(213, 163, 75, 0.18), transparent 50%),
+    var(--ui-paper);
+}
+
+.upgrade-banner span {
+  background: var(--ui-gold-soft);
+  color: #805311;
+}
+
+.lu-welcome-panel,
+.lu-hero-panel,
+.wa-announcement,
+.module-card.span-2 {
+  background:
+    linear-gradient(135deg, rgba(31, 122, 88, 0.12), transparent 56%),
+    var(--ui-paper);
+}
+
+.lu-welcome-panel::after,
+.wa-announcement::after,
+.upgrade-banner::after {
+  background: linear-gradient(135deg, var(--ui-emerald), var(--ui-gold));
+}

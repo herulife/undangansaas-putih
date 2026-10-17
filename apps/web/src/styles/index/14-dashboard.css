@@ -1,0 +1,525 @@
+/* index.css part 14/22 (asli baris 7017-7540) - dashboard */
+.brand {
+  font-size: 20px;
+}
+
+.brand span {
+  display: none;
+}
+
+.nav-links {
+  align-items: center;
+  color: #102f44;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #102f44;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 32px 0;
+  position: relative;
+}
+
+.nav-links a:hover::after {
+  background: #29acec;
+  border-radius: 99px;
+  bottom: 16px;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.button,
+.nav-button,
+.topbar-actions a,
+.module-actions a,
+.lu-primary-action,
+.lu-create,
+.lu-link-button,
+.lu-template-actions a,
+.lu-card-actions a,
+.lu-card-actions button,
+.wa-create,
+.wa-panel-head a,
+.wa-outline-action,
+.wa-announcement a {
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.primary,
+.nav-button,
+.topbar-actions .topbar-primary,
+.module-actions .primary,
+.lu-primary-action,
+.lu-create,
+.wa-create,
+.wa-announcement a {
+  background: linear-gradient(135deg, #5d79ff, #26c3e8);
+  border: 0;
+  box-shadow: 0 8px 20px rgba(79, 116, 255, 0.25);
+  color: #ffffff;
+}
+
+.secondary,
+.module-actions .secondary,
+.builder-toolbar-actions .secondary,
+.lu-link-button,
+.lu-template-actions a,
+.lu-card-actions a,
+.lu-card-actions button,
+.wa-outline-action {
+  background: #ffffff;
+  border: 1px solid #bfe1f2;
+  color: #075985;
+}
+
+.page-section,
+.builder-preview-shell {
+  padding-bottom: 72px;
+  padding-top: 72px;
+}
+
+.section-heading,
+.builder-preview-heading,
+.lu-section-title {
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.eyebrow,
+.ii-heading small,
+.lu-topbar span,
+.lu-section-title p,
+.wa-brand span,
+.saas-topbar span,
+.template-body p,
+.builder-panel-head span,
+.builder-status-grid span {
+  color: #23a9e6;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.section-heading h1,
+.builder-preview-heading h1,
+.saas-topbar h1,
+.lu-welcome-panel h1,
+.lu-hero-panel h1 {
+  color: #07324c;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.14;
+  margin: 10px 0 0;
+}
+
+.builder-preview-heading p:not(.eyebrow),
+.section-heading p:not(.eyebrow),
+.module-card p,
+.lu-welcome-panel p,
+.wa-panel p,
+.wa-announcement p {
+  color: #5b7180;
+  line-height: 1.7;
+}
+
+.template-grid,
+.module-grid,
+.lu-template-row,
+.lu-invitation-grid {
+  gap: 24px;
+}
+
+.template-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.template-card,
+.template-mini-card,
+.module-card,
+.form-card,
+.table-card,
+.builder-panel,
+.builder-preview-stage,
+.template-registry-button,
+.json-card,
+.lu-panel,
+.lu-welcome-panel,
+.lu-note-panel,
+.lu-workflow-panel,
+.lu-template-card,
+.lu-invitation-card,
+.lu-create-modal,
+.wa-stat-card,
+.wa-panel,
+.wa-announcement,
+.upgrade-banner,
+.tier-expiry-banner,
+.metric-card {
+  background: #ffffff;
+  border: 1px solid #d9e6ef;
+  border-radius: 8px;
+  box-shadow: 0 15px 34px rgba(14, 51, 70, 0.08);
+}
+
+.template-card {
+  overflow: hidden;
+  padding: 14px;
+}
+
+.template-art {
+  align-items: center;
+  border: 6px solid #202733;
+  border-radius: 28px;
+  box-shadow: 0 18px 32px rgba(20, 33, 47, 0.2);
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin: 0 auto 16px;
+  max-width: 148px;
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-4deg);
+}
+
+.template-art::before {
+  background: #111827;
+  border-radius: 0 0 12px 12px;
+  content: "";
+  height: 18px;
+  left: 50%;
+  position: absolute;
+  top: -1px;
+  transform: translateX(-50%);
+  width: 64px;
+  z-index: 2;
+}
+
+.template-art img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.template-body {
+  padding: 0 8px 10px;
+  text-align: center;
+}
+
+.template-body h2,
+.module-card h2,
+.builder-panel h2,
+.lu-section-title h2,
+.wa-panel h2,
+.wa-announcement h2 {
+  color: #082f49;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.template-body span,
+.template-mini-card span,
+.template-mini-card small,
+.lu-template-card span,
+.lu-invitation-card span,
+.lu-row,
+.wa-table td,
+.wa-member-row small {
+  color: #657787;
+}
+
+.builder-preview-page {
+  min-height: 100vh;
+}
+
+.builder-layout {
+  align-items: start;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+}
+
+.builder-panel,
+.builder-preview-stage {
+  padding: 22px;
+}
+
+.builder-panel-head strong {
+  align-items: center;
+  background: #e9f8ff;
+  border-radius: 999px;
+  color: #0284c7;
+  display: inline-flex;
+  height: 44px;
+  justify-content: center;
+  min-width: 44px;
+}
+
+.builder-status-grid article,
+.lu-builder-summary article,
+.lu-stats article {
+  background: #f6fbff;
+  border: 1px solid #d9eaf4;
+  border-radius: 8px;
+}
+
+.template-registry-button {
+  align-items: center;
+}
+
+.template-registry-button.is-active,
+.template-registry-button:hover {
+  border-color: #2eb7ec;
+  box-shadow: 0 15px 34px rgba(46, 183, 236, 0.16);
+}
+
+.template-registry-button img,
+.template-mini-card img,
+.lu-template-card img,
+.lu-invitation-preview img {
+  border-radius: 8px;
+}
+
+.builder-frame-shell,
+.lu-phone-frame {
+  background: #111827;
+  border: 8px solid #111827;
+  border-radius: 42px;
+  box-shadow: 0 24px 50px rgba(7, 28, 45, 0.24);
+  overflow: hidden;
+}
+
+.builder-device-top,
+.lu-phone-top {
+  background: #111827;
+  color: #ffffff;
+}
+
+.template-render-frame,
+.lu-phone-screen {
+  background: #ffffff;
+}
+
+.lu-mockup {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.lu-sidebar,
+.saas-sidebar,
+.wa-sidebar {
+  background: #ffffff;
+  border-right: 1px solid #dbe8f1;
+  box-shadow: 8px 0 26px rgba(14, 51, 70, 0.06);
+  color: #082f49;
+}
+
+.lu-logo {
+  align-items: center;
+}
+
+.lu-logo > span,
+.sidebar-brand span {
+  color: transparent;
+  font-size: 0;
+}
+
+.lu-logo strong,
+.sidebar-brand,
+.wa-brand strong {
+  color: #111827;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.lu-logo small,
+.wa-brand span {
+  display: block;
+  margin-top: 4px;
+}
+
+.lu-menu a,
+.sidebar-menu a,
+.wa-nav a,
+.wa-sidebar-footer a {
+  border-radius: 8px;
+  color: #335166;
+  font-weight: 800;
+}
+
+.lu-menu a.active,
+.lu-menu a:hover,
+.sidebar-menu a.active,
+.sidebar-menu a:hover,
+.wa-nav a.active,
+.wa-nav a:hover {
+  background: linear-gradient(135deg, rgba(93, 121, 255, 0.12), rgba(38, 195, 232, 0.16));
+  color: #075985;
+}
+
+.lu-menu a.active span,
+.lu-menu a:hover span,
+.sidebar-menu a.active span,
+.wa-nav a.active span {
+  background: linear-gradient(135deg, #5d79ff, #26c3e8);
+  color: #ffffff;
+}
+
+.lu-main,
+.saas-main,
+.wa-shell {
+  background: transparent;
+}
+
+.lu-topbar,
+.saas-topbar,
+.wa-topbar {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #d9e6ef;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(14, 51, 70, 0.08);
+}
+
+.lu-topbar strong,
+.wa-admin strong,
+.saas-topbar h1 {
+  color: #082f49;
+}
+
+.lu-admin-meta,
+.wa-admin,
+.sidebar-user {
+  background: #f8fcff;
+  border: 1px solid #d9e6ef;
+  border-radius: 8px;
+}
+
+.lu-welcome-panel,
+.lu-hero-panel,
+.wa-announcement {
+  background:
+    linear-gradient(135deg, rgba(46, 183, 236, 0.14), transparent 52%),
+    #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.lu-welcome-panel::after,
+.wa-announcement::after,
+.upgrade-banner::after {
+  background: linear-gradient(135deg, #5d79ff, #26c3e8);
+  border-radius: 999px;
+  content: "";
+  height: 92px;
+  opacity: 0.12;
+  position: absolute;
+  right: -26px;
+  top: -34px;
+  width: 92px;
+}
+
+.lu-shortcut-grid button,
+.lu-category-grid button,
+.lu-segmented button,
+.filter-pills button {
+  background: #ffffff;
+  border: 1px solid #d9e6ef;
+  border-radius: 8px;
+  color: #315166;
+}
+
+.lu-shortcut-grid button:hover,
+.lu-category-grid button:hover,
+.lu-segmented button.active,
+.filter-pills button:hover {
+  border-color: #2eb7ec;
+  box-shadow: 0 12px 24px rgba(46, 183, 236, 0.14);
+  color: #075985;
+}
+
+.lu-shortcut-grid span,
+.lu-kpi-grid article > span,
+.lu-user-avatar,
+.wa-avatar,
+.wa-member-row > span,
+.avatar {
+  background: linear-gradient(135deg, #5d79ff, #26c3e8);
+  color: #ffffff;
+}
+
+.lu-template-card,
+.lu-invitation-card,
+.template-mini-card {
+  overflow: hidden;
+}
+
+.lu-template-actions a:first-child,
+.lu-card-actions a:first-child {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.lu-template-actions button,
+.lu-card-actions button {
+  background: #0891b2;
+  color: #ffffff;
+}
+
+.lu-search,
+.wa-search,
+.invite-form input,
+.invite-form select,
+.editor-form input,
+.editor-form textarea,
+.editor-form select,
+.lu-detail-form input,
+.lu-detail-form select,
+.lu-detail-form textarea {
+  background: #ffffff;
+  border: 1px solid #cfe0ea;
+  border-radius: 8px;
+  color: #082f49;
+}
+
+.lu-search:focus,
+.wa-search:focus-within,
+.invite-form input:focus,
+.invite-form select:focus,
+.editor-form input:focus,
+.editor-form textarea:focus,
+.editor-form select:focus,
+.lu-detail-form input:focus,
+.lu-detail-form select:focus,
+.lu-detail-form textarea:focus {
+  border-color: #2eb7ec;
+  box-shadow: 0 0 0 3px rgba(46, 183, 236, 0.16);
+  outline: none;
+}
+
+.saas-dashboard {
+  grid-template-columns: 292px minmax(0, 1fr);
+}
+
+.saas-sidebar {
+  min-height: 100vh;
+}
+
+.sidebar-brand {
+  text-transform: none;
+}
+
+.sidebar-user {
+  padding: 16px;
+}
+
+.metric-card strong,
+.lu-stats strong,
+.wa-stat-card strong {
+  color: #0ea5e9;
+}

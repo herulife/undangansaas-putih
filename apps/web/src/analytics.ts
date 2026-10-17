@@ -40,7 +40,7 @@ export function trackEvent(input: TrackEventInput) {
 }
 
 function getVisitorId() {
-  const key = 'cintabuku:visitor-id'
+  const key = 'linkundang:visitor-id'
   const current = window.localStorage.getItem(key)
   if (current) {
     return current

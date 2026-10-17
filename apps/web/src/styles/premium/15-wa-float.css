@@ -1,0 +1,66 @@
+/* --- WA float --- */
+.ii-wa {
+  background: #0b0e16;
+  border: 1px solid #e8eaf1;
+  border-radius: 999px 12px 12px 999px;
+  box-shadow: 0 16px 36px rgba(11, 14, 22, 0.25);
+}
+
+.ii-wa b {
+  background: linear-gradient(135deg, #25d366, #1db954);
+}
+
+/* ============================================================
+   DASHBOARD (saas-*)
+   ============================================================ */
+
+.saas-dashboard {
+  background: #f4f6f9;
+  color: #0b0e16;
+}
+
+.saas-sidebar {
+  background:
+    linear-gradient(180deg, #0b0e16 0%, #11142a 55%, #0b0e16 100%),
+    radial-gradient(circle at 20% 0, rgba(99, 102, 241, 0.22), transparent 34%);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sidebar-brand {
+  font-family: "LinkUndang Inter", ui-sans-serif, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.sidebar-brand span {
+  background: linear-gradient(135deg, #4f46e5, #22d3ee);
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.4);
+}
+
+.sidebar-user {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+}
+
+.avatar {
+  background: linear-gradient(135deg, #4f46e5, #22d3ee);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-menu a {
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 700;
+}
+
+.sidebar-menu a.active,
+.sidebar-menu a:hover {
+  background: rgba(99, 102, 241, 0.18);
+  color: #ffffff;
+}
+
+.sidebar-menu span {
+  color: #22d3ee;
+}

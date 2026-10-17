@@ -1,0 +1,9 @@
+/* --- CTA modern bold --- */
+.ii-cta,
+.ii-actions a:first-child {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.4);
+  text-transform: none;
+  font-weight: 800;
+}

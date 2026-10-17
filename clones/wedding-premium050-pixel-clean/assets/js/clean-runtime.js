@@ -2,9 +2,9 @@
   "use strict";
 
   const weddingDate = new Date("2026-06-02T08:00:00+07:00").getTime();
-  const autoStep = 333;
-  const autoDelay = 2000;
-  const autoDuration = 999;
+  const autoStep = 200;
+  const autoDelay = 2800;
+  const autoDuration = 1200;
   const galleryImages = [];
 
   const $ = (selector, root = document) => root.querySelector(selector);

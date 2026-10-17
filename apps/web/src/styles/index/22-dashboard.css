@@ -1,0 +1,443 @@
+/* index.css part 22/22 (asli baris 11240-11681) - dashboard */
+.oripio-dashboard .wallet-actions a {
+  background: var(--or-green);
+  color: #fff;
+}
+
+.oripio-dashboard .wallet-actions button {
+  background: #f0f1ef;
+  color: var(--or-text);
+}
+
+.oripio-dashboard .wallet-actions svg {
+  height: 15px;
+  width: 15px;
+}
+
+.oripio-dashboard .dashboard-visual-grid {
+  align-items: start;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  padding: 16px 8px 0 12px;
+}
+
+.oripio-dashboard .chart-card,
+.oripio-dashboard .income-card {
+  background: #fff;
+  border: 1px solid var(--or-line);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.oripio-dashboard .chart-card {
+  min-height: 294px;
+  padding: 22px 24px;
+}
+
+.oripio-dashboard .income-card {
+  min-height: 294px;
+  padding: 22px;
+}
+
+.oripio-dashboard .chart-head {
+  align-items: flex-start;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.oripio-dashboard .chart-head .eyebrow {
+  color: var(--or-green);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.oripio-dashboard .chart-head h2 {
+  color: var(--or-text);
+  font-size: 19px;
+  font-weight: 950;
+  letter-spacing: 0;
+  margin: 4px 0 0;
+}
+
+.oripio-dashboard .chart-head > span {
+  color: var(--or-muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.oripio-dashboard .bar-chart {
+  align-items: end;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  height: 198px;
+  margin-top: 30px;
+  padding: 0 8px;
+}
+
+.oripio-dashboard .bar-column {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  height: 100%;
+}
+
+.oripio-dashboard .bar-column > div {
+  align-items: end;
+  background:
+    repeating-linear-gradient(to top, transparent 0 39px, #f0f2ef 40px);
+  display: flex;
+  gap: 0;
+  height: 160px;
+  justify-content: center;
+  width: 100%;
+}
+
+.oripio-dashboard .bar {
+  border-radius: 9px 9px 0 0;
+  display: block;
+  min-height: 18px;
+  width: 27px;
+}
+
+.oripio-dashboard .bar.invitation {
+  background: #dcefe9;
+}
+
+.oripio-dashboard .bar.rsvp {
+  background: var(--or-green);
+  box-shadow: 0 8px 16px rgba(15, 155, 99, 0.22);
+  margin-left: -17px;
+  width: 20px;
+}
+
+.oripio-dashboard .bar-column small {
+  color: #8f9692;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.oripio-dashboard .income-donut {
+  align-items: center;
+  background:
+    radial-gradient(circle at center, #fff 0 54%, transparent 55%),
+    conic-gradient(var(--or-green) 0 46%, #dfeee7 46% 79%, #f0f1ef 79% 100%);
+  border-radius: 50%;
+  display: grid;
+  height: 150px;
+  justify-content: center;
+  margin: 24px auto 20px;
+  place-items: center;
+  width: 150px;
+}
+
+.oripio-dashboard .income-donut strong,
+.oripio-dashboard .income-donut span {
+  display: block;
+  grid-area: 1 / 1;
+  text-align: center;
+}
+
+.oripio-dashboard .income-donut strong {
+  color: var(--or-text);
+  font-size: 16px;
+  font-weight: 950;
+  max-width: 110px;
+  overflow-wrap: anywhere;
+  transform: translateY(-8px);
+}
+
+.oripio-dashboard .income-donut span {
+  color: var(--or-muted);
+  font-size: 11px;
+  font-weight: 800;
+  transform: translateY(16px);
+}
+
+.oripio-dashboard .income-legend {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+}
+
+.oripio-dashboard .income-legend span {
+  color: #626a66;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.oripio-dashboard .income-legend b {
+  background: var(--or-green);
+  border-radius: 3px;
+  display: inline-block;
+  height: 8px;
+  margin-right: 7px;
+  width: 8px;
+}
+
+.oripio-dashboard .income-legend span:nth-child(2) b {
+  background: #b9ded1;
+}
+
+.oripio-dashboard .income-legend span:nth-child(3) b {
+  background: #ecefeb;
+}
+
+.oripio-dashboard .upgrade-banner {
+  display: none;
+}
+
+.oripio-dashboard .form-card,
+.oripio-dashboard .table-card,
+.oripio-dashboard .module-card,
+.oripio-dashboard .template-mini-card {
+  background: #fff;
+  border: 1px solid var(--or-line);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.oripio-dashboard .form-card,
+.oripio-dashboard .table-card {
+  margin: 16px 8px 0 12px;
+}
+
+.oripio-dashboard .box-header,
+.oripio-dashboard .table-head {
+  border-bottom: 1px solid var(--or-line);
+  padding: 15px 16px;
+}
+
+.oripio-dashboard .box-header .eyebrow,
+.oripio-dashboard .table-head .eyebrow {
+  color: var(--or-green);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.oripio-dashboard .form-card h2,
+.oripio-dashboard .table-card h2,
+.oripio-dashboard .module-card h2 {
+  color: var(--or-text);
+  font-size: 18px;
+  font-weight: 950;
+  letter-spacing: 0;
+  margin: 3px 0 0;
+}
+
+.oripio-dashboard .invite-form,
+.oripio-dashboard .ai-generator-form {
+  padding: 16px;
+}
+
+.oripio-dashboard .invite-form input,
+.oripio-dashboard .invite-form select,
+.oripio-dashboard .invite-form textarea,
+.oripio-dashboard .ai-generator-form input,
+.oripio-dashboard .ai-generator-form select,
+.oripio-dashboard .ai-generator-form textarea,
+.oripio-dashboard .table-tools input,
+.oripio-dashboard .table-tools select {
+  background: #f9faf8;
+  border: 1px solid var(--or-line);
+  border-radius: 7px;
+  color: var(--or-text);
+}
+
+.oripio-dashboard .button.primary,
+.oripio-dashboard .row-actions a:nth-child(2),
+.oripio-dashboard .row-actions button,
+.oripio-dashboard .template-mini-card a {
+  background: var(--or-green);
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+}
+
+.oripio-dashboard .invite-table-labels {
+  background: #f7f8f6;
+  color: #8d9691;
+}
+
+.oripio-dashboard .invite-row {
+  border-bottom: 1px solid var(--or-line);
+}
+
+.oripio-dashboard .adminlte-badge {
+  background: #e8f7ef;
+  color: var(--or-green-dark);
+}
+
+.oripio-dashboard .module-grid {
+  padding: 0 8px 16px 12px;
+}
+
+@media (max-width: 1180px) {
+  .oripio-dashboard {
+    grid-template-columns: 210px minmax(0, 1fr);
+    padding: 16px;
+  }
+
+  .oripio-dashboard .saas-sidebar {
+    min-height: calc(100vh - 32px);
+    top: 16px;
+  }
+
+  .oripio-dashboard .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .oripio-dashboard .metric-card:first-child {
+    grid-row: auto;
+  }
+
+  .oripio-dashboard .dashboard-visual-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .oripio-dashboard {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+
+  .oripio-dashboard .saas-sidebar,
+  .oripio-dashboard .saas-main {
+    border-radius: 12px;
+  }
+
+  .oripio-dashboard .saas-sidebar {
+    min-height: auto;
+    position: relative;
+    top: 0;
+  }
+
+  .oripio-dashboard .sidebar-menu {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .oripio-dashboard .nav-treeview {
+    display: contents;
+  }
+
+  .oripio-dashboard .nav-treeview > p {
+    grid-column: 1 / -1;
+    margin-top: 12px;
+  }
+
+  .oripio-dashboard .sidebar-upgrade {
+    display: none;
+  }
+
+  .oripio-dashboard .saas-topbar,
+  .oripio-dashboard .content-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .oripio-dashboard .oripio-search {
+    width: 100%;
+  }
+
+  .oripio-dashboard .topbar-actions,
+  .oripio-dashboard .content-header nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .oripio-dashboard .metric-grid,
+  .oripio-dashboard .sidebar-menu,
+  .oripio-dashboard .wallet-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .oripio-dashboard .metric-card.small-box {
+    grid-template-columns: 36px minmax(0, 1fr) auto;
+    padding: 16px;
+  }
+
+  .oripio-dashboard .bar {
+    width: 18px;
+  }
+
+  .oripio-dashboard .bar.rsvp {
+    margin-left: -11px;
+    width: 14px;
+  }
+}
+
+.template-invite-shell {
+  position: fixed;
+  inset: 0;
+  background: #0d0b0a;
+}
+
+.template-invite-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
+}
+
+.template-rsvp-fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 60;
+  min-width: 64px;
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #b45309, #92400e);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.template-rsvp-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.template-rsvp-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(13, 11, 10, 0.72);
+  cursor: pointer;
+}
+
+.template-rsvp-dialog {
+  position: relative;
+  width: min(100%, 460px);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+
+.template-rsvp-dialog .rsvp-form {
+  background: #fff;
+  border: 0;
+  margin: 0;
+}

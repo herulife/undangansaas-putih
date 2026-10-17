@@ -1,0 +1,524 @@
+/* index.css part 18/22 (asli baris 9110-9632) - dashboard */
+.adminlte-v3 .module-card > .eyebrow {
+  display: block;
+  padding-top: 15px;
+}
+
+.adminlte-v3 .module-card > h2 {
+  margin-top: 3px;
+}
+
+.adminlte-v3 .module-card > p,
+.adminlte-v3 .placeholder-table,
+.adminlte-v3 .module-actions,
+.adminlte-v3 .builder-flow-list {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.adminlte-v3 .module-card > p:last-child,
+.adminlte-v3 .placeholder-table {
+  margin-bottom: 15px;
+}
+
+.adminlte-v3 .template-mini-card {
+  padding: 12px;
+}
+
+.adminlte-v3 .placeholder-table {
+  border-color: var(--al-border);
+  border-radius: 3px;
+}
+
+.adminlte-v3 .placeholder-table span {
+  border-bottom-color: #f4f4f4;
+}
+
+@media (max-width: 1180px) {
+  .adminlte-v3 .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .adminlte-v3 .invite-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .adminlte-v3 .row-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 860px) {
+  .adminlte-v3 {
+    grid-template-columns: 1fr;
+  }
+
+  .adminlte-v3 .saas-sidebar {
+    min-height: auto;
+    position: relative;
+  }
+
+  .adminlte-v3 .sidebar-menu {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 10px;
+  }
+
+  .adminlte-v3 .nav-treeview > p {
+    grid-column: 1 / -1;
+    margin-left: 0;
+  }
+
+  .adminlte-v3 .content-header,
+  .adminlte-v3 .saas-topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .adminlte-v3 .topbar-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 620px) {
+  .adminlte-v3 .metric-grid,
+  .adminlte-v3 .module-grid,
+  .adminlte-v3 .sidebar-menu,
+  .adminlte-v3 .invite-row {
+    grid-template-columns: 1fr;
+  }
+
+  .adminlte-v3 .small-box {
+    min-height: 108px;
+  }
+
+  .adminlte-v3 .invite-form,
+  .adminlte-v3 .template-admin-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.adminyo-dashboard {
+  --ay-bg: #f6f7f9;
+  --ay-blue: #1687f3;
+  --ay-blue-soft: #eaf5ff;
+  --ay-danger: #ef5b64;
+  --ay-danger-soft: #fff0f2;
+  --ay-green: #18a957;
+  --ay-green-soft: #ebf8ef;
+  --ay-line: #e7ebf0;
+  --ay-muted: #87919d;
+  --ay-panel: #ffffff;
+  --ay-text: #20242a;
+  --ay-warning: #d6a100;
+  --ay-warning-soft: #fff8df;
+  background: var(--ay-bg);
+  color: var(--ay-text);
+  display: grid;
+  gap: 0;
+  grid-template-columns: 300px minmax(0, 1fr);
+  padding: 42px;
+}
+
+.adminyo-dashboard .saas-sidebar,
+.adminyo-dashboard .saas-main {
+  background: var(--ay-panel);
+  border: 1px solid var(--ay-line);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.adminyo-dashboard .saas-sidebar {
+  border-radius: 8px 0 0 8px;
+  border-right: 0;
+  color: var(--ay-text);
+  min-height: calc(100vh - 84px);
+  overflow: hidden;
+  padding: 0;
+  position: sticky;
+  top: 42px;
+}
+
+.adminyo-dashboard .saas-main {
+  border-radius: 0 8px 8px 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.adminyo-dashboard .brand-link {
+  display: none;
+}
+
+.adminyo-dashboard .user-panel {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid var(--ay-line);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 44px minmax(0, 1fr) 18px;
+  padding: 22px 20px;
+}
+
+.adminyo-dashboard .user-panel::after {
+  color: var(--ay-muted);
+  content: "v";
+  font-size: 12px;
+  text-align: right;
+}
+
+.adminyo-dashboard .avatar {
+  align-items: center;
+  background: linear-gradient(145deg, #f2f5f8, #e6ecf2);
+  border: 1px solid #dce3eb;
+  border-radius: 50%;
+  color: #26313f;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.adminyo-dashboard .user-panel strong {
+  color: var(--ay-text);
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.adminyo-dashboard .user-panel p {
+  align-items: center;
+  color: var(--ay-muted);
+  display: flex;
+  font-size: 11px;
+  gap: 7px;
+  margin: 3px 0 0;
+}
+
+.adminyo-dashboard .user-panel p span {
+  background: var(--ay-green);
+  border-radius: 999px;
+  display: inline-flex;
+  height: 7px;
+  width: 7px;
+}
+
+.adminyo-dashboard .user-panel small {
+  color: #9aa4b1;
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-top: 4px;
+}
+
+.adminyo-dashboard .sidebar-menu {
+  padding: 20px 14px 28px;
+}
+
+.adminyo-dashboard .nav-treeview > p {
+  color: #a0a8b1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 22px 12px 8px;
+  text-transform: uppercase;
+}
+
+.adminyo-dashboard .nav-treeview:first-child > p {
+  margin-top: 0;
+}
+
+.adminyo-dashboard .sidebar-menu a {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: #6f7884;
+  display: grid;
+  font-size: 13px;
+  gap: 9px;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  min-height: 44px;
+  padding: 10px 12px;
+}
+
+.adminyo-dashboard .sidebar-menu a:hover {
+  background: #f7fafc;
+  color: var(--ay-text);
+}
+
+.adminyo-dashboard .sidebar-menu a.active {
+  background: var(--ay-blue-soft);
+  color: var(--ay-blue);
+  font-weight: 800;
+}
+
+.adminyo-dashboard .nav-icon {
+  align-items: center;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 900;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+.adminyo-dashboard .sidebar-menu strong {
+  font-size: 13px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.adminyo-dashboard .sidebar-menu small {
+  background: var(--ay-green);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 3px 7px;
+}
+
+.adminyo-dashboard .saas-topbar {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid var(--ay-line);
+  box-shadow: none;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  min-height: 70px;
+  padding: 0 22px;
+}
+
+.adminyo-dashboard .saas-topbar-title span {
+  color: var(--ay-muted);
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.adminyo-dashboard .saas-topbar h1 {
+  color: var(--ay-text);
+  font-size: 18px;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.adminyo-dashboard .topbar-actions {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.adminyo-dashboard .topbar-actions a,
+.adminyo-dashboard .topbar-actions button {
+  align-items: center;
+  border-radius: 6px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  min-height: 34px;
+  padding: 8px 12px;
+}
+
+.adminyo-dashboard .topbar-actions a:not(.topbar-primary) {
+  background: #f8fafc;
+  border: 1px solid var(--ay-line);
+  color: #687382;
+}
+
+.adminyo-dashboard .topbar-primary {
+  background: var(--ay-blue);
+  border: 1px solid var(--ay-blue);
+  box-shadow: 0 10px 18px rgba(22, 135, 243, 0.2);
+  color: #fff;
+}
+
+.adminyo-dashboard .topbar-logout {
+  background: #fff;
+  border: 1px solid var(--ay-line);
+  color: #687382;
+  cursor: pointer;
+}
+
+.adminyo-dashboard .saas-content {
+  padding: 0;
+}
+
+.adminyo-dashboard .tier-expiry-banner {
+  background: var(--ay-warning-soft);
+  border: 1px solid #f4dd8a;
+  border-radius: 8px;
+  color: #7a5700;
+  margin: 16px 22px 0;
+  padding: 14px 16px;
+}
+
+.adminyo-dashboard .content-header {
+  align-items: center;
+  border-bottom: 1px solid var(--ay-line);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 18px 22px 16px;
+}
+
+.adminyo-dashboard .data-source,
+.adminyo-dashboard .eyebrow {
+  color: var(--ay-muted);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.adminyo-dashboard .content-header h2 {
+  color: var(--ay-text);
+  font-size: 22px;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1.15;
+  margin: 4px 0 0;
+}
+
+.adminyo-dashboard .content-header nav {
+  align-items: center;
+  color: var(--ay-muted);
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 7px;
+}
+
+.adminyo-dashboard .content-header a {
+  color: var(--ay-blue);
+}
+
+.adminyo-dashboard .reservation-tabs {
+  align-items: center;
+  border-bottom: 1px solid var(--ay-line);
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 14px 22px;
+}
+
+.adminyo-dashboard .reservation-tabs button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--ay-muted);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  gap: 7px;
+  padding: 6px 0;
+  white-space: nowrap;
+}
+
+.adminyo-dashboard .reservation-tabs button span {
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  height: 12px;
+  opacity: 0.65;
+  width: 12px;
+}
+
+.adminyo-dashboard .reservation-tabs button.active {
+  color: var(--ay-green);
+}
+
+.adminyo-dashboard .reservation-tabs button.active span {
+  background: var(--ay-green-soft);
+}
+
+.adminyo-dashboard .metric-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 16px 22px 0;
+}
+
+.adminyo-dashboard .metric-card.small-box {
+  background: #fff;
+  border: 1px solid var(--ay-line);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  color: var(--ay-text);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  min-height: 104px;
+  overflow: hidden;
+  padding: 14px 12px;
+}
+
+.adminyo-dashboard .metric-card p {
+  color: var(--ay-muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 0 0 7px;
+  text-transform: none;
+}
+
+.adminyo-dashboard .metric-card strong {
+  color: var(--ay-text);
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.adminyo-dashboard .metric-card span {
+  border-radius: 0 0 0 8px;
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  margin: 12px -12px -14px;
+  padding: 7px 12px;
+}
+
+.adminyo-dashboard .metric-card.success span {
+  background: var(--ay-green-soft);
+  color: #1a7d44;
+}
+
+.adminyo-dashboard .metric-card.info span {
+  background: var(--ay-blue-soft);
+  color: #146ebd;
+}
+
+.adminyo-dashboard .metric-card.warning span {
+  background: var(--ay-warning-soft);
+  color: #8a6500;
+}
+
+.adminyo-dashboard .metric-card.danger span {
+  background: var(--ay-danger-soft);
+  color: #bf3945;
+}
+
+.adminyo-dashboard .metric-sparkline {
+  align-self: center;
+  height: 40px;
+  width: 112px;
+}

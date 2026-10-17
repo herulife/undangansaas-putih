@@ -1,0 +1,17 @@
+/* --- Kategori --- */
+.ii-category {
+  background: #ffffff;
+  border: 1px solid #e4e7ee;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(11, 14, 22, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ii-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(11, 14, 22, 0.09);
+}
+
+.ii-category strong {
+  color: #0b0e16;
+}

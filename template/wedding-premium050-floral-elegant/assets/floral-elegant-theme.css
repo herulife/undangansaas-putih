@@ -1,0 +1,252 @@
+/* ==========================================
+   FLORAL ELEGANT THEME - PINK & SOFT
+   ========================================== */
+
+/* Override Color Variables */
+:root {
+    --gold: #E8A0BF;           /* Pink soft */
+    --gold-dark: #D470A2;      /* Pink medium */
+    --gold-gradient: linear-gradient(135deg, #E8A0BF 0%, #D470A2 50%, #BA6B87 100%);
+    --gold-soft: #F4C2D7;      /* Pink very soft */
+    --gold-text: #C44569;      /* Pink text */
+    --gold-light: #FFEAA7;     /* Keep as accent */
+    
+    /* Text colors */
+    --text-primary: #4A3728;
+    --text-secondary: #6B5344;
+    --text-muted: #8B7355;
+    
+    /* Background */
+    --bg-primary: #FFF5F8;
+    --bg-secondary: #FFF0F5;
+    --bg-overlay: rgba(255, 245, 248, 0.85);
+}
+
+/* Override body background */
+body {
+    background: linear-gradient(180deg, #FFF5F8 0%, #FFF0F5 50%, #FFE4EC 100%) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Override headings */
+h1, h2, h3, .heading, .title {
+    color: var(--gold-dark) !important;
+}
+
+/* Cover/Hero Section */
+.cover-section,
+.hero-cover,
+.cover-container {
+    background: linear-gradient(135deg, #FFE4EC 0%, #FFF5F8 50%, #FFE0F0 100%) !important;
+}
+
+.cover-title,
+.hero-title,
+.wedding-title {
+    color: var(--gold-dark) !important;
+    text-shadow: 2px 2px 4px rgba(212, 112, 162, 0.2) !important;
+}
+
+.cover-subtitle,
+.couple-names {
+    color: var(--text-primary) !important;
+}
+
+/* Button Styles */
+.btn-primary,
+.btn-gold,
+.button-primary,
+.cta-button {
+    background: var(--gold-gradient) !important;
+    border-color: var(--gold-dark) !important;
+    color: white !important;
+}
+
+.btn-primary:hover,
+.btn-gold:hover {
+    background: var(--gold-dark) !important;
+    box-shadow: 0 4px 15px rgba(212, 112, 162, 0.4) !important;
+}
+
+/* Section backgrounds */
+section {
+    background: var(--bg-primary) !important;
+}
+
+.section-alt,
+.bg-secondary {
+    background: var(--bg-secondary) !important;
+}
+
+/* Quote/Text sections */
+blockquote,
+.quote-text {
+    color: var(--text-secondary) !important;
+}
+
+/* Name highlights */
+.groom-name,
+.bride-name,
+.couple-highlight {
+    color: var(--gold-dark) !important;
+}
+
+/* Date/Time styling */
+.event-date,
+.event-time,
+.schedule {
+    color: var(--text-secondary) !important;
+}
+
+.event-date::before,
+.event-date::after {
+    background: var(--gold-soft) !important;
+}
+
+/* Divider lines */
+.divider,
+.ornament-divider {
+    color: var(--gold-soft) !important;
+    opacity: 0.7;
+}
+
+/* RSVP button */
+.rsvp-btn,
+.rsvp-button {
+    background: var(--gold-gradient) !important;
+    color: white !important;
+}
+
+/* Overlay for images */
+.overlay,
+.image-overlay {
+    background: linear-gradient(180deg, transparent 0%, rgba(255, 240, 245, 0.7) 100%) !important;
+}
+
+/* Gift section */
+.gift-card,
+.gift-box {
+    border-color: var(--gold-soft) !important;
+    background: var(--bg-secondary) !important;
+}
+
+/* Location/Map section */
+.location-card,
+.venue-card {
+    background: var(--bg-primary) !important;
+    border-color: var(--gold-soft) !important;
+}
+
+/* Audio button */
+.audio-btn,
+.music-toggle {
+    background: var(--gold-soft) !important;
+    color: var(--gold-dark) !important;
+}
+
+/* Gallery */
+.gallery-item,
+.photo-grid img {
+    border: 2px solid var(--gold-soft) !important;
+}
+
+/* Animated elements */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floral corner decorations */
+.corner-floral::before {
+    content: "🌸";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+.corner-floral::after {
+    content: "🌸";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+    color: var(--gold) !important;
+}
+
+/* Font styling */
+.font-script,
+.font-elegant,
+.script-text {
+    font-family: 'Great Vibes', 'Dancing Script', cursive !important;
+    color: var(--gold-dark) !important;
+}
+
+/* Nav dots */
+.nav-dot,
+.indicator {
+    background: var(--gold-soft) !important;
+}
+
+.nav-dot.active,
+.indicator.active {
+    background: var(--gold) !important;
+}
+
+/* Countdown */
+.countdown-item {
+    background: var(--bg-secondary) !important;
+    color: var(--gold-dark) !important;
+    border: 1px solid var(--gold-soft) !important;
+}
+
+/* Footer */
+footer,
+.footer-section {
+    background: linear-gradient(180deg, var(--bg-primary) 0%, #FFE0F0 100%) !important;
+}
+
+/* Card shadows */
+.card,
+.info-card {
+    box-shadow: 0 4px 20px rgba(232, 160, 191, 0.2) !important;
+}
+
+/* Text shadows */
+.shadow-gold {
+    text-shadow: 2px 2px 4px rgba(212, 112, 162, 0.3) !important;
+}
+
+/* Pink gradient overlay for cover */
+.cover-overlay::after {
+    background: linear-gradient(135deg, rgba(255,228,236,0.3) 0%, rgba(255,245,248,0.5) 100%) !important;
+}
+
+/* Ornament accents */
+.ornament,
+.decoration {
+    filter: sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+}
+
+/* Photo frame */
+.photo-frame {
+    border: 3px solid var(--gold-soft) !important;
+    box-shadow: 0 4px 15px rgba(232, 160, 191, 0.3) !important;
+}
+
+/* Loading animation */
+.loader,
+.loading {
+    border-color: var(--gold-soft) !important;
+    border-top-color: var(--gold) !important;
+}

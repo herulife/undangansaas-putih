@@ -1,0 +1,55 @@
+/* --- Template cards --- */
+.ii-template-section {
+  background: #f7f8fb;
+  padding: 72px 5vw;
+}
+
+.ii-template-card {
+  background: #ffffff;
+  border: 1px solid #e8eaf1;
+  border-radius: 18px;
+  box-shadow: 0 16px 38px rgba(11, 14, 22, 0.07);
+  padding: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ii-template-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(79, 70, 229, 0.14);
+}
+
+.ii-template-card > a:first-child {
+  border-radius: 12px;
+}
+
+.ii-template-card p {
+  color: #4f46e5;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.ii-template-card h3 {
+  color: #0b0e16;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.ii-template-card > a:nth-last-child(2) {
+  border: 2px solid #4f46e5;
+  border-radius: 999px;
+  color: #4f46e5;
+}
+
+.ii-template-card > a:last-child {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  border-radius: 999px;
+  color: #ffffff;
+}
+
+.ii-more {
+  background: #ffffff;
+  border: 2px solid #4f46e5;
+  border-radius: 999px;
+  color: #4f46e5;
+  font-weight: 800;
+}

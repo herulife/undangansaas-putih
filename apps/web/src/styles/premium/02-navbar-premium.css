@@ -1,0 +1,39 @@
+/* --- Navbar premium --- */
+.ii-nav {
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(11, 14, 22, 0.06);
+  box-shadow: none;
+}
+
+.ii-logo strong {
+  color: #0b0e16;
+  letter-spacing: -0.03em;
+}
+
+.ii-logo > span {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  border: 0;
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.45);
+  border-radius: 10px;
+  height: 32px;
+  width: 32px;
+}
+
+.ii-nav nav a {
+  color: #272b36;
+  font-weight: 700;
+}
+
+.ii-nav nav a.active,
+.ii-nav nav a:hover {
+  color: #4f46e5;
+}
+
+.ii-nav nav a.active::after,
+.ii-nav nav a:hover::after {
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  bottom: 20px;
+  height: 3px;
+}
